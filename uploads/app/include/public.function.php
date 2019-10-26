@@ -22,7 +22,7 @@
 		}
 	}
 	function CheckTell($idcard){
-		if(preg_match("/\d{3}-\d{8}|\d{4}-\d{7}/",$idcard)==0){
+		if(preg_match("/^\d{5,15}$/",$idcard)==0){
 			return false;
 		}else{
 			return true;

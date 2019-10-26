@@ -490,7 +490,7 @@ function isjsMobile(obj){
 	return true;
 }
 function isjsTell(str) {
-    var result = str.match(/\d{3}-\d{8}|\d{4}-\d{7}/);
+    var result = str.match(/^\d{5,15}$/);
     if (result == null) return false;
     return true;
 }
