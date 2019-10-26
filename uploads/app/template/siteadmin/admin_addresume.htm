@@ -159,7 +159,7 @@ function addresume(){
 	var telphone=$.trim($("#telphone").val());
 	var email=$.trim($("#email").val());
 	var description=$.trim($("#description").val());
-	var reg= /^[1][3456789]\d{9}$/;
+	var reg= /^\d{5,15}$/;
 	var myreg = /^([a-zA-Z0-9\-]+[_|\_|\.]?)*[a-zA-Z0-9\-]+@([a-zA-Z0-9\-]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;	
 	'{yun:}if $row.uid==""{/yun}'
 	if(username==''){parent.layer.msg("登录账户不能为空！",2,8);return false;}	

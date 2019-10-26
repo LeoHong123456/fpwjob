@@ -43,7 +43,7 @@ function tresume(){
 	if(telphone==''){
 		return mui.toast("请填写手机号码！");return false;
 	}else{
-	  var reg= /^[1][3456789]\d{9}$/;
+	  var reg= /^\d{5,15}$/;
 		 if(!reg.test(telphone)){
 			return mui.toast("手机号码格式错误！");return false;
 		 }
@@ -121,7 +121,7 @@ function tsendmoblie(){
 	}
 	var moblie=$("input[name=linktel]").val();
 	var authcode=$("input[name=authcode]").val();
-	var reg= /^[1][3456789]\d{9}$/; 
+	var reg= /^\d{5,15}$/;
 	if(moblie==''){
 		layermsg('手机号不能为空！',2);return false;
 	}else if(!reg.test(moblie)){

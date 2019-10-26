@@ -481,7 +481,7 @@ function check_email(strEmail){
 	 return false;
  }
 function isjsMobile(obj){
-	var reg= /^[1][3456789]\d{9}$/; 
+	var reg= /^\d{5,15}$/;
 	if(obj==''){
 		return false;
 	}else if(!reg.test(obj)){
@@ -1205,7 +1205,7 @@ function paylog_invoice(){
 	var link_man=$.trim($("#link_man").val());
 	var link_moblie=$.trim($("#link_moblie").val());
 	var address=$.trim($("#address").val());
-	var reg=/^[1][3456789]\d{9}$|^([0-9]{3,4})[-]?[0-9]{7,8}$/; 
+	var reg=/^\d{5,15}$|^([0-9]{3,4})[-]?[0-9]{7,8}$/;
 	if(!reg.test(link_moblie)){
 		layer.msg('联系电话格式错误！', 2, 8);return false;
 	}

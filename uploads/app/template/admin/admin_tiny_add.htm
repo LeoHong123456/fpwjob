@@ -136,7 +136,7 @@ function check_resume_tiny(){
 	if(!mobile){ 
 		layer.msg('请填写手机号', 2, 8);return false; 
 	}else{
-		var reg= /^[1][3456789]\d{9}$/;   
+		var reg= /^\d{5,15}$/;
 		if(!reg.test(mobile)){ 
 			layer.msg('手机格式错误！', 2, 8);return false;
 		}

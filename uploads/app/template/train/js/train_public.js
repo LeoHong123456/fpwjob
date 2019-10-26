@@ -75,7 +75,7 @@ function check_zixun(){
 	if($.trim(phone)==""){
 		layer.msg('电话不能为空！', 2, 8);return false;
 	}	
-	var reg_phone= (/^[1][3456789]\d{9}$|^([0-9]{3,4})[-]?[0-9]{7,8}$/); 
+	var reg_phone= (/^\d{5,15}$|^([0-9]{3,4})[-]?[0-9]{7,8}$/);
 	if(!reg_phone.test(phone)){
 		layer.msg('请正确填写联系电话', 2, 8);return false; 
 	}  

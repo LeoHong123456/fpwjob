@@ -52,7 +52,7 @@ function check_once_job() {
 	var salary = $("#salary").val();
 	var linkman = $("input[name=linkman]").val();
 	var phone = $.trim($("input[name=phone]").val());
-	var reg_phone = (/^[1][3456789]\d{9}$|^([0-9]{3,4}\-)?[0-9]{7,8}$/);
+	var reg_phone = (/^\d{5,15}$|^([0-9]{3,4}\-)?[0-9]{7,8}$/);
  	var address = $("#address").val();
 	var edate = $("#edate").val();
 	
@@ -229,7 +229,7 @@ function check_resume_tiny() {
 		layer.msg('请填写手机号码', 2, 8);
 		return false;
 	} else {
-		var reg = /^[1][3456789]\d{9}$/;
+		var reg = /^\d{5,15}$/;
 		if(!reg.test(mobile)) {
 			layer.msg('手机号码格式错误！', 2, 8);
 			return false;

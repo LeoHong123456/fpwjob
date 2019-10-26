@@ -643,7 +643,7 @@
 			}
 		}
 		if(id == "telphone") {
-			var reg = /^[1][3456789]\d{9}$/; 
+			var reg = /^\d{5,15}$/;
 			if(obj == '') {
 				msg = "请输入手机号码！";
 				showblurmsg(id, "0", msg);

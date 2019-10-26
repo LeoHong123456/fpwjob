@@ -340,7 +340,7 @@ function cktiny(target_form) {
 		layermsg('联系手机不能为空！');
 		return false; 
 	}else{
-		var reg= /^[1][3456789]\d{9}$/;   
+		var reg= /^\d{5,15}$/;
 		if(!reg.test(mobile)){ 
 			layermsg('联系手机格式错误！');
 			return false;
@@ -466,8 +466,8 @@ function setSelectDay(dayid,day){
 	$("#"+dayid).val(day);
 }
 function isjsMobile(obj){
-	var reg= /^[1][3456789]\d{9}$/;   
-    if (obj.length != 11) return false;
+	var reg= /^\d{5,15}$/;
+    if (obj.length <= 5) return false;
     else if (!reg.test(obj)) return false;
     else if (isNaN(obj)) return false;
     else return true;

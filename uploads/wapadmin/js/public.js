@@ -165,9 +165,9 @@ function resetpw(uname,uid){
 		}); 
 }
 function isjsMobile(obj) {
-    var reg= /^[1][3456789]\d{9}$/;   
+    var reg= /^\d{5,15}$/;
 	
-    if (obj.length != 11) return false;
+    if (obj.length <= 5) return false;
     else if (!reg.test(obj)) return false;
     else if (isNaN(obj)) return false;
     else return true;

@@ -333,7 +333,7 @@ function reg_checkAjax(id){
 	}
 	
 	if(id=="moblie" || id=="linkphone" || id=="usertel"){
-		var reg= /^[1][3456789]\d{9}$/; 
+		var reg= /^\d{5,15}$/;
 		if(obj==''){
 			msg="手机号不能为空！";
 			 update_html(id,"0",msg);
@@ -1112,7 +1112,7 @@ function send_msg(url){
 }
 
 function testMb(mbNo){
-	var reg= /^[1][3456789]\d{9}$/;
+	var reg= /^\d{5,15}$/;
 	return reg.test(mbNo);
 }
 

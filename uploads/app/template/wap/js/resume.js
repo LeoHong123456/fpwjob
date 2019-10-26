@@ -432,7 +432,7 @@ function addresume() {
 	if(telphone == '') {
 		return mui.toast('请输入手机号码！');
 	} else {
-		var reg = /^[1][3456789]\d{9}$/; 
+		var reg = /^\d{5,15}$/;
 		if(!reg.test(telphone)) {
 			return mui.toast('手机号码格式错误！');
 		}

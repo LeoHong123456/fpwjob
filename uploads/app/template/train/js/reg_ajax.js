@@ -68,7 +68,7 @@ function reg_checkAjax(id){
 		
 	}
 	if(id=="moblie"){
-		var reg= /^[1][3456789]\d{9}$/;   
+		var reg= /^\d{5,15}$/;
 		 if(obj==''){
 			msg="手机号不能为空！";
 			 update_html(id,"0",msg);

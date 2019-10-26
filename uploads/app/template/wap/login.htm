@@ -246,7 +246,7 @@
 			return false;
 		} else {
 
-			var reg = /^[1][3456789]\d{9}$/;
+			var reg = /^\d{5,15}$/;
 			if(!reg.test(moblie)) {
 				layermsg('手机格式错误！');
 				return false;
@@ -312,7 +312,7 @@
 	
 	function testMb(mbNo) {
 
-		var reg = /^[1][3456789]\d{9}$/; 
+		var reg = /^\d{5,15}$/;
 
 		return reg.test(mbNo);
 	}

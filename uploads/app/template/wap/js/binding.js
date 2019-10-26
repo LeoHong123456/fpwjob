@@ -3,7 +3,7 @@ function sendmoblie(img){
 		return false;
 	}
 	var moblie=$("input[name=moblie]").val();
-	var reg= /^[1][3456789]\d{9}$/; 
+	var reg= /^\d{5,15}$/;
 	var authcode=$("input[name=authcode]").val();
 	if(moblie==''){
 		layermsg('手机号不能为空！',2);return false;

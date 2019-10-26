@@ -25,7 +25,7 @@ function sendmoblie(img){
 	var moblie=$("input[name=moblie]").val();
 	var mobile=$("input[name=mobile]").val();
 	var pcode=$("input[name=phoneimg_code]").val();
-	var reg= /^[1][3456789]\d{9}$/; 
+	var reg= /^\d{5,15}$/;
 	if(pcode==""){
 		layer.msg('验证码不能为空！',2,8);return false;
 	}

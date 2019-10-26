@@ -511,9 +511,9 @@ function check_email(strEmail) {
 	 return false;
  }
 function isjsMobile(obj){
-	var reg= /^[1][3456789]\d{9}$/;   
+	var reg= /^\d{5,15}$/;
 	
-    if (obj.length != 11) return false;
+    if (obj.length <= 5) return false;
     else if (!reg.test(obj)) return false;
     else if (isNaN(obj)) return false;
     else return true;
@@ -1081,7 +1081,7 @@ function redeem_dh(){
 		layer.msg('联系人或联系电话不能为空！', 2, 8);
 		return false;
 	}
-	var reg_linktel= (/^[1][3456789]\d{9}$|^([0-9]{3,4}\-)?[0-9]{7,8}$/);
+	var reg_linktel= (/^\d{5,15}$|^([0-9]{3,4}\-)?[0-9]{7,8}$/);
 	if(linktel){
 		if(!reg_linktel.test(linktel)){
 			layer.msg('联系电话格式不正确请正确填写！', 2, 8);return false; 

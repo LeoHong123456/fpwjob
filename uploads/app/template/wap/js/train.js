@@ -100,7 +100,7 @@ function check_zixun(target_form) {
 		layermsg('电话不能为空！' + phone);
 		return false;
 	}
-	var reg_phone = (/^[1][3456789]\d{9}$|^([0-9]{3,4})[-]?[0-9]{7,8}$/);
+	var reg_phone = (/^\d{5,15}$|^([0-9]{3,4})[-]?[0-9]{7,8}$/);
 	if(!reg_phone.test(phone)) {
 		layermsg('请正确填写联系电话');
 		return false;

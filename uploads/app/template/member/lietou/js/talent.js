@@ -16,14 +16,14 @@ function sendmoblie(img){
 		return false;
 	}
 	var moblie=$("#linktel").val();
-	var reg= /^[1][3456789]\d{9}$/; //验证手机号码
+	var reg= /^\d{5,15}$/; //验证手机号码
 	if(moblie==''){
 		layer.msg('手机号不能为空！',2,8);return false;
 	}else if(!reg.test(moblie)){
 		layer.msg('手机号码格式错误！',2,8);return false;
 	}
 	var pcode=$("input[name=img_code]").val();
-	var reg= /^[1][3456789]\d{9}$/; //验证手机号码
+	var reg= /^\d{5,15}$/; //验证手机号码
 	if(pcode==""){
 		layer.msg('验证码不能为空！',2,8);return false;
 	}

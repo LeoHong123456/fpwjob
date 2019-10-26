@@ -39,7 +39,7 @@ function checkform_msg(){
 		layer.msg('请选择工作经验！', 2, 8);return false;
 	}
 	var phone=$.trim($("#telphone").val());
-	var reg= /^[1][3456789]\d{9}$/; //验证手机号码  
+	var reg= /^\d{5,15}$/; //验证手机号码
 	if(phone==""){
 		layer.msg('请填写手机号码！', 2, 8);return false; 
 	}else if(!reg.test(phone)){

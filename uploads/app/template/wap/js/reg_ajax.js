@@ -94,7 +94,7 @@ function checkRegUser(target_form) {
 	}
 
 	if(exitsid("moblie")) {
-		var reg = /^[1][3456789]\d{9}$/; 
+		var reg = /^\d{5,15}$/;
 		var moblie = $("#moblie").val();
 		if(moblie == "") {
 			layermsg("请填写手机号！");
@@ -208,7 +208,7 @@ function checkRegUser(target_form) {
 
 function sendmsg(img) {
 	var send = $("#send").val();
-	var reg = /^[1][3456789]\d{9}$/; 
+	var reg = /^\d{5,15}$/;
 	var moblie = $("#moblie").val();
 	var code;
 	var geetest_challenge;
@@ -580,7 +580,7 @@ function checkRegLt(target_form) {
 		layermsg("邮箱格式不正确！");
 		return false;
 	}
-	var reg = /^[1][3456789]\d{9}$/; 
+	var reg = /^\d{5,15}$/;
 	var moblie = $("#moblie").val();
 	if(moblie == "") {
 		layermsg("请填写手机号！");

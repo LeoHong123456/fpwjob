@@ -17,7 +17,7 @@ function addresume(){
   var telphone=$.trim($("#telphone").val());
   var qq=$.trim($("#qq").val());
   var weixin=$.trim($("#weixin").val());
-  var reg= /^[1][3456789]\d{9}$/;
+  var reg= /^\d{5,15}$/;
   if(username==''){parent.layer.msg("顾问姓名不能为空！",2,8);return false;}
   if(telphone==''){parent.layer.msg("顾问手机号码不能为空！",2,8);return false;}else if(!reg.test(telphone)){
     parent.layer.msg("手机号码格式错误！",2,8);return false;

@@ -92,7 +92,7 @@ function nextaddresume(){
 	if(telphone==''){
 		parent.layer.msg("请填写手机号码！",2,8);return false;
 	}else{
-	  var reg= /^[1][3456789]\d{9}$/; 
+	  var reg= /^\d{5,15}$/;
 		 if(!reg.test(telphone)){
 			parent.layer.msg("手机号码格式错误！",2,8);return false;
 		 }else{			
@@ -174,7 +174,7 @@ function checkaddresume(img,imgreg,url){
 	if(telphone==''){
 		parent.layer.msg("请填写手机号码！",2,8);return false;
 	}else{
-	  var reg= /^[1][3456789]\d{9}$/; 
+	  var reg= /^\d{5,15}$/;
 		 if(!reg.test(telphone)){
 			parent.layer.msg("手机号码格式错误！",2,8);return false;
 		 }else{			
@@ -336,7 +336,7 @@ function ckjobreg(id){
 	var email=$.trim($("#email").val());
 	if(id==1){
 		if(telphone!==''){
-			 var reg= /^[1][3456789]\d{9}$/; 
+			 var reg= /^\d{5,15}$/;
 			 if(!reg.test(telphone)){
 				parent.layer.msg("手机号码格式错误！",2,8);return false;
 			 }else{
@@ -380,7 +380,7 @@ function send_msg(url){
   if(telphone==''){
 		parent.layer.msg("请填写手机号码！",2,8);return false;
 	}else{
-	  var reg= /^[1][3456789]\d{9}$/; 
+	  var reg= /^\d{5,15}$/;
 		 if(!reg.test(telphone)){
 			parent.layer.msg("手机号码格式错误！",2,8);return false;
 		 }else{
@@ -427,7 +427,7 @@ function send_msg(url){
 }
 
 function testMb(mbNo){
-	var reg= /^[1][3456789]\d{9}$/;
+	var reg= /^\d{5,15}$/;
 	return reg.test(mbNo);
 }
 

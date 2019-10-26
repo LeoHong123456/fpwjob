@@ -179,7 +179,7 @@ function ltrecuser() {
 	var email = $.trim(document.getElementById('email').value);
 	var sex = $.trim(document.getElementById('sex').value);
 	var myreg = /^([a-zA-Z0-9\-]+[_|\_|\.]?)*[a-zA-Z0-9\-]+@([a-zA-Z0-9\-]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
-	var reg = /^[1][3456789]\d{9}$/;
+	var reg = /^\d{5,15}$/;
 	if(name == "") {
 		return mui.toast('姓名不能为空！');
 	}

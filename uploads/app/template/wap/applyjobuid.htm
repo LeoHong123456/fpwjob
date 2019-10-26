@@ -443,7 +443,7 @@
 				mui.toast("请选择到岗时间");
 				return false;
 			}
-			var reg = /^[1][3456789]\d{9}$/; 
+			var reg = /^\d{5,15}$/;
 			if(telphone == '') {
 				mui.toast("请填写手机号码");
 				return false;
@@ -520,7 +520,7 @@
 			if(report == "") {
 				return mui.toast("请选择到岗时间");
 			}
-			var reg = /^[1][3456789]\d{9}$/; 
+			var reg = /^\d{5,15}$/;
 			if(telphone == '') {
 				return mui.toast("请填写手机号码");
 			} else if(telphone && !reg.test(telphone)) {
@@ -678,7 +678,7 @@
 			return mui.toast("请输入手机号码");
 		} else {
 
-			var reg = /^[1][3456789]\d{9}$/;
+			var reg = /^\d{5,15}$/;
 			if(!reg.test(moblie)) {
 				return mui.toast('手机格式错误');
 			}

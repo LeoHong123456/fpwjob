@@ -49,7 +49,7 @@ function advice(img){
 	var username=$.trim($("#username").val());
 	var moblie=$.trim($("#moblie").val());
     var authcode=$.trim($("#msg_CheckCode").val());
-    var reg= /^[1][3456789]\d{9}$/;
+    var reg= /^\d{5,15}$/;
 	if(infotype==''){layermsg("请选择意见类型",2,8);return false;}
 	if(username==""){layermsg('联系人不能空!',2,8);return false;}
 	if(moblie==""){layermsg('联系手机不能为空!',2,8);return false;}else if(!reg.test(moblie)){layermsg('手机格式错误!',2,8);return false}
