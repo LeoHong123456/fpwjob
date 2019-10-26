@@ -1,5 +1,20 @@
 <?php
 function smarty_function_image($paramer,&$smarty){
+
+        function mk_Dir($path){
+            // 如果目录存在返回 ture
+            if(is_dir($path)){
+                return true;
+            }
+            // 如果上级目录存在 创建目录
+            if(is_dir(dirname($path))){
+                return mkdir($path);
+            }
+            // 递归 查找父目录
+            mk_Dir(dirname($path));
+            return mkdir($path);
+        }
+
 		global $db,$config;
 	    $width=$paramer[width];
 		$height=$paramer[height];
@@ -12,7 +27,8 @@ function smarty_function_image($paramer,&$smarty){
 		$action=$action?$action:"moblie";
 
 		$dir=APP_PATH."data/upload/tel/".$uid."/";
-		if(!is_dir($dir))@mkdir($dir);
+		if(!is_dir($dir)) mk_Dir($dir);
+
 		@chmod($dir,0777);
 		if($paramer[jobid])
 		{
