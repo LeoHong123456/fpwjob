@@ -409,8 +409,9 @@ class mysql {
 		return mysqli_affected_rows($this->conn);
 	}
 	public function show_error($message = "", $sql = "") {
-        
-        
+        $file_name = APP_PATH.'/log/'.date('Y-m-d').'.txt';
+        $msg = date('Y-m-d H:i:s').' '.$message.':'.$sql."\r\n";
+        file_put_contents($file_name,$msg,FILE_APPEND);
 	}
 	
 	public function free() {

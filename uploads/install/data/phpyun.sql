@@ -2046,6 +2046,7 @@ CREATE TABLE IF NOT EXISTS `phpyun_resume` (
   `description` varchar(150) DEFAULT NULL,
   `resume_photo` varchar(100) DEFAULT NULL,
   `photo` varchar(100) DEFAULT NULL,
+  `photo_status` int(2) DEFAULT '1',
   `phototype` int(11) DEFAULT '0',
   `expect` int(11) DEFAULT '0',
   `def_job` int(11) DEFAULT '0',
