@@ -1,0 +1,149 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>企业 &gt; {yun:}$headertitle{/yun} &gt; {yun:}$row.name{/yun}</span>
+</div>
+<div class="peo_det">
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">用户编号：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.id{/yun}</div>
+     </div>
+   
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">职位名称：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.name{/yun}</div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">公司名称：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.com_name{/yun}</div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">职位类别：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$job_name[$row.job1]{/yun}</div>
+     </div>
+   
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">工资待遇：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}if $row.minsalary&& $row.maxsalary{/yun}￥{yun:}$row.minsalary{/yun}-{yun:}$row.maxsalary{/yun}{yun:}elseif $row.minsalary&& !$row.maxsalary{/yun}￥{yun:}$row.minsalary{/yun}以上{yun:}else{/yun}面议{yun:}/if{/yun}</div>
+     </div>
+     <!--
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">工作性质：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$comclass_name[$row.type]{/yun}</div>
+     </div>-->
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">信息来源：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$source[$v.source]{/yun}</div>
+     </div>
+     {yun:}if $row.xsdate>time(){/yun}
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">置顶时间：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.xsdate|date_format:"%Y-%m-%d"{/yun}</div>
+     </div> 
+	 {yun:}/if{/yun}
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">推荐职位：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}if $row.rec_time>$time{/yun}是{yun:}else{/yun}否{yun:}/if{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">紧急职位：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}if $row.urgent_time>$time{/yun}是{yun:}else{/yun}否{yun:}/if{/yun}</div>
+     </div>
+   
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">审核状态：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">
+           {yun:}if $row.state==1{/yun}<div class="peo_det_yh_he">已审核</div>{yun:}elseif $row.state==0{/yun}<div class="peo_det_yh_ng">审核中</div>{yun:}elseif $row.state==3{/yun}<div class="peo_det_yh_no">未通过</div>{yun:}/if{/yun}
+          </div>
+     </div>
+     <input type="hidden" id="pytoken"  value="{yun:}$pytoken{/yun}"/>
+     <input type="hidden" id="lasturl"  value="{yun:}$lasturl{/yun}"/>
+</div>
+<div class="peo_det_bt">
+     <ul>
+         <li><a style="display:block" href="javascript:void(0);" onclick="statusdiv('{yun:}$row.state{/yun}','审核操作')">审核</a></li>
+         <li><a style="display:block" href="javascript:void(0);" onclick="jingjia('{yun:}$row.id{/yun}')">置顶</a></li>
+         <li><a style="display:block" href="index.php?c=admin_comjob&a=edit&id={yun:}$row.id{/yun}">修改</a></li>
+         <li><a style="display:block" href="javascript:void(0);" onclick="layer_del('确定要删除？', 'index.php?c=admin_comjob&a=del&id={yun:}$row.id{/yun}');">删除</a></li>
+     </ul>
+</div><input type="hidden" id="id" value="{yun:}$row.id{/yun}" />
+<!--审核弹出-->
+<div class="pop_up" style="display:none;" id="status_div">
+     <div class="pop_up_state">
+        <ul>
+          <li><label><input class="pop_up_state_cb" type="radio" name="status" value="0" id="status0"/>未审核</label></li>
+          <li><label><input class="pop_up_state_sb" type="radio" name="status" value="1" id="status1"/>正常</label></li>
+          <li><label><input class="pop_up_state_cb" type="radio" name="status" value="3" id="status3"/>未通过</label></li>
+        </ul>
+     </div>
+     <div class="pop_up_head">
+        <div class="pop_up_icon"></div>审核内容
+     </div>
+     <div class="pop_up_text"><div class="pop_up_text_textarea_bor"><textarea class="pop_up_text_ct" id="statusbody" name="statusbody">{yun:}$row.statusbody{/yun}</textarea></div></div>
+     <div class="pop_up_but">
+          <ul>
+              <li class="pop_up_but_q"><a style="display:block" href="javascript:void(0);" onclick="checkStatus('{yun:}$row.id{/yun}','index.php?c=admin_comjob&a=status')">确定</a></li>
+              <li class="pop_up_but_x"><a style="display:block" href="javascript:void(0);" onclick="layer.closeAll();">取消</a></li>
+          </ul>
+     </div>
+</div>
+<div id="infobox3" style="display:none;text-align:center;" class="pop_up">
+<table class="admin_tck_table">
+<tr><th>置顶天数：</th><td><div class="admin_tck_text_box admin_tck_text_box_w80"><input value="" name="xsdays" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')"class="admin_tck_text"/><span class="admin_tck_text_box_date">天</span></div></td></tr>
+<tr><td colspan="2"><div class="admin_tck_text_box_tip">如需取消置顶职位请单击 <input type="checkbox" id="xtype" name="s" value="1"/>  点击确认即可</div></td></tr>
+</table>
+    <div class="pop_up_but">
+          <ul>
+              <li class="pop_up_but_q"><a href="javascript:void(0);" onclick="isxs()">确认</a></li>
+              <li class="pop_up_but_x"><a href="javascript:void(0);" onclick="layer.closeAll();">取消</a></li>
+          </ul>
+     </div>
+        <input name="pid" value="0" type="hidden"/>       
+</div>
+<script type="text/javascript">
+function jingjia(id){
+	$("input[name=pid]").val(id);
+	layeropen("infobox3",'置顶');	
+}
+function isxs(){
+	var xtype=$("#xtype").attr("checked");
+	var days=$.trim($("input[name='xsdays']").val());
+	var pid=$.trim($("input[name='pid']").val());
+	var s=$.trim($("input[name='s']:checked").val());
+	layer.closeAll();
+	if(xtype=="checked"){		
+		layer.open({
+			content: "确定取消该职位置顶？",
+			btn: ['确定', '取消'],
+			shadeClose: false,
+			yes: function(){
+				layerload("执行中……");
+				$.post('index.php?c=admin_comjob&a=xuanshang',{xsdays:days,pid:pid,s:s},function(data){
+					layer.closeAll();
+					var data=eval('('+data+')');
+					layermsg(data.msg,Number(data.st),function(){location.reload(true);});return false;					
+				})
+			}
+		});
+	}else{
+		if(days<1){ 
+			layermsg("置顶天数不能为空！",2,function(){layeropen("infobox3");});return false;
+		}else{
+			layer.open({
+				content: "是否确定为该职位增加"+days+"天置顶？",
+				btn: ['确定', '取消'],
+				shadeClose: false,
+				yes: function(){
+					layerload("执行中……");
+					$.post('index.php?c=admin_comjob&a=xuanshang',{xsdays:days,pid:pid},function(data){
+						layer.closeAll();
+						var data=eval('('+data+')');
+						layermsg(data.msg,Number(data.st),function(){location.reload(true);});return false;
+					})
+				}
+			});
+		} 
+	}
+}
+</script>
+</body>
+</html>

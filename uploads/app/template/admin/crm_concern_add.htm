@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link href="images/reset.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<link href="images/system.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<link href="images/table_form.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<link href="{yun:}$config.sy_weburl{/yun}/js/layui/css/layui.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet">
+
+<style>
+  .layui-input{
+    width:260px;
+  }
+
+  .return-visit{
+    /*margin-left:100px;*/
+    border:1px dashed #c2c2c2;
+    /*display:inline-block*/
+    padding: 5px;
+  }
+</style>
+<title>后台管理</title>
+</head>
+<body class="body_ifm">
+<div class="infoboxp">
+  <div class="admin_new_tip">
+<a href="javascript:;" class="admin_new_tip_close"></a>
+<a href="javascript:;" class="admin_new_tip_open" style="display:none;"></a>
+    <div class="admin_new_tit"><i class="admin_new_tit_icon"></i>操作提示</div>
+    <div class="admin_new_tip_list_cont">
+      <div class="admin_new_tip_list">在此页面<!--  通过短信、email进行客户关怀，或 -->记录电话/拜访客户关怀过程，如客户已付款，一并开通会员套餐。</div>
+    </div>
+  </div>
+  <div class="clear"></div>
+ 
+  <div class="admin_add_box">
+    <div class="admin_add_box_c">
+      <iframe id="supportiframe"  name="supportiframe" onload="returnmessage2('supportiframe');" style="display:none"></iframe>
+      <form class="layui-form" name="myform" action="index.php?m=crm_concern&c=save" method="post"  target="supportiframe" onsubmit="return checkform();">
+
+        <div class="admin_add_list">
+          <div class="admin_add_list_name">
+             企业名称
+           </div>
+          <div class="admin_add_list_right">
+            <div class="layui-input-inline">
+		          <input type="text"  value="{yun:}$name{/yun}" name="name" class="layui-input" disabled>
+            </div>
+          </div>
+  		  </div>
+        
+        <div class="admin_add_list">
+          <div class="admin_add_list_name">联系人</div>
+          <div class="admin_add_list_right">
+            <input type="text"  value="{yun:}$linkman{/yun}" name="linkman" class="layui-input" disabled>
+          </div>
+        </div>
+
+        <div class="admin_add_list">
+          <div class="admin_add_list_name">联系邮箱</div>
+          <div class="admin_add_list_right">
+		        <input type="text"  value="{yun:}$linkmail{/yun}" name="email" class="layui-input" disabled>
+          </div>
+  		  </div>
+
+        <div class="admin_add_list">
+          <div class="admin_add_list_name">联系手机</div>
+          <div class="admin_add_list_right">
+		        <input type="text"  value="{yun:}$linktel{/yun}" name="mobile" class="layui-input" disabled>
+          </div>
+  		  </div>
+        
+        <div class="admin_add_list">
+          <div class="admin_add_list_name">联系电话</div>
+          <div class="admin_add_list_right">
+            <input type="text"  value="{yun:}$linkphone{/yun}" name="phone" class="layui-input" disabled>
+            <font color="gray"></font>
+          </div>
+        </div>
+
+        <div class="admin_add_list">
+          <div class="admin_add_list_name">关怀方式</div>
+          <div class="admin_add_list_right">
+            <div class="layui-input-block">
+              <input name="type" value="1" title="电话" checked type="radio" lay-filter="type"/>
+              <input name="type" value="2" title="拜访" type="radio" lay-filter="type"/>
+              <!--
+              <input name="type" value="3" title="短信" type="radio" lay-filter="type"/>
+              <input name="type" value="4" title="email" type="radio" lay-filter="type"/>
+              -->
+            </div>
+          </div>
+        </div>
+
+        <!--
+        <div class="admin_add_list" id="email" style="display: none;">
+          <div class="admin_add_list_name">邮件内容</div>
+          <div class="admin_add_list_right">
+            <textarea name="email_id" class="layui-textarea"></textarea>
+            <font color="gray"></font>
+          </div>
+        </div>
+
+        <div class="admin_add_list" id="msg" style="display: none;">
+          <div class="admin_add_list_name">短信内容</div>
+          <div class="admin_add_list_right">
+            <textarea name="msg_id" class="layui-textarea"></textarea>
+            <font color="gray"></font>
+          </div>
+        </div>
+-->
+        <div class="admin_add_list" id="content">
+          <div class="admin_add_list_name">关怀内容简述</div>
+          <div class="admin_add_list_right">
+            <textarea name="content" class="layui-textarea"></textarea>
+            <font color="gray"></font>
+          </div>
+        </div>
+
+        <div class="admin_add_list">
+          <div class="admin_add_list_name">关怀状态</div>
+          <div class="admin_add_list_right">
+            <div class="layui-input-block">
+              {yun:}if $crm_status == 2{/yun}
+              <input name="statusTmp" value="1" title="等待客户反馈" type="radio" lay-filter="status" disabled />
+              <input name="statusTmp" value="2" title="已付费，开通套餐" type="radio" lay-filter="status" checked disabled/>
+              <input name="statusTmp" value="3" title="客户无消费意向" type="radio" lay-filter="status" disabled/>
+              <input name="statusTmp" value="4" title="可能付费，增加回访提醒" type="radio" lay-filter="status" disabled/>
+
+              <input name="status" type="hidden" value="2"/>
+              {yun:}else{/yun}
+              <input name="status" value="1" title="等待客户反馈" checked type="radio" lay-filter="status"/>
+              <input name="status" value="2" title="已付费，开通套餐" type="radio" lay-filter="status"/>
+              <input name="status" value="3" title="客户无消费意向" type="radio" lay-filter="status"/>
+              <input name="status" value="4" title="可能付费，增加回访提醒" type="radio" lay-filter="status"/>
+              {yun:}/if{/yun}
+            </div>
+            <font color="gray"></font>
+          </div>
+        </div>
+
+        <!-- 开通套餐 -->
+        <div id="vip" style="display: none;">
+          <div class="admin_add_list">
+            <a href="javascript:void(0);" onclick="set_rating('{yun:}$comid{/yun}', '{yun:}$name{/yun}' );" class="layui-btn layui-btn-small layui-btn-warm">开通套餐</a>
+          </div>
+        </div>
+
+        <div id="returnVisit" class="return-visit" style="display: none;">
+          <div class="admin_add_list">
+            <div class="admin_add_list_name">下次回访时间</div>
+            <div class="admin_add_list_right">
+              <input class="layui-input" id="returnVisitTime" name="returnVisitTime" placeholder="yyyy-MM-dd HH:mm:ss" type="text"/>
+              <font color="gray"></font>
+            </div>
+          </div>
+
+          <div class="admin_add_list">
+            <div class="admin_add_list_name">回访说明</div>
+            <div class="admin_add_list_right">
+              <textarea name="returnVisitNote" class="layui-textarea"></textarea>
+              <font color="gray"></font>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin_add_list">
+          <div class="admin_add_list_name">备注信息</div>
+          <div class="admin_add_list_right">
+            <textarea name="note" class="layui-textarea"></textarea>
+            <font color="gray"></font>
+          </div>
+        </div>
+
+        <div class="admin_add_list">
+          <div class="admin_add_list_name">关怀时间</div>
+          <div class="admin_add_list_right">
+            <input class="layui-input" id="time" name="time" placeholder="yyyy-MM-dd HH:mm:ss" type="text"/>
+            <font color="gray"></font>
+          </div>
+        </div>
+
+        <!-- 短信、邮件内容id -->
+        <!-- <input type="hidden" name="content_id" value="0"/> -->
+
+        <!-- 订单id，开通会员后，设置该值 -->
+        <input type="hidden" name="order_id" id="order_id" value="0"/>
+
+        <!-- 业务员id -->
+        <input type="hidden" name="uid" value="{yun:}$uid{/yun}"/>
+
+        <!-- 企业id -->
+        <input type="hidden" name="comid" value="{yun:}$comid{/yun}"/>
+        
+        <div class="admin_add_list">
+          <input class="layui-btn layui-btn-normal" type="submit" name="submit" value="&nbsp;增加关怀记录&nbsp;" />
+  		  </div>
+
+        <input type="hidden" name="pytoken" value="{yun:}$pytoken{/yun}">
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="js/admin_public.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/layui.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/phpyun_layer.js?v={yun:}$config.cachecode{/yun}"></script>
+<script type="text/javascript">
+  layui.use(['form', 'laydate'], function(){
+    var form = layui.form
+    ,laydate = layui.laydate
+    ,$ = layui.$;
+
+    laydate.render({
+      elem: '#time'
+      ,type: 'datetime'
+      ,value: '{yun:}$time{/yun}'
+    });
+
+    laydate.render({
+      elem: '#returnVisitTime'
+      ,type: 'datetime'
+      ,value: '{yun:}$returnVisitTime{/yun}'
+    });
+
+    // form.on('radio(type)', function(data){
+    //   if(data.value == 2){//短信
+    //     $("#msg").show();
+    //     $("#email").hide();
+    //     $("#content").hide();
+    //   }
+    //   else if(data.value == 3){//email
+    //     $("#email").show();
+    //     $("#msg").hide();
+    //     $("#content").hide();
+    //   }
+    //   else{
+    //     $("#email").hide();
+    //     $("#msg").hide();
+    //     $("#content").show();
+    //   }
+    // });
+
+    form.on('radio(status)', function(data){
+      if(data.value == 2){//已付费，开通套餐
+        $("#returnVisit").hide();
+        $("#vip").show();
+      }
+      else if(data.value == 4){//增加回访提醒
+        $("#vip").hide();
+        $("#returnVisit").show();
+      }
+      else{
+        $("#vip").hide();
+        $("#returnVisit").hide();
+      }
+    });    
+
+  });//end layui.use
+
+  function checkform()
+  {
+    var status = $("input[name=status]:checked").val();
+
+    var crm_status = '{yun:}$crm_status{/yun}';
+    if(status == 2 && crm_status != 2){
+      var order_id = $("input[name=order_id]").val();
+      if(order_id == 0){
+        layer.msg('已付费客户需要及时开通套餐！');
+        return false;
+      }
+    }
+    else if(status == 4){
+      var time = $("#returnVisitTime").val();
+      time = Date.parse(new Date(time)) / 1000;
+      var now = Date.parse(new Date()) / 1000;
+
+      if(time <= now){
+        layer.msg('设置的回访提醒时间不合理，请重新设置');
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  function set_rating(uid,name){
+    layer.iframe(
+      'index.php?m=crm_customer&c=getstatis&uid='+uid,
+      '客户['+name+']套餐设置',
+      ['800px','600px'],
+      'auto',
+      {
+        maxmin:true
+      }
+    );
+  }
+
+  function returnmessage2(frame_id){
+    if(frame_id==''||frame_id==undefined){
+      frame_id='supportiframe';
+    }
+    
+    parent.layer.closeAll('loading');
+
+    var message = $(window.frames[frame_id].document).find("#layer_msg").val();
+    if(message != null){
+      var url=$(window.frames[frame_id].document).find("#layer_url").val();
+
+      var order_id = $(window.frames[frame_id].document).find("#order_id").val();
+      if(order_id != null && $("#order_id").val() == 0 ) {
+        $("#order_id").val(order_id);
+        layer.closeAll();
+        url = '';
+      }
+
+      var layer_time=$(window.frames[frame_id].document).find("#layer_time").val();
+      var layer_st=$(window.frames[frame_id].document).find("#layer_st").val();
+
+      $(window.frames[frame_id].document).find('body').html('');
+
+      if(url=='1'){
+        parent.layer.msg(message, layer_time, Number(layer_st),function(){ location.reload();});
+      }else if(url==''){
+        parent.layer.msg(message, layer_time, Number(layer_st));
+      }else{
+        parent.layer.msg(message, layer_time, Number(layer_st),function(){location.href = url;});
+      }
+    }
+  }
+</script>
+
+</body>
+</html>

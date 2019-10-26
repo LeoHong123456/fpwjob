@@ -1,0 +1,41 @@
+{yun:}include file="$wapstyle/member/cheader.htm"{/yun}
+<div class="wap_member_comp_h1"><span>我的发票</span></div>
+
+<ul class="yun_m_tit_three">
+    <li class="yun_m_tit_cur">
+        <a href="index.php?c=invoice">我的发票</a>
+    </li>
+    <li>
+        <a href="index.php?c=sqinvoice">发票索取</a>
+    </li>
+    <li>
+        <a href="index.php?c=invoice_info">发票信息</a>
+    </li>
+</ul>
+{yun:}foreach from=$rows item=log{/yun}
+<div class="invoice_box">
+    <div class="">申请时间：{yun:}$log.addtime|date_format:'%Y-%m-%d %H:%M:%S'{/yun}</div>
+    <div class="">发票抬头：{yun:}$log.title|mb_substr:0:10:'utf-8'{/yun}</div>
+    <div class="">发票总额：￥{yun:}$log.price{/yun}</div>
+    <div class="">开票性质：{yun:}if $log.style!='2'{/yun}纸质（快递）{yun:}else if $log.style=='2'{/yun}电子（邮箱） {yun:}/if{/yun}</div>
+    <div class="">收件人名：{yun:}$log.link_man{/yun} </div>
+    {yun:}if $log.status=='0'{/yun}
+    <div class="">发票状态：未审核</div>
+    {yun:}if $log.statusbody{/yun}
+    <div class="">审核说明：{yun:}$log.statusbody{/yun}</div>{yun:}/if{/yun}
+    {yun:}elseif $log.status=='1'{/yun}
+    {yun:}if $log.statusbody{/yun}
+    <div class="">审核说明：{yun:}$log.statusbody{/yun}</div>{yun:}/if{/yun}
+    {yun:}elseif $log.status=='2'{/yun}
+    <div class="">发票状态：未通过</div>
+    {yun:}if $log.statusbody{/yun}
+    <div class="">审核说明：{yun:}$log.statusbody{/yun}</div>{yun:}/if{/yun}
+    {yun:}elseif $log.status=='3'{/yun}
+    <div class="">发票状态：已打印</div>
+    {yun:}elseif $log.status=='4'{/yun}
+    <div class="">发票状态：已邮寄</div>
+    {yun:}/if{/yun}
+</div>
+{yun:}foreachelse{/yun}
+<div class="wap_member_no">暂无发票申请</div>
+{yun:}/foreach{/yun} {yun:}include file="$wapstyle/footer.htm"{/yun}

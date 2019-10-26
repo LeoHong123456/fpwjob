@@ -1,0 +1,129 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>运营 &gt; {yun:}$headertitle{/yun} &gt; {yun:}$row.order_id{/yun}</span>
+</div>
+<form action="index.php?c=admin_comorder&a=edit&id={yun:}$row.id{/yun}" method="post" enctype="multipart/form-data" onSubmit="return check_form();">
+<div class="peo_det">
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">充值单号：</div></div>
+          <div class="peo_det_yh_c">{yun:}$row.order_id{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">申请交易时间：</div></div>
+          <div class="peo_det_yh_c">&nbsp;{yun:}$row.order_time|date_format:"%Y-%m-%d %H:%M:%S"{/yun}</div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">用户名：</div></div>
+          <div class="peo_det_yh_c">{yun:}if $row.type==3||$row.order_type=='bank'{/yun}{yun:}$row.comname{/yun}+{yun:}/if{/yun}{yun:}$row.username{/yun}</div>
+     </div>
+     {yun:}if $coupon.id{/yun}
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">订单金额:</div></div>
+          <div class="peo_det_yh_c">{yun:}$row.price{/yun}元</div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">优惠券金额:</div></div>
+          <div class="peo_det_yh_c">{yun:}$coupon.coupon_amount{/yun}元</div>
+          <input name='coupon_amount' value="{yun:}$coupon.coupon_amount{/yun}" type="hidden"/>
+     </div>
+	 {yun:}/if{/yun}
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">待付金额：</div></div>
+          <div class="peo_det_yh_c">
+          
+          {yun:}if $row.order_state==1||$row.order_state==3{/yun}
+          <div class="peo_det_yh_c_txt">
+          <input type="text" name="order_price" id="order_price" class="input-text" size="10" value="{yun:}$row.order_price{/yun}" onkeyup="this.value=this.value.replace(/[^0-9.]/g,'')"></div>
+          {yun:}else{/yun}
+         <div class="peo_det_yh_c"> <input name='order_price' value='{yun:}$row.order_price{/yun}' type='hidden'/>{yun:}$row.order_price{/yun}</div>
+          {yun:}/if{/yun}
+          
+          </div>
+     </div>
+     {yun:}if $row.type==3||$row.order_type=='bank'{/yun} 
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">汇款银行：</div></div>
+          <div class="peo_det_yh_c">{yun:}$row.bankname{/yun}&nbsp;</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">汇入账号：</div></div>
+          <div class="peo_det_yh_c">{yun:}$row.bankid{/yun}&nbsp;</div>
+     </div>
+   
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">汇款金额：</div></div>
+          <div class="peo_det_yh_c">{yun:}$row.order_price{/yun}元</div>
+     </div>
+     {yun:}/if{/yun}
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">备注：</div></div>
+          <div class="peo_det_yh_c">
+          {yun:}if $row.order_state==1||$row.order_state==3{/yun}
+          <textarea name="order_remark" id="order_remark" class="admin_explain_textarea">{yun:}$row.order_remark{/yun}</textarea>
+          {yun:}else{/yun}
+          {yun:}$row.order_remark{/yun}
+          <input name='order_remark' value='{yun:}$row.order_remark{/yun}' type='hidden'/>
+          {yun:}/if{/yun}
+          
+          &nbsp;
+          </div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">订单类型：</div></div>
+          <div class="peo_det_yh_c">{yun:}if $row.type==1{/yun}购买会员{yun:}elseif $row.type=='2'{/yun}{yun:}$config.integral_pricename{/yun}充值{yun:}elseif $row.type=='3'{/yun}银行转帐{yun:}elseif $row.type=='4'{/yun}金额充值{yun:}elseif $row.type=='5'{/yun}购买增值包{yun:}elseif $row.type=='6'{/yun}课程订购{yun:}elseif $row.type=='26'{/yun}购买广告位{yun:}/if{/yun}</div>
+     </div>
+     {yun:}if $row.type=='2'{/yun}
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">所得{yun:}$config.integral_pricename{/yun}：</div></div>
+          <div class="peo_det_yh_c">{yun:}$row.integral{/yun}&nbsp;{yun:}$config.integral_priceunit{/yun}</div>
+     </div>
+     {yun:}/if{/yun}
+     {yun:}if $row.type=='3'||$row.order_type=='bank'{/yun}
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">上传汇款单：</div></div>
+          <div class="peo_det_yh_c">
+          {yun:}if $row.order_state==1||!$row.order_pic{/yun}
+          <div style="width:180px; overflow:hidden"><input type="file" name="order_pic" value="{yun:}$row.order_pic{/yun}" accept="image/*"></div>
+          {yun:}else{/yun}
+          <a href="javascript:void(0);" onClick="ordershow();"><img src="{yun:}$config.sy_weburl{/yun}/{yun:}$row.order_pic{/yun}" width="160px" height="60px" title="点击大图查看"></a>{yun:}/if{/yun}
+          </div>
+     </div>
+     {yun:}/if{/yun}
+</div>
+<div class="peo_det_bt">
+<div style="text-align:center;">
+{yun:}if $row.order_state==1||$row.order_state==3{/yun}
+<input class="admin_save_sub" name="update" type="submit" value="修改">
+{yun:}/if{/yun} 
+<input type="hidden" name="id" value="{yun:}$row.id{/yun}">
+<input type="hidden" name="pytoken"  value="{yun:}$pytoken{/yun}"/>
+<input type="hidden" name="lasturl"  value="{yun:}$lasturl{/yun}"/>
+<input class="admin_save_sub" type="button" value="返 回" onClick="history.back()" />
+{yun:}if $row.order_state==1||$row.order_state==3{/yun}
+<input class="admin_save_sub" type="button" value="确认" onClick="layer_del('确认该订单将充值到用户帐户', 'index.php?c=admin_comorder&a=setpay&id={yun:}$row.id{/yun}');">
+{yun:}/if{/yun}
+</div>
+</div>
+</form>
+<div id="orderpic" style="display:none;">
+<img src="{yun:}$config.sy_weburl{/yun}/{yun:}$row.order_pic{/yun}" width="280px" height="160px">
+</div>
+{yun:}if $layer{/yun}
+<input type="hidden" id="layermsg" value="{yun:}$layer.msg{/yun}">
+<input type="hidden" id="layerurl" value="{yun:}$layer.url{/yun}">
+<script>$(document).ready(function(){islayer();});</script>
+{yun:}/if{/yun}
+<script>
+function check_form(){
+	var order_price=$("#order_price").val();
+	if(order_price==''){ 
+		layermsg('待付金额不能为空！');
+		return false;
+	}
+} 
+function ordershow(){
+	layeropen('orderpic','汇款单图片');
+}
+</script>
+</body>
+</html>

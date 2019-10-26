@@ -1,0 +1,25 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>运营 &gt; {yun:}$headertitle{/yun}</span>
+</div>
+ {yun:}foreach item=v key=key from=$rows{/yun}
+<div class="et_pd_ct">
+<div class="et_pd_ct_te"><span class="et_pd_ct_te_rt">{yun:}$v.pay_state_n{/yun}</span><span class="et_pd_ct_te_rt_no"></span></div>
+  <div class="et_pd_ct_nm">
+  <div>消费单号：{yun:}$v.order_id{/yun}</div>
+  <div>用户名：{yun:}$v.username{/yun}</div>
+   <div>金额：{yun:}$v.order_price{/yun}{yun:}if $v.type==1{/yun}{yun:}$config.integral_priceunit{/yun}{yun:}$config.integral_pricename{/yun}{yun:}else{/yun}元{yun:}/if{/yun}</div>
+  <div>个人/猎头/公司名：{yun:}$v.comname{/yun}</div>
+   {yun:}if $v.pay_remark{/yun}<div>备注：{yun:}$v.pay_remark{/yun}</div>{yun:}/if{/yun}      
+  </div>
+  <div class="et_pd_ct_te"> <span class="et_pd_ct_te_ft">消费时间：{yun:}$v.pay_time|date_format:"%Y-%m-%d %H:%M"{/yun}</span> 
+   <a class="et_pd_ct_te_rt_del" href="javascript:;" onclick="layer_del('确定要删除？', 'index.php?c=admin_compay&a=del&id={yun:}$v.id{/yun}');">删除</a></div>
+  <input type="hidden" id="pytoken"  value="{yun:}$pytoken{/yun}"/>
+</div>
+{yun:}foreachelse{/yun}
+<div class="wap_member_no">暂时还没有消费记录<br>
+</div>
+{yun:}/foreach{/yun}
+<div class="pages"> {yun:}$pagenav{/yun}</div>
+</body>
+</html>

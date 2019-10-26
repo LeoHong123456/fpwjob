@@ -1,0 +1,23 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="admin_tongji_box">
+<ul class="admin_tongji_box_list">
+<li><span class="admin_tongji_box_s">企业会员：</span><span class="admin_tongji_box_s">今日<i class="admin_tongji_box_c">{yun:}$com.today{/yun}</i></span><span class="admin_tongji_box_s"> 昨日<i class="admin_tongji_box_c">{yun:}$com.yesterday{/yun}</i></span></li>
+<li><span class="admin_tongji_box_s">职位数：</span><span class="admin_tongji_box_s">今日<i class="admin_tongji_box_c">{yun:}$job.today{/yun}</i></span><span class="admin_tongji_box_s"> 昨日<i class="admin_tongji_box_c">{yun:}$job.yesterday{/yun}</i></span></li>
+<li><span class="admin_tongji_box_s">个人会员：</span><span class="admin_tongji_box_s">今日<i class="admin_tongji_box_c">{yun:}$user.today{/yun}</i></span><span class="admin_tongji_box_s"> 昨日<i class="admin_tongji_box_c">{yun:}$user.yesterday{/yun}</i></span></li>
+<li><span class="admin_tongji_box_s">简历数：</span><span class="admin_tongji_box_s">今日<i class="admin_tongji_box_c">{yun:}$resume.today{/yun}</i></span><span class="admin_tongji_box_s"> 昨日<i class="admin_tongji_box_c">{yun:}$resume.yesterday{/yun}</i></span></li>
+</ul>
+
+<ul class="admin_tongji_box_list">
+<li>待审核职位：<i class="admin_tongji_box_c">{yun:}$check.job{/yun}</i><a href="index.php?c=admin_comjob&state=4" class="admin_tongji_box_list_bth">立即审核</a></li>
+<li>待审核链接：<i class="admin_tongji_box_c">{yun:}$check.link{/yun}</i><a href="index.php?c=link&state=2" class="admin_tongji_box_list_bth">立即审核</a></li>
+<li>待确认订单：<i class="admin_tongji_box_c">{yun:}$check.order{/yun}</i><a href="index.php?c=admin_comorder&order_state=3" class="admin_tongji_box_list_bth">立即审核</a></li>
+
+<li>待审核企业认证：<i class="admin_tongji_box_c">{yun:}$check.com{/yun}</i><a href="index.php?c=comcert&status=3" class="admin_tongji_box_list_bth">立即审核</a></li>
+<li>待审核个人认证：<i class="admin_tongji_box_c">{yun:}$check.user{/yun}</i><a href="index.php?c=usercert&status=2" class="admin_tongji_box_list_bth">立即审核</a></li>
+</ul>
+</div>
+</body>
+</html>
+
+
+

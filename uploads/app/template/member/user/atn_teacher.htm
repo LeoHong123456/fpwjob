@@ -1,0 +1,52 @@
+{yun:}include file="$userstyle/header.htm"{/yun}
+<div class="yun_w1200">
+    {yun:}include file="$userstyle/left.htm"{/yun}
+    <div class="yun_m_rightbox fltR mt20 re">
+    
+          <div class="member_right_index_h1 fltL"> <span class="member_right_h1_span fltL">我的培训</span> <i class="member_right_h1_icon user_bg"></i></div>
+	<div class="resume_box_list"> 
+		<div class="job_list_tit"> 
+			<ul class="">
+		 		<li {yun:}if $smarty.get.c=='baoming_subject'{/yun}class="job_list_tit_cur"{yun:}/if{/yun}><a href="index.php?c=baoming_subject">报名课程</a></li>
+				 	<li {yun:}if $smarty.get.c=='fav_subject'{/yun}class="job_list_tit_cur"{yun:}/if{/yun}><a href="index.php?c=fav_subject">收藏课程</a>{yun:}if $msgnum{/yun}<i class="left_sidebar_leftmune_icon">{yun:}$msgnum{/yun}</i>{yun:}/if{/yun}</li>
+			      	<li {yun:}if $smarty.get.c=='atn_teacher'{/yun}class="job_list_tit_cur"{yun:}/if{/yun}><a href="index.php?c=atn_teacher">关注讲师</a></li>
+			 		<li {yun:}if $smarty.get.c=='fav_agency'{/yun}class="job_list_tit_cur"{yun:}/if{/yun}><a href="index.php?c=fav_agency">关注机构</a></li>
+			 		<li {yun:}if $smarty.get.c=='subject_zixun'{/yun}class="job_list_tit_cur"{yun:}/if{/yun}><a href="index.php?c=subject_zixun">培训留言</a></li>
+     		</ul> 
+     	</div>
+        {yun:}if $rows{/yun}
+      <div class="train_class_s">
+           <ul>
+		    {yun:}foreach item=log from=$rows{/yun}
+               <li>
+                   <div class="train_class_img fl" style="width:90px;"><a href="{yun:}url m=train c=teamshow id=$log.sc_uid nid=$log.tid{/yun}" target="_blank"><img style="width:70px;height:70px;border:1px solid #e9e9e9;" src="{yun:}$config.sy_weburl{/yun}/{yun:}$log.pic{/yun}" onerror="showImgDelay(this,'{yun:}$config.sy_weburl{/yun}/{yun:}$config.sy_pxteacher_icon{/yun}',2);"/></a></div>
+                   <div class="train_class_tra fl">
+                   <div class="train_class_tit fl" style="padding-top:0;"><a href="{yun:}url m=train c=teamshow id=$log.sc_uid nid=$log.tid{/yun}" target="_blank" class="List_Title_span_com">{yun:}$log.teacher{/yun}&nbsp;</a>                   <div class="train_class_city fl" style="font-size:14px;">{yun:}$log.time|date_format:'%Y-%m-%d'{/yun}</div>
+</div>
+                   <div class="train_class_mm fl"> 
+                 
+                    {yun:}if $log.snum>0{/yun}
+                     <span class="fav_sub fl"> {yun:}$log.sname{/yun}   </span>
+                  
+                              <a class="fav_sub_more fl" href="{yun:}url m=train c=mysubject id=$log.sc_uid{/yun}" target="_blank">共{yun:}$log.snum{/yun}门课程>></a>
+                    {yun:}else{/yun}暂无课程 {yun:}/if{/yun}
+                    &nbsp; </div>
+                   <div class="train_class_qx fl"><a href="javascript:void(0)" onclick="layer_del('您确定要取消关注？', 'index.php?c=atn_teacher&act=del&id={yun:}$log.id{/yun}&tid={yun:}$log.tid{/yun}');" class="cblue">取消关注</a></div>
+                   </div>
+               </li>
+			    {yun:}/foreach{/yun} 
+           </ul>
+      </div>     
+            {yun:}else{/yun}
+            <div class="msg_no">
+				<p>亲爱的用户，目前您未关注任何讲师，想要了解讲师近况</p>
+			    <p>立即搜索我感兴趣的讲师关注吧！</p>
+			    <a href="{yun:}url m=train c=teacher{/yun}" target="_blank" class="msg_no_sq uesr_submit">立即搜索我感兴趣的讲师>></a>
+			</div>
+            {yun:}/if{/yun}
+            <div class="clear"></div>
+            <div class="diggg">{yun:}$pagenav{/yun}</div>
+        </div>
+    </div>
+</div>
+{yun:}include file="$userstyle/footer.htm"{/yun} 

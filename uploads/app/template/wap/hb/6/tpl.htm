@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" href="{yun:}$config.sy_weburl{/yun}/app/template/wap/hb/reset.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+</head>
+
+<body class="">
+
+	<div class="hb_jobbox6">
+    	<div class="hb_jobbox6cont">
+			{yun:}foreach item=v from=$jobs key=key{/yun} 
+				{yun:}if $key < 3{/yun}
+				<div class="hb_jobbox6list">
+					<span class="hb_jobbox6name_s"> {yun:}$v.name{/yun}</span>
+					<div class="hb_jobbox6list_p">岗位要求：年龄{yun:}$comclass_name[$v.age]{/yun}，{yun:}$comclass_name[$v.edu]{/yun}学历，{yun:}$comclass_name[$v.exp]{/yun}经验</div>
+					<div class="hb_jobbox6list_p">
+						薪资待遇：
+							{yun:}if $v.minsalary && $v.maxsalary{/yun}
+								￥{yun:}$v.minsalary{/yun} - {yun:}$v.maxsalary{/yun}
+							{yun:}else if $v.minsalary{/yun}
+								￥{yun:}$v.minsalary{/yun}以上
+							{yun:}else{/yun}
+								面议
+							{yun:}/if{/yun}
+					</div>
+				</div>
+				{yun:}/if{/yun}
+			{yun:}/foreach{/yun}
+		</div>			
+		<div class="hb6_comname">{yun:}$comname{/yun}</div>
+          <div class="hb6_webname">{yun:}$config.sy_webname{/yun} ({yun:}$config.sy_weburl{/yun})</div>
+		<div class="hb6_ewm">
+			<img src="{yun:}url m=ajax c=pubqrcode toc=company toa=show toid=$smarty.get.id{/yun}" width="150" height="150">
+		</div>
+	</div>
+
+</body>

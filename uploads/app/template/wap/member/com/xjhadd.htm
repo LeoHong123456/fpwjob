@@ -1,0 +1,269 @@
+{yun:}include file="$wapstyle/member/cheader.htm"{/yun}
+<link rel="stylesheet" href="{yun:}$wap_style{/yun}/js/mui/css/mui.picker.min.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<link rel="stylesheet" href="{yun:}$wap_style{/yun}/js/mui/css/mui.poppicker.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<link rel="stylesheet" href="{yun:}$config.sy_weburl{/yun}/app/template/wap/css/style.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<div id="app" class="mui-views">
+	<div class="mui-view">
+		<div class="mui-pages"></div>
+	</div>
+</div>
+<!--页面主结构结束-->
+<!--单页面开始-->
+<div id="main" class="mui-page">
+	<!--页面主内容区开始-->
+	<div class="mui-page-content">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="yunset_list">
+					<li class="yunset_list_select"><span class="yunset_list_name">宣讲城市</span>
+						<span class="yunset_list_commentary">
+							<button id='cityPicker' class="mui-btn mui-btn-block" type='button' data-provinceid="{yun:}$row.provinceid{/yun}" data-cityid="{yun:}$row.cityid{/yun}">{yun:}if $row.provinceid{/yun}{yun:}$city_name[$row.provinceid]{/yun} {yun:}$city_name[$row.cityid]{/yun} {yun:}$city_name[$row.three_cityid]{/yun}{yun:}else{/yun}请选择{yun:}/if{/yun}</button>
+							<input type="hidden" id="provinceid" name="provinceid" value="{yun:}$row.provinceid{/yun}">
+							<input type="hidden" id="cityid" name="cityid" value="{yun:}$row.cityid{/yun}">
+						</span>
+					</li>
+					<li class="yunset_list_select">
+						<span class="yunset_list_name">宣讲学校</span>
+						<span class="yunset_list_commentary">
+							<button id="schoolPicker" class="mui-btn mui-btn-block" type="button" data-schoolid="{yun:}$row.schoolid{/yun}">
+								{yun:}if $row.schoolid{/yun}
+									{yun:}foreach from=$school item=v{/yun}
+										{yun:}if $row.schoolid == $v['id']{/yun}
+											{yun:}$v['schoolname']{/yun}
+										{yun:}/if{/yun}
+									{yun:}/foreach{/yun}
+								{yun:}else{/yun}
+									请选择
+								{yun:}/if{/yun}</button>
+							<input type="hidden" id="schoolid" name="schoolid" value="{yun:}$row.schoolid{/yun}">
+						</span>
+					</li>
+					<li class="yunset_list_text"><span class="yunset_list_name">详细地点</span>
+						<span class="yunset_list_commentary"> 
+							<input type="text" id="address" name="address" value="{yun:}$row.address{/yun}" class="reinputText" placeholder="请填写详细地点">
+			            </span>
+					</li>
+					<li class="yunset_list_select"><span class="yunset_list_name">宣讲日期</span>
+						<span class="yunset_list_commentary">
+							<button id='datetimePicker' data-options='{"type":"date","value":"{yun:}if $row.stime{/yun}{yun:}$row.stime|date_format:'%Y-%m-%d'{/yun}{yun:}/if{/yun}"}' class="mui-btn mui-btn-block date" type='button'>{yun:}if $row.stime{/yun}{yun:}$row.stime|date_format:'%Y-%m-%d'{/yun}{yun:}else{/yun}宣讲日期{yun:}/if{/yun}</button>
+			                <input type="hidden" id="datetime" name="datetime" value="{yun:}$row.stime|date_format:'%Y-%m-%d'{/yun}">
+						</span>
+					</li>
+					<li class="yunset_list_select"><span class="yunset_list_name">开始时间</span>
+						<span class="yunset_list_commentary">
+							<button id='stimePicker' data-options='{"type":"time","value":"{yun:}if $row.stime{/yun}{yun:}$row.stime|date_format:'%Y-%m-%d %H:%M'{/yun}{yun:}/if{/yun}"}' class="mui-btn mui-btn-block date" type='button'>{yun:}if $row.stime{/yun}{yun:}$row.stime|date_format:'%H:%M'{/yun}{yun:}else{/yun}开始时间{yun:}/if{/yun}</button>
+			                <input type="hidden" id="stime" name="stime" value="{yun:}$row.stime|date_format:'%H:%M'{/yun}">
+						</span>
+					</li>
+					<li class="yunset_list_select"><span class="yunset_list_name">结束时间</span>
+						<span class="yunset_list_commentary">
+							<button id='etimePicker' data-options='{"type":"time","value":"{yun:}if $row.etime{/yun}{yun:}$row.etime|date_format:'%Y-%m-%d %H:%M'{/yun}{yun:}/if{/yun}"}' class="mui-btn mui-btn-block date" type='button'>{yun:}if $row.etime{/yun}{yun:}$row.etime|date_format:'%H:%M'{/yun}{yun:}else{/yun}结束时间{yun:}/if{/yun}</button>
+			                <input type="hidden" id="etime" name="etime" value="{yun:}$row.etime|date_format:'%H:%M'{/yun}">
+						</span>
+					</li>
+				</ul>
+				<div class="yunset_bth_box" style="background: transparent; border: none;">
+					<input id="id" name="id" value="{yun:}$row.id{/yun}" type="hidden" />
+					<input type="submit" id="xjhsubmit" value="提交操作" class="reinputText2">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="{yun:}$wap_style{/yun}/js/mui/mui.picker.min.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$wap_style{/yun}/js/mui/mui.poppicker.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/data/plus/city.cache.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$wap_style{/yun}/js/mui/mui.view.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$wap_style{/yun}/js/jobadd.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script> 
+<script src="{yun:}$wap_style{/yun}/js/category.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+
+<script type="text/javascript">
+
+mui.init();
+var viewApi = mui('#app').view({
+	defaultPage: '#main'
+});
+//初始化单页的区域滚动
+mui('.mui-scroll-wrapper').scroll({
+	scrollY: true, //是否竖向滚动
+	scrollX: false, //是否横向滚动
+	startX: 0, //初始化时滚动至x
+	startY: 0, //初始化时滚动至y
+	indicators: true, //是否显示滚动条
+	deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+	// bounce: true //是否启用回弹
+});
+var view = viewApi.view;
+(function($) {
+	//处理view的后退与webview后退
+	var oldBack = $.back;
+	$.back = function() {
+		if(viewApi.canBack()) { //如果view可以后退，则执行view的后退
+			viewApi.back();
+		} else { //执行webview后退
+			oldBack();
+		}
+	};
+	view.addEventListener('pageBeforeBack', function(e) {
+		document.getElementById('contentshow').innerText = document.getElementById('content').value;
+		//console.log(e);
+	});
+	
+})(mui);
+
+(function($) {
+	$.init();
+	$.ready(function() {
+		//开始日期
+		var stimePicker = document.getElementById('stimePicker');
+		if(stimePicker){
+			var stime = document.getElementById('stime');
+			stimePicker.addEventListener('tap', function() {
+				var optionsJson = this.getAttribute('data-options') || '{}';
+				var options = JSON.parse(optionsJson);
+				var picker = new $.DtPicker(options);
+				picker.show(function(rs) {
+					stime.value =rs.text;
+					stimePicker.innerText =  rs.text;
+					picker.dispose();
+				});				
+			}, false);
+		}
+		//结束日期
+		var etimePicker = document.getElementById('etimePicker');
+		if(etimePicker){
+			var etime = document.getElementById('etime');
+			etimePicker.addEventListener('tap', function() {
+				var optionsJson = this.getAttribute('data-options') || '{}';
+				var options = JSON.parse(optionsJson);
+				var picker = new $.DtPicker(options);
+				picker.show(function(rs) {
+					etime.value =rs.text;
+					etimePicker.innerText =  rs.text;
+					picker.dispose();
+				});				
+			}, false);
+		}
+		//结束日期
+		var datetimePicker = document.getElementById('datetimePicker');
+		if(datetimePicker){
+			var datetime = document.getElementById('datetime');
+			datetimePicker.addEventListener('tap', function() {
+				var optionsJson = this.getAttribute('data-options') || '{}';
+				var options = JSON.parse(optionsJson);
+				var picker = new $.DtPicker(options);
+				picker.show(function(rs) {
+					datetime.value =rs.text;
+					datetimePicker.innerText =  rs.text;
+					picker.dispose();
+				});				
+			}, false);
+		}
+	});
+})(mui);
+
+(function() {
+	var xjhsubmit = document.getElementById('xjhsubmit');
+	if(xjhsubmit) {
+		xjhsubmit.addEventListener('tap', function(event) {
+			var provinceid = $.trim($("#provinceid").val()),
+				cityid = $.trim($("#cityid").val()),
+				schoolid = $.trim($("#schoolid").val()),
+				address = $.trim($("#address").val()),
+				datetime = $.trim($("#datetime").val()),
+				stime = $.trim($("#stime").val()),
+				etime = $.trim($("#etime").val()),
+				id = $.trim($("#id").val());
+				
+
+			if(provinceid==''){
+				mui.toast('请选择宣讲省份');
+				return false;
+			}
+			if(cityid==''){
+				mui.toast('请选择宣讲城市');
+				return false;
+			}
+			if(schoolid==''){
+				mui.toast('请选择宣讲学校');
+				return false;
+			}
+			if(address==''){
+				mui.toast('请选择详细地点');
+				return false;
+				
+			}
+			if(datetime==''){
+				mui.toast('请选择宣讲日期');
+				return false;
+			}
+			if(stime==''){
+				mui.toast('请选择宣讲开始时间');
+				return false;
+			}
+			if(etime==''){
+				mui.toast('请选择宣讲结束时间');
+				return false;
+			}
+			var sql={
+				provinceid : provinceid,
+				cityid : cityid,
+				schoolid : schoolid,
+				address : address,
+				datetime : datetime,
+				stime : stime,
+				etime : etime,
+				id:id,
+				submit: 'submit'
+			}
+			mui.post('index.php?c=xjhadd', sql, function(data) {
+				if(data.url){
+					layermsg(data.msg, 2, function() {
+						location.href = data.url;
+					});
+				}else{
+					layermsg(data.msg);return false;
+				}
+				
+			}, 'json');
+		}, false)
+	}
+
+	//选择快捷输入
+	mui('.mui-popover').on('tap', 'li', function(e) {
+		document.getElementById("name").value = document.getElementById("name").value + this.children[0].innerHTML;
+		mui('.mui-popover').popover('toggle')
+	})
+})();
+
+var xjhcityData = []
+	,xjhschoolData = [];
+'{yun:}foreach from=$city_index item=v{/yun}'
+	var xjhcityson = [];
+	'{yun:}foreach from=$city_type[$v] item=val{/yun}'
+		xjhcityson.push({
+			value: '{yun:}$val{/yun}',
+			text: '{yun:}$city_name[$val]{/yun}'
+		})
+		
+	'{yun:}/foreach{/yun}'
+	xjhcityData.push({
+		value : '{yun:}$v{/yun}',
+		text : '{yun:}$city_name[$v]{/yun}',
+		children :xjhcityson
+	})
+'{yun:}/foreach{/yun}'
+
+'{yun:}foreach from=$school item=sv{/yun}'
+	xjhschoolData.push({
+		cid: '{yun:}$sv["cityid"]{/yun}',
+		value: '{yun:}$sv["id"]{/yun}',
+		text: '{yun:}$sv["schoolname"]{/yun}'
+	})
+'{yun:}/foreach{/yun}'
+
+
+</script>
+
+{yun:}include file="$wapstyle/footer.htm"{/yun} 

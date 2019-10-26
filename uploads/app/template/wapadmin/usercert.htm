@@ -1,0 +1,17 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>个人 &gt; {yun:}$headertitle{/yun}</span>
+</div>
+{yun:}foreach item=v key=key from=$rows{/yun}
+<div class="et_pd_ct" onclick="showDetail('index.php?c=usercert&a=show&id={yun:}$v.uid{/yun}')">
+  <div class="et_pd_ct_nm">{yun:}$v.name{/yun}</div>
+  <div class="et_pd_ct_te"> <span class="et_pd_ct_te_ft">申请时间：{yun:}$v.cert_time|date_format:"%Y-%m-%d"{/yun}</span> 
+  {yun:}if $v.idcard_status==1{/yun}<span class="et_pd_ct_te_rt">已审核</span>{yun:}elseif $v.idcard_status==0{/yun}<span class="et_pd_ct_te_rt_ng">未审核</span>{yun:}elseif $v.idcard_status==2{/yun}<span class="et_pd_ct_te_rt_no">未通过</span>{yun:}/if{/yun} </div>
+</div>
+{yun:}foreachelse{/yun}
+<div class="wap_member_no">暂时还没有个人认证信息<br>
+</div>
+{yun:}/foreach{/yun}
+<div class="pages"> {yun:}$pagenav{/yun}</div>
+</body>
+</html>

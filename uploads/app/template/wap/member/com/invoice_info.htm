@@ -1,0 +1,319 @@
+{yun:}include file="$wapstyle/member/cheader.htm"{/yun}
+<link rel="stylesheet" href="{yun:}$wap_style{/yun}/js/mui/css/mui.picker.min.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<link rel="stylesheet" href="{yun:}$wap_style{/yun}/js/mui/css/mui.poppicker.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<link rel="stylesheet" href="{yun:}$config.sy_weburl{/yun}/app/template/wap/css/style.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<div class="wap_member_comp_h1"><span>我的发票</span></div>
+
+<div id="app" class="mui-views">
+    <div class="mui-view">
+        <div class="mui-pages"></div>
+    </div>
+</div>
+
+
+
+<div id="main" class="mui-page">
+    
+    <div class="mui-page-content">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+
+                <ul class="yun_m_tit_three">
+                    <li>
+                        <a href="index.php?c=invoice">我的发票</a>
+                    </li>
+                    <li>
+                        <a href="index.php?c=sqinvoice">发票索取</a>
+                    </li>
+                    <li class="yun_m_tit_cur">
+                        <a href="index.php?c=invoice_info">发票信息</a>
+                    </li>
+                </ul>
+
+                <ul class="yunset_password mt15 addInvoice" {yun:}if !$rows{/yun}style="display: none;" {yun:}/if{/yun}>
+                    <div class="member_set_meal_fk_fbox mt10">
+                        <li><span class="yunset_password_mname">发票抬头</span>
+                            <div class="mui-input-row">
+                                <input type="text" id="invoicetitle" class="mui-input-clear" placeholder="请输入发票抬头" value="{yun:}$rows.invoicetitle{/yun}">
+                            </div>
+                        </li>
+
+                        <li><span class="yunset_password_mname">企业税号</span>
+                            <div class="mui-input-row">
+                                <input type="text" class="mui-input-clear" id="registerno" placeholder="请填写企业税号" value="{yun:}$rows.registerno{/yun}">
+                            </div>
+                        </li>
+
+                    </div>
+
+                    <div class="member_set_meal_fk_fbox mt10">
+                        <li>
+                            <span class="yunset_password_mname">发票类型</span>
+                            <div onclick="checkType(1);">
+                                <i class="type1 member_set_meal_fk_xz {yun:}if $rows.invoicetype!=2{/yun}member_set_meal_fk_xz_cur{yun:}/if{/yun}"></i>企业普通发票
+                            </div>
+                        </li>
+                        <li>
+                            <div onclick="checkType(2);">
+                                <i class="type2 member_set_meal_fk_xz {yun:}if $rows.invoicetype==2{/yun}member_set_meal_fk_xz_cur{yun:}/if{/yun}"></i>增值税专用票
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="member_set_meal_fk_fbox mt10">
+
+                        <li><span class="yunset_password_mname">开户银行</span>
+                            <div class="mui-input-row">
+                                <input type="text" class="mui-input-clear" id="bank" placeholder="请填写企业开户银行{yun:}if $row.invoicetype!=2{/yun}(选填){yun:}/if{/yun}" value="{yun:}$rows.bank{/yun}">
+                            </div>
+                        </li>
+
+                        <li><span class="yunset_password_mname">开户账号</span>
+                            <div class="mui-input-row">
+                                <input type="text" class="mui-input-clear" id="bankno" placeholder="请填写企业开户账号{yun:}if $row.invoicetype!=2{/yun}(选填){yun:}/if{/yun}" value="{yun:}$rows.bankno{/yun}">
+                            </div>
+                        </li>
+
+                        <li><span class="yunset_password_mname">注册地址</span>
+                            <div class="mui-input-row">
+                                <input type="text" class="mui-input-clear" id="opaddress" placeholder="请填写企业注册地址{yun:}if $row.invoicetype!=2{/yun}(选填){yun:}/if{/yun}" value="{yun:}$rows.opaddress{/yun}">
+                            </div>
+                        </li>
+
+                        <li><span class="yunset_password_mname">注册固话</span>
+                            <div class="mui-input-row">
+                                <input type="text" class="mui-input-clear" id="opphone" placeholder="请填写企业注册固话{yun:}if $row.invoicetype!=2{/yun}(选填){yun:}/if{/yun}" value="{yun:}$rows.opphone{/yun}">
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="member_set_meal_fk_fbox mt10">
+                        <li>
+                            <span class="yunset_password_mname">开票性质</span>
+                            <div onclick="checkStyle(1);">
+                                <i class="style1 member_set_meal_fk_xz {yun:}if $rows.invoicestyle!=2{/yun}member_set_meal_fk_xz_cur{yun:}/if{/yun}"></i>纸质发票
+                            </div>
+                        </li>
+                        <li>
+                            <div onclick="checkStyle(2);">
+                                <i class="style2 member_set_meal_fk_xz {yun:}if $rows.invoicestyle==2{/yun}member_set_meal_fk_xz_cur{yun:}/if{/yun}"></i>电子发票
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="member_set_meal_fk_fbox mt10">
+
+                        <li><span class="yunset_password_mname">收件人名</span>
+                            <div class="mui-input-row">
+                                <input type="text" class="mui-input-clear" id="linkman" placeholder="请填写收件人姓名" value="{yun:}$rows.linkman{/yun}">
+                            </div>
+                        </li>
+
+                        <li id='li_street' {yun:}if $rows.invoicestyle=='2' {/yun}style="display: none;" {yun:}/if{/yun}><span class="yunset_password_mname">邮寄地址</span>
+                            <div class="mui-input-row">
+                                <input type="text" class="mui-input-clear" id="street" placeholder="请填写邮寄地址" value="{yun:}$rows.street{/yun}">
+                            </div>
+                        </li>
+
+                        <li id='li_phone' {yun:}if $rows.invoicestyle=='2' {/yun}style="display: none;" {yun:}/if{/yun}><span class="yunset_password_mname">手机号码</span>
+                            <div class="mui-input-row">
+                                <input type="text" class="mui-input-clear" id="phone" placeholder="请填写联系手机" value="{yun:}$rows.phone{/yun}">
+                            </div>
+                        </li>
+
+                        <li id='li_email' {yun:}if $rows.invoicestyle!='2' {/yun}style="display: none;" {yun:}/if{/yun}><span class="yunset_password_mname">电子邮箱</span>
+                            <div class="mui-input-row">
+                                <input type="text" class="mui-input-clear" id="email" placeholder="请填写电子邮箱" value="{yun:}$rows.email{/yun}">
+                            </div>
+                        </li>
+
+                    </div>
+
+                    <input type="hidden" id="invoicetype" value="{yun:}if $rows.invoicetype{/yun}{yun:}$rows.invoicetype{/yun}{yun:}else{/yun}1{yun:}/if{/yun}">
+                    <input type="hidden" id="invoicestyle" value="{yun:}if $rows.invoicestyle{/yun}{yun:}$rows.invoicestyle{/yun}{yun:}else{/yun}1{yun:}/if{/yun}">
+                    <input type="hidden" id="id" value="{yun:}$rows.id{/yun}">
+
+                    <div class="yunset_bth_box">
+                        <button id="invoicesubmit" class="mui-btn mui-btn-block mui-btn-primary" type="button"> 保 存 </button>
+                    </div>
+                </ul>
+                <div class="wap_member_no noInvoice" {yun:}if $rows{/yun}style="display: none;" {yun:}/if{/yun}>
+                    您暂时还没有添加发票信息
+                    <div>
+                        <a href="javascript:void(0)" onclick="addShow();" class="wap_member_no_submit">添加信息</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+
+
+<script src="{yun:}$wap_style{/yun}/js/mui/mui.view.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+
+<script language="javascript">
+    function addShow() {
+        $(".addInvoice").show();
+        $(".noInvoice").hide();
+    }
+
+    function checkType(type) {
+        if(type == 1) {
+            $("#invoicetype").val('1');
+            $(".type1").addClass("member_set_meal_fk_xz_cur");
+            $(".type2").removeClass("member_set_meal_fk_xz_cur");
+            $("#bank").attr("placeholder","请填写企业开户银行（选填）");
+            $("#bankno").attr("placeholder","请填写企业开户账号（选填）");
+            $("#opaddress").attr("placeholder","请填写企业注册地址（选填）");
+            $("#opphone").attr("placeholder","请填写企业注册固话（选填）");
+            
+        } else if(type == 2) {
+            $("#invoicetype").val('2');
+            $(".type2").addClass("member_set_meal_fk_xz_cur");
+            $(".type1").removeClass("member_set_meal_fk_xz_cur");
+            $("#bank").attr("placeholder","请填写企业开户银行");
+            $("#bankno").attr("placeholder","请填写企业开户账号");
+            $("#opaddress").attr("placeholder","请填写企业注册地址");
+            $("#opphone").attr("placeholder","请填写企业注册固话");
+        }
+    }
+
+    function checkStyle(style) {
+        if(style == 1) {
+            $("#invoicestyle").val('1');
+            $(".style1").addClass("member_set_meal_fk_xz_cur");
+            $(".style2").removeClass("member_set_meal_fk_xz_cur");
+            $("#li_street").show();
+            $("#li_phone").show();
+            $("#li_email").hide();
+
+        } else if(style == 2) {
+            $("#invoicestyle").val('2');
+            $(".style2").addClass("member_set_meal_fk_xz_cur");
+            $(".style1").removeClass("member_set_meal_fk_xz_cur");
+            $("#li_street").hide();
+            $("#li_phone").hide();
+            $("#li_email").show();
+        }
+    }
+
+    mui.init();
+    var viewApi = mui('#app').view({
+        defaultPage: '#main'
+    });
+    
+    mui('.mui-scroll-wrapper').scroll({
+        scrollY: true, 
+        scrollX: false, 
+        startX: 0, 
+        startY: 0, 
+        indicators: true, 
+        deceleration: 0.0006, 
+        
+    });
+    var view = viewApi.view;
+
+    (function() {
+    	if(document.getElementById('main')){
+			document.getElementById('main').addEventListener('touchmove', function (e) { e.preventDefault();}, {passive: false});
+		}
+        var invoicesubmit = document.getElementById('invoicesubmit');
+        if(invoicesubmit) {
+            invoicesubmit.addEventListener('tap', function(event) {
+                var title = $.trim(document.getElementById('invoicetitle').value),
+                    type = $.trim(document.getElementById('invoicetype').value),
+                    regno = $.trim(document.getElementById('registerno').value),
+
+                    bank = $.trim(document.getElementById('bank').value),
+                    bankno = $.trim(document.getElementById('bankno').value),
+                    opaddress = $.trim(document.getElementById('opaddress').value),
+                    opphone = $.trim(document.getElementById('opphone').value),
+
+                    style = $.trim(document.getElementById('invoicestyle').value),
+                    man = $.trim(document.getElementById('linkman').value),
+                    street = $.trim(document.getElementById('street').value),
+                    phone = $.trim(document.getElementById('phone').value),
+                    email = $.trim(document.getElementById('email').value),
+
+                    id = $.trim(document.getElementById('id').value);
+
+                if(title == '') {
+                    return mui.toast('请填写发票抬头！');
+                }
+                if(regno == '') {
+                    return mui.toast('请填写企业登记税号！');
+                }
+                if(type == '') {
+                    return mui.toast('请选择发票类型！');
+                } else if(type == 2) {
+                    if(bank == '') {
+                        return mui.toast('请填写企业开户银行！');
+                    }
+                    if(bankno == '') {
+                        return mui.toast('请填写企业开户账号！');
+                    }
+                    if(opaddress == '') {
+                        return mui.toast('请填写企业注册地址！');
+                    }
+                    if(opphone == '') {
+                        return mui.toast('请填写企业注册固话！');
+                    }  
+                }
+
+                if(style == '') {
+                    return mui.toast('请选择开票性质！');
+                }
+                if(man == '') {
+                    return mui.toast('请填写收件人姓名！');
+                }
+
+                if(style == 1) {
+                    if(street == '') {
+                        return mui.toast('请填写邮寄地址！');
+                    }
+                    if(phone == '') {
+                        return mui.toast('请填写收件人手机号！');
+                    } else if(!isjsMobile(phone)) {
+                        return mui.toast('手机号码格式错误！');
+                    }
+                } else if(style == 2) {
+                    var myreg = /^([a-zA-Z0-9\-]+[_|\_|\.]?)*[a-zA-Z0-9\-]+@([a-zA-Z0-9\-]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+                    if(email == '') {
+                        return mui.toast('请填写电子邮箱！');
+                    } else if(!myreg.test(email)) {
+                        return mui.toast('电子邮箱格式错误！');
+                    }
+                }
+
+                mui.post('index.php?c=invoice_info', {
+                    invoicetitle: title,
+                    invoicetype: type,
+                    registerno: regno,
+
+                    bank: bank,
+                    bankno: bankno,
+                    opaddress: opaddress,
+                    opphone: opphone,
+
+                    invoicestyle: style,
+                    linkman: man,
+                    street: street,
+                    phone: phone,
+                    email: email,
+
+                    id: id,
+                    submit: 'submit'
+                }, function(data) {
+                    layermsg(data.msg, 2, function() {
+                        location.href = data.url;
+                    });
+                }, 'json');
+            }, false)
+        }
+    })();
+</script>
+
+{yun:}include file="$wapstyle/footer.htm"{/yun}

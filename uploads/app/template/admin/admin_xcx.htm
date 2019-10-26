@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link href="images/reset.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<link href="images/system.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<link href="images/table_form.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}"></script>
+<link href="{yun:}$config.sy_weburl{/yun}/js/layui/css/layui.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/layui.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/phpyun_layer.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="js/admin_public.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+
+  <script>
+
+	function check_xcx_config(){
+		var xcx_rz=$("input[name='xcx_rz']:checked").val();
+		var xcx_price=$("#xcx_price").val();
+		var xcxuid=$("#sy_xcxuid").val();
+		var xcxkey=$("#xcxkey").val();
+		var xcxurl=$("#sy_xcxurl").val();
+		if(xcx_rz==2){
+			if(xcx_price==''||xcxuid==''||xcxkey==''||xcxurl==''){
+				parent.layer.msg('请完善以上信息！', 2, 8);return false;
+			}
+		}
+	}
+</script>
+<title>后台管理</title>
+</head>
+<body class="body_ifm">
+<div class="infoboxp"><div class="infoboxp_top_bg"></div>
+<div id="subboxdiv" style="width:100%;height:100%;display:none;position:absolute;"></div>
+<div class="infoboxp_top">
+	<span class="admin_title_span">小程序设置</span>
+</div>
+<div class="main_tag">
+<div class="admin_table_border">
+    <div>
+	<iframe id="supportiframe"  name="supportiframe" onload="returnmessage('supportiframe');" style="display:none"></iframe>
+	<form name="myform" target="supportiframe" action="index.php?m=xcx&c=save" method="post" onSubmit="return check_xcx_config()">
+         <table width="100%" class="table_form">
+            <tr class="admin_table_trbg">
+			 <tr>
+                <th width="160">小程序价格：</th>
+                <td><input class="input-text" type="text" name="xcx_price" id="xcx_price" size="30" value="{yun:}$config.xcx_price{/yun}" maxlength="255" >元</td>
+            </tr>
+            <tr>
+                <th width="160">商家小程序代理商ID：</th>
+                <td><input class="input-text" type="text" name="sy_xcxuid" id="sy_xcxuid" size="30" value="{yun:}$config.sy_xcxuid{/yun}"></td>
+            </tr>
+            <tr>
+                <th width="160">商家小程序代理商xcxKey：</th>
+                <td><input class="input-text" type="text" name="sy_xcxkey" id="sy_xcxkey" size="30" value="{yun:}$config.sy_xcxkey{/yun}"></td>
+            </tr>
+             <tr>
+                <th width="160">商家小程序代理商url：</th>
+                <td><input class="input-text" type="text" name="sy_xcxurl" id="sy_xcxurl" size="30" value="{yun:}$config.sy_xcxurl{/yun}"></td>
+            </tr>
+            <tr>
+                <th width="160">是否开启微信小程序功能：</th>
+                <td>
+                <div class="iradio_flat_height">
+                <input type="radio" name="xcx_rz" {yun:}if $config.xcx_rz=='1'||$config.xcx_rz==''{/yun}checked{yun:}/if{/yun} value='1' id="xcx_rz_11">
+                <span class="iradio_flat_left"><label for="xcx_rz_11">否 </label>&nbsp;</span>
+                <input type="radio" {yun:}if $config.xcx_rz=='2'{/yun}checked{yun:}/if{/yun} name="xcx_rz" value='2' id="xcx_rz_12">
+                <span class="iradio_flat_left"><label for="xcx_rz_12">是</label>&nbsp;</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span class="admin_web_tip">说明：必须填写上面四项才能开启小程序</span>
+                </div>
+                </td>
+            </tr>
+              <tr class="admin_table_trbg">
+                <td colspan="2" align="center">
+                <input type="hidden" name="pytoken" id='pytoken' value="{yun:}$pytoken{/yun}"/>	
+                <input class="admin_button" id="xcxconfig" type="submit" name="msgconfig" value="提交" />&nbsp;&nbsp;<input class="admin_button" type="reset" value="重置" /></td>
+            </tr>
+        </table>
+		</form>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

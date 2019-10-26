@@ -1,0 +1,26 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+	<span>个人 &gt; {yun:}$headertitle{/yun}</span>
+</div>
+
+<div class="admin_resume_tjbox_s">
+    <form method="get" action="index.php?c=user_member">
+		<input name='c' value="user_member" type="hidden">
+		<input type="text" value="{yun:}$smarty.get.keyword{/yun}" id="keyword" name="keyword" placeholder="搜索用户名" class="admin_resume_tjbox_text">
+		<input type="submit" value="搜索" class="admin_resume_tjbox_bth">
+    </form>
+</div>
+{yun:}foreach item=v key=key from=$userrows{/yun}
+	<div class="et_pd_ct" onclick="showDetail('index.php?c=user_member&a=edit&id={yun:}$v.uid{/yun}')">
+		<div class="et_pd_ct_nm"> <span>用户名：{yun:}$v.username{/yun}</span> <span class="free_hy"></span> </div>
+		<div class="et_pd_ct_te"> 
+			<span class="et_pd_ct_te_ft"><i>注册时间：{yun:}$v.reg_date|date_format:"%Y-%m-%d"{/yun}</i></span> 
+			<span class="et_pd_ct_te_rt_p"><i>{yun:}if $v.status==0{/yun}未审核{yun:}elseif $v.status==2{/yun}{yun:}elseif $v.status==3{/yun}未通过{yun:}/if{/yun}</i></span> 
+		</div>
+	</div>
+{yun:}foreachelse{/yun}
+	<div class="wap_member_no">暂时没有个人用户信息<br></div>
+{yun:}/foreach{/yun}
+<div class="pages"> {yun:}$pagenav{/yun}</div>
+</body>
+</html>

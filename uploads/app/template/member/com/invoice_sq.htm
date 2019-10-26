@@ -1,0 +1,243 @@
+{yun:}include file="$comstyle/header.htm"{/yun}
+<div class="w1000">
+    <div class="admin_mainbody"> {yun:}include file="$comstyle/left.htm"{/yun}
+
+        <div class=right_box>
+            <div class=admincont_box>
+                <div class="com_tit"><span class="com_tit_span">我的发票</span></div>
+
+                <div class="job_list_tit">
+                    <ul>
+                        <li class="job_list_tit_cur">
+                            <a href="index.php?c=invoice&act=apply">发票索取</a>
+                        </li>
+                        <li>
+                            <a href="index.php?c=invoice">发票列表</a>
+                        </li>
+                        <li>
+                            <a href="index.php?c=invoice&act=info">发票信息管理</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="com_body">
+                    <div class="admin_new_tip mt20">
+                        <div class="admin_new_tit"><i class="admin_new_tit_icon"></i>操作提示</div>
+                        <div class="admin_new_tip_list_cont">
+                            <div class="admin_new_tip_list">只有您所实际消耗的现金充值金额可开具发票，您提交开票申请后，如信息无误，我们将在5个工作日内开具，请耐心等待 </div>
+                        </div>
+                    </div>
+
+                    <div class=admin_textbox_04>
+                        <iframe id="supportiframe" name="supportiframe" onload="returnmessage('supportiframe');" style="display:none"></iframe>
+
+                        <form action="{yun:}$now_url{/yun}" target="supportiframe" method="post" id='myform'>
+
+                            <div class="mt20">
+                                <table class="com_table" id="job_checkbokid">
+                                    {yun:}if $rows{/yun}
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>订单编号</th>
+                                        <th>支付类型</th>
+                                        <th>支付形式</th>
+                                        <th>充值金额</th>
+                                        <th>支付状态</th>
+                                        <th>付款时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    {yun:}/if{/yun} {yun:}foreach from=$rows item=log{/yun} {yun:}assign var="state" value=$log.order_state{/yun} {yun:}assign var="type" value=$log.order_type{/yun}
+
+                                    <tr>
+                                        <td class="">
+                                            <input type="checkbox" name="checkboxid[]" value="{yun:}$log.order_id{/yun}" price="{yun:}$log.order_price{/yun}" class="job_hr_list_boxcheckbox_c">
+                                        </td>
+                                        <td>{yun:}$log.order_id{/yun}</td>
+                                        <td align="center">
+                                            {yun:}if $log.type==1{/yun}购买会员 {yun:}elseif $log.type=='2'{/yun}{yun:}$config.integral_pricename{/yun}充值 {yun:}elseif $log.type=='3'{/yun}银行转帐 {yun:}elseif $log.type=='4'{/yun}金额充值 {yun:}elseif $log.type=='5'{/yun}增值服务 {yun:}elseif $log.type=='6'{/yun}课程订购 {yun:}elseif $log.type=='7'{/yun}购买小程序 {yun:}elseif $log.type=='8'{/yun}分享红包推广 {yun:}elseif $log.type=='9'{/yun}悬赏红包 {yun:}elseif $log.type=='10'{/yun}职位置顶 {yun:}elseif $log.type=='11'{/yun}紧急招聘 {yun:}elseif $log.type=='12'{/yun}职位推荐 {yun:}elseif $log.type=='13'{/yun}职位自动刷新 {yun:}elseif $log.type=='16'{/yun}职位刷新 {yun:}elseif $log.type=='17'{/yun}兼职刷新 {yun:}elseif $log.type=='18'{/yun}高级职位刷新 {yun:}elseif $log.type=='19'{/yun}下载简历 {yun:}elseif $log.type=='20'{/yun}发布职位 {yun:}elseif $log.type=='21'{/yun}发布兼职 {yun:}elseif $log.type=='22'{/yun}发布高级职位 {yun:}elseif $log.type=='23'{/yun}面试邀请 {yun:}elseif $log.type=='24'{/yun}兼职推荐 {yun:}elseif $log.type=='26'{/yun}购买广告位 {yun:}/if{/yun}&nbsp;
+                                        </td>
+                                        <td align="center">{yun:}if $type{/yun}{yun:}$arr_data.pay.$type{/yun}{yun:}else{/yun}手动{yun:}/if{/yun}</td>
+                                        <td align="center">{yun:}$log.order_price{/yun}</td>
+                                        <td align="center">{yun:}$arr_data.paystate.$state{/yun}</td>
+                                        <td align="center">{yun:}$log.order_time|date_format:'%Y-%m-%d %H:%M:%S'{/yun}</td>
+                                        <td align="center">
+                                            {yun:}if $invoice{/yun}
+                                            <a href="javascript:;" order_id="{yun:}$log.order_id{/yun}" price="{yun:}$log.order_price{/yun}" class="invoice com_bth cblue">申请发票</a>
+                                            {yun:}else{/yun}
+                                            <a href="javascript:;" onclick="addInvoiceInfo();" class="invoice com_bth cblue">申请发票</a>
+                                            {yun:}/if{/yun}
+                                        </td>
+
+                                    </tr>
+                                    {yun:}foreachelse{/yun}
+                                    <tr>
+                                        <td colspan="7" class="table_end">
+                                            <div class="msg_no">暂无可申请发票订单记录。</div>
+                                        </td>
+                                    </tr>
+                                    {yun:}/foreach{/yun}
+                                </table>
+                            </div>
+
+                            {yun:}if !empty($rows){/yun}
+                            <div>
+                                <div class="com_Release_job_bot" style="margin-top:10px;">
+                                    <span class="com_Release_job_qx">
+										<input id='checkAll'  type="checkbox" onclick='m_checkAll(this.form)' class="com_Release_job_qx_check">全选
+									</span> {yun:}if $invoice{/yun}
+                                    <input class="c_btn_02" type="button" value="索取发票" onclick="return invoice_sq('checkboxid[]');"> {yun:}else{/yun}
+                                    <input class="c_btn_02" type="button" value="索取发票" onclick="return addInvoiceInfo();"> {yun:}/if{/yun}
+                                </div>
+                            </div>
+                            {yun:}/if{/yun}
+                        </form>
+                        <div class="clear"></div>
+                        <div class="diggg">{yun:}$pagenav{/yun}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="infoboxp22" id="invoice_div" style="display:none;">
+    <div class="invoice_box" style="padding-top:0px;">
+        <form action="index.php?c=invoice&act=apply" method="post" target="supportiframe">
+            <div class="invoice_tip">重要提示：根据最新增值税管理办法要求，7月1日起如需为企业（包括公司、非公司制企业法人、企业分支机构、个人独资企业、合伙企业和其他企业）开具增值税发票，需提供纳税人识别号或统一社会信用代码，否则该发票无法作为税收凭证。请准确选择发票抬头类型，若企业发票请填写有效税号信息。</div>
+            <div class="jb_infobox" style="width: 100%;">
+                <div class="invoice_ture" style="padding-bottom:15px;">订单信息 </div>
+                <div class="invoice_mumber"><span class="invoice_span">订单编号：</span></div>
+                <div class="invoice_money"><span class="invoice_span">实付金额：</span></div>
+
+                <div class="invoice_ture" style="padding-bottom:15px;">发票信息 </div>
+                <div class="invoice_fpxx">
+                    <div>
+                        发票类型： <span>{yun:}if $invoice.invoicetype==1{/yun}企业普通发票{yun:}elseif $invoice.invoicetype==2{/yun}增值税专用票{yun:}/if{/yun}</span>
+                    </div>
+                    <div>
+                        发票抬头：
+                        <span>{yun:}$invoice.invoicetitle{/yun}</span>
+
+                    </div>
+                    <a href="index.php?c=invoice&act=info" class="invoice_fpxx_xg">修改</a>
+                </div>
+                <div class="invoice_list" style="padding-left:0px;">
+
+                    <input name='order_price' type='hidden' id='order_price' />
+                    <input name='order_id' type='hidden' id='order_id' />
+                    <button type="submit" name='submit' value='1' class="invoice_list_bth">提交申请</button></div>
+
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    var sy_com_invoice = "{yun:}$config.sy_com_invoice{/yun}";
+
+    function accAdd(arg1, arg2) {
+        var r1, r2, m;
+        try {
+            r1 = arg1.toString().split(".")[1].length
+        } catch(e) {
+            r1 = 0
+        }
+        try {
+            r2 = arg2.toString().split(".")[1].length
+        } catch(e) {
+            r2 = 0
+        }
+        m = Math.pow(10, Math.max(r1, r2))
+        return(arg1 * m + arg2 * m) / m
+    }
+
+    function addInvoiceInfo() {
+        layer.confirm("您尚未添加发票信息，请先添加。", function() {
+            window.location.href = 'index.php?c=invoice&act=info';
+            window.event.returnValue = false;
+            return false;
+        });
+    }
+
+    function invoice_sq(name) {
+        if(sy_com_invoice == '1') {
+
+            var chk_value = [];
+            var i = 0;
+            var price_sum = 0;
+
+            $('input[name="' + name + '"]:checked').each(function() {
+                chk_value.push($(this).val());
+                price_sum = accAdd(price_sum, $(this).attr("price"));
+                i++;
+            });
+
+            if(i > 0) {
+                var order_id = chk_value;
+                var ordernum = chk_value.length;
+
+                if(order_id) {
+                    $("#order_id").val(order_id);
+                    $("#order_price").val(price_sum);
+                    $(".invoice_mumber").html('<span class="invoice_span">订单信息：</span> 你选择了' + ordernum + '份订单');
+                    $(".invoice_money").html('<span class="invoice_span">实付金额：</span>￥' + price_sum);
+                    $.layer({
+                        type: 1,
+                        title: '申请发票',
+                        closeBtn: [0, true],
+                        border: [10, 0.3, '#000', true],
+                        area: ['640px', 'auto'],
+                        page: {
+                            dom: "#invoice_div"
+                        }
+                    });
+                }
+            } else {
+                layer.msg("请选择所需开票定单！", 2, 9);
+                return false;
+            }
+        } else {
+            var i = layer.confirm('网站未开启发票申请，请联系管理员！', {
+                    btn: ['确定']
+                },
+                function() {
+                    layer.close(i);
+                }
+            );
+        }
+    }
+
+    $(document).ready(function() {
+        $(".invoice").click(function() {
+            if(sy_com_invoice == '1') {
+                var order_id = $(this).attr("order_id");
+                var price = $(this).attr("price");
+                if(order_id) {
+                    $("#order_id").val(order_id);
+                    $("#order_price").val(price);
+                    $(".invoice_mumber").html('<span class="invoice_span">订单编号：</span>' + order_id);
+                    $(".invoice_money").html('<span class="invoice_span">实付金额：</span>￥' + $(this).attr("price"));
+                    $.layer({
+                        type: 1,
+                        title: '申请发票',
+                        closeBtn: [0, true],
+                        border: [10, 0.3, '#000', true],
+                        area: ['640px', 'auto'],
+                        page: {
+                            dom: "#invoice_div"
+                        }
+                    });
+
+                }
+            } else {
+                var i = layer.confirm('网站未开发票申请，请联系管理员开启！', {
+                        btn: ['确定']
+                    },
+                    function() {
+                        layer.close(i);
+                    }
+                );
+            }
+        });
+    });
+</script>
+
+{yun:}include file="$comstyle/footer.htm"{/yun}

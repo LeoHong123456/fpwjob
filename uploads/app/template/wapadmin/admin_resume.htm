@@ -1,0 +1,32 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top"> <span>个人 &gt; 简历管理</span> </div>
+<div class="admin_resume_tjbox_s">
+    <form method="get" action="index.php?c=admin_resume">
+		<input name='c' value="admin_resume" type="hidden">
+		<input type="text" value="{yun:}$smarty.get.keyword{/yun}" id="keyword" name="keyword" placeholder="搜索简历名称" class="admin_resume_tjbox_text">
+		<input type="submit" value="搜索" class="admin_resume_tjbox_bth">
+    </form>
+</div>
+{yun:}foreach item=v key=key from=$rows{/yun}
+	<div class="et_pd_ct" onclick="showDetail('index.php?c=admin_resume&a=saveresume&uid={yun:}$v.uid{/yun}&e={yun:}$v.id{/yun}')">
+		<div class="et_pd_ct_nm"> 
+			<span>{yun:}$v.name{/yun}</span> 
+			{yun:}if $v.r_status==0{/yun}
+			<span class="et_pd_ct_te_rt_ng">未审核</span>
+			{yun:}else if $v.r_status==3{/yun}
+			<span class="et_pd_ct_te_rt_no">未通过</span>
+			{yun:}else{/yun}
+			<span class="resume_city">{yun:}$v.cityid_n{/yun}</span> 
+			{yun:}/if{/yun}
+		</div>
+		<div class="et_pd_ct_te"> 
+			<span class="resume_ft">{yun:}$v.job_post_n{/yun}（<a href="javascript:void(0)" class="job_name_all" style="color:red;">共{yun:}$v.jobnum{/yun}个</a>）</span> 
+			<span class="resume_time">{yun:}$v.lastupdate|date_format:"%Y-%m-%d"{/yun}</span> 
+		</div>
+	</div>
+{yun:}foreachelse{/yun}
+	<div class="wap_member_no">暂时还没有简历信息<br></div>
+{yun:}/foreach{/yun}
+<div class="pages"> {yun:}$pagenav{/yun}</div>
+</body>
+</html>

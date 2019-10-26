@@ -1,0 +1,76 @@
+{yun:}include file="$trainstyle/header.htm"{/yun}
+<script src="{yun:}$config.sy_weburl{/yun}/js/public.js?v={yun:}$config.cachecode{/yun}"></script>
+<div class="clear"></div>
+<div class="training_content training_w980">
+
+  {yun:}include file="$trainstyle/left.htm"{/yun}
+  <div class="right_column frt mt20">
+      <div class="right_nav_box">
+    <ul class="right_nav_box_list">
+    <li {yun:}if $smarty.get.status==""{/yun}class="right_nav_box_cur"{yun:}/if{/yun}><a href="index.php?c=team">已审核讲师</a></li>
+    <li {yun:}if $smarty.get.status=="1"{/yun}class="right_nav_box_cur"{yun:}/if{/yun}><a href="index.php?c=team&status=1">未审核讲师</a></li>
+    <li {yun:}if $smarty.get.status=="2"{/yun}class="right_nav_box_cur"{yun:}/if{/yun}><a href="index.php?c=team&status=2">未通过讲师</a></li>
+      </ul>
+      <a href="index.php?c=team_add" class="right_nav_box_fb" >我要发布讲师</a>
+      </div>
+    <div class="right_column_border">
+ 
+
+	  {yun:}if $total{/yun}
+      {yun:}foreach item=v from=$rows{/yun}
+      <dl class="Courses_Team flt">
+        <dt><a href="{yun:}url m=train c=teamshow id=$v.uid nid=$v.id{/yun}"><img width="80" height="100" src="../{yun:}$v.pic{/yun}"></a></dt>
+        <dd class=" Courses_Teamw630 ">
+          <div class="Courses_Team_mem_list"><em class="flt"><a class="Courses_Team_mem_list_a" href="{yun:}url m=train c=teamshow id=$v.uid nid='`$v.id`'{/yun}">{yun:}$v.name{/yun}</a> 
+          {yun:}if $v.status=="0"{/yun}
+          <span class="right_column_news_wsh">未审核</span>
+          {yun:}elseif $v.status=="1"{/yun}
+          <span class="right_column_news_ysh">已审核</span>
+          {yun:}elseif $v.status=="2"{/yun}
+          <span class="right_column_news_yzt">未通过</span>| <a href="javascript:;" onclick="show_msg('{yun:}$v.id{/yun}','index.php?c=team&act=statusbody')">查看原因</a> 
+          {yun:}/if{/yun}
+          </em> 
+          <span class="frt"><a href="{yun:}url m=train c=teamshow id=$v.uid nid=$v.id{/yun}" target="_blank">预览</a> <em class="px_line">|</em> 
+          <a href="index.php?c=team_add&id={yun:}$v.id{/yun}">修改</a> <em class="px_line">|</em> 
+          <a href="javascript:void(0)" onclick="layer_del('确定删除该讲师？','index.php?c=team&del={yun:}$v.id{/yun}');">删除</a></span></div>
+         
+          <div class="training_Courses_p Courses_Team_mem_list_p"><span class="training_Courses_span">擅长领域：</span> {yun:}$subject_name[$v.sid]{/yun} <span class="training_Courses_span" style="padding-left:100px;">所在地区：</span>{yun:}$city_name[$v.provinceid]{/yun} - {yun:}$city_name[$v.cityid]{/yun}{yun:}if $city_name[$v.threecityid]{/yun}-{yun:}$city_name[$v.threecityid]{/yun}{yun:}/if{/yun} </div>
+          <div class="training_Courses_p Courses_Team_mem_list_p"> <span class="training_Courses_span">擅长行业：</span>{yun:}$industry_name[$v.hy]{/yun}</div>
+          <div class=" Courses_Team_mem_list_p"><span class="training_Courses_span">添加时间：</span>{yun:}$v.ctime|date_format:"%Y-%m-%d %H:%M:%S"{/yun}</div>
+        </dd>
+      </dl>
+      {yun:}/foreach{/yun}
+	        <div class="clear"></div>
+      {yun:}else{/yun}
+      <div class="msg_no">暂无相关信息</div>
+      {yun:}/if{/yun}
+    </div>
+  </div>
+</div>
+<script>
+function show_msg(id,url){
+	$.post(url,{id:id},function(data){
+		$("#msgs").html(data);
+		$.layer({
+			type : 1,
+			title :'查看原因',
+			closeBtn : [0 , true],
+			border : [10 , 0.3 , '#000', true],
+			area : ['400px','200px'],
+			page : {dom :"#showmsg"}
+		});
+	})
+}
+</script>
+<div id="showmsg"  style="display:none; width: 400px;">
+	<div>
+    <div id="infobox">
+		 <div class="admin_Operating_sh" style="padding:10px; ">
+		<div class="admin_Operating_sh_h1" style="padding:5px;"><div style="height:80px;overflow:auto;" id="msgs"></div></div>
+		<div class="admin_Operating_sub" style="margin-top:10px;"> 
+          &nbsp;&nbsp;<input type="button" id="zxxCancelBtn" onClick="layer.closeAll();" class="cancel_btn" value='确认'></div>
+		</div>
+    </div>
+  </div>
+</div>
+{yun:}include file="$trainstyle/footer.htm"{/yun}

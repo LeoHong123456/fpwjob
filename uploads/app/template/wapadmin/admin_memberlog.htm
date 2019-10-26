@@ -1,0 +1,12 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="admin_c_box">
+<ul class="admin_log_box">
+{yun:}foreach from=$rows item=list{/yun}
+<li><div class="admin_log_uername">会员：{yun:}$list.username{/yun}</div><div class="">{yun:}$list.content{/yun}</div><span class="admin_log_box_s">{yun:}$list.ctime|date_format:"%Y-%m-%d"{/yun}</span> <a class="" href="javascript:;" onclick="layer_del('确定要删除？', 'index.php?c=member_log&a=del&id={yun:}$list.id{/yun}');" style=" position:absolute;right:10px;color:#09F;bottom:10px;">删除</a></li>
+{yun:}/foreach{/yun}  
+</ul>
+<div class="pages">{yun:}$pagenav{/yun}</div>
+</div>
+
+</body>
+</html>

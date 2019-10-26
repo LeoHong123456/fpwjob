@@ -1,0 +1,314 @@
+<link rel="stylesheet" href="{yun:}$wap_style{/yun}/js/mui/css/mui.min.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<link rel="stylesheet" href="{yun:}$wap_style{/yun}/js/mui/css/mui.picker.min.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<link rel="stylesheet" href="{yun:}$wap_style{/yun}/js/mui/css/mui.poppicker.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<link rel="stylesheet" href="{yun:}$config.sy_weburl{/yun}/app/template/wap/css/style.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<link rel="stylesheet" href="{yun:}$config.sy_weburl{/yun}/app/template/wap/css/itwap.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<div id="app" class="mui-views">
+    <div class="mui-view">
+        <div class="mui-pages"></div>
+    </div>
+</div>
+{yun:}include file="$wapstyle/header_lt.htm"{/yun}
+
+
+<div id="main" class="mui-page">
+    
+    <div class="mui-page-content">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+
+                <div class="lt_recuser_box">
+                    <div class="">赏金：<span class="lt_recuser_box_money">{yun:}$jobinfo.rebates{/yun}{yun:}if $config.lt_rebates_name{/yun} {yun:}$config.lt_rebates_name{/yun} {yun:}else{/yun}元{yun:}/if{/yun}</span></div>
+                    <div class="">推荐职位：
+                        <a href="{yun:}url m=wap c=ltjob a=recshow id=$jobinfo.id{/yun}">{yun:}$jobinfo.job_name|mb_substr:0:18:'utf-8'{/yun}</a>
+                    </div>
+                    <div class="">年薪：{yun:}if $jobinfo.maxsalary>0{/yun}￥{yun:}$jobinfo.minsalary|floatval{/yun}-{yun:}$jobinfo.maxsalary|floatval{/yun}万{yun:}elseif $jobinfo.minsalary>0{/yun}￥{yun:}$jobinfo.minsalary|floatval{/yun}万以上{yun:}else{/yun}面议{yun:}/if{/yun}</div>
+                </div>
+                <div class="ltjobrec_show_job_box">
+                    <div class="ltjobrec_show_jobinfo">
+                        <div class="lt_hunter_tit">职位要求</div>
+                        <div class="lt_recuser_box_js_p">
+                            <div class="">招聘企业： {yun:}$jobinfo.com_name{/yun}</div>
+                            <div class="">学历要求： {yun:}$jobinfo.edu_info{/yun} </div>
+                            <div class="">工作地点： {yun:}$jobinfo.provinceid_info{/yun} {yun:}$jobinfo.cityid_info{/yun} {yun:}$jobinfo.three_cityid_info{/yun}</div>
+
+                            <div class="">{yun:}$jobinfo.job_desc{/yun}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ltjobrec_show_job_box">
+                    <div class="ltjobrec_show_jobinfo">
+                        <div class="lt_hunter_tit" style="border:none;">推荐人才</div>
+
+                        <input type="hidden" id="uid" value="{yun:}$uid{/yun}" />
+                        <input type="hidden" name="job_uid" id="job_uid" value="{yun:}$jobinfo.uid{/yun}" />
+                        <input type="hidden" name="job_id" id="job_id" value="{yun:}$jobinfo.id{/yun}" />
+
+                        <ul class="yun_newwap_box">
+                            <li class="yun_newwap_text"><span class="yun_newwap_text_name">姓名</span>
+                                <div class="yun_newwap_text_box">
+                                    <input type="text" id="name" name="name" placeholder="请输入姓名" style="border:none; margin:0; padding:0;;height:30px; line-height:30px;">
+                                </div>
+                            </li>
+                            <li class="yun_newwap_text"><span class="yun_newwap_text_name">联系手机</span>
+                                <span class="yun_newwap_text_box">
+						<input type="number"  id="phone"   name="phone"  placeholder="请输入联系手机" style="border:none; margin:0; padding:0;;height:30px; line-height:30px;"> 
+
+					</span></li>
+                            <li class="yun_newwap_text"><span class="yun_newwap_text_name">联系邮箱</span>
+                                <span class="yun_newwap_text_box">
+						<input type="text" id="email" name="email" placeholder="请输入联系邮箱" style="border:none; margin:0; padding:0;;height:30px; line-height:30px;"> 
+
+					</span></li>
+                        </ul>
+
+                        <ul class="yun_newwap_box">
+                            <li class=""><span class="yun_newwap_text_name">性别</span>
+                                <span class="yun_newwap_text_box">
+								<button id="sexPicker" class="mui-btn mui-btn-block" type="button">请选择性别</button>
+								<input type="hidden" id="sex" name="sex" value="">
+								</span>
+                            </li>
+                            <li class=""><span class="yun_newwap_text_name">出生年月</span>
+                                <span class="yun_newwap_text_box">
+								<button id='birthdayUserPicker' data-options='{"type":"date","value":"1988-08-08","beginYear":1955,"endYear":2010}'  class="mui-btn mui-btn-block" type="button" placeholder="请选择出生年月">请选择出生年月</button>
+								<input type="hidden" id="birthday" name="birthday" value="">
+								</span>
+                            </li>
+                            <li class=""><span class="yun_newwap_text_name">最高学历</span>
+                                <span class="yun_newwap_text_box">
+								<button id="eduPicker" class="mui-btn mui-btn-block" type="button">请选择最高学历</button>
+								<input type="hidden" id="edu" name="edu" value="">
+								</span>
+                            </li>
+                            <li class=""><span class="yun_newwap_text_name">工作经验</span>
+                                <span class="yun_newwap_text_box">
+								<button id="expPicker" class="mui-btn mui-btn-block" type="button" data-exp="">请选择工作经验</button>
+								<input type="hidden" id="exp" name="exp" value="">
+								</span>
+                            </li>
+                            <li class=""><span class="yun_newwap_text_name">从事行业</span>
+                                <span class="yun_newwap_text_box">
+								<button id="hyPicker" class="mui-btn mui-btn-block" type="button">请选择从事行业</button>
+								<input type="hidden" id="hy" name="hy" value="">
+								</span>
+                            </li>
+                            <li class=""><span class="yun_newwap_text_name">期望职位</span>
+                                <span class="yun_newwap_text_box">
+								<button id="jobPicker" class="mui-btn mui-btn-block" type="button">请选择期望职位</button>
+								<input type="hidden" id="job1" name="job1" value="">
+								<input type="hidden" id="job1_son" name="job1_son" value="">
+								<input type="hidden" id="job_post" name="job_post" value="">
+								</span>
+                            </li>
+                            <li class=""><span class="yun_newwap_text_name">期望城市</span>
+                                <span class="yun_newwap_text_box">
+								<button id="cityPicker" class="mui-btn mui-btn-block" type="button" >请选择期望城市</button>
+								<input type="hidden" id="provinceid" name="provinceid" value="">
+								<input type="hidden" id="cityid" name="cityid" value="">
+								<input type="hidden" id="three_cityid" name="three_cityid" value="">
+								</span>
+                            </li>
+                            <li>
+                                <a href="#salaryhtml"><span class="yun_newwap_text_name">期望薪资</span>
+                                    <div class="" id="salaryshow" style="text-align: right;height:30px; line-height:30px;"> 请填写期望薪资</div>
+                                </a>
+                            </li>
+
+                            <li class=""><span class="yun_newwap_text_name">工作性质</span>
+                                <span class="yun_newwap_text_box">
+								<button id="typePicker" class="mui-btn mui-btn-block" type="button">请选择工作性质</button>
+								<input type="hidden" id="type" name="type" value="">
+								</span>
+                            </li>
+                            <li class=""><span class="yun_newwap_text_name">到岗时间</span>
+                                <span class="yun_newwap_text_box">
+								<button id="reportPicker" class="mui-btn mui-btn-block" type="button">请选择到岗时间</button>
+								<input type="hidden" id="report" name="report" value="">
+								</span>
+                            </li>
+                        </ul>
+
+                        <ul class="yun_newwap_box mt15">
+                            <li class="yun_newwap_text advice_list"><span class="yun_newwap_text_name">推荐理由</span>
+                                <span class="yun_newwap_text_box">
+						 <textarea class="lt_recuser_box_tj_list_textarea"  type="text" id="content" name="content" placeholder="请填写推荐理由"></textarea>
+					</span>
+                            </li>
+                        </ul>
+
+                        <div class="yun_newwap_bth">
+                            <button id="recusersubmit" type="button" class="mui-btn mui-btn-block mui-btn-primary">立即推荐</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lt_recuser_box_tj_p">
+                    为避免纠纷，请确认您所输入的好友信息是准确的：<br> 1.姓名请不要用先生女士等称谓代替；
+                    <br> 2.手机号码请尽量准确，以免联系不上；
+                    <br> 3.企业面试候选人之前不会透露个人信息给客户，防止骚扰。
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="salaryhtml" class="mui-page">
+    <div class="mui-page-content">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+
+                <div class="ltjobrec_show_job_box">
+                    <div class="ltjobrec_show_jobinfo">
+                        <div class="lt_hunter_tit" style="border:none;">填写薪资待遇</div>
+                        <ul class="yun_newwap_box">
+                            <li class="yun_newwap_text"><span class="yun_newwap_text_name">最低薪资</span>
+                                <div class="yun_newwap_text_box" style=" padding-right:50px; position:relative">
+                                    <input type="text" id="minsalary" name="minsalary" size="5" {yun:}if $row.minsalary{/yun} value="{yun:}$row.minsalary{/yun}" {yun:}/if{/yun} onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="请输入最低薪资" class="yun_wap_addresume_xz" style="border:none; margin:0; padding:0;;height:30px; line-height:30px;"> <span style="position:absolute;right:0px;top:0px; line-height:30px;">万元/年</span>
+                                </div>
+                            </li>
+                            <li class="yun_newwap_text"><span class="yun_newwap_text_name">最高薪资</span>
+                                <div class="yun_newwap_text_box" style=" padding-right:50px; position:relative">
+                                    <input type="text" id="maxsalary" name="maxsalary" size="5" {yun:}if $row.maxsalary{/yun} value="{yun:}$row.maxsalary{/yun}" {yun:}/if{/yun} onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="请输入最高薪资" style="border:none; margin:0; padding:0;;height:30px; line-height:30px;"> <span style="position:absolute;right:0px;top:0px; line-height:30px;">万元/年</span>
+
+                                </div>
+                            </li>
+
+                        </ul>
+						
+						</div> <div class="yun_newwap_bth">
+                            <button type="button" class="mui-btn mui-btn-block mui-btn-primary  mui-action-back">确定</button>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$wap_style{/yun}/js/mui/mui.min.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$wap_style{/yun}/js/mui/mui.picker.min.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$wap_style{/yun}/js/mui/mui.poppicker.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$wap_style{/yun}/js/mui/mui.view.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$wap_style{/yun}/js/lt.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/data/plus/city.cache.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/data/plus/job.cache.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$wap_style{/yun}/js/category.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$wap_style{/yun}/js/public.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script language="javascript">
+    var sexData = [];
+    '{yun:}foreach from=$arr_data.sex key=j item=v{/yun}'
+    sexData.push({
+        value: '{yun:}$j{/yun}',
+        text: '{yun:}$v{/yun}'
+    })
+    '{yun:}/foreach{/yun}'
+    var eduData = [];
+    '{yun:}foreach from=$userdata.user_edu key=j item=v{/yun}'
+    eduData.push({
+        value: '{yun:}$v{/yun}',
+        text: '{yun:}$userclass_name[$v]{/yun}'
+    })
+    '{yun:}/foreach{/yun}'
+    var expData = [];
+    '{yun:}foreach from=$userdata.user_word key=j item=v{/yun}'
+    expData.push({
+        value: '{yun:}$v{/yun}',
+        text: '{yun:}$userclass_name[$v]{/yun}'
+    })
+    '{yun:}/foreach{/yun}'
+    var educationData = [];
+    '{yun:}foreach from=$userdata.user_edu item=v{/yun}'
+    educationData.push({
+        value: '{yun:}$v{/yun}',
+        text: '{yun:}$userclass_name[$v]{/yun}'
+    })
+    '{yun:}/foreach{/yun}'
+    var hyData = [];
+    '{yun:}foreach from=$industry_index item=v{/yun}'
+    hyData.push({
+        value: '{yun:}$v{/yun}',
+        text: '{yun:}$industry_name[$v]{/yun}'
+    })
+    '{yun:}/foreach{/yun}'
+    var typeData = [];
+    '{yun:}foreach from=$userdata.user_type item=v{/yun}'
+    typeData.push({
+        value: '{yun:}$v{/yun}',
+        text: '{yun:}$userclass_name[$v]{/yun}'
+    })
+    '{yun:}/foreach{/yun}'
+    var reportData = [];
+    '{yun:}foreach from=$userdata.user_report item=v{/yun}'
+    reportData.push({
+        value: '{yun:}$v{/yun}',
+        text: '{yun:}$userclass_name[$v]{/yun}'
+    })
+    '{yun:}/foreach{/yun}'
+
+    mui.init();
+    var viewApi = mui('#app').view({
+        defaultPage: '#main'
+    });
+    
+    var view = viewApi.view;
+    (function($) {
+        document.getElementById('hearderback').classList.add('mui-action-back');
+        
+	    mui('.mui-scroll-wrapper').scroll({
+	        scrollY: true, 
+	        scrollX: false, 
+	        startX: 0, 
+	        startY: 0, 
+	        indicators: true, 
+	        deceleration: 0.0006, 
+	        
+	    });
+        
+        var oldBack = $.back;
+        $.back = function() {
+            if(viewApi.canBack()) { 
+                viewApi.back();
+            } else { 
+                oldBack();
+            }
+        };
+    })(mui);
+    
+    $(document).ready(function() {
+		if(document.getElementById('main')){
+			document.getElementById('main').addEventListener('touchmove', function (e) { e.preventDefault();}, {passive: false});
+		}
+	})
+    
+    view.addEventListener('pageBeforeBack', function(e) {
+        var salaryshow = '';
+        var minsalary = document.getElementById('minsalary').value;
+        var maxsalary = document.getElementById('maxsalary').value;
+        
+        if(minsalary) {
+            salaryshow = minsalary;
+            
+            if(maxsalary) {
+                salaryshow += '-' + maxsalary+'万元/年';
+            } else {
+                salaryshow += '万元/年以上';
+            }
+            
+            if(parseInt(maxsalary) < parseInt(minsalary)) {
+                document.getElementById('minsalary').value = '';
+                document.getElementById('maxsalary').value = '';
+                
+                return mui.toast('最低薪资不能比最高薪资高，请重新填写');
+            }else{
+            	document.getElementById('salaryshow').innerText = salaryshow;
+            }
+        }
+
+    });
+    (function() {
+        var recusersubmit = document.getElementById('recusersubmit');
+        recusersubmit.addEventListener('tap', ltrecuser, false)
+    })();
+</script>
+<script src="{yun:}$wap_style{/yun}/js/publicselect.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+{yun:}include file="$wapstyle/footer.htm"{/yun}

@@ -1,0 +1,62 @@
+{yun:}include file="$trainstyle/header.htm"{/yun}
+<script src="{yun:}$config.sy_weburl{/yun}/js/public.js?v={yun:}$config.cachecode{/yun}"></script>
+<div class="clear"></div>
+<div class="training_content training_w980">
+
+{yun:}include file="$trainstyle/left.htm"{/yun}
+<iframe id="supportiframe"  name="supportiframe" onload="returnmessage('supportiframe');" style="display:none"></iframe>
+<div class="right_column frt mt20">
+  <div class="right_nav_box">
+    <ul class="right_nav_box_list">
+      <li {yun:}if $smarty.get.status==""{/yun}class="right_nav_box_cur"{yun:}/if{/yun}><a href="index.php?c=message">全部留言</a></li>
+      <li {yun:}if $smarty.get.status=="1"{/yun}class="right_nav_box_cur"{yun:}/if{/yun}><a href="index.php?c=message&status=1">未回复留言</a></li>
+      <li {yun:}if $smarty.get.status=="2"{/yun}class="right_nav_box_cur"{yun:}/if{/yun}><a href="index.php?c=message&status=2">已回复留言</a></li>
+    </ul>
+  </div>
+  <div class="right_column_border">
+   
+    <div class="clear"></div>
+
+	{yun:}if $total{/yun}
+    {yun:}foreach item=v from=$rows{/yun}
+    
+    <div class="message_list_box">
+    <div class="message_list_box_userleft">
+    <div class="message_list_box_username">用户：{yun:}$v.nickname{/yun} </div>
+    <div class="message_list_box_phone">联系电话：{yun:}$v.phone{/yun} </div>
+    <div class="message_list_box_time">留言时间：{yun:}$v.ctime|date_format:"%Y-%m-%d %H:%M:%S"{/yun}</div>
+
+    </div>
+    <div class="sigm_up_box_r_sc ">
+  {yun:}if $v.status==1{/yun} <span style="color:#333">未回复</span>{yun:}else{/yun}已回复{yun:}/if{/yun} <em class="px_line">|</em> 
+      <a href="javascript:void(0)" class="new_Leave_Unanswered" onclick="layer_del('确定删除该咨询留言？','index.php?c=message&act=del&del={yun:}$v.id{/yun}');">删除</a>{yun:}if $v.status=="1"{/yun}
+      <a href="javascript:void(0)" onclick="$('#reply{yun:}$v.id{/yun}').toggle();"> | 回复</a>{yun:}/if{/yun}
+</div>
+        <div class="message_list_box_cont"><div class="message_list_box_cont_pd">留言内容：{yun:}$v.content{/yun}</div> </div>
+        
+        {yun:}if $v.status=="1"{/yun}
+      <div class="Courses_right_Advisory_box Courses_right_Advisory_box_690 ftl" id="reply{yun:}$v.id{/yun}" style="display: none;"> 
+      <i class="Courses_right_Advisory_box_icon"></i>
+ 	 <form name="myform" method="post" target="supportiframe" action="index.php?c=message&act=reply&reply=1">
+        <div class="goog-textarea_box">
+          <textarea name="content" class="goog-textarea_ly" ></textarea>
+        </div>
+        <div class="goog-textarea_tj">
+        <input type="hidden" name="id" value="{yun:}$v.id{/yun}" />
+          <input type="submit" value="提交" class="goog-textarea_tj_bth">
+        </div>
+        </form>
+      </div>
+       {yun:}elseif $v.status=="2"{/yun}
+      <div class="Courses_right_Advisory_hf ftl mt10">我的回复：{yun:}$v.reply{/yun}</div>
+       {yun:}/if{/yun}
+    </div>
+    {yun:}/foreach{/yun}  
+	 <div class="clear"></div>
+      {yun:}else{/yun}
+      <div class="msg_no">暂无相关信息</div>
+      {yun:}/if{/yun}
+  </div>
+</div>
+</div>
+{yun:}include file="$trainstyle/footer.htm"{/yun}

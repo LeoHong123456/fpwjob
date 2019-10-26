@@ -1,0 +1,98 @@
+{yun:}include file="$wapstyle/member/cheader.htm"{/yun} 
+<!--消息列表-->
+
+
+<div class="synews_box mt10">
+{yun:}if $userid_jobnum{/yun}
+<a href="index.php?c=hr">
+<i class="synews_box_icon"></i>
+<div class="synews_box_h1">应聘简历</div>
+<div class="synews_box_p">用户 {yun:}$userid.name{/yun} 申请了 {yun:}$userid.job_name{/yun} 职位！</div>
+<span class="synews_box_time">{yun:}$userid.datetime|date_format:"%Y-%m-%d %H:%M"{/yun}</span>
+<i class="synews_box_n">{yun:}$userid_jobnum{/yun}</i>
+</a>
+{yun:}else{/yun}
+<a href="index.php?c=hr">
+<i class="synews_box_icon"></i>
+<div class="synews_box_h1">应聘简历</div>
+<div class="synews_box_p">暂无新的用户申请职位！</div>
+</a>
+{yun:}/if {/yun}
+</div>
+
+<div class="synews_box mt10">
+{yun:}if $sxrows{/yun}
+<a href="index.php?c=sxnews">
+<i class="synews_box_icon synews_box_icon_sx"></i>
+<div class="synews_box_h1">私信</div>
+<div class="synews_box_p">{yun:}$sxrows.content{/yun}</div>
+<span class="synews_box_time">{yun:}$sxrows.ctime|date_format:"%Y-%m-%d %H:%M"{/yun}</span>
+{yun:}if $sxnum{/yun}<i class="synews_box_n">{yun:}$sxnum{/yun}</i>{yun:}/if{/yun}
+</a>
+{yun:}else{/yun}
+<a href="index.php?c=sxnews">
+<i class="synews_box_icon synews_box_icon_sx"></i>
+<div class="synews_box_h1">私信</div>
+<div class="synews_box_p">暂无消息 !</div>
+</a>
+{yun:}/if{/yun}
+</div>
+
+<div class="synews_box mt10">
+{yun:}if $jobrows.content!=""{/yun}
+<a href="index.php?c=msg">
+<i class="synews_box_icon synews_box_icon_pl"></i>
+<div class="synews_box_h1">职位咨询</div>
+<div class="synews_box_p">用户 {yun:}$jobrows.username{/yun} 咨询了 {yun:}$jobrows.job_name{/yun} 职位！</div>
+<span class="synews_box_time">{yun:}$jobrows.datetime|date_format:'%Y-%m-%d %H:%M'{/yun}</span>
+{yun:}if $jobnum{/yun}<i class="synews_box_n">{yun:}$jobnum{/yun}</i>{yun:}/if{/yun}
+</a>
+{yun:}else{/yun}
+<a href="index.php?c=msg">
+<i class="synews_box_icon synews_box_icon_pl"></i>
+<div class="synews_box_h1">职位咨询</div>
+<div class="synews_box_p">暂无新的用户咨询职位 !</div>
+
+</a>
+{yun:}/if{/yun}
+</div>
+<div class="synews_box mt10">
+{yun:}if $jobpacknum{/yun}
+<a href="index.php?c=rewardlog&jobid={yun:}$jobpack.jobid{/yun}">
+<i class="synews_box_icon synews_box_icon_sj"></i>
+<div class="synews_box_h1">赏金投递</div>
+<div class="synews_box_p">用户 {yun:}$jobpack.username{/yun} 申请了 {yun:}$jobpack.job_name{/yun} 职位！</div>
+<span class="synews_box_time">{yun:}$jobpack.datetime|date_format:'%Y-%m-%d %H:%M'{/yun}</span>
+{yun:}if $jobpacknum{/yun}<i class="synews_box_n">{yun:}$jobpacknum{/yun}</i>{yun:}/if{/yun}
+</a>
+{yun:}else{/yun}
+<a href="index.php?c=jobpack&t=r">
+<i class="synews_box_icon synews_box_icon_sj"></i>
+<div class="synews_box_h1">赏金投递</div>
+<div class="synews_box_p">暂无新的赏金投递!</div>
+</a>
+{yun:}/if{/yun}
+</div>
+<div class="synews_box mt10">
+{yun:}if $company_msg&&$com_msgnum{/yun}
+<a href="index.php?c=pl">
+<i class="synews_box_icon synews_box_icon_zx"></i>
+<div class="synews_box_h1">面试评价</div>
+<div class="synews_box_p">用户{yun:}$company_msg.name{/yun}对面试做了评价 !</div>
+<span class="synews_box_time">{yun:}$company_msg.ctime|date_format:'%Y-%m-%d %H:%M'{/yun}</span>
+{yun:}if $com_msgnum{/yun}<i class="synews_box_n">{yun:}$com_msgnum{/yun}</i>{yun:}/if{/yun}
+</a>
+{yun:}else{/yun}
+<a href="index.php?c=pl">
+<i class="synews_box_icon synews_box_icon_zx"></i>
+<div class="synews_box_h1">面试评价</div>
+<div class="synews_box_p">暂无新的面试评价!</div>
+
+</a>
+{yun:}/if{/yun}
+
+</div>
+
+
+
+{yun:}include file="$wapstyle/footer.htm"{/yun} 

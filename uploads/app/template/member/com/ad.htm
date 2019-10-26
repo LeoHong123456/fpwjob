@@ -1,0 +1,54 @@
+{yun:}include file="$comstyle/header.htm"{/yun}
+<div class="w1000">
+	<div class="admin_mainbody">
+		{yun:}include file="$comstyle/left.htm"{/yun} 
+		
+		<div class=right_box>
+			<div id="grow_freedom" class="grow_mod_wrap my_freedom">
+				<div class=admincont_box>
+					<div class="com_tit"><span class="com_tit_span"> 招聘广告服务</span></div>
+					
+					<div class="job_list_tit">
+						<ul class="">
+							<li {yun:}if $smarty.get.c=="ad"{/yun}  class="job_list_tit_cur"{yun:}/if{/yun} >
+								<a href="index.php?c=ad">购买广告位</a>
+							</li> 
+							<li {yun:}if $smarty.get.c=="ad_order"{/yun}class="job_list_tit_cur"{yun:}/if{/yun}>
+								<a href="index.php?c=ad_order">广告订单</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="com_body">
+						
+						<div class="clear"></div>
+
+						{yun:}foreach item=v from=$rows{/yun}
+						<div id="m2" class="ad_buy_list">
+							<div class="ad_buy_list_cont">
+								<div class="ad_buy_list_name">{yun:}$v.class_name{/yun}</div>
+								<div class="ad_buy_list_p">{yun:}$v.remark{/yun}</div>
+								<div class="ad_buy_list_pic">
+									{yun:}if $v.hrefn{/yun}
+										<a href="{yun:}$v.hrefn{/yun}" target="_blank" class="ad_buy_list_pic_bth">查看广告位置</a>
+									{yun:}/if{/yun}
+								</div>
+							</div>
+
+							<div class="ad_buy_list_bot">
+								<span class="ad_buy_list_cont_s">
+									<span class="ad_but_btn_n">{yun:}$v.integral_buy{/yun}</span> 
+									{yun:}if $v.btype==2{/yun}元{yun:}else{/yun}{yun:}$config.integral_pricename{/yun}{yun:}/if{/yun}/月
+								</span>
+								<a href="index.php?c=ad&act=adinfo&id={yun:}$v.id{/yun}" class="ad_buy_list_buy">购买</a>
+							</div>
+						</div>
+						{yun:}/foreach{/yun}
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{yun:}include file="$comstyle/footer.htm"{/yun}

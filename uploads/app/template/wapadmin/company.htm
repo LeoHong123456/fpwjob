@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>{yun:}$config.sy_webname{/yun} - 手机后台管理中心</title>
+<link href="css/wap.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+</head>
+
+<body style="background:#fff;">
+<!--头部-->
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+
+
+<div class="list_ct">
+     <a href="?c=admin_comjob">
+     <div class="list_ct_ft">职位管理</div>
+     </a>
+     {yun:}if $list.job_num_dsh!="0"{/yun}
+     <a href="?c=admin_comjob&state=4" class="admin_comjob_num">{yun:}$list.job_num_dsh{/yun}</a>
+     {yun:}/if{/yun}
+</div>
+<div class="list_ct">
+     <a href="?c=admin_comlist">
+     <div class="list_ct_ft">公司管理</div>
+      </a>
+      {yun:}if $list.com_num_dsh!="0"{/yun}
+      <a href="?c=admin_comlist&status=3" class="admin_comjob_num">{yun:}$list.com_num_dsh{/yun}</a>
+      {yun:}/if{/yun}
+</div>
+<div class="list_ct">
+     <a href="?c=comcert">
+     <div class="list_ct_ft">企业认证</div>
+     </a>
+     {yun:}if $list.comcert_num_dsh!="0"{/yun}
+     <a href="?c=comcert&status=3" class="admin_comjob_num">{yun:}$list.comcert_num_dsh{/yun}</a>
+     {yun:}/if{/yun}
+</div>
+<div class="list_ct">
+     <a href="?c=comnews">
+     <div class="list_ct_ft">企业新闻</div>
+     </a>
+     {yun:}if $list.comnews_num_dsh!="0"{/yun}
+     <a href="?c=comnews&status=3" class="admin_comjob_num">{yun:}$list.comnews_num_dsh{/yun}</a>
+     {yun:}/if{/yun}
+</div>
+<div class="list_ct">
+     <a href="?c=comproduct">
+     <div class="list_ct_ft">企业产品</div>
+     </a>
+     {yun:}if $list.comproduct_num_dsh!="0"{/yun}
+     <a href="?c=comproduct&status=3" class="admin_comjob_num">{yun:}$list.comproduct_num_dsh{/yun}</a>
+     {yun:}/if{/yun}
+</div>
+<div class="list_ct">
+     <a href="?c=admin_once">
+     <div class="list_ct_ft">店铺招聘</div>
+   </a>
+   {yun:}if $list.oncejob_num_dsh!="0"{/yun}
+   <a href="?c=admin_once&status=2" class="admin_comjob_num">{yun:}$list.oncejob_num_dsh{/yun}</a>
+   {yun:}/if{/yun}
+</div>
+</body>
+</html>

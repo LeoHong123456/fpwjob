@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link href="images/reset.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	<link href="./images/system.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	<link href="{yun:}$config.sy_weburl{/yun}/js/layui/css/layui.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	<link href="images/statis.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	<title>后台管理-图表分析</title>
+	<style>
+		.admin_new_search_time{width: 120px !important;}
+	</style>
+</head>
+
+<body class="body_ifm">
+
+<div class="infoboxp">
+	<div class="tabs_info">
+		<ul>
+			<li><a href="index.php?m=admin_event_log">用户行为</a></li>
+			<li class="curr"><a href="index.php?m=statis_elog">访问统计</a></li>
+ 		</ul>
+	</div>
+
+	<div class="admin_new_tip">
+		<a href="javascript:;" class="admin_new_tip_close"></a>
+		<a href="javascript:;" class="admin_new_tip_open" style="display:none;"></a>
+		<div class="admin_new_tit"><i class="admin_new_tit_icon"></i>操作提示</div>
+		<div class="admin_new_tip_list_cont">
+			<div class="admin_new_tip_list">该页面展示了用户行为记录统计。</div>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+	
+	<div class="admin_new_search_box">	
+ 		<form action="index.php" name="myform" method="get" class="lay-form">
+			<input name="m" value="statis_elog" type="hidden"/>
+			<a href="index.php?m=statis_elog&days=-1" class="tongji_c_bth {yun:}if $smarty.get.days=='-1'{/yun}tongji_c_bth_cur{yun:}/if{/yun}">昨天</a>
+			<a href="index.php?m=statis_elog&days=1"class="tongji_c_bth {yun:}if $smarty.get.days=='1' || $smarty.get.days=='' && $smarty.get.date==''{/yun}tongji_c_bth_cur{yun:}/if{/yun}">今天</a>
+			<a href="index.php?m=statis_elog&days=7"class="tongji_c_bth  {yun:}if $smarty.get.days=='7'{/yun}tongji_c_bth_cur{yun:}/if{/yun}">一周内</a>
+			<span class="admin_new_search_name">时间段：</span>	
+			<input class="admin_Filter_search" type="text" id="date" name="date" value="{yun:}$smarty.get.date{/yun}"/>
+			<input  class="admin_Filter_bth"  type="submit" name="" value="统计"/>
+ 		</form>
+	</div>
+	 
+
+	<div class="clear"></div>
+
+	<div class="adminstatis_box">
+		<div class="com_pay_balance">
+			<div class="com_pay_balance_data_q">
+				<i class="com_pay_balance_data_q_icon"></i>
+				<div class="com_pay_balance_data_n"><strong>{yun:}$data[0]['num']{/yun}</strong></div>
+				<div class="com_pay_balance_data_name">访问流量总数</div>
+			</div>
+		</div>
+
+		<div class="com_pay_balance">
+			<div class="com_pay_balance_data_q border_blue">
+				<i class="com_pay_balance_data_q_icon"></i>
+				<div class="com_pay_balance_data_n color_blue"><strong>{yun:}$data[0]['pcnum']{/yun}</strong></div>
+				<div class="com_pay_balance_data_name">PC端访问流量</div>
+			</div>
+		</div>
+
+		<div class="com_pay_balance">
+			<div class="com_pay_balance_data_q border_orange">
+				<i class="com_pay_balance_data_q_icon"></i>
+				<div class="com_pay_balance_data_n color_orange"><strong>{yun:}$data[0]['wapnum']{/yun}</strong></div>
+				<div class="com_pay_balance_data_name">WAP端访问流量</div>
+			</div>
+		</div>  
+		 
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="payments_com_pay_cont">
+		<div class="admin_atatic_chart " id="chart" style="height:550px; margin-top:20px;"></div>
+
+		<div class="statis_list" style="padding-top:0px;">
+			<table class="" lay-skin="nob" style="display: none;" id="detail" width="100%">
+				<thead>
+					<tr id="detail_thead"class="admin_table_top" style="text-align:left">
+						<th>访问页面</th>
+						<th>访问流量(次)</th>
+ 					</tr> 
+				</thead>
+				<tbody id="detail_tbody">
+					{yun:}foreach from=$values item=r{/yun}
+						<tr>
+							<td>{yun:}$r['name']{/yun}</td>
+							<td>{yun:}$r['value']{/yun}</td>
+ 						</tr>
+					{yun:}/foreach{/yun}
+					<tr>
+						<td>总计</td>
+						<td>{yun:}$total{/yun}</td>
+					</tr>
+				</tbody>
+			</table>  
+		</div>
+	</div>  
+
+</div>
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/layui.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/phpyun_layer.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/echarts_plain.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}"></script>
+<script>
+
+    layui.use(['form', 'laydate'], function(){
+		var laydate = layui.laydate
+			,form = layui.form
+			,$ = layui.$;
+
+		laydate.render({
+			elem: '#date',range:'~'
+		});
+
+		var title = '{yun:}$title{/yun}';
+		var names = [
+			{yun:}foreach from=$names item=v key=kkk{/yun}
+				{yun:}if $kkk>0{/yun}
+				,
+				{yun:}/if{/yun}
+				'{yun:}$v{/yun}'
+			{yun:}/foreach{/yun}
+		];
+
+		var values = [
+			{yun:}foreach from=$values item=v key=kkk{/yun}
+				{yun:}if $kkk>0{/yun}
+				,
+				{yun:}/if{/yun}
+				{
+					value : parseFloat('{yun:}$v["value"]{/yun}'),
+					name : '{yun:}$v["name"]{/yun}'
+				}
+			{yun:}/foreach{/yun}
+		];
+
+		var valuesBar = [
+			{yun:}foreach from=$values item=v key=kkk{/yun}
+				{yun:}if $kkk>0{/yun}
+				,
+				{yun:}/if{/yun}
+				{	
+					name : '{yun:}$v["name"]{/yun}',
+					type:'bar',
+					data : [parseFloat('{yun:}$v["value"]{/yun}')]
+					
+				}
+			{yun:}/foreach{/yun}
+		];
+
+		var valuesB = [
+			{yun:}foreach from=$values item=v key=kkk{/yun}
+				{yun:}if $kkk>0{/yun}
+				,
+				{yun:}/if{/yun}
+				parseFloat('{yun:}$v["value"]{/yun}')
+			{yun:}/foreach{/yun}
+		];
+
+		refreshPieChart(names, values, valuesB, valuesBar);
+    }); 
+
+    Array.prototype.sum = function (){
+		return this.reduce(function (partial, value){
+			return partial + value;
+		})
+    };
+
+    function refreshPieChart(names, values, valuesB, valuesBar){
+
+		
+		var myChart = echarts.init(document.getElementById('chart'));
+		
+		option = {
+			tooltip : {
+				trigger: 'axis',
+				axisPointer : {           
+					type : 'shadow'        
+				}
+			},
+			legend: {
+				data:names
+			},
+			toolbox: {
+				show : true,
+				orient: 'vertical',
+				x: 'right',
+				y: 'center',
+				feature : {
+					mark : {show: true},
+					dataView : {show: true, readOnly: false},
+					magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+					restore : {show: true},
+					saveAsImage : {show: true}
+				}
+			},
+			calculable : true,
+			xAxis : [
+				{
+					type : 'category',
+					data : ['{yun:}$title{/yun}']
+				}
+			],
+			yAxis : [
+				{
+					type : 'value'
+ 				}
+			],
+			series : valuesBar
+		};
+
+         myChart.setOption(option); 
+		 
+    }
+</script>
+</body>
+</html>

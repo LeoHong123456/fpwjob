@@ -1,0 +1,28 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>企业 &gt; {yun:}$headertitle{/yun}</span>
+</div>
+  <div class="admin_resume_tjbox_s">
+    <form method="get" action="index.php?c=admin_comjob">
+      <input name='c' value="admin_comjob" type="hidden">
+      <input type="text" value="{yun:}$smarty.get.keyword{/yun}" id="keyword" name="keyword" placeholder="搜索职位名称" class="admin_resume_tjbox_text">
+      <input type="submit" value="搜索" class="admin_resume_tjbox_bth">
+    </form>
+  </div>
+{yun:}foreach from=$rows item=v{/yun}
+<div class="et_pd_ct" onclick="showDetail('index.php?c=admin_comjob&a=show&id={yun:}$v.id{/yun}')">
+     <div class="et_pd_ct_nm"><span class="admin_job_name">{yun:}$v.name{/yun}</span></div>
+     <div class="et_pd_ct_comm">{yun:}$v.com_name{/yun}</div>
+     <div class="et_pd_ct_te">
+          <span class="et_pd_ct_te_ft">发布时间：{yun:}$v.sdate|date_format:"%Y-%m-%d"{/yun}</span>
+          {yun:}if $v.state==1{/yun}<span class="et_pd_ct_te_rt">已审核</span>{yun:}elseif $v.state==0{/yun}<span class="et_pd_ct_te_rt_ng">审核中</span>{yun:}elseif $v.state==3{/yun}<span class="et_pd_ct_te_rt_no">未通过</span>{yun:}/if{/yun}
+     </div>
+</div>
+{yun:}foreachelse{/yun}
+<div class="wap_member_no">暂时还没有职位信息</div>
+{yun:}/foreach{/yun}
+
+<div class="pages">{yun:}$pagenav{/yun}</div>
+
+</body>
+</html>

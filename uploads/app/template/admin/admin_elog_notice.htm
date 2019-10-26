@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link href="images/reset.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	<link href="images/system.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	<link href="images/table_form.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	
+	<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}"></script>
+	<link href="{yun:}$config.sy_weburl{/yun}/js/layui/css/layui.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	<script src="{yun:}$config.sy_weburl{/yun}/js/layui/layui.js?v={yun:}$config.cachecode{/yun}"></script>
+	<script src="{yun:}$config.sy_weburl{/yun}/js/layui/phpyun_layer.js?v={yun:}$config.cachecode{/yun}"></script>
+	<script src="js/admin_public.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+	
+	<title>后台管理</title>
+	
+</head>
+
+<body class="body_ifm">
+	<div class="infoboxp">
+		<div class="tabs_info">
+			<ul>
+				<li {yun:}if $smarty.get.c==basic{/yun}class="curr"{yun:}/if{/yun}>
+					<a href="index.php?m=admin_elog_fk&c=basic">基本信息</a>
+				</li>
+				<li {yun:}if $smarty.get.c==integral{/yun}class="curr"{yun:}/if{/yun}>
+					<a href="index.php?m=admin_elog_fk&c=integral">账户充值</a>
+				</li>
+				<li {yun:}if $smarty.get.c==vip{/yun}class="curr"{yun:}/if{/yun}>
+					<a href="index.php?m=admin_elog_fk&c=vip">套餐服务</a>
+				</li>
+				<li {yun:}if $smarty.get.c==resume{/yun}class="curr"{yun:}/if{/yun}>
+					<a href="index.php?m=admin_elog_fk&c=resume">新建简历</a>
+				</li>
+				<li {yun:}if $smarty.get.c==job{/yun}class="curr"{yun:}/if{/yun}>
+					<a href="index.php?m=admin_elog_fk&c=job">职位发布</a>
+				</li>
+				<li {yun:}if $smarty.get.c==binding{/yun}class="curr"{yun:}/if{/yun}>
+					<a href="index.php?m=admin_elog_fk&c=binding">账户认证</a>
+				</li>
+ 			</ul>
+		</div>
+
+		<div class="admin_new_tip">
+			<a href="javascript:;" class="admin_new_tip_close"></a>
+			<a href="javascript:;" class="admin_new_tip_open" style="display:none;"></a>
+			<div class="admin_new_tit"><i class="admin_new_tit_icon"></i>操作提示</div>
+			<div class="admin_new_tip_list_cont">
+				<div class="admin_new_tip_list">
+					该页面展示了网站用户的 
+					<font color="red">
+						{yun:}if $smarty.get.c==basic{/yun}【基本信息】
+						{yun:}else if $smarty.get.c==integral{/yun}【账户充值】
+						{yun:}else if $smarty.get.c==vip{/yun}【套餐服务】
+						{yun:}else if $smarty.get.c==resume{/yun}【新建简历】
+						{yun:}else if $smarty.get.c==job{/yun}【职位发布】
+						{yun:}else if $smarty.get.c==binding{/yun}【账户认证】
+						{yun:}/if{/yun}
+					</font> 行为记录，可能需要您的关注。
+				</div>
+
+				<div class="admin_new_tip_list">
+					数据时间范围：{yun:}$time_begin{/yun} ~ {yun:}$time_end{/yun}  滞留时间：{yun:}$seconds{/yun}秒以上
+				</div>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+		
+		<div class="admin_new_search_box">
+		
+			<form action="index.php" name="myform" method="get" onSubmit="return cktimesave()">
+				<input name="m" value="admin_elog_fk" type="hidden"/>
+				<input name="c" value="{yun:}$smarty.get.c{/yun}" type="hidden"/>
+				<input name="utype" value="{yun:}$smarty.get.utype{/yun}" type="hidden"/>
+				<span class="admin_new_search_name">访问时间：</span>		
+		 		
+				<input class="admin_Filter_search" type="text" id="time" name="time" value="{yun:}$smarty.get.time{/yun}"/>
+				
+				<span class="admin_new_search_name">滞留时长：</span>		
+				<input class="admin_Filter_search" type="text" id="seconds" name="seconds" value="{yun:}$smarty.get.seconds{/yun}" style="width:40px;"/>
+				<span class="admin_new_search_name">秒以上</span>	
+				<script type="text/javascript">
+					layui.use(['laydate'], function(){var laydate = layui.laydate,$ = layui.$;laydate.render({elem: '#time',range:'~'});});
+				</script>
+		
+				<input  class="admin_Filter_bth"  type="submit" name="qysearch" value="搜索"/>
+			</form>	  
+		</div>
+
+		<div class="clear"></div>
+		<div id="note_div" style="display:none; width:420px;">
+            <div class="" style=" margin-top:10px;">
+                <form class="layui-form" action="index.php?m=admin_elog_fk&c=note" target="supportiframe" method="post" id="formlabel">
+                    <table cellspacing='1' cellpadding='1' class="admin_examine_table" align="center">
+						<tr>
+                            <th>备注反馈：</th>
+                            <td align="left">
+                                <textarea id="note" name="note" class="admin_explain_textarea" style="width:290px;height:150px;"></textarea> 
+                            </td>
+                        </tr>
+                            <td colspan='2' align="center">
+								<input type="submit" onclick="loadlayer();" value='确认' class="admin_examine_bth">
+                                <input type="button" onClick="layer.closeAll();" class="admin_examine_bth_qx" value='取消'>
+							</td>
+                        </tr>
+                        <input type="hidden" name="pytoken" value="{yun:}$pytoken{/yun}">
+                        <input name="id" id="noteid" value="0" type="hidden">
+                    </table>
+                </form>
+            </div>
+        </div>
+
+		<div class="clear"></div>
+		
+		<div class="table-list">
+			<div class="admin_table_border">
+				<iframe id="supportiframe"  name="supportiframe" onload="returnmessage('supportiframe');" style="display:none"></iframe>
+				<form action="index.php" name="myform" method="get" target="supportiframe" id='myform'>
+					<input name="m" value="admin_elog_fk" type="hidden"/>
+					<input name="c" value="integral" type="hidden"/>
+					
+					<table width="100%">
+						<thead>
+							<tr class="admin_table_top">
+								<th style="width:20px;">
+									<label for="chkall"><input type="checkbox" id='chkAll'  onclick='CheckAll(this.form)'/></label>
+								</th>
+								{yun:}if $smarty.get.t=="id" && $smarty.get.order=="asc"{/yun}
+									<th>
+										<a href="{yun:}searchurl order=desc t=id m=admin_elog_fk c=integral untype='order,t'{/yun}">
+											编号<img src="images/sanj.jpg"/>
+										</a>
+									</th>
+								{yun:}else{/yun}
+									<th>
+										<a href="{yun:}searchurl order=asc t=id m=admin_elog_fk c=integral untype='order,t'{/yun}">
+											编号<img src="images/sanj2.jpg"/>
+										</a>
+									</th>
+								{yun:}/if{/yun}
+								<th align="left">用户名</th>
+								<th align="left">
+									{yun:}if $smarty.get.c==integral || $smarty.get.c==binding || $smarty.get.c==basic{/yun}
+										个人姓名(性别)/企业名称（联系人）
+									{yun:}else if $smarty.get.c==vip || $smarty.get.c==job{/yun}
+										企业名称（联系人）
+									{yun:}else if $smarty.get.c==resume{/yun}
+										个人姓名（性别）
+									{yun:}/if{/yun}
+								</th>
+								<th align="left">联系电话</th>
+ 								<th align="left">访问页面</th>
+ 								<th align="left">滞留时间</th>
+ 								<th align="left">访问时间</th>
+								<th align="left">离开时间</th>
+								<th align="left">行为结果</th>
+								<th align="left">操作</th>
+ 							</tr>
+						</thead>
+
+						<tbody>
+							{yun:}foreach item=v from=$rows{/yun}
+								<tr align="center" id="list{yun:}$v.id{/yun}">
+									<td><input type="checkbox" value="{yun:}$v.id{/yun}"  name='del[]' onclick='unselectall()' rel="del_chk" /></td>
+									<td>{yun:}$v.id{/yun}</td>
+									<td align="left">{yun:}$v.username{/yun}</td>
+									<td align="left">
+										{yun:}if $v.usertype=="1"{/yun}	
+											{yun:}$v.name{/yun}{yun:}if $v.sex_n{/yun}（{yun:}$v.sex_n{/yun}）{yun:}/if{/yun}
+										{yun:}else if $v.usertype=="2"{/yun}	
+											{yun:}$v.comname{/yun}（{yun:}$v.name{/yun}）
+										{yun:}/if{/yun}
+									</td>
+									<td align="left">{yun:}$v.mobile{/yun}</td> 
+									<td align="left">
+										{yun:}if $v.opera == 10{/yun}基本信息（PC）
+										{yun:}else if $v.opera == 11{/yun}基本信息（WAP）
+										
+										{yun:}else if $v.opera == 12{/yun}账户认证（PC）
+										{yun:}else if $v.opera == 13{/yun}账户认证（WAP）
+
+										{yun:}else if $v.opera == 21{/yun}新建简历（PC）
+										{yun:}else if $v.opera == 22{/yun}新建简历（WAP）
+										
+										{yun:}else if $v.opera == 31{/yun}发布职位（PC）
+										{yun:}else if $v.opera == 32{/yun}修改职位（PC）
+										{yun:}else if $v.opera == 33{/yun}兼职发布（PC）
+										{yun:}else if $v.opera == 34{/yun}兼职修改（PC）
+
+										{yun:}else if $v.opera == 35{/yun}发布职位（WAP）
+										{yun:}else if $v.opera == 36{/yun}修改职位（WAP）
+										{yun:}else if $v.opera == 37{/yun}兼职发布（WAP）
+										{yun:}else if $v.opera == 38{/yun}兼职修改（WAP）	
+										
+										{yun:}else if $v.opera == 41{/yun}积分充值（PC）
+										{yun:}else if $v.opera == 42{/yun}套餐会员（PC）
+										{yun:}else if $v.opera == 43{/yun}时间会员（PC）
+										{yun:}else if $v.opera == 44{/yun}增值服务（PC）
+										{yun:}else if $v.opera == 45{/yun}积分充值（WAP）
+										{yun:}else if $v.opera == 46{/yun}套餐会员（WAP）
+										{yun:}else if $v.opera == 47{/yun}时间会员（WAP）
+										{yun:}else if $v.opera == 48{/yun}增值服务（WAP）
+										{yun:}/if{/yun}
+									</td>
+									<td align="left">{yun:}$v.seconds{/yun}</td>
+ 									<td align="left">{yun:}$v.timein|date_format:"%Y-%m-%d %H:%M:%S"{/yun}</td>
+									<td align="left">{yun:}$v.timeout|date_format:"%Y-%m-%d %H:%M:%S"{/yun}</td>
+
+									<td align="left">
+ 										{yun:}if $v.status==2{/yun}
+											充值失败
+										{yun:}else if $v.status==3{/yun}
+											{yun:}if $v.order_state==3{/yun}
+												充值下单，等待管理员确认{yun:}if $v.order_type_n{/yun}（{yun:}$v.order_type_n{/yun}）{yun:}/if{/yun}
+											{yun:}else if $v.order_state==1{/yun}
+												充值下单，未付款{yun:}if $v.order_type_n{/yun}（{yun:}$v.order_type_n{/yun}）{yun:}/if{/yun}
+											{yun:}/if{/yun}
+										{yun:}else if $v.status==4{/yun}
+											充值下单，已取消订单
+										{yun:}else{/yun}
+											{yun:}if $smarty.get.c=='basic' || $smarty.get.c=='resume' || $smarty.get.c=='job' || $smarty.get.c=='binding'{/yun}
+												未操作
+											{yun:}else if $smarty.get.c=='integral'{/yun}
+												未充值
+											{yun:}else if $smarty.get.c=='vip'{/yun}
+												未下单
+											{yun:}/if{/yun}
+										{yun:}/if{/yun}
+										<br>
+										{yun:}if $v.note{/yun}已联系备注{yun:}/if{/yun}
+ 									</td>
+
+									<td align="left">
+										{yun:}if $v.note !=""{/yun}
+											<a href="javascript:;" class="admin_new_c_bth admin_new_c_bth_xg note" lid="{yun:}$v.id{/yun}" uid="{yun:}$v.uid{/yun}" note="{yun:}$v.note{/yun}" >查看</a>
+										{yun:}else{/yun}
+											<a href="javascript:;" class="admin_new_c_bth admin_new_c_bth_xg note" lid="{yun:}$v.id{/yun}" uid="{yun:}$v.uid{/yun}" note="{yun:}$v.note{/yun}" >备注</a>
+										{yun:}/if{/yun}
+									</td>
+ 								</tr>
+							{yun:}/foreach{/yun}
+							
+							{yun:}if $total > $config.sy_listnum {/yun}
+								<tr>
+									{yun:}if $pagenum==1{/yun}
+										<td colspan="3"> 从 1 到 {yun:}$config.sy_listnum {/yun} ，总共 {yun:}$total{/yun} 条</td>
+									{yun:}else if $pagenum > 1 && $pagenum < $pages{/yun}
+										<td colspan="3"> 从 {yun:}($pagenum-1) * $config.sy_listnum + 1{/yun} 到 {yun:}$pagenum * $config.sy_listnum{/yun} ，总共 {yun:}$total{/yun} 条</td>
+									{yun:}else if $pagenum == $pages{/yun}
+										<td colspan="3"> 从 {yun:}($pagenum-1) * $config.sy_listnum + 1{/yun} 到 {yun:}$total{/yun} ，总共 {yun:}$total{/yun} 条</td>
+									{yun:}/if{/yun}
+									<td colspan="8" class="digg">{yun:}$pagenav{/yun}</td>
+								</tr>
+							{yun:}/if{/yun}
+						</tbody>
+					</table>
+					<input type="hidden" name="pytoken"  id='pytoken' value="{yun:}$pytoken{/yun}">
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			$(".note").click(function() {
+				var id = $(this).attr("lid");
+				var uid = $(this).attr("uid");
+				var note = $(this).attr("note");
+
+				$("#noteid").val(id);
+				$("#note").text(note);
+   				layui.use(['form'], function() {
+					var form = layui.form;
+					form.render();
+				});
+                
+				$.layer({
+					type: 1,
+					title: '关怀备注',
+					closeBtn: [0, true],
+					border: [10, 0.3, '#000', true],
+					area: ['420px', '280px'],
+					page: {
+						dom: "#note_div"
+					}
+				});
+			});
+		})
+
+	</script>
+</body>
+</html>

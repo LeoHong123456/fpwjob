@@ -1,0 +1,44 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>企业 &gt; {yun:}$headertitle{/yun} &gt; {yun:}$com.name{/yun}</span>
+</div>
+<div class="rz_dd">
+     <div class="peo_det_yh"> <div class="peo_det_yh_nm"><div class="nb">企业名称：</div> </div><div class="peo_det_yh_c peo_det_yh_hig">{yun:}$com.name{/yun}</div></div>
+
+<div class="peo_det_yh"> <div class="peo_det_yh_nm"><div class="nb">审核状态： </div></div><div class="peo_det_yh_c peo_det_yh_hig">{yun:}if $row.status=='1'{/yun} <font color="green">已通过</font>{yun:}elseif $row.status=='2'{/yun}<font color="red">未通过</font>{yun:}else{/yun}<font color="orange">待审核</font>{yun:}/if{/yun}</div></div>
+       <div class="peo_det_yh"> <div class="peo_det_yh_nm"><div class="nb">申请时间： </div></div><div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.ctime|date_format:"%Y-%m-%d"{/yun}</div></div>
+          <div class="peo_det_yh" style="border:none"> <div class="peo_det_yh_nm"><div class="nb">营业执照： </div></div><div class="peo_det_yh_c ">&nbsp;</div></div>
+          <div class="admin_com_z"><img class="rz_dd_tu" src="{yun:}$config.sy_weburl{/yun}{yun:}$row.check{/yun}"/></div>
+     <input type="hidden" id="pytoken"  value="{yun:}$pytoken{/yun}"/>
+     <input type="hidden" id="lasturl"  value="{yun:}$lasturl{/yun}"/>
+</div>
+<div class="peo_det_but" style="margin-top:30px;">
+     <ul>
+         <li><a style="display:block" href="javascript:void(0)" onclick="statusdiv('{yun:}$row.status{/yun}','审核操作')">审核</a></li>
+         <li><a style="display:block" href="javascript:void(0)" onclick="layer_del('确定要删除？', 'index.php?c=comcert&a=del&id={yun:}$row.id{/yun}');">删除</a></li>
+     </ul>
+</div>
+<!--审核弹出-->
+<div class="pop_up" id="status_div" style="display:none;">
+     <div class="pop_up_state">
+        <ul>
+          <li><label><input class="pop_up_state_cb" type="radio" value='0' name="status" id="status0"/>待审核</label></li>
+          <li><label><input class="pop_up_state_sb" type="radio" value='1' name="status" id="status1"/>已通过</label></li>
+          <li><label><input class="pop_up_state_cb" type="radio" value="2" name="status" id="status2"/>未通过</label></li>
+        </ul>
+     </div>
+     <div class="pop_up_head">
+        <div class="pop_up_icon"></div>审核内容
+     </div>
+     <div class="pop_up_text"><div class="pop_up_text_textarea_bor"><textarea class="pop_up_text_ct" name="statusbody" id="statusbody">{yun:}$row.statusbody{/yun}</textarea></div></div>
+     <div class="pop_up_but">
+          <ul>
+              <li class="pop_up_but_q" ><a style="display:block" href="javascript:void(0);" onclick="checkStatus('{yun:}$row.id{/yun}','index.php?c=comcert&a=status')">确定</a></li>
+              <li class="pop_up_but_x" ><a style="display:block" href="javascript:void(0)" onclick="layer.closeAll();">取消</a></li>
+          </ul>
+     </div>
+</div>
+
+
+</body>
+</html> 

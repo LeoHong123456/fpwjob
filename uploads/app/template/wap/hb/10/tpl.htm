@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<link rel="stylesheet" href="{yun:}$config.sy_weburl{/yun}/app/template/wap/hb/reset.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<title>{yun:}$title{/yun}</title>
+	<meta http-equiv="keywords" content="{yun:}$keywords{/yun},wap" />
+	<meta http-equiv="description" content="{yun:}$description{/yun}" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width" initial-scale="1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no,email=no" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" />
+</head>
+
+<body class="" >
+
+	<div class="hb_jobbox">
+    	<div class="hb_joblist">
+		{yun:}foreach item=v from=$jobs key=key{/yun} 
+			{yun:}if $key < 3{/yun}
+				<div class="hb_jobname"> {yun:}$v.name{/yun}</div>
+				<div class="hb_gwzz">
+					
+						<span class="hb_10_xz">{yun:}if $v.minsalary && $v.maxsalary{/yun}
+							￥{yun:}$v.minsalary{/yun}-{yun:}$v.maxsalary{/yun}
+						{yun:}else if $v.minsalary{/yun}
+							￥{yun:}$v.minsalary{/yun}以上
+						{yun:}else{/yun}
+							面议
+						{yun:}/if{/yun}
+                          </span>
+					<span class="hb_10_city">{yun:}$city_name[$v.cityid]{/yun}</span>
+					<span class="hb_10_jy">{yun:}$comclass_name[$v.exp]{/yun}</span>
+					
+				</div>
+			{yun:}/if{/yun}
+		{yun:}/foreach{/yun}
+		</div>
+    <div class="hb_webname">{yun:}$config.sy_webname{/yun} ({yun:}$config.sy_weburl{/yun})</div>
+		<div class="hb_ewm"><img src="{yun:}url m=ajax c=pubqrcode toc=company toa=show toid=$smarty.get.id{/yun}" width="160" height="160"></div>
+        
+				<div class="hb10_comname">{yun:}$comname{/yun}</div>
+			
+            
+	</div>
+
+</body>

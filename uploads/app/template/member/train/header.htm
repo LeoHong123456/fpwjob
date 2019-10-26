@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>会员中心首页</title>
+<link rel="stylesheet" href="{yun:}$train_style{/yun}/css/css.css?v={yun:}$config.cachecode{/yun}" type="text/css">
+<script type="text/javascript" src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.1.min.js?v={yun:}$config.cachecode{/yun}"></script> 
+<link href="{yun:}$config.sy_weburl{/yun}/js/layui/css/layui.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" /><script src="{yun:}$config.sy_weburl{/yun}/js/layui/layui.js?v={yun:}$config.cachecode{/yun}"></script><script src="{yun:}$config.sy_weburl{/yun}/js/layui/phpyun_layer.js?v={yun:}$config.cachecode{/yun}"></script> 
+<script type="text/javascript" src="{yun:}$config.sy_weburl{/yun}/js/member_public.js?v={yun:}$config.cachecode{/yun}"></script>  
+<script>var weburl="{yun:}$config.sy_weburl{/yun}";</script>
+</head>
+<body>
+<div class="training_top">
+<div class="training_w980">
+<div class="training_top_left flt">
+<span class="training_top_slogan flt">欢迎来到{yun:}$config.sy_webname{/yun}！</span>
+</div>
+<div class="top_right_re fr">
+<div class="top_right">
+  <div class="yun_topNav fr"> <a class="yun_navMore" href="javascript:;">网站导航</a>
+            <div class="yun_webMoredown" style="display:none">
+              <div class="yun_top_nav_box"> 
+			    <ul class="yun_top_nav_box_l">
+			    {yun:}navmap key=key item=maplist{/yun}
+				<li><a href="{yun:}$maplist.url{/yun}" {yun:}if $maplist.eject{/yun} target="_blank"{yun:}/if{/yun}>{yun:}$maplist.name{/yun}</a></li>
+                {yun:}/navmap{/yun}
+				</ul>
+                 <ul class="yun_top_nav_box_wx">
+               {yun:}nav item=navlist_app hovclass=nav_list_hover nid=11{/yun}          
+				<li> <a class="move_0{yun:}$navlist_app.sort{/yun}"{yun:}if $navlist_app.eject{/yun} target="_blank"{yun:}/if{/yun} href="{yun:}$config.sy_weburl{/yun}/{yun:}$navlist_app.url{/yun}">{yun:}$navlist_app.name{/yun}</a> </li>
+                {yun:}/nav{/yun}
+                </ul>
+               </div>
+            </div>
+          </div>
+   <div class="header_Remind fr header_Remind_hover" style="display:none" id="tzmsgNum"><em class="header_Remind_em "><i class="header_Remind_msg"></i></em>
+     <div>
+       <div class="header_Remind_list" style="display:none;">
+       <div class="header_Remind_list_a"><a href="{yun:}$config.sy_weburl{/yun}/member/index.php?c=sign_up" class="fl">课程预约</a><span class="header_Remind_list_r fr" id="sign_upNum">(0)</span></div>
+       <div class="header_Remind_list_a"><a href="{yun:}$config.sy_weburl{/yun}/member/index.php?c=sysnews" class="fl">系统消息</a><span class="header_Remind_list_r fr" id="sysmsgNum">(0)</span></div>
+       <div class="header_Remind_list_a"><a href="{yun:}$config.sy_weburl{/yun}/member/index.php?c=message" class="fl">咨询留言</a><span class="header_Remind_list_r fr" id="messageNum">(0)</span></div>
+     </div>
+   </div>    
+   </div> 
+<div class="header_Remind_list_tt">您好：<font color="#ffe300">{yun:}$username{/yun}</font><a  href="javascript:void(0)" onclick="logout('index.php?act=logout')">[安全退出]</a>&nbsp;&nbsp;<a href="{yun:}url m=train{/yun}">返回培训首页</a>&nbsp;&nbsp;
+
+     </div>
+</div>
+  </div>
+</div>
+</div>
+<div class="header_info">
+<div class="header_info_w1100">
+<div class="header_info_logo"> 
+	  <img src="{yun:}$config.sy_weburl{/yun}/{yun:}$info.logo{/yun}" width="100" height="100" onerror="showImgDelay(this,'{yun:}$config.sy_weburl{/yun}/{yun:}$config.sy_px_icon{/yun}',2)" />
+	    </div>
+<div class="header_info_cont">
+<div class="header_info_jgname">{yun:}if $info.name==""{/yun}<a href="index.php?c=info" class="header_info_ws">您还未完善基本信息，点击完善！</a>{yun:}else{/yun}{yun:}$info.name{/yun}{yun:}/if{/yun}</div>
+<div class="rz_box"> 
+{yun:}if $info.email_status=="1"{/yun}
+        <a href="index.php?c=binding"><span class="rz_icon yxrz">{yun:}$info.linkmail{/yun} </span> </a>
+        {yun:}else{/yun}
+        <a href="index.php?c=binding"><span class="rz_icon yxwrz">邮箱未验证 </span>  </a>
+        {yun:}/if{/yun}
+        {yun:}if $info.moblie_status=="1"{/yun}
+        <a href="index.php?c=binding"><span class="rz_icon sjrz">{yun:}$info.linktel{/yun} </span> </a>
+        {yun:}else{/yun}
+        <a href="index.php?c=binding"><span class="rz_icon sjwrz">手机未验证 </span>  </a>
+        {yun:}/if{/yun}
+        {yun:}if $info.yyzz_status=="1"{/yun}
+      <a href="index.php?c=binding"><span class="rz_icon zzrz">执照已验证 </span> </a>
+        {yun:}else{/yun}
+     <a href="index.php?c=binding"><span class="rz_icon zzwrz">执照未验证 </span>  </a>
+        {yun:}/if{/yun}
+        </div>
+        <div class="header_info_cz"><a href="index.php?c=uppic">修改LOGO</a><span class="header_info_cz_line">|</span> <a href="index.php?c=info">修改基本资料</a><span class="header_info_cz_line">|</span><a href="{yun:}url m=train c=agencyshow id=$uid{/yun}">预览主页</a></div>
+
+        
+</div>
+<div class="header_jf">
+        我的{yun:}$config.integral_pricename{/yun}：<span class="Basic_Information_t_p_y jifen">{yun:}$statis.integral{/yun}</span> {yun:}$config.integral_priceunit{/yun}{yun:}$config.integral_pricename{/yun}<br>
+        <a href="index.php?c=integral" class="hqjf"> 如何获取{yun:}$config.integral_pricename{/yun}?</a>
+      
+        </div>
+        
+        
+        <div class="com_index_sign_box">
+					<div class="com_index_sign">{yun:}sign{/yun}</div>
+				</div>
+</div>
+</div>
+
+
+
+

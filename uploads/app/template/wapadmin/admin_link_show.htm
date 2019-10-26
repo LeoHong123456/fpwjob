@@ -1,0 +1,81 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>{yun:}$headertitle{/yun} &gt; {yun:}$linkrow.link_name{/yun}</span>
+</div>
+<div class="peo_det">
+<div class="peo_det_yh">
+       <div class="peo_det_yh_nm">
+         <div class="nb">链接类型：</div>
+       </div>
+       <div class="peo_det_yh_c peo_det_yh_hig"> 
+       {yun:}if $linkrow.link_type eq 1{/yun}
+       文字链接{yun:}else{/yun}图片链接{yun:}/if{/yun}
+       </div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">链接标题：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$linkrow.link_name{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">链接地址：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$linkrow.link_url{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+       <div class="peo_det_yh_nm">
+         <div class="nb">显示位置：</div>
+       </div>
+       <div class="peo_det_yh_c peo_det_yh_hig">
+       {yun:}if $linkrow.tem_type==1{/yun} 全站使用 {yun:}/if{/yun}
+       {yun:}if $linkrow.tem_type==2{/yun} 仅在首页使用{yun:}/if{/yun}
+       {yun:}if $linkrow.tem_type==3{/yun} 仅在猎头页使用{yun:}/if{/yun}</div>
+     </div>
+    {yun:}if $linkrow.link_type==2{/yun}
+    {yun:}if $linkrow.img_type==1{/yun}
+    <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">链接图片：</div></div>
+          <img src="../{yun:}$linkrow.pic{/yun}" width="150" height="80" />
+     </div>
+    
+    {yun:}else if $linkrow.img_type==2{/yun}
+    <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">链接图片：</div></div>
+          <img src="{yun:}$linkrow.pic{/yun}" width="150" height="80" />
+     </div>
+      {yun:}/if{/yun}
+     {yun:}/if{/yun} 
+     <div class="peo_det_yh">
+    <div class="peo_det_yh_nm"><div class="nb">排序：</div></div>
+    <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$linkrow.link_sorting{/yun}</div>
+    </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">审核状态：</div></div>
+                 <div class="peo_det_yh_c peo_det_yh_hig">   {yun:}if $linkrow.link_state=="1"{/yun}<div class="peo_det_yh_he">已审核</div>{yun:}else{/yun}<div class="peo_det_yh_ng">未审核</div>{yun:}/if{/yun}</div>
+     </div>
+     <input type="hidden" id="pytoken"  value="{yun:}$pytoken{/yun}"/>
+     <input name="id" type="hidden">
+     
+</div>
+<div class="peo_det_but">
+     <ul>
+         <li><a style="display:block" href="javascript:void(0);" onclick="statusdiv('{yun:}$linkrow.link_state{/yun}','审核操作')">审核</a></li>
+         <li><a style="display:block" href="javascript:void(0);" onclick="layer_del('确定要删除？', 'index.php?c=link&a=del&id={yun:}$linkrow.id{/yun}');">删除</a></li>
+     </ul>
+</div>
+<!--审核弹出-->
+<div class="pop_up" style="display:none;" id="status_div">
+     <div class="pop_up_state">
+        <ul>
+          <li><label><input class="pop_up_state_cb" type="radio" name="status" value="0" id="status0"/>未审核</label></li>
+          <li><label><input class="pop_up_state_sb" type="radio" name="status" value="1" id="status1"/>已审核</label></li>
+        </ul>
+     </div>
+     <div class="pop_up_but">
+          <ul>
+              <li class="pop_up_but_q"><a style="display:block" href="javascript:void(0);" onclick="checkStatus('{yun:}$linkrow.id{/yun}','index.php?c=link&a=status')">确定</a></li>
+              <li class="pop_up_but_x"><a style="display:block" href="javascript:void(0);" onclick="layer.closeAll();">取消</a></li>
+          </ul>
+     </div>
+</div>
+
+</body>
+</html>

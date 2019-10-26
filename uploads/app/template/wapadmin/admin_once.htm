@@ -1,0 +1,23 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>企业 &gt; {yun:}$headertitle{/yun}</span><a href="index.php?c=admin_once&a=add" class="et_pd_top_tjdp">添加</a>
+</div>
+{yun:}foreach from=$rows item=v{/yun}
+<div class="et_pd_ct" onclick="showDetail('index.php?c=admin_once&a=show&id={yun:}$v.id{/yun}')">
+     <div class="et_pd_ct_nm">
+          <span>{yun:}$v.title{/yun}{yun:}if $v.mans{/yun}/{yun:}$v.mans{/yun}人{yun:}/if{/yun}</span>
+          <span class="free_hy">{yun:}$v.ctime|date_format:'%Y-%m-%d'{/yun} 至 {yun:}$v.edate|date_format:'%Y-%m-%d'{/yun}</span>
+     </div>
+     <div class="et_pd_ct_te">
+          <span class="et_pd_ct_te_ft">{yun:}$v.companyname{/yun}</span>
+          {yun:}if $v.edate<=time(){/yun}<span class="et_pd_ct_te_rt" style="color:#f0081f;">已过期</span>{yun:}elseif $v.status==1{/yun}<span class="et_pd_ct_te_rt">已审核</span>{yun:}else{/yun}<span class="et_pd_ct_te_rt_ng">未审核</span>{yun:}/if{/yun}
+     </div>
+</div>
+{yun:}foreachelse{/yun}
+<div class="wap_member_no">暂时还没有招聘信息</div>
+{yun:}/foreach{/yun}
+
+<div class="pages">{yun:}$pagenav{/yun}</div>
+
+</body>
+</html>

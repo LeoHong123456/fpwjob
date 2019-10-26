@@ -1,0 +1,120 @@
+{yun:}include file="$wapstyle/member/cheader.htm"{/yun}
+<link rel="stylesheet" href="{yun:}$config.sy_weburl{/yun}/app/template/wap/css/style.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+
+<section class="wap_member">
+	<div class="wap_member_comp_h1"><span>面试评价</span></div>
+
+	<div id="app" class="mui-views">
+		<div class="mui-view">
+			<div class="mui-pages"></div>
+		</div>
+	</div>
+	
+	
+	<div id="main" class="mui-page">
+		
+		<div class="mui-page-content">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					
+						{yun:}if $rows{/yun} {yun:}foreach item=v from=$rows{/yun}
+						<div class="yun_wap_pf_list ">
+                        <div class="">面&nbsp;&nbsp;试&nbsp;人：{yun:}$v.name{/yun}</div>
+						<div class="yun_wap_pf_box">
+
+							<div class="yun_wap_pf_p">综合评分：<span class="yun_wap_pf_p_z">{yun:}$v.score{/yun}</span> 分</div>
+							<div class="yun_wap_pf_p">描述相符：<span class="yun_wap_pf_p_n">{yun:}$v.desscore{/yun}</span> 分</div>
+							<div class="yun_wap_pf_p">面&nbsp;&nbsp;试&nbsp;官 ：<span class="yun_wap_pf_p_n">{yun:}$v.hrscore{/yun}</span> 分 </div>
+							<div class="yun_wap_pf_p">企业环境：<span class="yun_wap_pf_p_n">{yun:}$v.comscore{/yun}</span> 分</div>
+
+						</div>
+						<div class="">评论时间：{yun:}$v.ctime|date_format:'%Y-%m-%d'{/yun}</div>
+						<div class="">面试过程：{yun:}$v.content{/yun}</div>
+						{yun:}if $v.reply==""{/yun}
+						<div class="">回复状态：未回复</div>
+						{yun:}else{/yun}
+						<div class="">回复内容：{yun:}$v.reply{/yun}</div>
+						{yun:}if $v.othercontent{/yun}<div class="">其它评论：{yun:}$v.othercontent{/yun}</div>{yun:}/if{/yun}
+						{yun:}/if{/yun}
+					    </div>				 
+						<div class="yun_member_bth">
+							{yun:}if $v.reply==""{/yun}
+							<a href="#replyhtml" data-id="{yun:}$v.id{/yun}" class="yun_member_sub reply">回复</a>
+							{yun:}/if{/yun}
+						</div>
+						 {yun:}/foreach{/yun}
+						{yun:}else{/yun} 					
+						<div class="wap_member_no">
+							没有面试评价
+						</div> 
+						{yun:}/if{/yun}
+					
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="pages">{yun:}$pagenav{/yun}</div>
+
+<div id="replyhtml" class="mui-page">
+	<form method="post" action="index.php?c=pl" onsubmit=" return checkReply()">
+		<div class="mui-page-content">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div class="yun_wap_info_brief">
+						<div class="yun_wap_info_brief_c">
+							<div class="yun_wap_info_brief_tit"> 评价回复 </div>
+							<textarea class="textAreaMsg tip contenttext" name="reply" id="reply" placeholder="请输入回复内容"></textarea></div>
+                            <div class="yunset_bth_box">
+						<input class="reinputText2" type="submit" name="submit" value="回复">
+						<input type="hidden" id="id" name="id">
+					</div>	</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<script src="{yun:}$wap_style{/yun}/js/mui/mui.view.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script language="javascript">
+	mui.init();
+	var viewApi = mui('#app').view({
+		defaultPage: '#main'
+	});
+	
+	mui('.mui-scroll-wrapper').scroll();
+	var view = viewApi.view;
+	(function($) {
+		
+		var oldBack = $.back;
+		$.back = function() {
+			if(viewApi.canBack()) { 
+				viewApi.back();
+			} else { 
+				oldBack();
+			}
+		};
+	})(mui);
+	$(document).ready(function() {
+		if(document.getElementById('main')){
+			document.getElementById('main').addEventListener('touchmove', function (e) { e.preventDefault();}, {passive: false});
+		}
+		if(document.getElementById('replyhtml')){
+			document.getElementById('replyhtml').addEventListener('touchmove', function (e) { e.stopPropagation();}, {passive: false});
+		}
+	})
+	mui('.reply').each(function(i, arr) {
+		arr.addEventListener('tap', function(e) {
+			document.getElementById('id').value = e.target.dataset.id;
+		}, false)
+	}, false);
+	
+	function checkReply(){
+		var reply = $.trim($('#reply').val());
+ 		if(reply==""){
+			layermsg("请填写回复内容！");
+			return false;
+		}
+ 	}
+</script>
+{yun:}include file="$wapstyle/footer.htm"{/yun}

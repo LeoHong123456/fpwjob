@@ -1,0 +1,84 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>企业 &gt; {yun:}$headertitle{/yun} &gt; {yun:}$row.title{/yun}</span>
+</div>
+<div class="peo_det">
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">店铺名称：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.companyname{/yun}</div>
+     </div>
+   
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">职位名称：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.title{/yun}</div>
+     </div>
+     
+     
+  
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">有效时间：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.edate|date_format:'%Y-%m-%d'{/yun}</div>
+     </div>
+   
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">联系电话：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.phone{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">联&nbsp;系&nbsp; 人：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.linkman{/yun}</div>
+     </div>
+     
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">发布时间：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.ctime|date_format:'%Y-%m-%d'{/yun}</div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">工作地点：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$city_name[$row.provinceid]{/yun}{yun:}$city_name[$row.cityid]{/yun}{yun:}$city_name[$row.three_cityid]{/yun}</div>
+     </div>
+     {yun:}if $row.pic{/yun}
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">店铺形象：</div></div>
+          <div class="peo_det_yh_c"><img src="{yun:}$config.sy_weburl{/yun}/{yun:}$row.pic{/yun}" width="160px" height="60px"></div>
+     </div>
+     {yun:}/if{/yun}
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">招聘要求：</div></div>
+          <div class="peo_det_yh_c ">{yun:}$row.require{/yun}&nbsp;</div>
+     </div>
+   
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">审核状态：</div></div>
+          <div class="peo_det_yh_hig">
+          {yun:}if $row.edate<=time(){/yun}<font color="red">已过期</font>{yun:}elseif $row.status==1{/yun}<div class="peo_det_yh_he">已审核</div>{yun:}else{/yun}<div class="peo_det_yh_ng">未审核</div>{yun:}/if{/yun}
+     </div>     </div>
+     <input type="hidden" id="pytoken"  value="{yun:}$pytoken{/yun}"/>
+     <input type="hidden" id="lasturl"  value="{yun:}$lasturl{/yun}"/>
+</div>
+<div class="peo_det_but">
+     <ul>
+         <li><a style="display:block" href="javascript:void(0);" onclick="statusdiv('{yun:}$row.status{/yun}','审核操作')">审核</a></li>
+         <li><a style="display:block" href="javascript:void(0);" onclick="layer_del('确定要删除？', 'index.php?c=admin_once&a=del&id={yun:}$row.id{/yun}');">删除</a></li>
+         <li><a style="display:block" href="index.php?c=admin_once&a=add&id={yun:}$row.id{/yun}">修改</a></li>
+     </ul>
+</div>
+<!--审核弹出-->
+<div class="pop_up" style="display:none;" id="status_div">
+     <div class="pop_up_state">
+        <ul>
+          <li><label><input class="pop_up_state_cb" type="radio" name="status" value="0" id="status0"/>未审核</label></li>
+          <li><label><input class="pop_up_state_sb" type="radio" name="status" value="1" id="status1"/>已审核</label></li>
+        </ul>
+     </div>
+     <div class="pop_up_but">
+          <ul>
+              <li class="pop_up_but_q"><a style="display:block" href="javascript:void(0);" onclick="checkStatus('{yun:}$row.id{/yun}','index.php?c=admin_once&a=status')">确定</a></li>
+              <li class="pop_up_but_x"><a style="display:block" href="javascript:void(0);" onclick="layer.closeAll();">取消</a></li>
+          </ul>
+     </div>
+</div>
+
+
+</body>
+</html>

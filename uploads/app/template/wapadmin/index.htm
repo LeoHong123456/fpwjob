@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>{yun:}$config.sy_webname{/yun} - 手机后台管理中心</title>
+	<link href="css/wap.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	<meta name="renderer" content="webkit"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+	<script src="js/layer/layer.m.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+	<script src="js/public.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script> 
+</head>
+
+<body style="background:#f1f1f1">
+	<div class="admin_header"><div class="admin_header_cont">站长管理中心</div></div>
+	<div class="admin_mune_box">
+		<dl class="admin_nav">
+			<a href="?c=company">
+				<dt class="admin_nav_c1"><i class="admin_nav_icon admin_nav_icon_qy"></i></dt>
+				<dd>企业</dd>
+			</a>
+		</dl>
+		<dl class="admin_nav">
+			<a href="?c=user">
+				<dt class="admin_nav_c2"><i class="admin_nav_icon admin_nav_icon_gr"></i></dt>
+				<dd>个人</dd>
+			</a>
+		</dl>
+		<dl class="admin_nav">
+			<a href="?c=yunying">
+				<dt class="admin_nav_c3"><i class="admin_nav_icon admin_nav_icon_y"></i></dt>
+				<dd>运营</dd>
+			</a>
+		</dl>
+		<dl class="admin_nav">
+			<a href="?c=member_log">
+				<dt class="admin_nav_c4"><i class="admin_nav_icon admin_nav_icon_rz"></i></dt>
+				<dd>日志</dd>
+			</a>
+		</dl>
+		
+		<dl class="admin_nav">
+			<a href="?c=tongji">
+				<dt class="admin_nav_c5"><i class="admin_nav_icon admin_nav_icon_tj"></i></dt>
+				<dd>统计</dd>
+			</a>
+		</dl>
+		
+		<dl class="admin_nav">
+			<a href="?c=link">
+				<dt class="admin_nav_c6"><i class="admin_nav_icon admin_nav_icon_lj"></i></dt>
+				<dd>友情链接</dd>
+			</a>
+		</dl>
+		
+		<dl class="admin_nav">
+			<a href="?c=admin_recharge">
+				<dt class="admin_nav_c7"><i class="admin_nav_icon admin_nav_icon_cz"></i></dt>
+				<dd>会员充值</dd>
+			</a>
+		</dl>
+		
+		<dl class="admin_nav">
+			<a href="index.php?c=admin_company_rating">
+				<dt class="admin_nav_c8"><i class="admin_nav_icon admin_nav_icon_dj"></i></dt>
+				<dd>设置等级</dd>
+			</a>
+		</dl>
+	</div>
+
+	<div class="admin_index_box">
+		<div class="admin_index_box_cont">
+			<div class="admin_index_tjleft">企业统计</div>
+			<i class="admin_index_tjleft_icon"></i>
+			<div class="admin_index_box_cont_tit">会员数：</div>
+
+			<ul class="admin_index_box_sjlist">
+				<li> <div class="admin_index_t">今日</div><div class="admin_index_n">{yun:}$list.com_num_now{/yun}</div></li>
+				<li> <div class="admin_index_t">昨日</div><div class="admin_index_n">{yun:}$list.com_num{/yun}</div></li>
+				<li> <a href="?c=admin_comlist&status=3"><div class="admin_index_t">待审核</div><div class="admin_index_n">{yun:}$list.com_num_dsh{/yun}</div></a></li>
+			</ul>
+
+			<div class="admin_index_box_cont_tit">职位数：</div>
+			<ul class="admin_index_box_sjlist">
+				<li><div class="admin_index_t">今日</div><div class="admin_index_n">{yun:}$list.job_num_now{/yun}</div></li>
+				<li><div class="admin_index_t">昨日</div><div class="admin_index_n">{yun:}$list.job_num{/yun}</div></li>
+				<li><a href="?c=admin_comjob&state=4"><div class="admin_index_t">待审核</div><div class="admin_index_n">{yun:}$list.job_num_dsh{/yun}</div></a></li>
+			</ul>
+			<div class="admin_index_dsh">
+				待审核企业认证：{yun:}$list.comcert_num_dsh{/yun} <a href="index.php?c=comcert&status=3" class="admin_index_dsh_a">立即审核</a>
+			</div>
+		</div>
+
+		<div class="admin_index_box_cont">
+			<div class="admin_index_tjleft admin_index_tjleft_gr">个人统计</div>
+			<i class="admin_index_tjleft_icon admin_index_tjleft_icon_icon"></i>
+			<div class="admin_index_box_cont_tit">会员数：</div>
+
+			<ul class="admin_index_box_sjlist">
+				<li><div class="admin_index_t">今日</div><div class="admin_index_n">{yun:}$list.user_num_now{/yun}</div></li>
+				<li><div class="admin_index_t">昨日</div><div class="admin_index_n">{yun:}$list.user_num{/yun}</div></li>
+				<li><a href="?c=user_member&status=4"><div class="admin_index_t">待审核</div><div class="admin_index_n">{yun:}$list.user_num_dsh{/yun}</div></a></li>
+			</ul>
+
+			<div class="admin_index_box_cont_tit">简历数：</div>
+			<ul class="admin_index_box_sjlist">
+				<li><div class="admin_index_t">今日</div><div class="admin_index_n">{yun:}$list.resume_num_now{/yun}</div></li>
+				<li><div class="admin_index_t">昨日</div><div class="admin_index_n">{yun:}$list.resume_num{/yun}</div></li>
+				<li><a href="?c=admin_resume&r_status=4"><div class="admin_index_t">待审核</div><div class="admin_index_n">{yun:}$list.resume_num_dsh{/yun}</div></a></li>
+			</ul>
+
+			<div class="admin_index_dsh">
+				待审核个人认证：{yun:}$list.usercert_num_dsh{/yun} <a href="index.php?c=usercert&status=2" class="admin_index_dsh_a">立即审核</a>
+			</div>
+		</div>
+
+
+		<div class="admin_index_box_cont">
+			<div class="admin_index_tjleft admin_index_tjleft_otr">其他统计</div>
+			<i class="admin_index_tjleft_icon admin_index_tjleft_otr_i"></i>
+
+			<ul class="admin_index_box_sjlist admin_index_box_sjlist_k">
+				<li><div class="admin_index_t admin_index_t_pd">待审核友情链接</div><div class="admin_index_n">{yun:}$list.link_num_dsh{/yun} </div><div class=""><a href="index.php?c=link&state=2" class="admin_index_sh_bth mt10">立即审核</a></div></li>
+				<li><div class="admin_index_t admin_index_t_pd">待确认订单</div><div class="admin_index_n">{yun:}$list.order_num_dsh{/yun}</div><div class=""><a href="index.php?c=admin_comorder&order_state=3" class="admin_index_sh_bth mt10">立即审核</a></div></li>
+			</ul>
+		</div>
+
+		<div class="admin_index_lout"><a href="javascript:void(0)" onclick="layer_del('','index.php?c=index&a=logout')">退出登录</a></div>
+	</div>
+
+	 
+</body>
+</html>

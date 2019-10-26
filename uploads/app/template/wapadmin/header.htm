@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>{yun:}$config.sy_webname{/yun} - 手机后台管理中心</title>
+<link href="css/wap.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="js/layer/layer.m.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="js/public.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script type="text/javascript">
+// 收缩展开效果
+$(document).ready(function(){
+   $(".ht_home_head_list").click(function(){
+	   layer.open({
+		   type:1,
+	       content:$(".admin_header_nav").html(),
+	   });
+   });
+});
+</script>
+
+
+<body >
+<!--头部-->
+<div class="ht_home_head" >
+  <div class="ht_home_head_back">  <a href="{yun:}if $backurl{/yun}{yun:}$backurl{/yun}{yun:}else{/yun}javascript:history.back();{yun:}/if{/yun}"><i class="ht_home_head_back_iocn"></i></a></div>
+  <div class="ht_home_head_tit">{yun:}$headertitle{/yun}</div>
+   <div class="ht_home_head_list"> <i class="ht_home_head_list_icon"></i> </div>
+  <div class="admin_header_nav" style="display:none">
+<div class="admin_mune_box_box" >
+ <dl class="admin_nav">
+       <a href="?c=company">
+         <dt class="admin_nav_c1"><i class="admin_nav_icon admin_nav_icon_qy"></i></dt>
+         <dd>企业</dd>
+       </a>
+     </dl>
+      <dl class="admin_nav">
+            <a href="?c=user">
+      <dt class="admin_nav_c2"><i class="admin_nav_icon admin_nav_icon_gr"></i></dt>
+         <dd>个人</dd>
+       </a>
+     </dl>
+      <dl class="admin_nav">
+        <a href="?c=yunying">
+       <dt class="admin_nav_c3"><i class="admin_nav_icon admin_nav_icon_y"></i></dt>
+         <dd>运营</dd>
+       </a>
+     </dl>
+      <dl class="admin_nav">
+      <a href="?c=member_log">
+         <dt class="admin_nav_c4"><i class="admin_nav_icon admin_nav_icon_rz"></i></dt>
+         <dd>日志</dd>
+       </a>
+     </dl>
+      <dl class="admin_nav">
+        <a href="?c=tongji">
+      <dt class="admin_nav_c5"><i class="admin_nav_icon admin_nav_icon_tj"></i></dt>
+         <dd>统计</dd>
+       </a>
+     </dl>
+      <dl class="admin_nav">
+      <a href="?c=link">
+       <dt class="admin_nav_c6"><i class="admin_nav_icon admin_nav_icon_lj"></i></dt>
+         <dd>友情链接</dd>
+       </a>
+     </dl>
+      <dl class="admin_nav">
+        <a href="?c=admin_recharge">
+         <dt class="admin_nav_c7"><i class="admin_nav_icon admin_nav_icon_cz"></i></dt>
+         <dd>会员充值</dd>
+       </a>
+     </dl>
+      <dl class="admin_nav">
+       <a href="index.php?c=admin_company_rating">
+      <dt class="admin_nav_c8"><i class="admin_nav_icon admin_nav_icon_dj"></i></dt>
+         <dd>设置等级</dd>
+       </a>
+     </dl>
+     
+    <div class="admin_nav_index_box"><a href="index.php" class="admin_nav_index">返回首页</a></div>
+</div>
+ 
+</div>
+
+
+</div>
+
+
+<!--置顶-->
+

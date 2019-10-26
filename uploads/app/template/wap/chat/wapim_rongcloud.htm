@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<title>{yun:}$title{/yun}</title>
+<meta http-equiv="keywords" content="{yun:}$keywords{/yun},wap" />
+<meta http-equiv="description" content="{yun:}$description{/yun}" />
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+</head>
+<body>
+<input type="hidden" id="homepage" value="1"/>
+<script>var wapurl="{yun:}url m=wap{/yun}",toid='{yun:}$member.uid{/yun}',chatplace='{yun:}$chatplace{/yun}';</script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<link href="{yun:}$config.sy_weburl{/yun}/js/layui/css/layui.mobile.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/layui.js?v={yun:}$config.cachecode{/yun}"></script>
+<script type='text/javascript' src='{yun:}$wap_style{/yun}/chat/rongcloud/RongIMLib-2.3.5.min.js?v={yun:}$config.cachecode{/yun}'></script>
+<script src="{yun:}$wap_style{/yun}/js/layer/layer.m.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script> 
+$(function() {
+	if(toid!=''){
+		goChat('customer');
+	}else{
+		goChat();
+	}
+});
+function goChat(mode){
+	//带聊天对象id进入的直接进入客服模式，不显示主界面
+	if(mode == 'customer'){
+		var customer = true;
+	}else{
+		var customer = false;
+	}
+	if(chatplace!=""){
+		var title='聊天';
+	}else{
+		var title='直聊';
+	}
+	var id = '{yun:}$uid{/yun}';
+	if(id!=''){
+		$.post(wapurl+"index.php?c=chat&a=goChat",{rand: Math.random()},function(data){
+			var res = eval('(' + data + ')');
+			//layui绑定扩展
+			layui.config({
+				base: '{yun:}$wap_style{/yun}/chat/rongcloud/'
+			}).extend({
+				socket: 'socket'
+			});
+
+			layui.use(['mobile', 'jquery', 'socket'], function (socket) {
+				var mobile = layui.mobile ,layim = mobile.layim; 
+				var socket = layui.socket;
+				socket.config({
+					key: res.key,
+					token: res.token,
+					layim: layim,
+					chat_type:res.chat_type
+				});
+				//获取历史聊天对象
+				var local = layui.data('layim-mobile')[res.id] || {};
+				local.history = res.history;
+				layui.data('layim-mobile', {
+					key: res.id
+					,value: local
+				});
+
+				layim.config({
+					init: {
+						mine: {
+							"id": res.mine.id
+							,"status": res.mine.status
+							,"username": res.mine.username
+							,"uname": res.mine.uname
+							,"access_token": res.mine.access_token
+							,"avatar": res.mine.avatar
+							,"sign": res.mine.sign
+							,"resource": res.mine.resource
+							,"usertype":res.mine.usertype
+						}
+					}
+					//上传图片接口
+					, uploadImage: {
+						url: wapurl+"index.php?c=chat&a=uploadImage" //（返回的数据格式见下文）
+						, type: 'post' //默认post
+					}
+					//获取推荐好友
+					,getRecommend:{
+						url: wapurl+"index.php?c=chat&a=getRecommend"
+						, type: 'get' //默认
+					}
+					//查找好友总数
+					,findFriendTotal:{
+						url: wapurl+"index.php?c=chat&a=findFriendTotal"
+						, type: 'get' //默认
+					}                       
+					//获取好友资料
+					,getInformation:{
+						url: wapurl+"index.php?c=chat&a=getInfomation"
+						, type: 'get' //默认
+					}  
+					//保存我的资料
+					,saveMyInformation:{
+						url: wapurl+"index.php?c=chat&a=saveInfo"
+						, type: 'post' //默认
+					}                                       
+					//获取总的记录数
+					,getChatLogTotal:{
+						url: wapurl+"index.php?c=chat&a=getChat"
+						, type: 'get' //默认post
+					}                       
+					//获取历史记录
+					,getChatLog:{
+						url: wapurl+"index.php?c=chat&a=getChatPage"
+						, type: 'get' //默认post
+					}          	
+					,brief: customer
+					,isNewFriend: false //是否在联系人面板开启新的朋友
+					,title: title 
+					,copyright:true
+					, notice: true //是否开启桌面消息提醒，默认false
+					,isgroup: false //是否开启群组
+				}); 
+				if(customer===true){
+					layim.chat({
+						id: '{yun:}$member.username{/yun}'
+						,name: '{yun:}$member.nickname{/yun}'
+						,type: 'friend'
+						,avatar: '{yun:}$member.avatar{/yun}'
+				    });
+					//客服模式点左上角返回
+				    layim.on('back', function(){
+						history.back();
+					});
+				}else{
+					//返回来源页
+					layim.on('back', function(){
+						var homepage=$("#homepage").val();
+						if(homepage==1){
+							history.back();
+						}else{
+							if(chatplace!=""){
+								$(".layim-title").hide();
+							}
+							$("#homepage").val(1);
+						}
+					});
+				}
+			});
+		});
+	}else{
+		layer.open({
+			content: '您已离线，请重新登录'
+		});
+		setTimeout(function(){location.href = wapurl+'index.php?c=login';},2000);
+	}
+}
+function readed(obj){
+	if(chatplace!=""){
+		$(".layim-title").show();
+	}
+	$("#homepage").val(2);
+}
+</script>
+<style>
+.layui-m-layermain .layui-m-layersection {
+    vertical-align: bottom;
+}
+</style>  
+</body>
+</html>

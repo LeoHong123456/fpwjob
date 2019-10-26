@@ -1,0 +1,115 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>企业 &gt; {yun:}$headertitle{/yun} &gt; {yun:}$row.name{/yun}</span>
+</div>
+<div class="peo_det">
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">企业全称：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.name{/yun}</div>
+     </div>
+    <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">企业简称：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.shortname{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">联&nbsp;系&nbsp; 人：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.linkman{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">所属职位：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.linkjob{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">联系邮件：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.linkmail{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">从事行业：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$industry_name[$row.hy]{/yun}</div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">企业性质：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$comclass_name[$row.pr]{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">企业规模：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$comclass_name[$row.mun]{/yun}</div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">创办时间：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.sdate{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">注册资金：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}if $row.money{/yun}{yun:}$row.money{/yun}万{yun:}/if{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">邮政编码：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.zip{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">联系QQ：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.linkqq{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">固定电话：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.linkphone{/yun}</div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">联系手机：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.linktel{/yun}</div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">企业网址：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.website{/yun}</div>
+     </div>
+     {yun:}if $row.logo{/yun}
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">企业logo：</div></div>
+          <div class="peo_det_yh_c "><img class="rz_dd_tu" src="{yun:}$config.sy_weburl{/yun}/{yun:}$row.logo{/yun}"/></div>
+     </div>
+     {yun:}/if{/yun}
+	  <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">企业简介：</div></div>
+          <div class="peo_det_yh_c ">{yun:}$row.content{/yun}&nbsp;</div>
+     </div>
+   
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">登录时间：</div></div>
+          <div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.lastupdate|date_format:'%Y-%m-%d'{/yun}</div>
+     </div>
+     <input type="hidden" id="pytoken"  value="{yun:}$pytoken{/yun}"/>
+     <input type="hidden" id="lasturl"  value="{yun:}$lasturl{/yun}"/>
+</div>
+<div class="peo_det_but">
+     <ul>
+         <li><a style="display:block" href="javascript:void(0);" onclick="statusdiv('{yun:}$row.status{/yun}','审核操作')">审核</a></li>
+         <li><a style="display:block" href="javascript:void(0);" onclick="layer_del('确定要删除？', 'index.php?c=admin_comlist&a=del&del={yun:}$row.uid{/yun}');">删除</a></li>
+         <li><a style="display:block" href="javascript:;" onclick="resetpw('{yun:}$row.username{/yun}','{yun:}$row.uid{/yun}');">重置</a></li>
+     </ul>
+</div>
+<input type="hidden" id="uid" value="{yun:}$row.uid{/yun}" />
+<!--审核弹出-->
+<div class="pop_up" style="display:none;" id="status_div">
+     <div class="pop_up_state">
+        <ul>
+          <li><label><input class="pop_up_state_cb" type="radio" name="status" value="0" id="status0"/>未审核</label></li>
+          <li><label><input class="pop_up_state_sb" type="radio" name="status" value="1" id="status1"/>正常</label></li>
+          <li><label><input class="pop_up_state_cb" type="radio" name="status" value="3" id="status3"/>未通过</label></li>
+        </ul>
+     </div>
+     <div class="pop_up_head">
+        <div class="pop_up_icon"></div>审核内容
+     </div>
+     <div class="pop_up_text"><div class="pop_up_text_textarea_bor"><textarea class="pop_up_text_ct" id="statusbody" name="statusbody">{yun:}$row.lock_info{/yun}</textarea></div></div>
+     <div class="pop_up_but">
+          <ul>
+              <li class="pop_up_but_q"><a style="display:block" href="javascript:void(0);" onclick="checkStatus('{yun:}$row.uid{/yun}','index.php?c=admin_comlist&a=status')">确定</a></li>
+              <li class="pop_up_but_x"><a style="display:block" href="javascript:void(0)" onclick="layer.closeAll();">取消</a></li>
+          </ul>
+     </div>
+</div>
+
+
+</body>
+</html>

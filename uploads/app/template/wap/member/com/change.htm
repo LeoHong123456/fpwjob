@@ -1,0 +1,126 @@
+{yun:}include file="$wapstyle/member/cheader.htm"{/yun} 
+<script src="{yun:}$wap_style{/yun}/js/rewardpay.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+
+<div class="wap_member_comp_h1"><span>赏金转换{yun:}$config.integral_pricename{/yun}</span></div> 
+  
+<div class="loglist_box">
+我的钱包：<span class="yun_reward_list_box_n">￥{yun:}$statis.packpay{/yun}</span> 
+ 冻结金额：<span class="yun_reward_list_box_n">￥{yun:}$statis.freeze{/yun}</span>
+  </div><div style="padding:10px 10px 0 10px;">
+<div class="admin_new_tip ">
+        <div class="admin_new_tit">操作提示</div>
+        <div class="admin_new_tip_list_cont">
+          <div class="admin_new_tip_list">单笔转换金额必须达到{yun:}$config.packprice_min_recharge{/yun}元,一日最多转换{yun:}if $config.paypack_max_recharge gt 0{/yun}{yun:}$config.paypack_max_recharge{/yun}次{yun:}else{/yun}次数不限{yun:}/if{/yun}
+			  ,已经转换{yun:}$changeNum{/yun}次。</div>
+                   
+         
+           </div>
+     </div>
+      </div> 
+ <section class="wap_member">
+	   <form name="change"  action="index.php?c=change" method="post" onsubmit="return change_form();">
+	   <ul class="yunset_password mt15">
+			<li><span class="yunset_password_mname">转换金额： </span> 
+			<div class="yunset_sj_box">
+			 <input type="text" class="yunset_sjtext" name="changeprice" id="changeprice" value="" placeholder="自定义" onkeyup="changepriceprice(this);" autocomplete="off">
+			 </div></li>
+			 <li><span class="yunset_password_mname">转换{yun:}$config.integral_pricename{/yun}：</span> 
+			<div class="yunset_sj_box">
+			 <em class="pay_xymoney_t_n"><span class="payintegral" id="payintegral">0</span></em>个{yun:}$config.integral_pricename{/yun}<input type="hidden" name="changeintegral" id="changeintegral" size="20" value=""  class="yunset_sjtext">
+			 </div></li>
+		</ul>
+		<div class="yunset_bth_box">
+			{yun:}if $statis.packpay>0{/yun}
+		    <input type="submit" value="转换" name=nextstep class="reinputText2">
+			{yun:}else{/yun}
+			<input  type="submit" value="不可转换" name=nextstep class="reinputText2"  disabled>
+			{yun:}/if{/yun}
+		</div>
+		</form>
+	</section> 
+</div> </div>
+<script>
+	function accAdd(arg1,arg2){ 
+		var r1,r2,m; 
+		try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
+		try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0} 
+		m=Math.pow(10,Math.max(r1,r2))
+		return (arg1*m+arg2*m)/m 
+	}
+	function accSub(arg1,arg2){ 
+		return accAdd(arg1,-arg2); 
+	} 
+	function accMul(arg1, arg2) {
+		var m = 0, s1 = arg1.toString(), s2 = arg2.toString();
+		try { m += s1.split(".")[1].length } catch (e) { }
+		try { m += s2.split(".")[1].length } catch (e) { }
+		return Number(s1.replace(".", "")) * Number(s2.replace(".", "")) / Math.pow(10, m)
+	}
+	function accDiv(arg1,arg2){    
+		var t1=0,t2=0,r1,r2;    
+		try{t1=arg1.toString().split(".")[1].length}catch(e){}    
+		try{t2=arg2.toString().split(".")[1].length}catch(e){}    
+		with(Math){        
+			r1=Number(arg1.toString().replace(".",""));        
+			r2=Number(arg2.toString().replace(".",""));        
+			return (r1/r2)*pow(10,t2-t1);    
+		}
+	}
+
+	function changepriceprice(obj){
+		var packpay='{yun:}$statis.packpay{/yun}';
+		var proportion='{yun:}$config.integral_proportion{/yun}';
+		var minchangeprice='{yun:}$config.packprice_min_recharge{/yun}';
+
+		var changeprice=$("#changeprice").val();
+		if(changeprice!=""){
+			var changeprice=parseFloat(changeprice);
+		}
+		
+		if(changeprice>0 && changeprice<minchangeprice){
+			$("#changeprice").val(minchangeprice);
+			$("#changeintegral").val(proportion*minchangeprice);
+			$("#payintegral").html(proportion*minchangeprice);
+			layermsg('转换金额不能小于{yun:}$config.packprice_min_recharge{/yun},请重新填写 ！', 2, 8);return false;
+		}
+		obj.value = obj.value.replace(/^[0]/gi,"");
+		obj.value = obj.value.replace(/[^\d.]/g,"");  
+		obj.value = obj.value.replace(/\.{2,}/g,"."); 
+		obj.value = obj.value.replace(".","$#$").replace(/\./g,"").replace("$#$","."); 
+		obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d).*$/,'$1$2.$3'); 
+
+		if(changeprice!=""){
+
+			if(changeprice<=packpay){
+				
+				var integraltotal=parseInt(accMul(proportion,changeprice));
+				var integralFact=accMul(proportion,changeprice);
+				if(integralFact>integraltotal){
+					var integraltotal= accAdd(integraltotal,1);
+				}
+				$("#changeintegral").val(integraltotal);
+				$("#payintegral").html(integraltotal);
+
+			} else {
+				
+				var integraltotal=parseInt(accMul(proportion,packpay));
+				var integralFact=accMul(proportion,packpay);
+				if(integralFact>integraltotal){
+					var integraltotal= accAdd(integraltotal,1);
+				}
+				$("#changeprice").val(packpay);
+				$("#changeintegral").val(integraltotal);
+				$("#payintegral").html(integraltotal);
+			}
+
+		}else{
+			
+			$("#changeprice").val("");
+			$("#changeintegral").val("");
+			$("#payintegral").html(0);
+
+		}
+		
+	}
+</script>
+{yun:}include file="$wapstyle/footer.htm"{/yun} 

@@ -1,0 +1,93 @@
+{yun:}include file="$trainstyle/header.htm"{/yun}
+<script src="{yun:}$config.sy_weburl{/yun}/js/public.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/member_public.js?v={yun:}$config.cachecode{/yun}"></script>
+<div class="clear"></div>
+<div class="training_content training_w980">
+
+{yun:}include file="$trainstyle/left.htm"{/yun}
+<div class="right_column frt mt20">
+<div class="right_nav_box">
+    <ul class="right_nav_box_list">
+<li {yun:}if $smarty.get.status==""{/yun}class="right_nav_box_cur"{yun:}/if{/yun}><a href="index.php?c=sign_up">预约名单</a></li>
+<li {yun:}if $smarty.get.status=="1"{/yun}class="right_nav_box_cur"{yun:}/if{/yun}><a href="index.php?c=sign_up&status=1">已联系名单</a></li>
+<li {yun:}if $smarty.get.status=="2"{/yun}class="right_nav_box_cur"{yun:}/if{/yun}><a href="index.php?c=sign_up&status=2">未联系名单</a></li>
+</ul>
+</div>
+<div class="right_column_border">
+
+<div class="clear"></div>
+<div class="Reservation_list" style="padding:0px;">
+
+<iframe id="supportiframe"  name="supportiframe" onload="returnmessage('supportiframe');" style="display:none"></iframe>
+<form action="{yun:}$now_url{/yun}" method="post" target="supportiframe" id='myform'>
+{yun:}foreach item=v from=$rows{/yun}
+{yun:}assign var="state" value=$v.order_state{/yun}
+<div class="sigm_up_box">
+<div class="sigm_up_box_checkbox"><input type="checkbox" name="delid[]" value="{yun:}$v.id{/yun}" class="Reservation_list_check Reservation_list_check_mt5"></div>
+<div class="sigm_up_box_r" style="width:800px;">
+<div class="sigm_up_box_r_user" style="width:500px;">
+<div class="sigm_up_box_r_user_name"><span class="sigm_up_box_r_user_name_s">{yun:}$v.name{/yun}</span> {yun:}if $v.status=="1"{/yun}<span class="right_column_news_ysh">已联系</span>{yun:}/if{/yun}</div>
+<div class="sigm_up_box_r_user_touch">联系电话：{yun:}$v.phone{/yun}<span class="sigm_up_box_r_user_time">报名时间：{yun:}$v.ctime|date_format:"%Y-%m-%d %H:%M:%S"{/yun}</span></div>
+<div>预约课程：{yun:}$v.sub_name{/yun}</div>
+</div>
+<div class="sigm_up_box_r_fk" style="width:200px; margin-top:20px">
+<div class="sigm_up_box_r_fk_zt">{yun:}if $v.isprice==1{/yun}{yun:}$arr_data.paystate.$state{/yun}{yun:}else{/yun}<font color="red">到场支付</font>{yun:}/if{/yun}</div>
+
+
+</div>
+<div class="sigm_up_box_r_sc">
+<a href="javascript:void(0)" onclick="layer_del('确定删除该报名信息？','index.php?c=sign_up&delid={yun:}$v.id{/yun}');">删除</a>
+</div>
+<div class="sigm_up_box_r_p">预约内容：{yun:}$v.content{/yun}</div>
+
+</div>
+</div>
+
+{yun:}foreachelse{/yun}
+      <div class="msg_no">暂无相关信息</div>
+{yun:}/foreach{/yun}
+{yun:}if !empty($rows){/yun}
+<div class="sigm_up_box sigm_up_box_bg">
+<div class="sigm_up_box_checkbox_w50"><input id='checkAll' type="checkbox" onclick='m_checkAll(this.form)' class="right_column_news_cbox"><label for="checkAll">全选</label></div>
+
+<input type="button" value="删除选中项" class="right_column_news_sub" onclick="return really1('delid[]');">
+<input type="hidden" name="status" value="0" />
+<input class="btn-v3" type="button" value="设为已联系" onclick="return really2('delid[]');"> 
+</div>
+{yun:}/if{/yun}
+</form>
+</div>
+</div>
+</div>
+</div>
+<script>
+function really1(name){
+	var chk_value =[];    
+	$('input[name="'+name+'"]:checked').each(function(){    
+		chk_value.push($(this).val());   
+	});
+	if(chk_value.length==0){
+		layer.msg("请选择要删除的数据！",2,8);return false;
+	}else{
+		$("input[name=status]").val(0);
+		layer.confirm("确定删除吗？",function(){
+			setTimeout(function(){$('#myform').submit()},0); 
+		});
+	}
+}
+function really2(name){
+	var chk_value =[];    
+	$('input[name="'+name+'"]:checked').each(function(){    
+		chk_value.push($(this).val());   
+	});
+	if(chk_value.length==0){
+		layer.msg("请选择要设为已联系的数据！",2,8);return false;
+	}else{
+		$("input[name=status]").val('1');
+		layer.confirm("确定要设为已联系吗？",function(){
+			setTimeout(function(){$('#myform').submit()},0);
+		});
+	}
+}
+</script>
+{yun:}include file="$trainstyle/footer.htm"{/yun}

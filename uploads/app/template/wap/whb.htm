@@ -1,0 +1,92 @@
+{yun:}include file="$wapstyle/header_cont.htm"{/yun}
+<link rel="stylesheet" href="{yun:}$wap_style{/yun}/hb/reset.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+
+
+<section>
+	<div class="flex pdl12 pdr12 pdt10 pdb10 bgwhite">
+		<div class="flex flex-horizontally-center flex-vertical-center">
+			<img src="{yun:}$wap_style{/yun}/hb/images/flower.png" width="80" height="80">
+		</div>
+		<div class="flex-1 ml10">
+			<h3 class="f16 c333 ui-nowrap-flex">选择模板，一键生成招聘海报</h3>
+			<p class="f14 mt5 ui-nowrap-flex">移动招聘首选-让招聘更有效</p>
+			<p class="f14 cff9 ui-nowrap-flex">★转发朋友圈、员工内推、打印张贴★</p>
+		</div>
+	</div>
+		
+	<div class="">
+		<ul class="poster-list pdb10 overflow ">
+			<li class="">
+				<a href="{yun:}url m=wap c=company a=ws id=$smarty.get.id hb=10{/yun}" class="hb_listbox">
+				<div class="poster_pic"><img src="{yun:}$wap_style{/yun}/hb/images/hb10.png"></div>
+				<div class="hb_listbox_name">制式</div>
+				</a>
+			</li>
+
+			<li class="">
+				<a href="{yun:}url m=wap c=company a=ws id=$smarty.get.id hb=9{/yun}" class="hb_listbox">
+					<div class="poster_pic"><img src="{yun:}$wap_style{/yun}/hb/images/hb9.png"></div>
+					<div class="hb_listbox_name">创意海报</div>
+				</a>
+			</li>
+
+			<li class="">
+				<a href="{yun:}url m=wap c=company a=ws id=$smarty.get.id hb=8{/yun}" class="hb_listbox">
+					<div class="poster_pic"><img src="{yun:}$wap_style{/yun}/hb/images/hb8.png"></div>   
+					<div class="hb_listbox_name">招财猫</div>
+				</a>
+			</li>
+			<li class="">
+				<a href="{yun:}url m=wap c=company a=ws id=$smarty.get.id hb=7{/yun}" class="hb_listbox">					
+					<div class="poster_pic"><img src="{yun:}$wap_style{/yun}/hb/images/hb7.png"></div>
+					<div class="hb_listbox_name">挑战自己</div>
+				</a>
+			</li>
+			<li class="">
+				<a href="{yun:}url m=wap c=company a=ws id=$smarty.get.id hb=6{/yun}" class="hb_listbox">
+					<div class="poster_pic"><img src="{yun:}$wap_style{/yun}/hb/images/hb6.png"></div>   
+					<div class="hb_listbox_name">合适你就来</div>
+				</a>
+			</li>
+			<li class="">
+				<a href="{yun:}url m=wap c=company a=ws id=$smarty.get.id hb=5{/yun}" class="hb_listbox">
+					<div class="poster_pic"><img src="{yun:}$wap_style{/yun}/hb/images/hb5.png"></div>   
+					<div class="hb_listbox_name">下一个主角</div>
+				</a>
+			</li>
+			<li class="">
+				<a href="{yun:}url m=wap c=company a=ws id=$smarty.get.id hb=4{/yun}" class="hb_listbox">
+					<div class="poster_pic"><img src="{yun:}$wap_style{/yun}/hb/images/hb4.png"></div>   
+					<div class="hb_listbox_name">放飞梦想</div>
+				</a>
+			</li>
+
+			<li class="">
+				<a href="{yun:}url m=wap c=company a=ws id=$smarty.get.id hb=3{/yun}" class="hb_listbox">
+					<div class="poster_pic"><img src="{yun:}$wap_style{/yun}/hb/images/hb3.png"></div>   
+					<div class="hb_listbox_name">与众不同</div>
+				</a>
+			</li>
+				
+			<li class="">
+				<a href="{yun:}url m=wap c=company a=ws id=$smarty.get.id hb=2{/yun}" class="hb_listbox">
+					<div class="poster_pic"><img src="{yun:}$wap_style{/yun}/hb/images/hb2.png"></div>   
+					<div class="hb_listbox_name">门店特制</div>
+				</a>
+			</li>
+
+			<li class="">
+				<a href="{yun:}url m=wap c=company a=ws id=$smarty.get.id hb=1{/yun}" class="hb_listbox">
+					<div class="poster_pic"><img src="{yun:}$wap_style{/yun}/hb/images/hb1.png"></div>   
+					<div class="hb_listbox_name">有梦想你就来</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</section>
+
+<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+{yun:}if !$fr{/yun}
+{yun:}include file="$wapstyle/footer.htm"{/yun} 
+{yun:}/if{/yun}

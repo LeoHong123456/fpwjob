@@ -1,0 +1,100 @@
+{yun:}include file="$trainstyle/header.htm"{/yun} 
+<div class="clear"></div>
+<div class="training_content training_w980">
+<div class="training_reg  ftl mt10">
+<div class="training_reg_h1">
+<span class="training_reg_h1_span">会员登录</span><span class="training_reg_h1_bt"><i class="training_reg_h1_i">*</i> 为必填项</span>
+</div>
+<div class="training_reg_left  ftl">
+
+<ul>
+<li><em class="training_reg_em"><i class="training_reg_h1_i">*</i> 用 户 名：</em><input type="text" id="username" class="training_reg_text"></li>
+<li><em class="training_reg_em"><i class="training_reg_h1_i">*</i> 密　　码：</em><input type="password" id="password" class="training_reg_text"></li>
+{yun:}if strpos($config.code_web,"前台登录")!==false{/yun}
+<li>
+	 {yun:}if $config.code_kind==3{/yun}	
+		<!---geetest----->
+        	<em class="training_reg_em"><i class="training_reg_h1_i">*</i> 安全验证：</em>
+            <div class="training_verification">
+		<div id="popup-captcha" data-id='sublogin' data-type='click'></div>
+		<input type='hidden' id="popup-submit">
+        </div>
+	{yun:}else{/yun}
+	
+	<em class="training_reg_em"><i class="training_reg_h1_i">*</i> 验 证 码：</em>
+	<input type="text" id="txt_CheckCode" maxlength="6" class="training_reg_text training_reg_textw120">
+	<img id="vcode_img" src="{yun:}$config.sy_weburl{/yun}/app/include/authcode.inc.php" style="margin-left:10px; float:left">
+	<a href="javascript:void(0);" onclick="checkCode('vcode_img');" class="registe_a" style="display:inline-block; line-height:30px; padding-left:10px;">看不清？</a>
+	
+	{yun:}/if{/yun}
+</li>
+{yun:}/if{/yun}
+<input type="hidden" name="cookie" value="{yun:}$cookie{/yun}" id="cookie"/>
+<li><em class="training_reg_em">&nbsp;</em><a href="{yun:}url m=forgetpw{/yun}" style="color:#06F;float:left;text-align:left;">忘记密码？</a></li>
+<li><em class="training_reg_em">&nbsp;</em><input type="button" onclick="checklogin('{yun:}url m=train c=login{/yun}','vcode_img');" id='sublogin' value="立即登录" class="btn_reg_submit" /></li>
+</ul>
+</div>
+<div class="training_reg_right ftr">
+	<div class="training_reg_right_log">
+		还不是{yun:}$config.sy_webname{/yun}用户？
+		<a href="{yun:}url m=train c=register{/yun}" class="training_reg_right_log_a" style="display:block; margin-top:10px;">立即注册</a>
+	</div>
+</div>
+
+<div class="training_reg_right ftr">
+	<div class="training_reg_right_log">
+		
+		使用以下帐号直接登录:
+		{yun:}if $config.sy_sinalogin==1{/yun}
+			<a class="icon_wb png" title="使用新浪微博帐号登录" href="{yun:}url m=sinaconnect{/yun}">新浪</a>
+		{yun:}/if{/yun}
+     
+		{yun:}if $config.sy_qqlogin==1{/yun}
+			<a class="icon_qq png" title="使用腾讯QQ帐号登录" href="{yun:}$config.sy_weburl{/yun}/qqlogin.php" >QQ</a>
+		{yun:}/if{/yun}
+        
+		{yun:}if $config.wx_author==1{/yun}
+			<a class="icon_weixin png" title="使用微信帐号登录" href="{yun:}url m=wxconnect{/yun}">微信</a>
+		{yun:}/if{/yun}
+
+	</div>
+</div>
+
+</div>
+</div>
+<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<link href="{yun:}$config.sy_weburl{/yun}/js/layui/css/layui.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" /><script src="{yun:}$config.sy_weburl{/yun}/js/layui/layui.js?v={yun:}$config.cachecode{/yun}"></script><script src="{yun:}$config.sy_weburl{/yun}/js/layui/phpyun_layer.js?v={yun:}$config.cachecode{/yun}"></script> 
+<script src="{yun:}$config.sy_weburl{/yun}/js/public.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<!--[if IE 6]>
+<script src="{yun:}$config.sy_weburl{/yun}/js/png.js?v={yun:}$config.cachecode{/yun}"></script>
+<script>
+DD_belatedPNG.fix('.png,.pagination li a ');
+</script>
+<![endif]-->
+<script src="{yun:}$train_style{/yun}/js/reg_ajax.js?v={yun:}$config.cachecode{/yun}" type="text/javascript"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/geetest/gt.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/geetest/pc.js?v={yun:}$config.cachecode{/yun}" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+	$("#username,#txt_CheckCode").focus(function(){
+		var txAreaVal = $(this).val();
+		if( txAreaVal == this.defaultValue){$(this).val("");}
+	}).blur(function(){
+		var txAreaVal = $(this).val();
+		if( txAreaVal == this.defaultValue||$(this).val()==""){$(this).val(this.defaultValue);}
+	}).keydown(function (e) {
+	    var ev = document.all ? window.event : e;
+	    if (ev.keyCode == 13) {
+	        checklogin('{yun:}url m=train c=login{/yun}','vcode_img');
+	    } else { return;}
+	});
+	
+	$("#password").keydown(function (e) {
+	    var ev = document.all ? window.event : e;
+	    if (ev.keyCode == 13) {
+	        checklogin('{yun:}url m=train c=login{/yun}','vcode_img');
+	    } else { return; }
+	});
+});
+</script>
+{yun:}include file="$trainstyle/footer.htm"{/yun} 

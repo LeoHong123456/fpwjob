@@ -1,0 +1,30 @@
+{yun:}include file="$wapstyle/member/lheader.htm"{/yun} 
+<script src="{yun:}$wap_style{/yun}/js/rewardpay.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<div class="wap_member_comp_h1"><span>提现</span></div> 
+<div class="loglist_box">
+我的钱包：<span class="yun_reward_list_box_n">￥{yun:}$statis.packpay{/yun}</span> 
+ <span class="wap_member_msg_job_s"> 冻结金额：<span class="yun_reward_list_box_n">￥{yun:}$statis.freeze{/yun}</span> </span> 
+  </div>
+  <section class="wap_member">
+	   <form name="pay"  action="index.php?c=withdraw" method="post" onsubmit="return withdraw_form();">
+	   <ul class="yunset_password mt15">
+			<li><span class="yunset_password_mname">真实姓名： </span> 
+			<div class="yunset_sj_box">
+			 <input type="text" class="yunset_sjtext" name="real_name" id="real_name" value=""placeholder="请输入真实姓名">
+			 </div></li>
+			 <li><span class="yunset_password_mname">提现金额：</span> 
+			<div class="yunset_sj_box">
+			 <input type="text" class="yunset_sjtext" name="price" id="price" onkeyup= "this.value=this.value.replace(/[^0-9.]/g,'')" value=''  placeholder="请输入提现金额">
+			 </div></li>
+		</ul>
+		<div class="yunset_bth_box">
+			{yun:}if $statis.packpay>=$config.sy_withdraw_minmoney{/yun}
+			<input class="reinputText2" type="submit" value="提现">
+			{yun:}else{/yun}
+			<input  type="button" value="不可提现" name='nextstep' disabled  class="reinputText2" >
+			{yun:}/if{/yun}
+		</div>
+		</form>
+	</section>
+
+{yun:}include file="$wapstyle/footer.htm"{/yun} 

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" href="{yun:}$config.sy_weburl{/yun}/app/template/wap/hb/reset.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+</head>
+
+<body class="">
+
+	<div class="hb_jobbox7">
+    	<div class="hb_jobbox7cont">
+		{yun:}foreach item=v from=$jobs key=key{/yun} 
+			{yun:}if $key<5{/yun}
+				<div class="hb_jobbox7name"> {yun:}$v.name{/yun}</div>
+           
+   
+ 
+  
+			{yun:}/if{/yun}
+		{yun:}/foreach{/yun}
+       </div>
+       <div class="hb_jobbox7comname">{yun:}$comname{/yun}</div>
+           <div class="hb7_webname">{yun:}$config.sy_webname{/yun} ({yun:}$config.sy_weburl{/yun})</div>
+
+			<div class="hb7_ewm"><img src="{yun:}url m=ajax c=pubqrcode toc=company toa=show toid=$smarty.get.id{/yun}" width="150" height="150"></div>
+	</div>
+
+</body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" href="{yun:}$config.sy_weburl{/yun}/app/template/wap/hb/reset.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+</head>
+
+<body class="">
+
+	<div class="hb_jobbox5">
+    	<div class="hb_jobbox5cont">
+       <ul class="hb_jobbox5list">
+		{yun:}foreach item=v from=$jobs key=key{/yun} 
+			{yun:}if $key<6{/yun}
+            
+			<li> {yun:}$v.name{/yun}
+            
+            <span class="hb_jobbox5list_xz">{yun:}if $v.minsalary && $v.maxsalary{/yun}
+								￥{yun:}$v.minsalary{/yun} - {yun:}$v.maxsalary{/yun}
+							{yun:}else if $v.minsalary{/yun}
+								￥{yun:}$v.minsalary{/yun}以上
+							{yun:}else{/yun}
+								面议
+							{yun:}/if{/yun}</span>
+            </li>
+            
+           
+			{yun:}/if{/yun}
+		{yun:}/foreach{/yun}
+      
+            
+    </ul>
+             
+             
+</div>
+	<div class="hb5_comname">{yun:}$comname{/yun}</div>
+<div class="hb5_webname">{yun:}$config.sy_webname{/yun} ({yun:}$config.sy_weburl{/yun})</div>
+
+			<div class="hb5_ewm"><img src="{yun:}url m=ajax c=pubqrcode toc=company toa=show toid=$smarty.get.id{/yun}" width="170" height="170"></div>
+	</div>
+
+</body>

@@ -1,0 +1,114 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>企业 &gt; {yun:}$headertitle{/yun}</span>
+</div>
+<form action="index.php?c=admin_once&a=add{yun:}if $smarty.get.id{/yun}&id={yun:}$smarty.get.id{/yun}{yun:}/if{/yun}" method="post" enctype="multipart/form-data" onSubmit="return check_form();">
+<div class="peo_det">
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">职位名称：</div></div>
+          <div class="peo_det_yh_c"><div class="wapadmin_text_box"><input type="text"  value="{yun:}$row.title{/yun}" name="title" id="title" class="wapadmin_text_box_text"></div></div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">店面名称：</div></div>
+          <div class="peo_det_yh_c"><div class="wapadmin_text_box"><input type="text"  value="{yun:}$row.companyname{/yun}" name="companyname" id="companyname" class="wapadmin_text_box_text"></div></div>
+     </div>
+      <div class="peo_det_yh">
+      <div class="peo_det_yh_nm"><div class="nb">工作地点：</div></div>
+      <tr >
+           
+            <td><div class=textbox>
+                <div class="admin_td_h">
+                  <div class="wapadmin_select_box_w30"> <select name="provinceid" id="provinceid" lid="citysid" class="wapadmin_select">
+                    <option value="">请选择</option>
+                {yun:}foreach from=$city_index item=v{/yun}
+                    <option value='{yun:}$v{/yun}' {yun:}if $row.provinceid==$v{/yun}selected{yun:}/if{/yun}>{yun:}$city_name[$v]{/yun}</option>
+                {yun:}/foreach{/yun}
+                  </select>
+                  </div>
+                 <div class="wapadmin_select_box_w30">  <select name="cityid" size="1" id="citysid" lid="three_cityid"class="wapadmin_select">
+                    <option value="">请选择</option>
+			   {yun:}foreach from=$city_type[$row.provinceid]  item=v{/yun}
+                    <option value='{yun:}$v{/yun}' {yun:}if $row.cityid==$v{/yun}selected{yun:}/if{/yun}>{yun:}$city_name[$v]{/yun}</option>
+                {yun:}/foreach{/yun}
+                  </select></div>
+                  <div class="wapadmin_select_box_w30"> <select name="three_cityid" size="1" id="three_cityid" class="wapadmin_select">
+                    <option value="">请选择</option>
+			 {yun:}foreach from=$city_type[$row.cityid]  item=v{/yun}
+                    <option value='{yun:}$v{/yun}' {yun:}if $row.three_cityid==$v{/yun}selected{yun:}/if{/yun}>{yun:}$city_name[$v]{/yun}</option>
+                {yun:}/foreach{/yun}
+            
+                  </select></div>
+                </div>
+              </div></td>
+               </tr>
+     </div>
+     
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">有效时间(天)：</div></div>
+          <div class="peo_det_yh_c"><div style="position:relative;width:160px;"><div class="wapadmin_text_box" style="width:150px">
+          <input type="text" id="edate" name="edate" value="{yun:}if $row.edate>0{/yun}{yun:}$row.edate{/yun}{yun:}else{/yun}0{yun:}/if{/yun}" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="3" class="wapadmin_text_box_text"></div><span style="position:absolute;right:-15px;top:0px; line-height:30px;">天</span></div></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">联&nbsp;系&nbsp; 人：</div></div>
+          <div class="peo_det_yh_c"><div class="wapadmin_text_box"><input type="text" id="linkman" name="linkman" value="{yun:}$row.linkman{/yun}" class="wapadmin_text_box_text"/></div></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">联系电话：</div></div>
+          <div class="peo_det_yh_c"><div class="wapadmin_text_box"><input type="text" name="phone" id="phone" value="{yun:}$row.phone{/yun}" class="wapadmin_text_box_text" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')"/></div></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">店铺形象：</div></div>
+          <div class="peo_det_yh_c">
+          <div style="width:180px; overflow:hidden"><input type="file" name="pic" value="{yun:}$row.pic{/yun}" accept="image/*"></div>
+          {yun:}if $row.pic{/yun}<img src="{yun:}$config.sy_weburl{/yun}/{yun:}$row.pic{/yun}" width="160px" height="60px">{yun:}/if{/yun}
+          </div>
+     </div>
+    <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">招聘要求：</div></div>
+          <div class="peo_det_yh_c"><div style="border:1px solid #ddd"><textarea id="require" name="require" class="wapadmin_textarea_box_t" >{yun:}$row.require{/yun}</textarea></div></div>
+     </div>
+           <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">密码:</div></div>
+          <div class="peo_det_yh_c"><div class="wapadmin_text_box"><input type="password" name="password" id="password" value=""  onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" class="wapadmin_text_box_text"/></div></div>
+     </div>
+</div>
+<div class="peo_det_bt">
+<div style="text-align:center;">
+<input class="admin_save_sub" name="add" type="submit" value="{yun:}if $smarty.get.id{/yun}修改{yun:}else{/yun}添加{yun:}/if{/yun}">
+<input type="hidden" name="id" value="{yun:}$row.id{/yun}">
+<input type="hidden" name="pytoken"  value="{yun:}$pytoken{/yun}"/>
+</div>
+</div>
+</form>
+{yun:}if $layer{/yun}
+<input type="hidden" id="layermsg" value="{yun:}$layer.msg{/yun}">
+<input type="hidden" id="layerurl" value="{yun:}$layer.url{/yun}">
+<script>$(document).ready(function(){islayer();});</script>
+{yun:}/if{/yun}
+<script>
+function check_form(){
+	if($.trim($("#title").val())==''){ 
+		layermsg('职位名称不能为空！');return false;
+	}
+	if($.trim($("#companyname").val())==''){ 
+		layermsg('店面名称不能为空！');return false;
+	}
+	if($("input[name=cityid]").val()==''){
+		layermsg('请选择工作地点');return false;
+	}
+	if($.trim($("#edate").val())==''){ 
+		layermsg('有效时间不能为空！');return false;
+	}
+	if($.trim($("#phone").val())==''){ 
+		layermsg('联系电话不能为空！');return false;
+	}
+	if($.trim($("#phone").val())!='' && isjsMobile($.trim($("#phone").val()))==false){ 
+		layermsg('联系电话格式错误！');return false;
+	}	
+	if($.trim($("#require").val())==''){ 
+		layermsg('要求不能为空！');return false;
+	}
+} 
+</script>
+</body>
+</html>

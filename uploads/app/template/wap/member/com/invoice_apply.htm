@@ -1,0 +1,140 @@
+{yun:}include file="$wapstyle/member/cheader.htm"{/yun}
+<section class="main_member_cot_box">
+    <ul class="yun_m_tit_three">
+        <li>
+            <a href="index.php?c=invoice">我的发票</a>
+        </li>
+        <li class="yun_m_tit_cur">
+            <a href="index.php?c=sqinvoice">发票索取</a>
+        </li>
+        <li>
+            <a href="index.php?c=invoice_info">发票信息</a>
+        </li>
+    </ul>
+
+    <div class="wap_member_post_list" id="paylogList">
+        {yun:}foreach item=log from=$rows{/yun} {yun:}assign var="state" value=$log.order_state{/yun} {yun:}assign var="type" value=$log.order_type{/yun}
+        <div class="com_member_hr">
+            <div class="paylog_tit"><span class="paylog_lx">{yun:}if $log.type==1{/yun}购买会员 {yun:}elseif $log.type=='2'{/yun}{yun:}$config.integral_pricename{/yun}充值 {yun:}elseif $log.type=='3'{/yun}银行转帐 {yun:}elseif $log.type=='4'{/yun}金额充值 {yun:}elseif $log.type=='5'{/yun}增值服务 {yun:}elseif $log.type=='6'{/yun}课程订购 {yun:}elseif $log.type=='7'{/yun}购买小程序 {yun:}elseif $log.type=='8'{/yun}分享红包推广 {yun:}elseif $log.type=='9'{/yun}悬赏红包 {yun:}elseif $log.type=='10'{/yun}职位置顶 {yun:}elseif $log.type=='11'{/yun}紧急招聘 {yun:}elseif $log.type=='12'{/yun}职位推荐 {yun:}elseif $log.type=='13'{/yun}职位自动刷新 {yun:}elseif $log.type=='16'{/yun}职位刷新 {yun:}elseif $log.type=='17'{/yun}兼职刷新 {yun:}elseif $log.type=='18'{/yun}高级职位刷新 {yun:}elseif $log.type=='19'{/yun}下载简历 {yun:}elseif $log.type=='20'{/yun}发布职位 {yun:}elseif $log.type=='21'{/yun}发布兼职 {yun:}elseif $log.type=='22'{/yun}发布高级职位 {yun:}elseif $log.type=='23'{/yun}面试邀请 {yun:}elseif $log.type=='24'{/yun}兼职推荐 {yun:}elseif $log.type=='26'{/yun}购买广告位 {yun:}/if{/yun}</span>
+                <span class="paylog_tit_zt">{yun:}$arr_data.paystate.$state{/yun}</span>
+            </div>
+            <div class="user_member_box" style="padding-bottom:5px;">
+                <div class="com_member_hr_p1"><span class="member_c9">充值单号：</span>{yun:}$log.order_id{/yun}</div>
+
+                <div class="com_member_hr_p1"><span class="member_c9">支付形式：</span>{yun:}if $type{/yun}{yun:}$arr_data.pay.$type{/yun}{yun:}else{/yun}手动{yun:}/if{/yun}</div>
+                <div class="com_member_hr_p1"><span class="member_c9">充值金额：</span>{yun:}$log.order_price{/yun}</div>
+
+                <div class="com_member_hr_p1"><span class="member_c9">订单时间：</span>{yun:}$log.order_time|date_format:"%Y-%m-%d %H:%M:%S"{/yun}</div>
+                {yun:}if $log.order_remark{/yun}
+                <div class="com_member_hr_p1"><span class="member_c9">订单备注：</span>{yun:}$log.order_remark{/yun}</div>
+                {yun:}/if{/yun}
+            </div>
+
+            <div class="com_member_hr_cz">
+                {yun:}if $invoice{/yun}
+                <a href="javascript:;" order_id="{yun:}$log.order_id{/yun}" price="{yun:}$log.order_price{/yun}" class="invoice yun_member_hr_bth">申请发票</a>
+                {yun:}else{/yun}
+                <a href="javascript:void(0)" onclick="addInvoiceInfo()" class="invoice yun_member_hr_bth">申请发票</a>
+                {yun:}/if{/yun}
+            </div>
+        </div>
+        {yun:}foreachelse{/yun}
+        <div class="wap_member_no">暂无可申请发票订单记录。</div>
+        {yun:}/foreach{/yun}
+
+        <div class="pages"> {yun:}$pagenav{/yun}</div>
+    </div>
+    <div style="display: none;" id="applyInvoice">
+
+        <div class="admin_new_tip ">
+            <div class="admin_new_tit">重要提示</div>
+            <div class="admin_new_tip_list_cont">
+                <div class="admin_new_tip_list"> 根据最新增值税管理办法要求，7月1日起如需为企业（包括公司、非公司制企业法人、企业分支机构、个人独资企业、合伙企业和其他企业）开具增值税发票，需提供纳税人识别号或统一社会信用代码，否则该发票无法作为税收凭证。请准确选择发票抬头类型，若企业发票请填写有效税号信息。</div>
+            </div>
+        </div>
+
+        <div class="invoice_sqbox_h1"><span class="invoice_sqbox_h1_s">确认发票信息</span>
+            <a href="index.php?c=invoice_info" class="invoice_sqbox_xg">修改</a>
+        </div>
+        <div class="invoice_sqbox">
+
+            <div class="invoice_mumber"><span class="invoice_span">订单编号：</span></div>
+            <div class="invoice_money"><span class="invoice_span">实付金额：</span></div>
+
+            <div>发票类型：
+                <span>{yun:}if $invoice.invoicetype==1{/yun}企业普通发票{yun:}elseif $invoice.invoicetype==2{/yun}增值税专用票{yun:}/if{/yun}</span></div>
+            <div>发票抬头：<span>{yun:}$invoice.invoicetitle{/yun}</span></div>
+
+            <div class="invoice_bthbox">
+                <input name='order_price' type='hidden' id='order_price' />
+                <input name='order_id' type='hidden' id='order_id' />
+                <input type="button" class="invoice_list_bth" value="提交申请" onclick="apply_invoice();">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    function addInvoiceInfo() {
+        layer.open({
+            content: '您还没有发票信息，请先添加！',
+            btn: ['确定', '取消'],
+            shadeClose: false,
+            yes: function() {
+                setTimeout(function() {
+                    location.href = 'index.php?c=invoice_info';
+                }, 0);
+            }
+        });
+    }
+    var sy_com_invoice = "{yun:}$config.sy_com_invoice{/yun}";
+    $(document).ready(function() {
+        $(".invoice").click(function() {
+
+            if(sy_com_invoice == '1') {
+                var order_id = $(this).attr("order_id");
+                var price = $(this).attr("price");
+
+                if(order_id) {
+                    $("#order_id").val(order_id);
+                    $("#order_price").val(price);
+                    $(".invoice_mumber").html('<span class="invoice_span">订单编号：</span>' + order_id);
+                    $(".invoice_money").html('<span class="invoice_span">实付金额：</span>￥' + $(this).attr("price"));
+                    $("#paylogList").hide();
+                    $("#applyInvoice").show();
+                }
+            } else {
+                layer.open({
+                    content: '网站未开启发票申请，请联系管理员！',
+                    btn: ['确定', '取消'],
+                    shadeClose: false,
+                    yes: function() {
+                        setTimeout(function() {
+                            location.href = '';
+                        }, 0);
+                    }
+                });
+            }
+        });
+    });
+
+    function apply_invoice() {
+        var order_id = $("#order_id").val();
+        var price = $("#order_price").val();
+        var url = "index.php?c=sqinvoice";
+        $.post(url, {
+            order_id: order_id,
+            order_price: price,
+
+        }, function(data) {
+
+            var data = eval('(' + data + ')');
+            layermsg(data.msg, 2, function() {
+                window.location.href = data.url;
+            });
+
+        });
+    }
+</script>
+{yun:}include file="$wapstyle/footer.htm"{/yun}

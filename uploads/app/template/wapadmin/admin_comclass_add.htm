@@ -1,0 +1,333 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<script src="{yun:}$config.sy_weburl{/yun}/js/ueditor/ueditor.config.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/ueditor/ueditor.all.min.js?v={yun:}$config.cachecode{/yun}"></script>
+<script type="text/javascript">
+ var weburl='{yun:}$config_wapdomain{/yun}';
+var ue = UE.getEditor('description',{
+	toolbars: false,elementPathEnabled:false,wordCount:false,autoHeightEnabled:false 
+}); 
+</script>
+<div class="et_pd_top">
+     <span>企业 &gt; 职位审核 &gt; {yun:}$row.name{/yun}</span>
+</div>
+<form action="index.php?c=admin_comjob&edit" method="post" onSubmit="return savejob()">
+<div class="peo_det">
+     {yun:}if $row.id{/yun}
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">编号：</div></div>
+          <div class="peo_det_yh_c">{yun:}$row.id{/yun}</div>
+     </div>
+     {yun:}/if{/yun}
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">职位名称：</div></div>
+          <div class="peo_det_yh_c"><input id="name" value="{yun:}$row.name{/yun}" /></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">公司名称：</div></div>
+          <div class="peo_det_yh_c"><input id="com_name" value="{yun:}$row.com_name{/yun}" /></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">从事行业：</div></div>
+          <div class="peo_det_yh_c">
+          <select name="hy" id="hy">
+          {yun:}foreach from=$industry_index key=j item=v{/yun}
+            <option value='{yun:}$v{/yun}' {yun:}if $row.hy==$v{/yun}selected{yun:}/if{/yun}>{yun:}$industry_name[$v]{/yun}</option>
+            {yun:}/foreach{/yun}
+          </select></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">职位类别：</div></div>
+          <div class="peo_det_yh_c">
+          <select name="job1" id="job1" class="job1" lid="job1_son">
+              <option value="">--请选择--</option>
+                {yun:}foreach from=$job_index key=j item=v{/yun}
+              <option value='{yun:}$v{/yun}' {yun:}if $row.job1==$v{/yun}selected{yun:}/if{/yun}>{yun:}$job_name[$v]{/yun}</option>
+                {yun:}/foreach{/yun}
+            </select></div>
+      </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">&nbsp;</div></div>
+          <div class="peo_det_yh_c">
+          <select name="job1_son" id="job1_son" class="job1" lid="job1_son1">
+              <option value="">--请选择--</option>
+                {yun:}foreach from=$job_type[$row.job1] key=j item=va{/yun}
+              <option value='{yun:}$va{/yun}' {yun:}if $row.job1_son==$va{/yun}selected{yun:}/if{/yun}>{yun:}$job_name[$va]{/yun}</option>
+                {yun:}/foreach{/yun}
+            </select></div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">&nbsp;</div></div>
+          <div class="peo_det_yh_c">
+          <select name="job_post" id="job1_son1">
+              <option value="">--请选择--</option>
+                {yun:}foreach from=$job_type[$row.job1_son] key=j item=val{/yun}
+              <option value='{yun:}$val{/yun}' {yun:}if $row.job_post==$val{/yun}selected{yun:}/if{/yun}>{yun:}$job_name[$val]{/yun}</option>
+                {yun:}/foreach{/yun}
+            </select></div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">工作地点：</div></div>
+          <div class="peo_det_yh_c">
+          <select name="provinceid" id="provinceid" class="province" lid="cityid">
+              <option value="">请选择</option>
+                {yun:}foreach from=$city_index key=j item=v{/yun}
+              <option value='{yun:}$v{/yun}' {yun:}if $row.provinceid==$v{/yun}selected{yun:}/if{/yun}>{yun:}$city_name[$v]{/yun}</option>
+                {yun:}/foreach{/yun}
+            </select></div>
+      </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">&nbsp;</div></div>
+          <div class="peo_det_yh_c">
+          <select name="cityid" size="1" id="cityid" class="province" lid="three_cityid">
+              <option value="">请选择</option> 
+                {yun:}if $row.provinceid{/yun}
+                    {yun:}foreach from=$city_type[$row.provinceid] key=j item=v{/yun}
+              <option value='{yun:}$v{/yun}' {yun:}if $row.cityid==$v{/yun}selected{yun:}/if{/yun}>{yun:}$city_name[$v]{/yun}</option>
+                    {yun:}/foreach{/yun}
+                {yun:}/if{/yun}
+            </select></div>
+     </div>
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">&nbsp;</div></div>
+          <div class="peo_det_yh_c">
+          <select name="three_cityid" size="1"  class="province" id="three_cityid" {yun:}if !$row.three_cityid{/yun} style="display:none;"{yun:}/if{/yun}>
+            <option value="">请选择</option>
+            {yun:}if $row.cityid{/yun}
+            {yun:}foreach from=$city_type[$row.cityid] key=j item=v{/yun}
+            <option value='{yun:}$v{/yun}' {yun:}if $row.three_cityid==$v{/yun}selected{yun:}/if{/yun}>{yun:}$city_name[$v]{/yun}</option>
+            {yun:}/foreach{/yun}
+            {yun:}/if{/yun}
+            </select></div>
+     </div>
+   
+     <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">工资待遇：</div></div>
+          <div class="peo_det_yh_c">
+          <select name="salary" id="salaryid"> 
+          <option value="">请选择</option>
+          {yun:}foreach item=v from=$comdata.job_salary{/yun}
+          <option value="{yun:}$v{/yun}" {yun:}if $row.salary==$v{/yun}selected="selected"{yun:}/if{/yun}>{yun:}$comclass_name[$v]{/yun}</option>
+          {yun:}/foreach{/yun}
+          </select></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">工作性质：</div></div>
+          <div class="peo_det_yh_c">
+          <select name="type" id="typeid">
+          <option>请选择工作性质</option>
+          {yun:}foreach item=v from=$comdata.job_type{/yun}
+          <option value="{yun:}$v{/yun}" {yun:}if $row.type==$v{/yun}selected="selected"{yun:}/if{/yun}>{yun:}$comclass_name[$v]{/yun}</option>
+          {yun:}/foreach{/yun}
+          </select></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">招聘人数：</div></div>
+          <div class="peo_det_yh_c"><select name="number" id="number">
+            {yun:}foreach from=$comdata.job_number key=j item=v{/yun}
+            <option value='{yun:}$v{/yun}' {yun:}if $row.number==$v{/yun}selected{yun:}/if{/yun}>{yun:}$comclass_name[$v]{/yun}</option>
+            {yun:}/foreach{/yun}
+          </select></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">工作经验：</div></div>
+          <div class="peo_det_yh_c"><select name="exp" id="exp">
+        {yun:}foreach from=$comdata.job_exp key=j item=v{/yun}
+            <option value='{yun:}$v{/yun}' {yun:}if $row.exp==$v{/yun}selected{yun:}/if{/yun}>{yun:}$comclass_name[$v]{/yun}</option>
+		{yun:}/foreach{/yun}
+          </select></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">到岗时间：</div></div>
+          <div class="peo_det_yh_c"><select name="report" id="report">
+        {yun:}foreach from=$comdata.job_report key=j item=v{/yun}
+            <option value='{yun:}$v{/yun}' {yun:}if $row.report==$v{/yun}selected{yun:}/if{/yun}>{yun:}$comclass_name[$v]{/yun}</option>
+		{yun:}/foreach{/yun}
+          </select></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">性　　别：</div></div>
+          <div class="peo_det_yh_c">
+           <select name="sex" id="sex" >
+         {yun:}foreach from=$arr_data.sex key=j item=v{/yun}    
+            <option value='{yun:}$j{/yun}' {yun:}if $row.sex==$j{/yun}selected{yun:}/if{/yun}>{yun:}$v{/yun}</option>
+          {yun:}/foreach{/yun}        
+          </select>
+          </div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">教育程度：</div></div>
+          <div class="peo_det_yh_c"><select name="edu" id="edu">
+        {yun:}foreach from=$comdata.job_edu key=j item=v{/yun}
+            <option value='{yun:}$v{/yun}' {yun:}if $row.edu==$v{/yun}selected{yun:}/if{/yun}>{yun:}$comclass_name[$v]{/yun}</option>
+		{yun:}/foreach{/yun}
+          </select></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">婚姻状况：</div></div>
+          <div class="peo_det_yh_c"><select name="marriage" id="marriage">
+        {yun:}foreach from=$comdata.job_marriage key=j item=v{/yun}
+            <option value='{yun:}$v{/yun}' {yun:}if $row.marriage==$v{/yun}selected{yun:}/if{/yun}>{yun:}$comclass_name[$v]{/yun}</option>
+        {yun:}/foreach{/yun}
+          </select></div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">语言要求：</div></div>
+          <div class="peo_det_yh_c">
+          {yun:}foreach from=$comdata.job_lang key=j item=v{/yun}
+			<div style="margin-top:0px; float:left;">
+			  <input type="checkbox" style="margin-top:5px;" id="lang{yun:}$v{/yun}" value='{yun:}$v{/yun}' name="lang[]" {yun:}if $row.lang && in_array($v,$row.lang){/yun}checked{yun:}/if{/yun} class="" />
+			  <label for="lang{yun:}$v{/yun}" >{yun:}$comclass_name[$v]{/yun}</label>
+			</div>
+			{yun:}/foreach{/yun}</div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">福利待遇：</div></div>
+          <div class="peo_det_yh_c">
+          {yun:}foreach from=$comdata.job_welfare key=j item=v{/yun}
+		<div class="job_add_y_list" style="margin-top:0px; float:left;">
+		  <input type="checkbox" style="margin-top:5px;" value='{yun:}$v{/yun}' id="welfare{yun:}$v{/yun}" name="welfare[]" {yun:}if $row.welfare && in_array($v,$row.welfare){/yun}checked{yun:}/if{/yun} class="job_add_check_box">
+		  <label for="welfare{yun:}$v{/yun}" >{yun:}$comclass_name[$v]{/yun}</label>
+		</div>
+		{yun:}/foreach{/yun}</div>
+     </div>
+      <div class="peo_det_yh">
+          <div class="peo_det_yh_nm"><div class="nb">描述职位：</div></div>
+          <div class="peo_det_yh_c"><textarea  name="description" style="height:200px; width:200px" id="description">{yun:}$row.description{/yun}</textarea></div>
+     </div>
+</div>
+<div class="peo_det_bt">
+<div style="text-align:center;">
+{yun:}if $row.id{/yun}
+<input type="hidden" name="lasturl" value="{yun:}$lasturl{/yun}">
+<input type="hidden" name="id" value="{yun:}$row.id{/yun}">
+<input class="admin_submit4" type="submit" name="update" value="&nbsp;修 改&nbsp;" />
+{yun:}else{/yun}
+<input type="hidden" name="uid" value="{yun:}$uid{/yun}"><input class="admin_submit4" type="submit" name="update" value="&nbsp;保 存&nbsp;" />{yun:}/if{/yun}
+<input class="admin_save_sub" type="button" value="返 回" name="" onClick="history.back()" />
+</div>
+</div>
+</form>
+<script type="text/javascript">
+var weburl="{yun:}$config.sy_weburl{/yun}";
+function toDate(str){
+	var sd=str.split("-");
+	return new Date(sd[0],sd[1],sd[2]);
+}
+function savejob(id){
+	var end = $("#edate").val();
+	var name = $.trim($("#name").val());
+	if(name==''){
+		layermsg('职位名称不能为空！',2);return false;
+	}
+	if($("#job1_son").val()==''){
+		layermsg('请选择职位类别！',2);return false;
+	}
+
+	if($("#provinceid").val()==''){
+		layermsg('请选择工作地点！',2);return false;
+	}
+	var description = editor.text(); 
+	if(description==""){
+		layermsg('职位描述不能为空！',2);return false;
+	}else{
+		$("#description").val(description);
+	}
+	if(end==""){
+		layermsg('结束时间不能为空！', 2);return false;
+	}else{
+        var now = new Date();
+        var year = now.getFullYear();       
+        var month = now.getMonth() + 1;     
+        var day = now.getDate();    
+		var st=toDate(year+"-"+month+"-"+day);
+		var ed=toDate(end);
+		if(st>ed){
+			layermsg('结束日期必须大于今天日期！',2);return false;
+		}
+	}	
+}
+
+$(document).ready(function(){
+	$(".job1").change(function(){
+		var job=$(this).val();
+		var lid=$(this).attr("lid");
+		if(job==""){
+			$("#"+lid+" option").remove()
+			$("<option value=''>请选择</option>").appendTo("#"+lid);
+			lid2=$("#"+lid).attr("lid");
+			if(lid2){
+				$("#"+lid2+" option").remove();
+				$("<option value=''>请选择</option>").appendTo("#"+lid2);
+			}
+		}
+		$.post(weburl+"/index.php?m=ajax&c=ajax_job", {"str":job},function(data) {
+			if(lid!="" && data!=""){
+				$('#'+lid+' option').remove();
+				$(data).appendTo("#"+lid);
+				job_type(lid);
+			}
+		})
+	})
+	$(".province").change(function(){
+		var province=$(this).val();
+		var lid=$(this).attr("lid");
+		if(lid){ 
+			if(province==""){
+				$("#"+lid+" option").remove()
+				$("<option value='0'>请选择城市</option>").appendTo("#"+lid);
+				lid2=$("#"+lid).attr("lid");
+				if(lid2){
+					$("#"+lid2+" option").remove();
+					$("<option value='0'>请选择城市</option>").appendTo("#"+lid2);
+					$("#"+lid2).hide();
+				}
+			}
+			$.post(weburl+"/index.php?m=ajax&c=ajax", {"str":province},function(data) {
+				if(lid!="" && data!=""){
+					$('#'+lid+' option').remove();
+					$(data).appendTo("#"+lid);
+					city_type(lid);
+				}
+			})
+		}
+	})
+})
+
+function job_type(id){
+	var id;
+	var job=$("#"+id).val();
+	var lid=$("#"+id).attr("lid");
+	$.post(weburl+"/index.php?m=ajax&c=ajax_job", {"str":job},function(data) {
+		if(lid!="" && data!=""){
+			$('#'+lid+' option').remove();
+			$(data).appendTo("#"+lid);
+		}
+	})
+}
+function city_type(id){
+	var id;
+	var province=$("#"+id).val();
+	var lid=$("#"+id).attr("lid");
+	$.post(weburl+"/index.php?m=ajax&c=ajax", {"str[]":[province]},function(data) {
+		if(lid!=""){
+			if(lid!="three_cityid" && lid!="three_city" && data!=""){
+				$('#'+lid+' option').remove();
+				$(data).appendTo("#"+lid);
+			}else{
+				if(data!=""){
+					$('#'+lid+' option').remove();
+					$(data).appendTo("#"+lid);
+					$('#'+lid).show();
+				}else{
+					$('#'+lid+' option').remove();
+					$("<option value='0'>请选择城市</option").appendTo("#"+lid);
+					$('#'+lid).hide();
+				}
+			}
+		}
+	})
+}
+</script>
+
+</body>
+</html>

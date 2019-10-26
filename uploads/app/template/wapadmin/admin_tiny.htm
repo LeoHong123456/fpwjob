@@ -1,0 +1,15 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top"> 
+<span>个人 &gt; {yun:}$headertitle{/yun}</span> 
+</div>
+{yun:}foreach item=v key=key from=$rows{/yun}
+<div class="et_pd_ct" onclick="showDetail('index.php?c=admin_tiny&a=show&id={yun:}$v.id{/yun}')">
+  <div class="et_pd_ct_nm"> <span>{yun:}$v.username{/yun}/{yun:}$v.exp{/yun}</span> <span class="free_hy">{yun:}$v.time|date_format:"%Y-%m-%d"{/yun}</span> </div>
+  <div class="et_pd_ct_te"> <span class="et_pd_ct_te_ft">{yun:}$v.job{/yun}</span> {yun:}if $v.status==1{/yun}<span class="et_pd_ct_te_rt">已审核</span>{yun:}elseif $v.status==0{/yun}<span class="et_pd_ct_te_rt_ng">未审核</span>{yun:}else{/yun}<span class="et_pd_ct_te_rt_no">已过期</span>{yun:}/if{/yun} </div>
+</div>
+{yun:}foreachelse{/yun}
+<div class="wap_member_no">暂时没有普工简历信息<br></div>
+{yun:}/foreach{/yun}
+<div class="pages"> {yun:}$pagenav{/yun}</div>
+</body>
+</html>

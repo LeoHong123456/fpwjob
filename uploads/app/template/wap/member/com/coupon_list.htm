@@ -1,0 +1,210 @@
+{yun:}include file="$wapstyle/member/cheader.htm"{/yun}
+
+<link rel="stylesheet" href="{yun:}$config.sy_weburl{/yun}/app/template/wap/css/style.css?v={yun:}$config.cachecode{/yun}" type="text/css" />
+<div id="app" class="mui-views">
+	<div class="mui-view">
+		<div class="mui-pages"></div>
+	</div>
+</div>
+
+
+<div id="main" class="mui-page">
+	
+	<div class="mui-page-content">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll"> 
+<section id="muiclist" class="wap_member">
+	<div class="wap_member_comp_h1"><span>优惠卡券</span></div>
+	
+	{yun:}foreach from=$rows item=v{/yun}
+		<div class="coupon_list_box">
+
+			
+			{yun:}if $v.status=='1'{/yun}
+				<div class="coupon_list">
+					<div class="coupon_list_left">
+						<div class="coupon_list_left_n">￥<span class="coupon_list_left_n_m">{yun:}$v.coupon_amount{/yun}</span></div>
+						<div class="coupon_list_left_p">满 {yun:}$v.coupon_scope{/yun} 使用</div>
+					</div>
+					
+					<div class="coupon_list_right_time">使用时间：{yun:}$v.ctime|date_format:"%Y-%m-%d"{/yun} 至 {yun:}$v.validity|date_format:"%Y-%m-%d"{/yun}</div>
+					<div class="coupon_list_right_qm">优惠券码：{yun:}$v.number{/yun}</div>
+					<div class="">
+						
+						<a href="#couponhtml" data-id="{yun:}$v.id{/yun}" class="coupon_list_right_zs coupon">可赠送</a>
+					</div>
+				</div>
+			{yun:}/if{/yun}
+	
+			
+			{yun:}if $v.status=='2'{/yun}
+				<div class="coupon_list coupon_list_cur">
+					<div class="coupon_list_left">
+						<div class="coupon_list_left_n">￥<span class="coupon_list_left_n_m">{yun:}$v.coupon_amount{/yun}</span></div>
+						<div class="coupon_list_left_p">满 {yun:}$v.coupon_scope{/yun} 使用</div>
+					</div>
+				
+					<div class="coupon_list_right_time">使用时间：{yun:}$v.ctime|date_format:"%Y-%m-%d"{/yun} 至 {yun:}$v.validity|date_format:"%Y-%m-%d"{/yun}</div>
+					<div class="coupon_list_right_qm">优惠券码：{yun:}$v.number{/yun}</div>
+					<div class="">已使用 </div>
+					<a href="javascript:void(0)" onclick="layer_del('确定要删除？','index.php?c=delcoupon&id={yun:}$v.id{/yun}')"class="coupon_list_right_cz">删除</a>
+				</div>
+			{yun:}/if{/yun}
+	
+			
+			{yun:}if $v.status=='3'{/yun}
+				<div class="coupon_list coupon_list_cur">
+					<div class="coupon_list_left">
+						<div class="coupon_list_left_n">￥<span class="coupon_list_left_n_m">{yun:}$v.coupon_amount{/yun}</span></div>
+						<div class="coupon_list_left_p">满 {yun:}$v.coupon_scope{/yun} 使用</div>
+					</div>
+					
+					<div class="coupon_list_right_time">使用时间：{yun:}$v.ctime|date_format:"%Y-%m-%d"{/yun} 至 {yun:}$v.validity|date_format:"%Y-%m-%d"{/yun}</div>
+					<div class="coupon_list_right_qm">优惠券码：{yun:}$v.number{/yun}</div>
+					<div class="">已过期 </div>
+					<a href="javascript:void(0)" onclick="layer_del('确定要删除？','index.php?c=delcoupon&id={yun:}$v.id{/yun}')"class="coupon_list_right_cz">删除</a>
+				</div>
+			{yun:}/if{/yun}
+		</div>
+	{yun:}foreachelse{/yun}
+		
+		<div class="wap_member_no">您暂时没有优惠券哦~</div>
+		
+	{yun:}/foreach{/yun}
+
+</section>
+</div>
+
+		</div>
+	</div>
+	
+</div>
+
+<div id="couponhtml" class="mui-page">
+	<div class="mui-page-content">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="mui-content">
+						<div id='list' class="mui-indexed-list">
+							<div class="blacklistadd_search_box">
+							<div class="mui-indexed-list-search mui-input-row mui-search">
+							<div class="blacklistadd_search">	<input type="text" id="keyword" class="mui-input-clear mui-indexed-list-search-input" placeholder="请输入企业名称"></div>
+							</div> <div class="blacklistadd_search_but"><button type="button"  id="search">搜索</button></div>
+							</div>
+							<div class="blacklistadd_box" style="background-color: #fff;">
+							<div class="mui-indexed-list-alert"></div>
+							<div class="mui-indexed-list-inner"style="display:none" id="comullist">
+								
+							</div>
+							<div id="nonelist"  class="blacklist_notip " style="display:none">暂未匹配到相关企业</div>
+							</div>
+							<input type="hidden" id="id">
+						<div class="blacklistadd_box_bth"><a id='done' class="mui-btn mui-btn-link mui-pull-right mui-btn-blue mui-disabled">完成</a></div>
+					</div>
+				<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="{yun:}$wap_style{/yun}/js/mui/mui.view.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script type="text/javascript">
+mui.init();
+var viewApi = mui('#app').view({
+	defaultPage: '#main'
+});
+
+var view = viewApi.view;
+(function($) {
+	
+	mui('.mui-scroll-wrapper').scroll({
+		scrollY: true, 
+		scrollX: false, 
+		startX: 0, 
+		startY: 0, 
+		indicators: true, 
+		deceleration: 0.0006, 
+		
+	});
+	
+	var oldBack = $.back;
+	$.back = function() {
+		if(viewApi.canBack()) { 
+			viewApi.back();
+		} else { 
+			oldBack();
+		}
+	};
+})(mui);
+mui('.coupon').each(function(i, arr) {
+	arr.addEventListener('tap', function(e) {
+		document.getElementById('id').value = e.target.dataset.id;
+	}, false)
+}, false);
+mui.ready(function() {
+	var list = document.getElementById('list');
+	var done = document.getElementById('done');
+	if(document.getElementById('muiclist')){
+		document.getElementById('muiclist').addEventListener('touchmove', function (e) { e.preventDefault();}, {passive: false});
+	}
+	done.addEventListener('tap', function() {
+		var uid =list.querySelectorAll('input[name="cuid"]:checked')[0].value;
+		var id = document.getElementById('id').value;
+		if (uid > 0) {
+			document.getElementById('done').innerHTML='加载中...';
+			$.post(wapurl+"/member/index.php?c=handsel",{cuid:uid,coupon:id},function(data){
+				var data=eval('('+data+')');
+				layermsg(data.msg, 2,function(){location.reload(true);});return false; 
+			});
+		} else {
+			mui.alert('请选择要赠送的公司！');
+		}
+	}, false);
+	mui('.mui-indexed-list-inner').on('change', 'input', function() {
+		var count = list.querySelectorAll('input[name="cuid"]:checked').length;
+		if(count){
+			if (done.classList.contains("mui-disabled")) {
+				done.classList.remove("mui-disabled");
+			}
+		}else{
+			if(!done.classList.contains("mui-disabled")) {
+				done.classList.add("mui-disabled");
+			}
+		}
+	});
+});
+(function($) {
+	document.getElementById('search').addEventListener('tap', function() {
+		var keyword = document.getElementById('keyword').value;
+		$(".addcom").each(function(i,arr){
+			arr.remove();
+		},false)
+		if(keyword){
+			document.getElementById('done').innerHTML='加载中...';
+			$.post(wapurl+"member/index.php?c=searchcom",{name:keyword},function(data){
+				document.getElementById('done').innerHTML='完成';
+				if(data!=1){
+					var oDiv = document.createElement('div');
+					oDiv.className = 'addcom';
+					oDiv.innerHTML = data;
+					document.getElementById('comullist').appendChild(oDiv);
+					
+					document.getElementById('comullist').style.display='';
+					document.getElementById('nonelist').style.display='none';
+					
+				}else{
+					document.getElementById('comullist').style.display='none';
+					document.getElementById('nonelist').style.display='';
+				}
+			
+			})
+		}else{
+			document.getElementById('comullist').style.display='none';
+			document.getElementById('nonelist').style.display='none';
+		}
+	}, false);
+})(mui);
+</script>
+
+{yun:}include file="$wapstyle/footer.htm"{/yun} 

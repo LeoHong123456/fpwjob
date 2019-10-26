@@ -1,0 +1,22 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="admin_resume_tjbox">
+  <div class="admin_resume_tjbox_s">
+    <form method="get" action="index.php?c=admin_company_rating">
+      <input name='c' value="admin_company_rating" type="hidden">
+      <input type="text" value="{yun:}$smarty.get.keyword{/yun}" id="keyword" name="keyword" placeholder="搜索企业名称" class="admin_resume_tjbox_text">
+      <input type="submit" value="搜索" class="admin_resume_tjbox_bth">
+    </form>
+  </div>
+  <ul class="admin_c_r">
+    {yun:}foreach item=v key=key from=$rows{/yun}
+    <li>
+      <div class="">企业名称：<span class="admin_c_r_name">{yun:}if $v.name{/yun}{yun:}$v.name{/yun}{yun:}else{/yun}<font color="blue">暂未设定企业名称</font>{yun:}/if{/yun}</span></div>
+      <div class="">会员等级：<span class="admin_c_r_c">{yun:}$v.rating_name{/yun}</span></div>
+      <a href="index.php?c=admin_company_rating&a=ratingshow&id={yun:}$v.uid{/yun}&rating={yun:}$v.rating{/yun}" class="admin_c_bth">设置</a></li>
+      {yun:}foreachelse{/yun}
+    <li>暂时没有企业会员信息</li>
+    {yun:}/foreach{/yun}
+  </ul>
+</div>
+<div class="pages"> {yun:}$pagenav{/yun}</div>
+</body></html>

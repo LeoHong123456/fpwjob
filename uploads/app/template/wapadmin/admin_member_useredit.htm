@@ -1,0 +1,99 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top"> 
+	<span>个人 &gt; {yun:}$headertitle{/yun} &gt; {yun:}$row.name{/yun}</span> 
+</div>
+<div class="peo_det">
+	<div class="peo_det_yh">
+		<div class="peo_det_yh_nm">
+			<div class="nb">用&nbsp;户&nbsp;&nbsp;名：</div>
+		</div>
+		<div class="peo_det_yh_c peo_det_yh_hig">{yun:}$user_info.username{/yun}</div>
+	</div>
+	<div class="peo_det_yh">
+		<div class="peo_det_yh_nm">
+			<div class="nb">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</div>
+		</div>
+		<div class="peo_det_yh_c peo_det_yh_hig">{yun:}$row.name{/yun}</div>
+	</div>
+	<div class="peo_det_yh">
+		<div class="peo_det_yh_nm">
+			<div class="nb">联系邮箱：</div>
+		</div>
+		<div class="peo_det_yh_c peo_det_yh_hig">{yun:}$user_info.email{/yun}</div>
+	</div>
+	<div class="peo_det_yh">
+		<div class="peo_det_yh_nm">
+			<div class="nb">联系手机：</div>
+		</div>
+		<div class="peo_det_yh_c peo_det_yh_hig">{yun:}$user_info.moblie{/yun}</div>
+	</div>
+	<div class="peo_det_yh">
+		<div class="peo_det_yh_nm">
+			<div class="nb">注册时间：</div>
+		</div>
+		<div class="peo_det_yh_c peo_det_yh_hig">{yun:}$user_info.reg_date|date_format:'%Y-%m-%d'{/yun}</div>
+	</div>
+	<div class="peo_det_yh">
+		<div class="peo_det_yh_nm">
+			<div class="nb">用户状态：</div>
+		</div>
+    <div class="peo_det_yh_c peo_det_yh_hig">
+		{yun:}if $user_info.status=="1"{/yun}正常
+		{yun:}elseif $user_info.status==2{/yun}已锁定
+		{yun:}elseif $user_info.status==3{/yun}未通过
+		{yun:}elseif $user_info.status==0{/yun}未审核
+		{yun:}/if{/yun} </div>
+	</div>
+	<input type="hidden" id="pytoken"  value="{yun:}$pytoken{/yun}"/>
+	<input type="hidden" id="lasturl"  value="{yun:}$lasturl{/yun}"/>
+</div>
+
+<div class="peo_det_bt">
+	<ul>
+		<li><a style="display:block" href="javascript:;" onclick="statusdiv('{yun:}$user_info.status{/yun}','锁定操作')">审核</a></li>
+		<li><a style="display:block" href="javascript:;" onclick="lockdiv('{yun:}$user_info.status{/yun}','锁定操作')">锁定</a></li>
+		<li><a style="display:block" href="javascript:void(0);" onclick="layer_del('确定要删除？', 'index.php?c=user_member&a=del&del={yun:}$user_info.uid{/yun}');">删除</a></li>
+		<li><a style="display:block" href="javascript:;" onclick="resetpw('{yun:}$user_info.username{/yun}','{yun:}$user_info.uid{/yun}');">重置</a></li>
+	</ul>
+</div>
+
+<div class="pop_up" style="display:none;" id="status_div">
+     <div class="pop_up_state">
+        <ul>
+          <li><label><input class="pop_up_state_cb" type="radio" name="status" value="0" id="status0"/>未审核</label></li>
+          <li><label><input class="pop_up_state_sb" type="radio" name="status" value="1" id="status1"/>正常</label></li>
+          <li><label><input class="pop_up_state_sb" type="radio" name="status" value="2" id="status2"/>未通过</label></li>
+        </ul>
+     </div>
+     <div class="pop_up_head">
+        <div class="pop_up_icon"></div>审核说明
+     </div>
+     <div class="pop_up_text"><textarea id="statusbody" name="statusbody" class="admin_explain_textarea" >{yun:}$user_info.lock_info{/yun}</textarea></div>
+     <div class="pop_up_but">
+          <ul>
+              <li class="pop_up_but_q"><a style="display:block" href="javascript:;" onclick="checkStatus('{yun:}$row.uid{/yun}','index.php?c=user_member&a=status')">确定</a></li>
+              <li class="pop_up_but_x"><a style="display:block" href="javascript:;" onclick="layer.closeAll();">取消</a></li>
+          </ul>
+     </div>
+</div>
+
+<div class="pop_up" style="display:none;" id="lock_div">
+	<div class="pop_up_state">
+        <ul>
+			<li style="width:45%"><label><input class="pop_up_state_cb" type="radio" name="status" value="1" id="status1"/>正常</label></li>
+			<li style="width:45%"><label><input class="pop_up_state_sb" type="radio" name="status" value="2" id="status2"/>锁定</label></li>
+        </ul>
+	</div>
+	<div class="pop_up_head">
+        <div class="pop_up_icon"></div>锁定说明
+	</div>
+	<div class="pop_up_text"><textarea id="statusbody" name="statusbody" class="admin_explain_textarea">{yun:}$user_info.lock_info{/yun}</textarea> </div>
+	<div class="pop_up_but">
+		<ul>
+			<li class="pop_up_but_q"><a style="display:block" href="javascript:;" onclick="checkStatus('{yun:}$user_info.uid{/yun}','index.php?c=user_member&a=status')">确定</a></li>
+			<li class="pop_up_but_x"><a style="display:block" href="javascript:;" onclick="layer.closeAll();">取消</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

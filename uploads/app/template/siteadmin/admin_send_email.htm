@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link href="images/reset.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	<link href="images/system.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" /> 
+	<link href="images/table_form.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+	<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}"></script>
+	<script src="js/admin_public.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+	<script src="{yun:}$config.sy_weburl{/yun}/js/ueditor/ueditor.config.js?v={yun:}$config.cachecode{/yun}"></script>
+	<script src="{yun:}$config.sy_weburl{/yun}/js/ueditor/ueditor.all.min.js?v={yun:}$config.cachecode{/yun}"></script>
+	<link href="{yun:}$config.sy_weburl{/yun}/js/layui/css/layui.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet">
+	<title>后台管理</title>
+</head>
+
+<body class="body_ifm">
+ 
+<div class="infoboxp">
+	<div class="admin_new_tip">
+		<a href="javascript:;" class="admin_new_tip_close"></a>
+		<a href="javascript:;" class="admin_new_tip_open" style="display:none;"></a>
+		<div class="admin_new_tit"><i class="admin_new_tit_icon"></i>操作提示</div>
+		<div class="admin_new_tip_list_cont">
+			<div class="admin_new_tip_list">发送邮件时，请正确选择用户类型。</div>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="tag_box mt10">
+	<iframe id="supportiframe"  name="supportiframe" onload="returnmessage('supportiframe');" style="display:none"></iframe> 
+	
+	<form name="myform" method="post" target="supportiframe" class="layui-form">
+		<table width="100%" class="table_form">
+			<tr >
+				<tbody><th bgcolor="#f0f6fb" colspan="2" ><span class="admin_bold">自定义邮件</span></th></tbody>
+			</tr>
+			
+			<tr>
+				<th width="120">选择用户</th>
+				<td>
+					<div class="layui-form-item">
+						<div class="layui-input-inline">
+							<input type="radio" name="utype" value="1" id="CheckboxGroup1_1" title="个人用户"/>
+							<input type="radio" name="utype" value="2" id="CheckboxGroup1_2" title="企业用户"/>
+							<input type="radio" name="utype" value="3" id="CheckboxGroup1_3" title="猎头用户"/>
+							<input type="radio" name="utype" value="4" id="CheckboxGroup1_4" title="培训用户" />
+							<input type="radio" name="utype" value="5" id="CheckboxGroup1_5" title="自定义用户" />
+						</div>
+						<div class="layui-form-mid layui-word-aux">注：全部用户发送，时间较长，建议分批发送</div>
+					</div>
+				</td>
+			</tr>
+			<tr id="user_email" style="display:none;">
+				<th width="120">用户邮箱</th>
+				<td>
+					<input class="input-text" type="text" name="email_user" size="50"/><font color="gray">多个邮箱请用,(半角)隔开</font>
+				</td>
+			</tr>
+			<tr class="admin_table_trbg">
+				<th width="120">邮件主题</th>
+				<td><input class="input-text" type="text" name="email_title" size="40"/><font color="gray"></font></td>
+			</tr>
+        	<tr>
+				<th width="120">邮件内容</th>
+				<td>
+					<script id="myEditor" name="content" type="text/plain" style="width:800px;height:300px;"></script>
+ 				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2">
+					<input class="layui-btn layui-btn-normal" type="button" onClick="CheckSend();" value="&nbsp;发 送&nbsp;"  />
+					<input class="layui-btn layui-btn-normal" type="reset" name="reset" value="&nbsp;重 置 &nbsp;" />
+				</td>
+			</tr>
+		</table>
+		<input type="hidden" name="pytoken" value="{yun:}$pytoken{/yun}">
+	</form>
+	</div>
+</div>
+
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/layui.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/phpyun_layer.js?v={yun:}$config.cachecode{/yun}"></script>
+
+<script type="text/javascript">
+	
+	layui.use(['layer', 'form'], function(){
+		var layer = layui.layer
+			,form = layui.form
+			,$ = layui.$;
+
+		$("input[name='utype']").each(function(){
+			$(this).next().click(function(){
+				var val = $(this).prev().val();
+				if(val=='5'){
+ 					$("#user_email").show();
+					$("input[name=email_user]").val('');
+				}else{
+					$("#user_email").hide();
+					$("input[name=email_user]").val('');
+				}
+			});
+		});
+	});
+
+	var ue = UE.getEditor('myEditor');
+	
+	function CheckSend(){
+		var utype = $('input[name="utype"]:checked').val();
+ 		if( utype == null){
+			parent.layer.msg("请选择用户类型！",2,8);
+			return false; 
+		}
+		if($("#CheckboxGroup1_5").attr("checked")=='checked'){
+			var email=$("input[name='email_user']").val();
+			if(email==''){
+				parent.layer.msg("请输入自定义邮箱！",2,8);
+				return false;
+			}
+		}
+		var title=$("input[name=email_title]").val();
+		if(title==""){
+			parent.layer.msg('主题不能为空，请填写主题！', 2, 8);
+			return false;
+		}
+		var content = UE.getEditor('myEditor').getContent();
+		if(content==""){
+			parent.layer.msg('内容不能为空，请填写内容！', 2, 8);
+			return false;
+		}
+
+		var pytoken=$("input[name='pytoken']").val();
+		sendDivEmail(utype,title,content,email,pytoken,3,20,0,0,0,"正在发送，请稍候。。。");
+	}
+
+	function sendDivEmail(utype,title,content,email,pytoken,status,pagelimit,value,sendok,sendno,msg){
+		if(status=="3"){
+ 			var pagelimit=20;
+			var pytoken=$("input[name='pytoken']").val();
+			var ii = parent.layer.msg(msg,{
+				icon:16,shade:0.01
+			});
+
+			$.post("index.php?m=email&c=send",{
+ 				utype:utype,email_title:title,content:content,email_user:email,pytoken:pytoken,
+				pagelimit:pagelimit,value:value,sendok:sendok,sendno:sendno},
+				function(data){
+					parent.layer.close(ii);
+					var data=eval('('+data+')');
+ 					sendDivEmail(utype,title,content,email,pytoken,data.status,pagelimit,data.value,data.sendok,data.sendno,data.msg)
+				})
+		}else{
+			parent.layer.close(ii);
+			parent.layer.alert(msg, 9);
+			location.reload();
+		}
+	}
+
+</script>
+</body>
+</html>

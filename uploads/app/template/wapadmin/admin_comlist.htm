@@ -1,0 +1,31 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="et_pd_top">
+     <span>企业 &gt; {yun:}$headertitle{/yun}</span>
+</div>
+  <div class="admin_resume_tjbox_s">
+    <form method="get" action="index.php?c=admin_comlist">
+      <input name='c' value="admin_comlist" type="hidden">
+      <input type="text" value="{yun:}$smarty.get.keyword{/yun}" id="keyword" name="keyword" placeholder="搜索公司名称" class="admin_resume_tjbox_text">
+      <input type="submit" value="搜索" class="admin_resume_tjbox_bth">
+    </form>
+  </div>
+{yun:}foreach item=v from=$rows{/yun}
+<div class="et_pd_ct" onclick="showDetail('index.php?c=admin_comlist&a=edit&id={yun:}$v.uid{/yun}')">
+     <div class="et_pd_ct_nm">
+		<div class="admin_com_username">用户名：{yun:}$v.username{/yun}</div>
+          <div>{yun:}$v.name{/yun}{yun:}if $v.shortname{/yun}【{yun:}$v.shortname{/yun}】{yun:}/if{/yun}</div>
+          <span class="free_hy">{yun:}$v.rating_name{/yun}</span>
+     </div>
+     <div class="et_pd_ct_te">
+          <span class="et_pd_ct_te_ft">注册时间：{yun:}$v.reg_date|date_format:"%Y-%m-%d"{/yun}</span>
+          {yun:}if $v.status=='1'{/yun}<span class="et_pd_ct_te_rt">已审核</span>{yun:}elseif  $v.status=='3'{/yun}<span class="et_pd_ct_te_rt_no">未通过</span>{yun:}elseif $v.status=='0'{/yun}<span class="et_pd_ct_te_rt_ng">未审核</span>{yun:}/if{/yun}
+     </div>
+</div>
+{yun:}foreachelse{/yun}
+<div class="wap_member_no">暂时还没有企业用户信息</div>
+{yun:}/foreach{/yun}
+
+<div class="pages">{yun:}$pagenav{/yun}</div>
+
+</body>
+</html>

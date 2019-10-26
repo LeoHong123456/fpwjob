@@ -1,0 +1,12 @@
+<script> var style="{yun:}$config.sy_weburl{/yun}/app/template"</script>
+<script src="{yun:}$config.sy_weburl{/yun}/app/template/chat/rongcloud/RongIMLib-2.3.5.min.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/app/template/chat/rongcloud/chat.js?v={yun:}$config.cachecode{/yun}"></script> 
+<div class="chat_box none" onclick="goChat('reconnection')"><img src="{yun:}$config.sy_weburl{/yun}/{yun:}$config.sy_chat_logo{/yun}"> <span> 直聊</span></div>
+<input type="hidden" id="chat_connection" value="1"/>
+<input type="hidden" id="chat_information" value="1"/>
+<input type="hidden" id="chatready" value="0"/>
+<style>
+.chat_box{width:105px;height:50px; line-height:50px; position:fixed;right:0px;bottom:0px;border-radius: 2px;box-shadow: 1px 1px 50px rgba(0,0,0,.3); background:#fff ; cursor:pointer; z-index:100000000
+}
+.chat_box img{width:30px;height:30px; margin-left:15px; margin-right:10px;}
+</style>

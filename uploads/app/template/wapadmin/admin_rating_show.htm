@@ -1,0 +1,112 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun} 
+<!--内页-->
+<form name="myform" action="index.php?c=admin_company_rating&a=ratingshow&id={yun:}$row.uid{/yun}" method="post">
+  <div class="">
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">会员等级：</div>
+      <div class=" peo_det_yh_c">
+        <select class="peo_det_yh_c_select" name="ratingid" id="ratingid" onchange="uprating(this.value);">
+          
+        {yun:}foreach from=$rating_list item=ratings{/yun}
+        
+          <option value="{yun:}$ratings.id{/yun}" {yun:}if $ratings.id==$statis.rating{/yun}selected{yun:}/if{/yun}>{yun:}$ratings.name{/yun}</option>
+          
+        {yun:}/foreach{/yun}
+        
+        </select>
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">账户{yun:}$config.integral_pricename{/yun}：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="integral" size="15" class="peo_det_yh_c_text" value="{yun:}$statis.integral{/yun}" />
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">会员到期时间：</div>
+      <div class=" peo_det_yh_c_pd120">        
+        <input type="text" name="vipetime" id="vipetime" value="{yun:}if $statis.vip_etime{/yun}{yun:}$statis.vip_etime|date_format:'%Y-%m-%d'{/yun}{yun:}else{/yun}无限{yun:}/if{/yun}" class="peo_det_yh_c_text" readonly="readonly" > 
+         </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">延长会员时间(天)：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="addday" id="addday" value="" size="15" class="peo_det_yh_c_text" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')">
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">发布猎头职位数：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="lt_job_num" id="lt_job_num"size="15" class="peo_det_yh_c_text" value="{yun:}$statis.lt_job_num{/yun}" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')"/>
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">高级简历下载数：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="lt_down_resume" id="lt_down_resume"size="15" class="peo_det_yh_c_text" value="{yun:}$statis.lt_down_resume{/yun}" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')"/>
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">刷新猎头职位：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="lt_breakjob_num" id="lt_breakjob_num"size="15" class="peo_det_yh_c_text" value="{yun:}$statis.lt_breakjob_num{/yun}" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')" />
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">发布职位数：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="job_num" id="job_num"size="15" class="peo_det_yh_c_text" value="{yun:}$statis.job_num{/yun}" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')"/>
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">剩余下载数：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="down_resume" id="down_resume" size="15" class="peo_det_yh_c_text" value="{yun:}$statis.down_resume{/yun}" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')" />
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">邀请面试： </div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="invite_resume" id="invite_resume"size="15" class="peo_det_yh_c_text" value="{yun:}$statis.invite_resume{/yun}" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')" />
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">刷新职位数：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="breakjob_num" id="breakjob_num"size="15" class="peo_det_yh_c_text" value="{yun:}$statis.breakjob_num{/yun}" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')"/>
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">发布兼职数：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="part_num" id="part_num" size="15" class="peo_det_yh_c_text" value="{yun:}$statis.part_num{/yun}" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')"/>
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">刷新兼职数：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="breakpart_num" id="breakpart_num" size="15" class="peo_det_yh_c_text" value="{yun:}$statis.breakpart_num{/yun}" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')" />
+      </div>
+    </div>
+    <div class="peo_det_yh peo_det_yhpd120">
+      <div class="peo_det_yh_nm peo_det_yh_nm_w120">招聘会报名次数：</div>
+      <div class=" peo_det_yh_c_pd120">
+        <input type="text" name="zph_num" id="zph_num" size="15" class="peo_det_yh_c_text" value="{yun:}$statis.zph_num{/yun}" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')"/>
+      </div>
+    </div>
+    <div class="peo_det_bt">
+        <input type="hidden" name="uid" value="{yun:}$com_info.uid{/yun}" id="uid"/>
+        <input type="hidden" name="rating_type" value="{yun:}$statis.rating_type{/yun}" id="rating_type"/>
+        <input type="hidden" name="oldetime" id="oldetime" value="{yun:}$statis.vip_etime{/yun}">
+        <input type="hidden" name="name" value="{yun:}$statis.rating_name{/yun}" id="rating_name"/>
+        <input type="hidden" name="lasturl" value="{yun:}$lasturl{/yun}"/>
+        <input class="admin_submit4" type="submit" name="com_update" value="&nbsp;修 改&nbsp;" style="width:100%" />
+    </div>
+  </div>
+</form>
+{yun:}if $layer{/yun}
+<input id="layermsg" value="{yun:}$layer.msg{/yun}" type="hidden">
+<input id="layerurl" value="{yun:}$layer.url{/yun}" type="hidden">
+<script>$(document).ready(function(){islayer();});</script>
+{yun:}/if{/yun}
+</body></html>

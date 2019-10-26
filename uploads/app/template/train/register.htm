@@ -1,0 +1,180 @@
+{yun:}include file="$trainstyle/header.htm"{/yun}
+<div class="clear"></div>
+<div class="training_content training_w980">
+    <div class="training_reg  ftl mt10">
+        <div class="training_reg_h1"> <span class="training_reg_h1_span">会员注册</span>
+            <span class="training_reg_h1_bt"><i class="training_reg_h1_i">*</i> 为必填项</span> </div>
+        <div class="training_reg_left  ftl">
+            <ul>
+                <li><em class="training_reg_em"><i class="training_reg_h1_i">*</i> 用 户 名：</em>
+                    <input class="training_reg_text" type="text" id="username" name="username" onBlur="reg_checkAjax('username');">
+                    <span id="ajax_username" class="reg_tips "><i class="reg_tips_icon"></i>请填写您的用户名！</span>
+                </li>
+                <li><em class="training_reg_em"><i class="training_reg_h1_i">*</i> 密&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;码：</em>
+                    <input class="training_reg_text" type="password" id="password" name="password" onBlur="reg_checkAjax('password');">
+                    <span class="reg_tips " id="ajax_password"><i class="reg_tips_icon"></i>建议使用复杂组合的强密码，6-20个字符</span>
+                </li>
+                <li><em class="training_reg_em"><i class="training_reg_h1_i">*</i> 确认密码：</em>
+                    <input class="training_reg_text" type="password" id="passconfirm" name="passconfirm" onBlur="reg_checkAjax('passconfirm');">
+                    <span id="ajax_passconfirm" class="reg_tips"><i class="reg_tips_icon"></i>请确认密码！</span>
+                </li>
+                <li><em class="training_reg_em"><i class="training_reg_h1_i">*</i> 电子邮箱：</em>
+                    <div class="train_reg_pt">
+                        <input class="training_reg_text" type="text" id="email1" name="email"  onkeyup="get_def_email(this.value,'1','{yun:}url m=ajax c=def_email{/yun}');">
+                        <span id="ajax_email1" class="reg_tips"><i class="reg_tips_icon"></i>请输入常用电子邮件地址！</span>
+                        <div class="reg_email_box none" id="defemail1"></div>
+                        <input type="hidden" id="default" value="-1" />
+                        <input type="hidden" id="def" value="" />
+                        <input type="hidden" id="event" value="" />
+                        <input type="hidden" id="allnum" value="0" />
+                        <input type="hidden" id="defEmail" value="{yun:}$config.sy_def_email{/yun}" />
+                    </div>
+                </li>
+
+                <li><em class="training_reg_em"><i class="training_reg_h1_i">*</i> 联系手机：</em>
+                    <input class="training_reg_text" type="text" id="moblie" name="moblie" onkeyup="this.value=this.value.replace(/[^0-9-]/g,'')" onBlur="reg_checkAjax('moblie');">
+                    <span id="ajax_moblie" class="reg_tips"><i class="reg_tips_icon"></i>请输入手机号码！</span>
+                </li>
+
+                {yun:}if strpos($config.code_web,"注册会员")!==false{/yun}
+                <li>
+                    {yun:}if $config.code_kind=='3'{/yun}
+                    
+                    <em class="training_reg_em"><i class="training_reg_h1_i">*</i> 安全验证：</em>
+                    <div class="training_verification">
+                        <div id="popup-captcha" data-id='subreg' data-type='click'></div>
+                        <input type='hidden' id="popup-submit">
+                    </div>
+                    {yun:}else{/yun}
+                    <em class="training_reg_em"><i class="training_reg_h1_i">*</i> 验 证 码：</em>
+                    <input type="text" id="CheckCode" maxlength="6" onBlur="reg_checkAjax('CheckCode');" class="training_reg_text training_reg_textw120" onfocus="checkCode('vcode_img')" autocomplete="off">
+                    <a href="javascript:void(0);" onclick="checkCode('vcode_img');" class="registe_a" style="display:inline-block; line-height:30px; padding-left:10px; float:left"><img id="vcode_img" src="{yun:}$config.sy_weburl{/yun}/app/include/authcode.inc.php" style="margin-left:10px; float:left">
+                    </a>
+                    <span id="ajax_CheckCode" class="reg_tips"><i class="reg_tips_icon"></i>请输入验证码！</span> {yun:}/if{/yun}
+                </li>
+                {yun:}/if{/yun} {yun:}if $config.reg_real_name_check == "1"{/yun}
+                <input type="hidden" id="send" value="0" />
+
+                <li><em class="training_reg_em"><i class="training_reg_h1_i">*</i> 短信验证：</em>
+                    <input type="text" id="moblie_code" class="training_reg_text training_reg_textw120" onBlur="reg_checkAjax('moblie_code');" />
+                    <a class="reg_btn_s02_disable" href="javascript:void(0);" id="subreg" onclick="sendmsg('vcode_img');"><span id="time">获取短信验证</span></a>
+                    <span class="reg_tips false" id="ajax_moblie_code"><i class="reg_tips_icon"></i></span>
+                </li>
+
+                <li>
+                    <em class="training_reg_em"><i class="training_reg_h1_i">*</i> 真实姓名：</em>
+                    <input class="training_reg_text" type="text" id="realname" name="realname" onBlur="reg_checkAjax('realname');">
+                    <span id="ajax_realname" class="reg_tips "><i class="reg_tips_icon"></i>请填写您的用户名！</span>
+                </li>
+                {yun:}/if{/yun}
+
+                <li><em class="training_reg_em">&nbsp;</em>
+                    <input id="xieyi" type="checkbox" value="1" class="re_checkbox" checked="checked"> 我已阅读
+                    <a href="{yun:}$config.sy_weburl{/yun}/about/service.html" target="_blank">《{yun:}$config.sy_webname{/yun}用户服务协议》</a> ，并自愿遵守该协议。 </li>
+                <li style="margin-top:0px;"><em class="training_reg_em">&nbsp;</em>
+                    <input type="button" value="立即注册" id="subreg" class="btn_reg_submit" onclick="checkform('{yun:}url m=train c=register{/yun}','{yun:}url m=register c=ok type=1{/yun}','vcode_img');" />
+                </li>
+            </ul>
+        </div>
+        <div class="training_reg_right ftr">
+            <div class="training_reg_right_log">已有账户？
+                <a href="{yun:}url m=train c=login{/yun}" class="training_reg_right_log_a">立即登录</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="" style="width:550px; background:#fff; margin:20px auto; display: none;" id="written_off">
+    <div class="reg_have_tip">
+        <i class="reg_have_tip_icon"></i>
+        <div class="reg_have_tip_tit"><span id="zy_type">该手机号已被注册为企业账号</span></div>
+        <div class="reg_have_tip_zc" id="zy_name"></div>
+    </div>
+
+    <div class="reg_have_tip_p_c">
+        <div class="reg_have_tip_p">1. 如果是你本人，但不记得密码，您可以找回密码
+            <a href="{yun:}url m=forgetpw{/yun}" class="reg_have_tip_bth">找回密码</a>
+        </div>
+        <div class="reg_have_tip_p">
+			<span id="desc_toast">2. 解除手机号与该账号的绑定，解除绑定后，您无法 继续用该手机号登录</span>
+            <a href="javascript:void(0);" onclick="CheckPW()" class="reg_have_tip_bth">解除绑定</a>
+        </div>
+    </div>
+    <div class="reg_have_tip_kf">如有疑问可拨打客服服务热线：<span class="reg_have_tip_kf_tel">{yun:}$config.sy_freewebtel{/yun}</span></div>
+    <input type="hidden" id="zy_uid" value="" />
+    <input type="hidden" id="zy_mobile" value="" />
+    <input type="hidden" id="zy_email" value="" />
+</div>
+
+
+
+<div class="none" id="postpw">
+    <ul class="reg_have_jc">
+        <li>
+            <span class="reg_have_jc_name"><font color="#FF3300">*</font> 登录密码：</span>
+            <input id="pw" type='password' class="reg_have_jc_name_text" placeholder="请输入登录密码" />
+        </li>
+
+        <li>
+            <span class="reg_have_jc_name"><font color="#FF3300">*</font> 验&nbsp;证&nbsp;码：</span>
+            <input type="text" id="code" class="reg_have_jc_name_textyz" maxlength="6" onfocus="checkCode('vcode_imgs')" autocomplete="off" />
+            <a><img id="vcode_imgs" onclick="checkCode('vcode_imgs');" src="{yun:}$config.sy_weburl{/yun}/app/include/authcode.inc.php" /></a>
+        </li>
+
+        <li>
+            <span class="reg_have_jc_name">&nbsp; </span>
+            <input class="reg_have_jc_bth" type="button" value="确认解绑" onclick="post_pass('vcode_imgs');" />
+        </li>
+
+    </ul>
+</div>
+
+
+<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<link href="{yun:}$config.sy_weburl{/yun}/js/layui/css/layui.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/layui.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/phpyun_layer.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/public.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$train_style{/yun}/js/train_public.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$train_style{/yun}/js/reg_ajax.js?v={yun:}$config.cachecode{/yun}" type="text/javascript"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/geetest/gt.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/geetest/pc.js?v={yun:}$config.cachecode{/yun}" type="text/javascript"></script>
+<style>
+    .reg_tips {
+        display: none;
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        $(document).keydown(function(e) {
+            var ev = document.all ? window.event : e;
+            if(ev.keyCode == 13) {
+                checkform('{yun:}url m=train c=register{/yun}', '{yun:}url m=register c=ok type=1{/yun}', 'vcode_img');
+            }
+        });
+        $("#username,#email1,#password,#passconfirm,#moblie,#txt_CheckCode").keydown(function(e) {
+            var ev = document.all ? window.event : e;
+            if(ev.keyCode == 13) {
+                checkform('{yun:}url m=train c=register{/yun}', '{yun:}url m=register c=ok type=1{/yun}', 'vcode_img');
+            } else {
+                return;
+            }
+        });
+        $("#xieyi").keyup(function(event) {
+            var myEvent = event || window.event;
+            if(myEvent.keyCode == 13) {
+                checkform('{yun:}url m=train c=register{/yun}', '{yun:}url m=register c=ok type=1{/yun}', 'vcode_img');
+            } else {
+                return;
+            };
+        });
+    });
+</script>
+<!--[if IE 6]>
+<script src="{yun:}$config.sy_weburl{/yun}/js/png.js?v={yun:}$config.cachecode{/yun}"></script>
+<script>
+DD_belatedPNG.fix('.png,.pagination li a ');
+</script>
+<![endif]-->
+{yun:}include file="$tplstyle/footer.htm"{/yun}

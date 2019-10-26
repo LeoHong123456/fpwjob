@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link href="images/reset.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<link href="images/system.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<link href="images/table_form.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet" type="text/css" />
+<script src="{yun:}$config.sy_weburl{/yun}/js/jquery-1.8.0.min.js?v={yun:}$config.cachecode{/yun}"></script>
+<script src="js/admin_public.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<link href="{yun:}$config.sy_weburl{/yun}/js/layui/css/layui.css?v={yun:}$config.cachecode{/yun}" rel="stylesheet">
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/layui.js?v={yun:}$config.cachecode{/yun}" language="javascript"></script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui/phpyun_layer.js?v={yun:}$config.cachecode{/yun}"></script>
+<title>后台管理</title>
+</head>
+<body class="body_ifm">
+<div class="infoboxp">
+  <div class="admin_new_tip">
+  <a href="javascript:;" class="admin_new_tip_close"></a>
+<a href="javascript:;" class="admin_new_tip_open" style="display:none;"></a>
+    <div class="admin_new_tit"><i class="admin_new_tit_icon"></i>操作提示</div>
+    <div class="admin_new_tip_list_cont">
+      <div class="admin_new_tip_list">该页面展示了网站的聊天设置信息。</div>
+    </div>
+  </div>
+  <div class="clear"></div>
+ 
+<div class="main_tag mt10">
+<div class="tag_box">
+<iframe id="supportiframe"  name="supportiframe" onload="returnmessage('supportiframe');" style="display:none"></iframe>
+<form id="chatform" class="layui-form" action="index.php?m=admin_chat_config&c=save" method="post" enctype= "multipart/form-data" target="supportiframe">
+    <table width="100%" class="table_form">
+     <tr class="admin_table_trbg">
+       <th width="200" bgcolor="#f0f6fb"><span class="admin_bold">参数说明</span></th>
+          <td bgcolor="#f0f6fb"><span class="admin_bold">参数值</span></td>
+    
+    </tr>
+	<tr>
+      <th width="160">聊天开放：</th>
+      <td>
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <input type="checkbox" name="sy_chat_open" lay-skin="switch" lay-text="开放|关闭"
+              {yun:}if $config.sy_chat_open=="1"{/yun}
+             checked
+              {yun:}/if{/yun}
+              />
+          </div>
+        </div>   
+      </td>
+    </tr>
+	<tr class="admin_table_trbg"> 
+    <th width="160">聊天图标：</th>
+    <td>
+		<button type="button" class="yun_bth_pic adminupload" lay-data="{name: 'sy_chat_logo',imgid: 'imgicon'}">上传图片</button>
+		<input type="hidden" id="layupload_type" value="2"/>
+		<input type="hidden" id="upload_path" value="logo"/>
+		<input type="hidden" name="sy_chat_logo" value="{yun:}$config.sy_chat_logo{/yun}"/>
+        <img id="imgicon" src="{yun:}$config.sy_weburl{/yun}/{yun:}$config.sy_chat_logo{/yun}" style="max-width:100px;_width:100px;" {yun:}if !$config.sy_chat_logo{/yun}class="none"{yun:}/if{/yun}>
+	  </td>
+    </tr>   
+  <tr class="admin_table_trbg">
+    <th width="160">开放模式：</th>
+    <td>
+      <div class="layui-form-item">
+        <div class="layui-input-block">
+            <input name="sy_chat_type" value="1" title="免费开放"
+              {yun:}if $config.sy_chat_type=="1"{/yun}
+               checked 
+              {yun:}/if{/yun}
+               type="radio"/>
+            <input name="sy_chat_type" value="2" title="条件开放"
+              {yun:}if $config.sy_chat_type=="2"{/yun}
+               checked 
+              {yun:}/if{/yun}
+             type="radio"/>
+			 <span class="admin_web_tip">免费开放：个人、企业可以直接沟通，影响收入。条件开放：个人投递简历或企业下载简历后可以沟通</span>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr class="admin_table_trbg">
+    <th width="160">通讯平台：</th>
+    <td>
+      <div class="layui-form-item">
+        <div class="layui-input-block">
+            <input name="chat_platform" value="2" title="环信"
+              {yun:}if $config.chat_platform=="2"{/yun}
+               checked 
+              {yun:}/if{/yun}
+             type="radio"/>
+		     <input name="chat_platform" value="3" title="融云"
+              {yun:}if $config.chat_platform=="3"{/yun}
+               checked 
+              {yun:}/if{/yun}
+             type="radio"/>
+			 <span class="admin_web_tip">请慎重选择通讯平台，更改平台会造成原有的聊天用户和数据失效！！！</span>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+
+  <tr class="admin_table_trbg easemob" {yun:}if $config.chat_platform!="2"{/yun}style="display:none;"{yun:}/if{/yun}>
+    <th width="160">OrgName：</th>
+    <td>
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <div class="layui-input-inline">
+              <input name="sy_easemob_orgname" id="sy_easemob_orgname" autocomplete="off" class="layui-input" type="text" 
+               value="{yun:}$config.sy_easemob_orgname{/yun}" size="60" maxlength="255" />
+            </div>
+            <span class="admin_web_tip">申请地址：<a href='http://www.easemob.com/' target='_blank'>http://www.easemob.com/</a></span>
+          </div>
+        </div>
+    </td>
+  </tr>
+  <tr class="admin_table_trbg easemob" {yun:}if $config.chat_platform!="2"{/yun}style="display:none;"{yun:}/if{/yun}>
+    <th width="160">AppName：</th>
+    <td>
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <div class="layui-input-inline">
+              <input name="sy_easemob_appname" id="sy_easemob_appname" autocomplete="off" class="layui-input" type="text" 
+               value="{yun:}$config.sy_easemob_appname{/yun}" size="60" maxlength="255" />
+            </div>
+          </div>
+        </div>
+	</td>
+  </tr>
+    <tr class="admin_table_trbg easemob" {yun:}if $config.chat_platform!="2"{/yun}style="display:none;"{yun:}/if{/yun}>
+    <th width="160">Client ID：</th>
+    <td>
+    <div class="layui-form-item">
+          <div class="layui-input-block">
+            <div class="layui-input-inline">
+              <input name="sy_easemob_clientid" id="sy_easemob_clientid" autocomplete="off" class="layui-input" type="text" 
+               value="{yun:}$config.sy_easemob_clientid{/yun}" size="60" maxlength="255" />
+            </div>
+            <span class="admin_web_tip"></span>
+          </div>
+        </div>
+    </td>
+  </tr>
+    <tr class="admin_table_trbg easemob" {yun:}if $config.chat_platform!="2"{/yun}style="display:none;"{yun:}/if{/yun}>
+    <th width="160">Client Secret：</th>
+    <td>
+    <div class="layui-form-item">
+          <div class="layui-input-block">
+            <div class="layui-input-inline">
+              <input name="sy_easemob_clientSecret" id="sy_easemob_clientSecret" autocomplete="off" class="layui-input" type="text" 
+               value="{yun:}$config.sy_easemob_clientSecret{/yun}" size="60" maxlength="255" />
+            </div>
+          </div>
+        </div>
+    </td>
+  </tr>
+  
+    <tr class="admin_table_trbg rongcloud" {yun:}if $config.chat_platform!="3"{/yun}style="display:none;"{yun:}/if{/yun}>
+    <th width="160">App Key：</th>
+    <td>
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <div class="layui-input-inline">
+              <input name="sy_rong_appkey" id="sy_rong_appkey" autocomplete="off" class="layui-input" type="text" 
+               value="{yun:}$config.sy_rong_appkey{/yun}" size="60" maxlength="255" />
+            </div>
+            <span class="admin_web_tip">申请地址：<a href='http://www.rongcloud.cn' target='_blank'>http://www.rongcloud.cn</a></span>
+          </div>
+        </div>
+    </td>
+  </tr>
+  <tr class="admin_table_trbg rongcloud" {yun:}if $config.chat_platform!="3"{/yun}style="display:none;"{yun:}/if{/yun}>
+    <th width="160">App Secret：</th>
+    <td>
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <div class="layui-input-inline">
+              <input name="sy_rong_appsecret" id="sy_rong_appsecret" autocomplete="off" class="layui-input" type="text" 
+               value="{yun:}$config.sy_rong_appsecret{/yun}" size="60" maxlength="255" />
+            </div>
+          </div>
+        </div>
+	</td>
+  </tr>
+  
+        <tr class="admin_table_trbg">
+            <td colspan="3" align="center">
+			<input type="hidden" name="pytoken" id='pytoken' value="{yun:}$pytoken{/yun}">
+            <input class="layui-btn layui-btn-normal" id="chatconfig" type="button" onclick="ckchat()" value="提交" />&nbsp;&nbsp;
+            <input class="layui-btn layui-btn-normal" type="reset" value="重置" /></td>
+        </tr>
+    </table>  
+  </form>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var weburl = '{yun:}$config.sy_weburl{/yun}';
+layui.use(['layer', 'form'], function(){
+    var layer = layui.layer
+    ,form = layui.form
+    ,$ = layui.$;
+	
+	$("input[name=chat_platform]").each(function(){
+		$(this).next().click(function(){
+			var chatvalue = $(this).prev().val();
+			if(chatvalue==1){
+				$(".easemob").hide();
+				$(".rongcloud").hide();
+			}else if(chatvalue==2){
+				$(".easemob").show();
+				$(".rongcloud").hide();
+			}else if(chatvalue==3){
+				$(".easemob").hide();
+				$(".rongcloud").show();
+			}
+		});
+    });	
+});
+function ckchat(){
+	var sy_chat_open = $("input[name=sy_chat_open]").is(":checked") ? 1 : 2, sy_easemob_clientSecret = $("#sy_easemob_clientSecret").val(), sy_rong_appsecret = $("#sy_rong_appsecret").val();
+	if(sy_chat_open == 1 && (sy_easemob_clientSecret== '' && sy_rong_appsecret== '')){
+		parent.layer.msg("填写通讯平台信息后才能开放聊天！",2,8);return false;
+	}
+	$("#chatform").submit();
+}
+</script>
+<script src="{yun:}$config.sy_weburl{/yun}/js/layui.upload.js?v={yun:}$config.cachecode{/yun}" type='text/javascript'></script> 
+</body>
+</html>

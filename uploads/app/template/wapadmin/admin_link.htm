@@ -1,0 +1,17 @@
+{yun:}include file="$wapadminstyle/header.htm"{/yun}
+<div class="admin_c_box">
+  <ul class="admin_log_box">
+    {yun:}foreach item=v key=key from=$linkrows{/yun}
+    <li> <a href="index.php?c=link&a=add&id={yun:}$v.id{/yun}">
+      <div class="admin_link_webname">{yun:}$v.link_name{/yun}</div>
+      <div class="admin_link_webadd">{yun:}$v.link_url{/yun}</div>
+      <div class="admin_link_websh"> {yun:}if $v.link_state neq 1{/yun}<span class="admin_link_websh_c">未审核</span>{yun:}else{/yun}<span class="admin_link_websh_b">已审核</span>{yun:}/if{/yun} </div>
+      </a> </li>
+      {yun:}foreachelse{/yun}
+  <div class="wapadmin_tip"><i class="wapadmin_tip_icon"></i>暂时还没有友情链接信息</div>
+    {yun:}/foreach{/yun}
+  </ul>
+  <div class="pages">{yun:}$pagenav{/yun}</div>
+
+</div>
+</body></html>
