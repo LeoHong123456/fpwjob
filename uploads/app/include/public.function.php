@@ -12,7 +12,7 @@
  */
  
 	function CheckMoblie($moblie){
-		return preg_match("/1[3456789]{1}\d{9}$/",trim($moblie));
+		return preg_match("/^\d{5,15}$/",trim($moblie));
 	}
 	function CheckRegUser($str){
 		if(!preg_match("/^[\x{4e00}-\x{9fa5}A-Za-z0-9_\-]+$/u",$str)){

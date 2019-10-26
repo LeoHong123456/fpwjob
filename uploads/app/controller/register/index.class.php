@@ -457,7 +457,7 @@ class index_controller extends common{
 				|| $_POST['codeid']=='2'
 				|| $this->config['reg_real_name_check']=="1"
 			){
-			if(!preg_match("/1[3456789]{1}\d{9}$/",$_POST['moblie'])){
+			if(!preg_match("/^\d{5,15}$/",$_POST['moblie'])){
 				$this->errjson('手机格式错误！');
 			}else{
 				$moblieNum = $Member->GetMemberNum(array("moblie"=>$_POST['moblie']));
