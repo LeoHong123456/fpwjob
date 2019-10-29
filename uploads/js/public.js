@@ -512,14 +512,13 @@ function check_email(strEmail) {
  }
 function isjsMobile(obj){
 	var reg= /^\d{5,15}$/;
-	
     if (obj.length <= 5) return false;
     else if (!reg.test(obj)) return false;
     else if (isNaN(obj)) return false;
     else return true;
 }
 function isjsTell(str) {
-    var result = str.match(/^\d{5,15}$/);
+    var result = str.match(/^([0-9]{3,4}-)?[0-9]{7,8}$/);
     if (result == null) return false;
     return true;
 }
