@@ -1,14 +1,13 @@
 <?php 
   $db_config = array(
       'dbtype'=>'mysql',
-      'dbhost'=>'localhost',
-      'dbuser'=>'root',
-      'dbpass'=>'root',
-      'dbname'=>'vip02',
-      'def'=>'phpyun_',
+      'dbhost'=>'154.211.7.204',
+      'dbuser'=>'fpw',
+      'dbpass'=>'MzgyZTlmMDc0ZTNk@',
+      'dbname'=>'fpwjob',
+      'def'=>'fpw_',
       'charset'=>'utf8',
       'timezone'=>'PRC',
       'coding'=>'84f46a1a8378b7f20c828b4949a7f9de', //生成cookie加密
     );
-    
 ?>
