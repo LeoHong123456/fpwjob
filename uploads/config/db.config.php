@@ -2,7 +2,7 @@
   $db_config = array(
       'dbtype'=>'mysql',
       'dbhost'=>'154.211.7.204',
-      'dbuser'=>'fpw',
+      'dbuser'=>'fpwjob',
       'dbpass'=>'MzgyZTlmMDc0ZTNk@',
       'dbname'=>'fpwjob',
       'def'=>'fpw_',
