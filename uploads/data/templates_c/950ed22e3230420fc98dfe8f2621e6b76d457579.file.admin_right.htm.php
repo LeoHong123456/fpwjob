@@ -299,11 +299,10 @@ var integral_pricename='<?php echo $_smarty_tpl->tpl_vars['config']->value['inte
     <div class="maininfo">
     <div class="mainboxtop"><h6>开发团队</h6></div>
         <div class="maincontent">
-        <p>开发团队：phpyun开发组</p>
-        <p>特别感谢：花菜 , 肖强 , 纪祥 , 逍遥 , 龙泉 , 小关 , 茉莉传媒 , 石头先生</p>
-        <p>联系电话：400-880-5523</p>
-		<p>官方网站：<a href="http://www.phpyun.com/" target="_blank">http://www.phpyun.com/</a> 官方论坛：<a href="http://bbs.phpyun.com/" target="_blank">http://bbs.phpyun.com/</a></p>
-<p>咨询QQ：3367562 , 721799845 , 721799844</p>
+        <p>开发团队:LEO</p>
+        <p>联系电话：09163044437</p>
+	<p>官方网站：<a href="https://www.fpwjob.com/" target="_blank">https://www.fpwjob.com/</a>
+	<p>咨询QQ：1513314683</p>
         </div>
     </div>
   </div> 
