@@ -1,3 +1,15 @@
 <?php 
-$keyword=array(); 
+$keyword=array('0'=>array('id'=>'5','key_name'=>'JAVA','num'=>'17','type'=>'3','size'=>'','color'=>'#','bold'=>'1','tuijian'=>'1')
+,'1'=>array('id'=>'3','key_name'=>'UI','num'=>'8','type'=>'3','size'=>'','color'=>'#','bold'=>'1','tuijian'=>'1')
+,'2'=>array('id'=>'4','key_name'=>'WEB前端','num'=>'4','type'=>'3','size'=>'','color'=>'#','bold'=>'1','tuijian'=>'1')
+,'3'=>array('id'=>'1','key_name'=>'客服','num'=>'3','type'=>'3','size'=>'','color'=>'#','bold'=>'1','tuijian'=>'1')
+,'4'=>array('id'=>'2','key_name'=>'出入款','num'=>'3','type'=>'3','size'=>'','color'=>'#','bold'=>'1','tuijian'=>'1')
+,'5'=>array('id'=>'10','key_name'=>'推广','num'=>'2','type'=>'3','size'=>'','color'=>'#','bold'=>'1','tuijian'=>'1')
+,'6'=>array('id'=>'12','key_name'=>'IOS','num'=>'1','type'=>'3','size'=>'','color'=>'#','bold'=>'1','tuijian'=>'1')
+,'7'=>array('id'=>'6','key_name'=>'C++','num'=>'0','type'=>'3','size'=>'','color'=>'#000000','bold'=>'1','tuijian'=>'1')
+,'8'=>array('id'=>'7','key_name'=>'.NET','num'=>'0','type'=>'3','size'=>'','color'=>'#','bold'=>'1','tuijian'=>'1')
+,'9'=>array('id'=>'8','key_name'=>'Android','num'=>'0','type'=>'3','size'=>'','color'=>'#','bold'=>'1','tuijian'=>'1')
+,'10'=>array('id'=>'9','key_name'=>'PHP','num'=>'0','type'=>'3','size'=>'','color'=>'#','bold'=>'1','tuijian'=>'1')
+)
+; 
 ?>
