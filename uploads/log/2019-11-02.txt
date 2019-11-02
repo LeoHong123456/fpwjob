@@ -1,0 +1,1474 @@
+2019-11-02 00:07:12 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572624432' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 00:07:12 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 00:07:41 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572624461' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 00:07:41 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 00:07:55 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572624475' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 00:07:55 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 00:08:03 错误SQL语句：:SELECT * FROM `fpw_atn` WHERE `xjhid` IN () and `uid`=''
+2019-11-02 00:08:03 错误SQL语句：:SELECT `uid`,`name`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-11-02 00:08:03 错误SQL语句：:SELECT `id`,`schoolname` FROM `fpw_school_academy` WHERE `id` IN ()
+2019-11-02 00:18:39 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572625119' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 00:18:39 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 00:19:26 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572625166' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 00:19:26 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 00:20:01 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572625201' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 00:20:01 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 00:20:15 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572625215' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 00:20:15 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 00:21:04 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572625264' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 00:21:04 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 02:43:48 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572633828' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 02:43:48 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 06:55:26 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572648926' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 06:55:26 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 08:46:51 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572655611' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 08:46:51 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 08:47:09 错误SQL语句：:SELECT eid FROM `fpw_down_resume` WHERE comid=
+2019-11-02 08:47:15 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572655635' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 08:47:15 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 08:47:45 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572655665' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 08:47:45 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 08:48:12 错误SQL语句：:SELECT eid FROM `fpw_down_resume` WHERE comid=
+2019-11-02 08:50:15 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572655815' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 08:50:15 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 09:05:32 错误SQL语句：:SELECT * FROM `fpw_admin_log` WHERE `uid`= and `content`='登录成功' order by `ctime` desc limit 2
+2019-11-02 09:05:35 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 09:05:35 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:05:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:08:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:08:19 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='23' and job_id IN ()
+2019-11-02 09:08:19 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='23' limit=3
+2019-11-02 09:13:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:13:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:13:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:14:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:14:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:14:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:14:34 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572657274' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 09:14:34 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 09:14:36 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND (`name` LIKE '%.NET%' or `com_name` LIKE '%.NET%' or `name` LIKE '%.NET%' or `com_name` LIKE '%.NET%') ORDER BY `lastupdate`  DESC limit -20,20
+2019-11-02 09:24:07 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 09:24:07 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:24:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:24:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:24:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:24:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:28:03 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 09:28:03 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:28:03 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:28:03 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:28:03 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:28:03 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:28:03 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 09:28:03 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 09:28:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:28:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:28:04 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:28:04 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:28:04 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:28:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:28:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:28:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:28:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:28:19 错误SQL语句：:SELECT `uid`,`status` FROM `fpw_member` WHERE `uid` IN ()
+2019-11-02 09:28:19 错误SQL语句：:SELECT `uid`,`rating_name` FROM `fpw_company_statis` WHERE `uid` IN ()
+2019-11-02 09:30:32 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:30:32 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:30:32 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:30:58 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 09:30:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:30:58 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:30:58 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:30:58 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:30:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:30:59 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 09:30:59 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 09:30:59 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:30:59 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:30:59 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:30:59 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:30:59 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:30:59 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:31:00 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:00 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:00 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:28 错误SQL语句：:SELECT * FROM `fpw_admin_log` WHERE `uid`= and `content`='登录成功' order by `ctime` desc limit 2
+2019-11-02 09:31:31 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 09:31:31 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:31:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:31:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:43 错误SQL语句：:SELECT * FROM `fpw_admin_log` WHERE `uid`= and `content`='登录成功' order by `ctime` desc limit 2
+2019-11-02 09:31:46 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 09:31:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:46 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:31:46 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:31:46 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:31:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:31:46 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 09:31:46 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 09:31:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:47 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:31:47 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:31:47 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:31:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:31:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:31:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:32:37 错误SQL语句：:UPDATE `fpw_user_entrust` SET `expect`='1' WHERE 1 and `eid`='55' and `uid`='87'
+2019-11-02 09:33:36 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 09:33:36 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 09:33:36 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 09:33:36 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 09:33:36 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 09:33:36 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 09:33:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:33:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:33:36 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:33:36 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:33:36 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:33:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 09:33:36 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 09:33:37 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 09:33:37 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 09:33:37 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 09:33:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:33:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 09:33:37 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 09:33:37 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 09:33:37 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 09:33:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 10:09:18 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 10:09:18 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 10:09:18 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 10:09:19 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 10:09:19 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 10:09:19 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 10:09:19 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 10:09:19 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 10:09:19 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 10:22:37 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 10:22:37 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 10:22:37 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 10:22:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 10:22:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 10:22:37 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 10:22:37 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 10:22:37 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 10:22:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 10:24:58 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572661498' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 10:24:58 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 10:26:08 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572661568' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 10:26:08 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 11:22:26 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572664946' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 11:22:26 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 11:22:35 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572664955' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 11:22:35 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 11:23:24 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572665004' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 11:23:24 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 11:32:34 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:32:34 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:34 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:32:39 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:43 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:32:43 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:43 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:43 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:43 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:43 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:44 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:32:44 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:32:44 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:44 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:44 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:44 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:44 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:44 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:49 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:32:50 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:32:54 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:32:59 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:32:59 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:33:02 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:33:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:33:07 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:33:08 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:33:14 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:33:18 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:33:18 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:33:23 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:33:23 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:34:16 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:34:16 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:34:16 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:34:16 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:34:16 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:34:16 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:34:17 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:34:17 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:34:17 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:34:17 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:34:17 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:34:17 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:34:17 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:34:17 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:34:24 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:34:33 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:34:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:36:39 错误SQL语句：:SELECT * FROM `fpw_resume_tiny` WHERE status='1'  ORDER BY lastupdate  DESC limit -24,24
+2019-11-02 11:37:05 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:37:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:37:05 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:37:05 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:37:05 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:37:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:37:05 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:37:05 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:37:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:37:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:37:06 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:37:06 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:37:06 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:37:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:40:31 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:40:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:40:46 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-11-02 11:40:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:40:46 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:40:46 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:40:46 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:40:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:40:47 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in (,,,,,,,,,)
+2019-11-02 11:40:47 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in (,,,,,,,,,)
+2019-11-02 11:40:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:40:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-11-02 11:40:47 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-11-02 11:40:47 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-11-02 11:40:47 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-11-02 11:40:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-11-02 11:43:27 数据库不可用：:2002
+2019-11-02 11:43:27 错误SQL语句：:SELECT * FROM `phpyun_member` WHERE `uid`='7' AND `usertype`='1' limit 1
+2019-11-02 11:43:27 数据库不可用：:2002
+2019-11-02 11:43:28 数据库不可用：:2002
+2019-11-02 11:43:28 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`='2'  limit 1
+2019-11-02 11:43:28 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572666212 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572666212 AND `time_end`>1572666212 ORDER BY `sort` DESC limit 18
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572666212 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:32 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 11:43:32 数据库不可用：:2002
+2019-11-02 11:43:36 数据库不可用：:2002
+2019-11-02 11:43:36 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:43:36 数据库不可用：:2002
+2019-11-02 11:43:41 数据库不可用：:2002
+2019-11-02 11:43:41 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `username`='admin' and `status` = 1 limit 1
+2019-11-02 11:43:41 数据库不可用：:2002
+2019-11-02 11:43:43 数据库不可用：:2002
+2019-11-02 11:43:43 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:43:43 数据库不可用：:2002
+2019-11-02 11:43:49 数据库不可用：:2002
+2019-11-02 11:43:49 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `username`='admin' and `status` = 1 limit 1
+2019-11-02 11:43:49 数据库不可用：:2002
+2019-11-02 11:43:51 数据库不可用：:2002
+2019-11-02 11:43:51 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:43:51 数据库不可用：:2002
+2019-11-02 11:43:59 数据库不可用：:2002
+2019-11-02 11:43:59 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `username`='admin' and `status` = 1 limit 1
+2019-11-02 11:43:59 数据库不可用：:2002
+2019-11-02 11:44:02 数据库不可用：:2002
+2019-11-02 11:44:02 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:44:02 数据库不可用：:2002
+2019-11-02 11:44:06 数据库不可用：:2002
+2019-11-02 11:44:06 错误SQL语句：:SELECT count(*) as num FROM phpyun_px_teacher WHERE `r_status`<>'2' and `status`='1' and `sid`='8' and `hy`='36' order by `ctime` desc
+2019-11-02 11:44:06 数据库不可用：:2002
+2019-11-02 11:44:06 数据库不可用：:2002
+2019-11-02 11:44:06 错误SQL语句：:SELECT * FROM `phpyun_px_teacher` WHERE `r_status`<>'2' and `status`='1' and `sid`='8' and `hy`='36' order by `ctime` desc limit 0,20
+2019-11-02 11:44:06 数据库不可用：:2002
+2019-11-02 11:44:06 数据库不可用：:2002
+2019-11-02 11:44:06 错误SQL语句：:SELECT `uid`,`name` FROM `phpyun_px_train` WHERE 1 and `uid` in (0)
+2019-11-02 11:44:06 数据库不可用：:2002
+2019-11-02 11:44:06 数据库不可用：:2002
+2019-11-02 11:44:06 错误SQL语句：:SELECT * FROM `phpyun_atn` WHERE `uid`='' and `tid`<>''
+2019-11-02 11:44:06 数据库不可用：:2002
+2019-11-02 11:44:08 数据库不可用：:2002
+2019-11-02 11:44:08 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `username`='admin' and `status` = 1 limit 1
+2019-11-02 11:44:08 数据库不可用：:2002
+2019-11-02 11:44:10 数据库不可用：:2002
+2019-11-02 11:44:10 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:44:10 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572666255 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572666255 AND `time_end`>1572666255 ORDER BY `sort` DESC limit 18
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572666255 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:15 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 11:44:15 数据库不可用：:2002
+2019-11-02 11:44:23 数据库不可用：:2002
+2019-11-02 11:44:23 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`='2'  limit 1
+2019-11-02 11:44:23 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572666266 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572666266 AND `time_end`>1572666266 ORDER BY `sort` DESC limit 18
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572666266 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:26 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 11:44:26 数据库不可用：:2002
+2019-11-02 11:44:27 数据库不可用：:2002
+2019-11-02 11:44:27 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 11:44:27 数据库不可用：:2002
+2019-11-02 11:44:27 数据库不可用：:2002
+2019-11-02 11:44:27 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 11:44:27 数据库不可用：:2002
+2019-11-02 11:44:27 数据库不可用：:2002
+2019-11-02 11:44:27 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 11:44:27 数据库不可用：:2002
+2019-11-02 11:44:31 数据库不可用：:2002
+2019-11-02 11:44:31 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:44:31 数据库不可用：:2002
+2019-11-02 11:44:39 数据库不可用：:2002
+2019-11-02 11:44:39 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `username`='admin' and `status` = 1 limit 1
+2019-11-02 11:44:39 数据库不可用：:2002
+2019-11-02 11:44:41 数据库不可用：:2002
+2019-11-02 11:44:41 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:44:41 数据库不可用：:2002
+2019-11-02 11:44:46 数据库不可用：:2002
+2019-11-02 11:44:46 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `username`='admin' and `status` = 1 limit 1
+2019-11-02 11:44:46 数据库不可用：:2002
+2019-11-02 11:44:48 数据库不可用：:2002
+2019-11-02 11:44:48 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:44:48 数据库不可用：:2002
+2019-11-02 11:45:00 数据库不可用：:2002
+2019-11-02 11:45:00 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `username`='admin' and `status` = 1 limit 1
+2019-11-02 11:45:00 数据库不可用：:2002
+2019-11-02 11:45:02 数据库不可用：:2002
+2019-11-02 11:45:02 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:45:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572666362 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572666362 AND `time_end`>1572666362 ORDER BY `sort` DESC limit 18
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572666362 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:02 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 11:46:02 数据库不可用：:2002
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:04 错误SQL语句：:SELECT `uid` FROM `phpyun_company` WHERE `name`<>'' AND `r_status`<>'2' LIMIT 5000,1
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:04 错误SQL语句：:SELECT count(*) FROM phpyun_company WHERE `name`<>'' AND `r_status`<>'2'
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:04 错误SQL语句：:SELECT * FROM phpyun_company where `name`<>'' AND `r_status`<>'2' ORDER BY `lastupdate`   DESC limit -20,20
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:04 错误SQL语句：:SELECT `id`,`uid`,`status`,`name` FROM `phpyun_company_job` WHERE `uid` IN () and r_status<>'2' and status<>'1' and state=1  order by `lastupdate` desc
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:04 错误SQL语句：:SELECT * FROM phpyun_company where `name`<>'' AND `r_status`<>'2' AND `rec`='1' AND `hottime`>'1572666364' ORDER BY `jobtime`  DESC limit 10
+2019-11-02 11:46:04 数据库不可用：:2002
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:06 错误SQL语句：:SELECT `uid` FROM `phpyun_company` WHERE `name`<>'' AND `r_status`<>'2' LIMIT 5000,1
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:06 错误SQL语句：:SELECT count(*) FROM phpyun_company WHERE `name`<>'' AND `r_status`<>'2'
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:06 错误SQL语句：:SELECT * FROM phpyun_company where `name`<>'' AND `r_status`<>'2' ORDER BY `lastupdate`   DESC limit -20,20
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:06 错误SQL语句：:SELECT `id`,`uid`,`status`,`name` FROM `phpyun_company_job` WHERE `uid` IN () and r_status<>'2' and status<>'1' and state=1  order by `lastupdate` desc
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:06 错误SQL语句：:SELECT * FROM phpyun_company where `name`<>'' AND `r_status`<>'2' AND `rec`='1' AND `hottime`>'1572666366' ORDER BY `jobtime`  DESC limit 10
+2019-11-02 11:46:06 数据库不可用：:2002
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:07 错误SQL语句：:SELECT `uid` FROM `phpyun_company` WHERE `name`<>'' AND `r_status`<>'2' LIMIT 5000,1
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:07 错误SQL语句：:SELECT count(*) FROM phpyun_company WHERE `name`<>'' AND `r_status`<>'2'
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:07 错误SQL语句：:SELECT * FROM phpyun_company where `name`<>'' AND `r_status`<>'2' ORDER BY `lastupdate`   DESC limit -20,20
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:07 错误SQL语句：:SELECT `id`,`uid`,`status`,`name` FROM `phpyun_company_job` WHERE `uid` IN () and r_status<>'2' and status<>'1' and state=1  order by `lastupdate` desc
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:07 错误SQL语句：:SELECT * FROM phpyun_company where `name`<>'' AND `r_status`<>'2' AND `rec`='1' AND `hottime`>'1572666367' ORDER BY `jobtime`  DESC limit 10
+2019-11-02 11:46:07 数据库不可用：:2002
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:08 错误SQL语句：:SELECT `uid` FROM `phpyun_company` WHERE `name`<>'' AND `r_status`<>'2' LIMIT 5000,1
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:08 错误SQL语句：:SELECT count(*) FROM phpyun_company WHERE `name`<>'' AND `r_status`<>'2'
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:08 错误SQL语句：:SELECT * FROM phpyun_company where `name`<>'' AND `r_status`<>'2' ORDER BY `lastupdate`   DESC limit -20,20
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:08 错误SQL语句：:SELECT `id`,`uid`,`status`,`name` FROM `phpyun_company_job` WHERE `uid` IN () and r_status<>'2' and status<>'1' and state=1  order by `lastupdate` desc
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:08 错误SQL语句：:SELECT * FROM phpyun_company where `name`<>'' AND `r_status`<>'2' AND `rec`='1' AND `hottime`>'1572666368' ORDER BY `jobtime`  DESC limit 10
+2019-11-02 11:46:08 数据库不可用：:2002
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0'  and `xsdate`>'1572666370' ORDER BY rand()  DESC limit 5
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 错误SQL语句：:SELECT `id` FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' LIMIT 5000,1
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 错误SQL语句：:SELECT count(*) FROM phpyun_company_job WHERE `state`=1 and `r_status`=1 and `status`='0'
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit -20,20
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572666370 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 10
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:10 错误SQL语句：:SELECT * FROM phpyun_company where `name`<>'' AND `logo`<>'' AND `r_status`<>'2' AND `rec`='1' AND `hottime`>'1572666370' ORDER BY `jobtime`  DESC limit 8
+2019-11-02 11:46:10 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572666379 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572666379 AND `time_end`>1572666379 ORDER BY `sort` DESC limit 18
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572666379 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:46:19 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 11:46:19 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_navigation` WHERE `nid`='20'
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_tplmobliepic` WHERE `type`='nav'
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_tplmobliepic` WHERE `type`='hd'
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_tplmobliepic` WHERE `type`='indexnav' order by `id` asc
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_tplmobliepic` WHERE `type`='ad'
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 4
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572666503 AND `time_end`>1572666503 ORDER BY `sort` DESC limit 5
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572666503 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572666503 ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY if(a.`topdate`>1572666503,a.`topdate`,a.`lastupdate`)DESC LIMIT 5
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 5
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT `id` FROM `phpyun_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572666503' LIMIT 5000,1
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT count(*) FROM phpyun_zhaopinhui WHERE 1 AND unix_timestamp(`endtime`)>'1572666503'
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT * FROM `phpyun_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572666503' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:48:23 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `phpyun_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 11:48:23 数据库不可用：:2002
+2019-11-02 11:51:31 数据库不可用：:2002
+2019-11-02 11:51:31 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:51:31 数据库不可用：:2002
+2019-11-02 11:51:36 数据库不可用：:2002
+2019-11-02 11:51:36 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `username`='admin' and `status` = 1 limit 1
+2019-11-02 11:51:36 数据库不可用：:2002
+2019-11-02 11:51:38 数据库不可用：:2002
+2019-11-02 11:51:38 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:51:38 数据库不可用：:2002
+2019-11-02 11:51:39 数据库不可用：:2002
+2019-11-02 11:51:39 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `username`='admin' and `status` = 1 limit 1
+2019-11-02 11:51:39 数据库不可用：:2002
+2019-11-02 11:51:41 数据库不可用：:2002
+2019-11-02 11:51:41 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:51:41 数据库不可用：:2002
+2019-11-02 11:51:42 数据库不可用：:2002
+2019-11-02 11:51:42 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `username`='admin' and `status` = 1 limit 1
+2019-11-02 11:51:42 数据库不可用：:2002
+2019-11-02 11:51:44 数据库不可用：:2002
+2019-11-02 11:51:44 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:51:44 数据库不可用：:2002
+2019-11-02 11:52:01 数据库不可用：:2002
+2019-11-02 11:52:01 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:52:01 数据库不可用：:2002
+2019-11-02 11:52:02 数据库不可用：:2002
+2019-11-02 11:52:02 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:52:02 数据库不可用：:2002
+2019-11-02 11:52:03 数据库不可用：:2002
+2019-11-02 11:52:03 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:52:03 数据库不可用：:2002
+2019-11-02 11:52:03 数据库不可用：:2002
+2019-11-02 11:52:03 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:52:03 数据库不可用：:2002
+2019-11-02 11:52:04 数据库不可用：:2002
+2019-11-02 11:52:04 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:52:04 数据库不可用：:2002
+2019-11-02 11:52:05 数据库不可用：:2002
+2019-11-02 11:52:05 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:52:05 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572666924 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572666924 AND `time_end`>1572666924 ORDER BY `sort` DESC limit 18
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572666924 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:24 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 11:55:24 数据库不可用：:2002
+2019-11-02 11:55:25 数据库不可用：:2002
+2019-11-02 11:55:25 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 11:55:25 数据库不可用：:2002
+2019-11-02 11:55:25 数据库不可用：:2002
+2019-11-02 11:55:25 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 11:55:25 数据库不可用：:2002
+2019-11-02 11:55:25 数据库不可用：:2002
+2019-11-02 11:55:25 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 11:55:25 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572666933 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572666933 AND `time_end`>1572666933 ORDER BY `sort` DESC limit 18
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572666933 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:33 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 11:55:33 数据库不可用：:2002
+2019-11-02 11:55:38 数据库不可用：:2002
+2019-11-02 11:55:38 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 4
+2019-11-02 11:55:38 数据库不可用：:2002
+2019-11-02 11:55:38 数据库不可用：:2002
+2019-11-02 11:55:38 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 18
+2019-11-02 11:55:38 数据库不可用：:2002
+2019-11-02 11:55:38 数据库不可用：:2002
+2019-11-02 11:55:38 错误SQL语句：:SELECT * FROM phpyun_company where `name`<>'' AND `r_status`<>'2' AND `rec`='1' AND `hottime`>'1572666938' ORDER BY `jobtime`  DESC limit 8
+2019-11-02 11:55:38 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572666990 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572666990 AND `time_end`>1572666990 ORDER BY `sort` DESC limit 18
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572666990 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:30 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 11:56:30 数据库不可用：:2002
+2019-11-02 11:56:33 数据库不可用：:2002
+2019-11-02 11:56:33 错误SQL语句：:SELECT * FROM `phpyun_admin_user` WHERE `uid`=''  limit 1
+2019-11-02 11:56:33 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572667446 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572667446 AND `time_end`>1572667446 ORDER BY `sort` DESC limit 18
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572667446 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:06 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 12:04:06 数据库不可用：:2002
+2019-11-02 12:04:10 数据库不可用：:2002
+2019-11-02 12:04:10 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 12:04:10 数据库不可用：:2002
+2019-11-02 12:04:10 数据库不可用：:2002
+2019-11-02 12:04:10 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 12:04:10 数据库不可用：:2002
+2019-11-02 12:04:10 数据库不可用：:2002
+2019-11-02 12:04:10 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 12:04:10 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_navigation` WHERE `nid`='20'
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_tplmobliepic` WHERE `type`='nav'
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_tplmobliepic` WHERE `type`='hd'
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_tplmobliepic` WHERE `type`='indexnav' order by `id` asc
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_tplmobliepic` WHERE `type`='ad'
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 4
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572667474 AND `time_end`>1572667474 ORDER BY `sort` DESC limit 5
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572667474 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572667474 ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY if(a.`topdate`>1572667474,a.`topdate`,a.`lastupdate`)DESC LIMIT 5
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 5
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT `id` FROM `phpyun_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572667474' LIMIT 5000,1
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT count(*) FROM phpyun_zhaopinhui WHERE 1 AND unix_timestamp(`endtime`)>'1572667474'
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT * FROM `phpyun_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572667474' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:34 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `phpyun_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-11-02 12:04:34 数据库不可用：:2002
+2019-11-02 12:04:40 数据库不可用：:2002
+2019-11-02 12:04:40 错误SQL语句：:SELECT username,usertype,password,uid,salt,status,did,login_date FROM phpyun_member WHERE 1 and `username`='admin' limit 1
+2019-11-02 12:04:40 数据库不可用：:2002
+2019-11-02 12:04:50 数据库不可用：:2002
+2019-11-02 12:04:50 错误SQL语句：:SELECT username,usertype,password,uid,salt,status,did,login_date FROM phpyun_member WHERE 1 and `username`='user001' limit 1
+2019-11-02 12:04:50 数据库不可用：:2002
+2019-11-02 12:04:53 数据库不可用：:2002
+2019-11-02 12:04:53 错误SQL语句：:SELECT username,usertype,password,uid,salt,status,did,login_date FROM phpyun_member WHERE 1 and `username`='user001' limit 1
+2019-11-02 12:04:53 数据库不可用：:2002
+2019-11-02 12:04:53 数据库不可用：:2002
+2019-11-02 12:04:53 错误SQL语句：:SELECT `pw_repeat`,`pwuid`,`uid`,`username`,`salt`,`email`,`moblie`,`password`,`usertype`,`status`,`email_status`,`did`,`login_date` FROM phpyun_member WHERE 1 and `username`='上善若水' limit 1
+2019-11-02 12:04:53 数据库不可用：:2002
+2019-11-02 12:04:55 数据库不可用：:2002
+2019-11-02 12:04:55 错误SQL语句：:SELECT username,usertype,password,uid,salt,status,did,login_date FROM phpyun_member WHERE 1 and `username`='user001' limit 1
+2019-11-02 12:04:55 数据库不可用：:2002
+2019-11-02 12:04:56 数据库不可用：:2002
+2019-11-02 12:04:56 错误SQL语句：:SELECT username,usertype,password,uid,salt,status,did,login_date FROM phpyun_member WHERE 1 and `username`='user001' limit 1
+2019-11-02 12:04:56 数据库不可用：:2002
+2019-11-02 12:04:57 数据库不可用：:2002
+2019-11-02 12:04:57 错误SQL语句：:SELECT username,usertype,password,uid,salt,status,did,login_date FROM phpyun_member WHERE 1 and `username`='user001' limit 1
+2019-11-02 12:04:57 数据库不可用：:2002
+2019-11-02 12:05:07 数据库不可用：:2002
+2019-11-02 12:05:07 错误SQL语句：:SELECT count(*) as num FROM phpyun_px_teacher WHERE `r_status`<>'2' and `status`='1' and `sid`='1' and `hy`='42' order by `ctime` desc
+2019-11-02 12:05:07 数据库不可用：:2002
+2019-11-02 12:05:07 数据库不可用：:2002
+2019-11-02 12:05:07 错误SQL语句：:SELECT * FROM `phpyun_px_teacher` WHERE `r_status`<>'2' and `status`='1' and `sid`='1' and `hy`='42' order by `ctime` desc limit 0,20
+2019-11-02 12:05:07 数据库不可用：:2002
+2019-11-02 12:05:07 数据库不可用：:2002
+2019-11-02 12:05:07 错误SQL语句：:SELECT `uid`,`name` FROM `phpyun_px_train` WHERE 1 and `uid` in (0)
+2019-11-02 12:05:07 数据库不可用：:2002
+2019-11-02 12:05:07 数据库不可用：:2002
+2019-11-02 12:05:07 错误SQL语句：:SELECT * FROM `phpyun_atn` WHERE `uid`='' and `tid`<>''
+2019-11-02 12:05:07 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572667511 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572667511 AND `time_end`>1572667511 ORDER BY `sort` DESC limit 18
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572667511 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:11 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 12:05:11 数据库不可用：:2002
+2019-11-02 12:05:14 数据库不可用：:2002
+2019-11-02 12:05:14 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 12:05:14 数据库不可用：:2002
+2019-11-02 12:05:14 数据库不可用：:2002
+2019-11-02 12:05:14 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 12:05:14 数据库不可用：:2002
+2019-11-02 12:05:14 数据库不可用：:2002
+2019-11-02 12:05:14 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 12:05:14 数据库不可用：:2002
+2019-11-02 12:06:45 数据库不可用：:2002
+2019-11-02 12:06:45 错误SQL语句：:SELECT `pw_repeat`,`pwuid`,`uid`,`username`,`salt`,`email`,`moblie`,`password`,`usertype`,`status`,`email_status`,`did`,`login_date` FROM phpyun_member WHERE 1 and `username`='上善若水' limit 1
+2019-11-02 12:06:45 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE `status`=1 and `r_status`=1 and `rec_resume`=1 
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572667609 ORDER BY `lastupdate`  DESC limit 32
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT * FROM `phpyun_admin_announcement` WHERE 1  ORDER BY `datetime` DESC LIMIT 2
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit 6
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT * FROM phpyun_hotjob where `time_start`<1572667609 AND `time_end`>1572667609 ORDER BY `sort` DESC limit 18
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT `shortname`,`uid`,`hy`,`provinceid`,`cityid`,`three_cityid` FROM `phpyun_company` WHERE `uid` IN ()
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `uid` IN () and state=1 and r_status='1' and status='0' 
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT `uid`,`comtpl` FROM `phpyun_company_statis` WHERE `uid` IN ()
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 AND `rec_time`>=1572667609 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 5
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT * FROM `phpyun_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' ORDER BY `lastupdate`  DESC limit 15
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC LIMIT 10
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`rec_resume`=1 ORDER BY a.`lastupdate` DESC LIMIT 16
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `phpyun_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' ORDER BY a.`lastupdate` DESC LIMIT 8
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY hits DESC limit 10
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 AND FIND_IN_SET('t',`describe`) AND `newsphoto`<>'' ORDER BY `datetime` DESC limit 2
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:49 错误SQL语句：:SELECT * FROM `phpyun_news_base` WHERE 1 ORDER BY `datetime` DESC limit 14
+2019-11-02 12:06:49 数据库不可用：:2002
+2019-11-02 12:06:52 数据库不可用：:2002
+2019-11-02 12:06:52 错误SQL语句：:SELECT count(*) as num FROM phpyun_company WHERE 1
+2019-11-02 12:06:52 数据库不可用：:2002
+2019-11-02 12:06:52 数据库不可用：:2002
+2019-11-02 12:06:52 错误SQL语句：:SELECT count(*) as num FROM phpyun_company_job WHERE 1
+2019-11-02 12:06:52 数据库不可用：:2002
+2019-11-02 12:06:52 数据库不可用：:2002
+2019-11-02 12:06:52 错误SQL语句：:SELECT count(*) as num FROM phpyun_resume_expect WHERE 1
+2019-11-02 12:06:52 数据库不可用：:2002
+2019-11-02 12:06:58 数据库不可用：:2002
+2019-11-02 12:06:58 错误SQL语句：:SELECT count(*) as num FROM phpyun_px_teacher WHERE `r_status`<>'2' and `status`='1' and `sid`='9' and `hy`='39' order by `ctime` desc
+2019-11-02 12:06:58 数据库不可用：:2002
+2019-11-02 12:06:58 数据库不可用：:2002
+2019-11-02 12:06:58 错误SQL语句：:SELECT * FROM `phpyun_px_teacher` WHERE `r_status`<>'2' and `status`='1' and `sid`='9' and `hy`='39' order by `ctime` desc limit 0,20
+2019-11-02 12:06:58 数据库不可用：:2002
+2019-11-02 12:06:58 数据库不可用：:2002
+2019-11-02 12:06:58 错误SQL语句：:SELECT `uid`,`name` FROM `phpyun_px_train` WHERE 1 and `uid` in (0)
+2019-11-02 12:06:58 数据库不可用：:2002
+2019-11-02 12:06:58 数据库不可用：:2002
+2019-11-02 12:06:58 错误SQL语句：:SELECT * FROM `phpyun_atn` WHERE `uid`='' and `tid`<>''
+2019-11-02 12:06:58 数据库不可用：:2002
+2019-11-02 12:07:08 数据库不可用：:2002
+2019-11-02 12:07:08 错误SQL语句：:SELECT * FROM phpyun_member WHERE 1 and `username`='上善若水' and `usertype`='3' limit 1
+2019-11-02 12:07:08 数据库不可用：:2002
+2019-11-02 12:07:28 数据库不可用：:2002
+2019-11-02 12:07:28 错误SQL语句：:SELECT `pw_repeat`,`pwuid`,`uid`,`username`,`salt`,`email`,`moblie`,`password`,`usertype`,`status`,`email_status`,`did`,`login_date` FROM phpyun_member WHERE 1 and `username`='上善若水' limit 1
+2019-11-02 12:07:28 数据库不可用：:2002

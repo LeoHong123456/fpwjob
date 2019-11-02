@@ -1,0 +1,1035 @@
+2019-10-31 00:10:39 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572451839' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:10:39 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:10:58 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572451858' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:10:58 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:11:40 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572451900' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:11:40 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:13:56 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572452036' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:13:56 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:14:32 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE  `status`='1' and `zp_status`='0' and `r_status`<>'2' AND `rec`='1' ORDER BY lastupdate DESC  limit -6,6
+2019-10-31 00:14:32 错误SQL语句：:SELECT `uid`,`name`,`hy`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 00:14:32 错误SQL语句：:SELECT `uid`,`hy`,`photo_big` FROM `fpw_lt_info` WHERE `uid` IN ()
+2019-10-31 00:14:32 错误SQL语句：:select a.uid,b.com_pic from fpw_company_statis a left join fpw_company_rating b on a.rating = b.id WHERE a.uid in ()
+2019-10-31 00:14:32 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE `status`='1' and `uid` in () and `r_status`<>'2' order by `lastupdate` desc
+2019-10-31 00:14:32 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE  `status`='1' and `zp_status`='0' and `r_status`<>'2' ORDER BY  `lastupdate`   DESC  limit -3,3
+2019-10-31 00:14:32 错误SQL语句：:SELECT `uid`,`name`,`hy`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 00:14:32 错误SQL语句：:SELECT `uid`,`hy`,`photo_big` FROM `fpw_lt_info` WHERE `uid` IN ()
+2019-10-31 00:14:32 错误SQL语句：:select a.uid,b.com_pic from fpw_company_statis a left join fpw_company_rating b on a.rating = b.id WHERE a.uid in ()
+2019-10-31 00:14:32 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE `status`='1' and `uid` in () and `r_status`<>'2' order by `lastupdate` desc
+2019-10-31 00:14:32 错误SQL语句：:SELECT `id` FROM `fpw_lt_info` WHERE `yyzz_status`='1' and `r_status`<>'2' and `com_name`<>'' LIMIT 5000,1
+2019-10-31 00:14:32 错误SQL语句：:SELECT * FROM `fpw_lt_info` WHERE `yyzz_status`='1' and `r_status`<>'2' and `com_name`<>'' ORDER BY `uid`  DESC  limit -4,4
+2019-10-31 00:14:32 错误SQL语句：:select a.uid,b.com_pic from fpw_lt_statis a left join fpw_company_rating b on a.rating = b.id WHERE a.uid in ()
+2019-10-31 00:14:32 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE `status`='1' and `uid` in () and `r_status`<>'2' order by `lastupdate` desc
+2019-10-31 00:16:00 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572452160' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:16:00 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:16:42 错误SQL语句：:UPDATE `fpw_member_statis` SET  WHERE 1 and `uid`='7'
+2019-10-31 00:16:56 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572452216' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:16:56 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:17:53 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572452273' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:17:53 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:18:14 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572452294' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:18:14 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:18:24 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572452304' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:18:24 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:19:00 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572452340' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:19:00 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:27:58 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572452878' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:27:58 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:31:11 错误SQL语句：:SELECT * FROM `fpw_atn` WHERE `xjhid` IN () and `uid`='7'
+2019-10-31 00:31:11 错误SQL语句：:SELECT `uid`,`name`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 00:31:11 错误SQL语句：:SELECT `id`,`schoolname` FROM `fpw_school_academy` WHERE `id` IN ()
+2019-10-31 00:32:10 错误SQL语句：:SELECT * FROM `fpw_atn` WHERE `xjhid` IN () and `uid`=''
+2019-10-31 00:32:10 错误SQL语句：:SELECT `uid`,`name`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 00:32:10 错误SQL语句：:SELECT `id`,`schoolname` FROM `fpw_school_academy` WHERE `id` IN ()
+2019-10-31 00:38:36 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572453516' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:38:36 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:38:40 错误SQL语句：:SELECT * FROM `fpw_once_job` WHERE `status`='1' and `pay`<>'1' and `edate`>1572453520 ORDER BY ctime  DESC limit -20,20
+2019-10-31 00:38:41 错误SQL语句：:SELECT * FROM `fpw_once_job` WHERE `status`='1' and `pay`<>'1' and `edate`>1572453521 ORDER BY ctime  DESC limit -20,20
+2019-10-31 00:38:57 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572453537' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:38:57 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:39:38 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572453578' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:39:38 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:39:39 错误SQL语句：:SELECT * FROM `fpw_once_job` WHERE `status`='1' and `pay`<>'1' and `edate`>1572453579 ORDER BY ctime  DESC limit -20,20
+2019-10-31 00:39:47 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572453587' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:39:47 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:41:32 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572453692' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:41:32 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:42:47 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572453767' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:42:47 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:42:55 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572453775' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:42:55 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:43:59 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572453839' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:43:59 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:46:22 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572453982' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:46:22 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:46:39 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572453999' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:46:39 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:47:38 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572454058' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:47:38 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:48:14 错误SQL语句：:SELECT `uid`,`claim`,`source`,`email` FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 00:49:18 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572454158' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:49:18 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:49:31 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572454171' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:49:31 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:49:33 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572454173' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:49:33 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:50:12 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572454212' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:50:12 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:50:32 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572454232' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:50:32 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:52:27 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572454347' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:52:27 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 00:55:44 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572454544' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 00:55:44 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 01:04:09 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572455049' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 01:04:09 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 01:04:14 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572455054' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 01:04:14 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 01:08:48 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572455328' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 01:08:48 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 01:19:19 错误SQL语句：:SELECT * FROM `fpw_admin_log` WHERE `uid`= and `content`='登录成功' order by `ctime` desc limit 2
+2019-10-31 01:19:23 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 01:19:23 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:23 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 01:19:23 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 01:19:23 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 01:19:23 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 01:19:24 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 01:19:24 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 01:19:26 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:26 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:26 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 01:19:26 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 01:19:26 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 01:19:26 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 01:19:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:38 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:38 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:38 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 01:19:54 错误SQL语句：:SELECT `jobid`,COUNT(jobid) as jnum FROM `fpw_part_apply` WHERE `jobid` in () GROUP BY jobid
+2019-10-31 01:20:10 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572456010' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 01:20:10 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 01:45:39 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572457539' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 01:45:39 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 02:07:30 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `job1` = 837 ORDER BY `lastupdate`  DESC limit -20,20
+2019-10-31 04:29:21 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572467361' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 04:29:21 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 05:00:29 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572469229' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 05:00:29 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 08:14:54 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572480894' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 08:14:54 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 08:15:09 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572480909' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 08:15:09 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 08:15:12 错误SQL语句：:SELECT eid FROM `fpw_down_resume` WHERE comid=
+2019-10-31 08:15:15 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572480915' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 08:15:15 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 08:15:16 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572480916' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 08:15:16 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 08:15:32 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572480932' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 08:15:32 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 08:44:04 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572482644' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 08:44:04 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 08:50:39 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572483039' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 08:50:39 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 08:52:28 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572483148' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 08:52:28 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 08:56:04 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572483364' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 08:56:04 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 08:59:40 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572483580' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 08:59:40 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 09:02:42 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572483762' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 09:02:42 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 09:09:41 错误SQL语句：:SELECT * FROM `fpw_resume_tiny` WHERE status='1'  ORDER BY lastupdate  DESC limit -24,24
+2019-10-31 09:10:24 错误SQL语句：:SELECT * FROM `fpw_admin_log` WHERE `uid`= and `content`='登录成功' order by `ctime` desc limit 2
+2019-10-31 09:10:27 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 09:10:27 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 09:10:27 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 09:10:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:10:27 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 09:10:27 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 09:10:27 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 09:10:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 09:10:28 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:10:28 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:10:28 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 09:10:28 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 09:10:28 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 09:10:28 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 09:11:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:11:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:26:15 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:26:15 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:26:15 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:26:16 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:26:16 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:26:16 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 09:43:17 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572486197' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 09:43:17 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 09:43:18 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572486198' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 09:43:18 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:09:08 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 10:09:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 10:11:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:11:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:11:33 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:16:59 错误SQL语句：:SELECT * FROM `fpw_resume_tiny` WHERE status='1'  ORDER BY lastupdate  DESC limit -24,24
+2019-10-31 10:17:01 错误SQL语句：:SELECT * FROM `fpw_once_job` WHERE `status`='1' and `pay`<>'1' and `edate`>1572488221 ORDER BY ctime  DESC limit -20,20
+2019-10-31 10:17:04 错误SQL语句：:SELECT * FROM `fpw_news_base` WHERE 1 AND `nid` in (2) ORDER BY `datetime` DESC limit -20,20
+2019-10-31 10:17:22 错误SQL语句：:SELECT * FROM `fpw_resume_tiny` WHERE status='1'  ORDER BY lastupdate  DESC limit -24,24
+2019-10-31 10:17:24 错误SQL语句：:SELECT * FROM `fpw_once_job` WHERE `status`='1' and `pay`<>'1' and `edate`>1572488244 ORDER BY ctime  DESC limit -20,20
+2019-10-31 10:17:27 错误SQL语句：:SELECT * FROM `fpw_partjob` WHERE (`deadline`>'1572488247' or `deadline`=0) and `state`=1 and `r_status`<>2 ORDER BY `lastupdate`  DESC limit -10,10
+2019-10-31 10:17:27 错误SQL语句：:SELECT `uid`,`shortname` FROM `fpw_company` WHERE `uid` in()
+2019-10-31 10:17:27 错误SQL语句：:SELECT `uid`,`shortname` FROM `fpw_company` WHERE `uid` in()
+2019-10-31 10:17:30 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:17:30 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572488250' ORDER BY unix_timestamp(`starttime`)  asc  limit -10,10
+2019-10-31 10:17:30 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:17:30 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:17:39 错误SQL语句：:SELECT count(*) as num,`uid` FROM `fpw_px_subject` WHERE 1 and `uid` in () and `status`='1' and `pause_status`='1' group by uid
+2019-10-31 10:17:42 错误SQL语句：:SELECT count(*) as num,`uid` FROM `fpw_px_subject` WHERE 1 and `uid` in () and `status`='1' and `pause_status`='1' group by uid
+2019-10-31 10:17:44 错误SQL语句：:SELECT count(*) as num,`uid` FROM `fpw_px_subject` WHERE 1 and `uid` in () and `status`='1' and `pause_status`='1' group by uid
+2019-10-31 10:19:20 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='12' and job_id IN ()
+2019-10-31 10:19:20 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='12' limit=3
+2019-10-31 10:20:26 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572488426' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 10:20:26 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:20:28 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572488428' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 10:20:28 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:26:05 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 10:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:26:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:26:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:26:09 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:29:53 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572488993' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 10:29:53 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:31:34 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572489094' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 10:31:34 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:31:49 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572489109' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 10:31:49 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:32:02 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572489122' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 10:32:02 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:32:02 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572489122' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 10:32:02 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:42:16 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572489736' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 10:42:16 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 10:48:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:48:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:48:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:48:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:48:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:48:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:48:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:48:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 10:48:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:22:34 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `fpw_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND ((a.`minsalary`<=8000 and a.`maxsalary`>=8000) 
+							or (a.`minsalary`<=10000 and a.`maxsalary`>=10000)) ORDER BY a.`lastupdate` DESC limit -20,20
+2019-10-31 11:22:37 错误SQL语句：:SELECT * FROM `fpw_resume_tiny` WHERE status='1'  ORDER BY lastupdate  DESC limit -24,24
+2019-10-31 11:33:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:52 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:52 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:52 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:33:59 错误SQL语句：:SELECT `uid`,`username` FROM `fpw_member` WHERE `uid` in () and `usertype`='1'
+2019-10-31 11:34:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:34:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:34:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 11:34:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 12:21:33 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572495693' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:21:33 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:21:53 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572495713' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:21:53 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:22:18 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572495738' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:22:18 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:22:41 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572495761' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:22:41 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:22:53 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572495773' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:22:53 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:22:53 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572495773' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:22:53 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:24:02 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572495842' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:24:02 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:24:32 错误SQL语句：:SELECT * FROM `fpw_atn` WHERE `xjhid` IN () and `uid`=''
+2019-10-31 12:24:32 错误SQL语句：:SELECT `uid`,`name`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 12:24:32 错误SQL语句：:SELECT `id`,`schoolname` FROM `fpw_school_academy` WHERE `id` IN ()
+2019-10-31 12:25:32 错误SQL语句：:SELECT * FROM `fpw_atn` WHERE `xjhid` IN () and `uid`=''
+2019-10-31 12:25:32 错误SQL语句：:SELECT `uid`,`name`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 12:25:32 错误SQL语句：:SELECT `id`,`schoolname` FROM `fpw_school_academy` WHERE `id` IN ()
+2019-10-31 12:30:00 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572496200' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:30:00 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:34:54 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572496494' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:34:54 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:36:16 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572496576' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:36:16 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:36:26 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572496586' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:36:26 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 12:45:02 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572497102' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 12:45:02 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 13:05:29 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572498329' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 13:05:29 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 13:16:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:37 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:40 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:40 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:40 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:42 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:42 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:16:42 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 13:30:29 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572499829' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 13:30:29 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 13:30:48 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572499848' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 13:30:48 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 13:33:12 错误SQL语句：:SELECT * FROM `fpw_admin_announcement` WHERE 1  ORDER BY `datetime` DESC limit -10,10
+2019-10-31 13:34:02 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572500042' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 13:34:02 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 13:34:12 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572500052' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 13:34:12 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 13:34:15 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572500055' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 13:34:15 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 13:36:41 错误SQL语句：:SELECT * FROM `fpw_news_base` WHERE 1 ORDER BY `datetime` DESC limit -10,10
+2019-10-31 13:39:10 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572500350' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 13:39:10 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 13:39:12 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572500352' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 13:39:12 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 13:39:15 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572500355' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 13:39:15 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 14:44:55 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:55 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:55 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:56 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:56 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:56 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:57 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:57 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:57 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:57 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:57 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:57 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:44:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 14:49:44 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572504584' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 14:49:44 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 14:50:25 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572504625' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 14:50:25 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 14:51:49 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE  `status`='1' and `zp_status`='0' and `r_status`<>'2' ORDER BY lastupdate DESC  limit -20,20
+2019-10-31 14:51:49 错误SQL语句：:SELECT `uid`,`name`,`hy`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 14:51:49 错误SQL语句：:SELECT `uid`,`hy`,`photo_big` FROM `fpw_lt_info` WHERE `uid` IN ()
+2019-10-31 14:51:49 错误SQL语句：:select a.uid,b.com_pic from fpw_company_statis a left join fpw_company_rating b on a.rating = b.id WHERE a.uid in ()
+2019-10-31 14:51:49 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE `status`='1' and `uid` in () and `r_status`<>'2' order by `lastupdate` desc
+2019-10-31 15:03:17 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE  `status`='1' and `zp_status`='0' and `r_status`<>'2' ORDER BY lastupdate DESC  limit -20,20
+2019-10-31 15:03:17 错误SQL语句：:SELECT `uid`,`name`,`hy`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 15:03:17 错误SQL语句：:SELECT `uid`,`hy`,`photo_big` FROM `fpw_lt_info` WHERE `uid` IN ()
+2019-10-31 15:03:17 错误SQL语句：:select a.uid,b.com_pic from fpw_company_statis a left join fpw_company_rating b on a.rating = b.id WHERE a.uid in ()
+2019-10-31 15:03:17 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE `status`='1' and `uid` in () and `r_status`<>'2' order by `lastupdate` desc
+2019-10-31 15:03:25 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572505405' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 15:03:25 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 15:03:28 错误SQL语句：:SELECT `uid`,`claim`,`source`,`email` FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 15:03:36 错误SQL语句：:SELECT `uid`,`claim`,`source`,`email` FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 15:03:44 错误SQL语句：:SELECT `uid`,`claim`,`source`,`email` FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 15:04:20 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572505460' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 15:04:20 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 15:04:24 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 15:04:24 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572505464' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 15:04:24 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 15:04:27 错误SQL语句：:SELECT * FROM `fpw_news_base` WHERE 1 ORDER BY `datetime` DESC limit -10,10
+2019-10-31 15:04:29 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572505469' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 15:04:29 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 15:04:31 错误SQL语句：:SELECT * FROM `fpw_once_job` WHERE `status`='1' and `pay`<>'1' and `edate`>1572505471 ORDER BY ctime  DESC limit -20,20
+2019-10-31 15:04:33 错误SQL语句：:SELECT * FROM `fpw_once_job` WHERE `status`='1' and `pay`<>'1' and `edate`>1572505473 ORDER BY ctime  DESC limit -20,20
+2019-10-31 15:04:56 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572505496' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 15:04:56 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 15:04:58 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572505498' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 15:04:58 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 15:24:26 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:26 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:26 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:28 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:28 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:28 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:30 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:24:30 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:24:54 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:24:54 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:24:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:24:58 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:01 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:01 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:01 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:12 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:25:12 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:25:14 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:25:14 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:25:55 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 15:25:55 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 15:25:55 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 15:25:56 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 15:25:57 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:57 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:25:57 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 15:25:57 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:25:57 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 15:25:57 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 15:26:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:03 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:03 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:03 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:05 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:26:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:25 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:25 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:25 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:27 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:32:27 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:32:29 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:32:29 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:32:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:36 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:41 错误SQL语句：:SELECT check FROM fpw_company_cert WHERE `uid`='30' and `type`='3' limit 1
+2019-10-31 15:32:44 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:44 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:44 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:47 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:32:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:33:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:33:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:33:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:33:10 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 15:33:10 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 15:33:10 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 15:33:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:33:11 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 15:33:11 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:11 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 15:33:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 15:33:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:33:51 错误SQL语句：:SELECT `jobid`,COUNT(jobid) as jnum FROM `fpw_part_apply` WHERE `jobid` in () GROUP BY jobid
+2019-10-31 15:33:52 错误SQL语句：:SELECT `id`,`name`,`com_name`,`lastupdate` FROM `fpw_company_job` WHERE `id` in () 
+2019-10-31 15:33:52 错误SQL语句：:SELECT count(jobid) as num,jobid FROM `fpw_company_job_sharelog` WHERE `jobid` IN () group by jobid
+2019-10-31 15:33:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:33:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:33:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:33:55 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:55 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:55 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:57 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:57 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:57 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:58 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:58 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:58 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:58 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:58 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:58 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:58 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:58 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:58 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:59 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:59 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:33:59 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:34:25 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:34:25 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:34:25 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:34:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:28 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:28 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:28 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:29 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:29 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:29 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:29 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:29 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:29 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:34 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 15:34:34 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 15:34:34 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 15:34:34 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 15:34:34 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:34:34 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 15:34:34 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 15:34:34 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 15:34:34 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 15:34:34 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:37:33 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:37:33 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:37:42 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:37:42 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:37:59 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:37:59 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:38:10 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:38:10 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:38:19 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:38:19 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:52:18 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:52:18 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:52:18 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:52:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:52:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:52:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:52:50 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 15:52:50 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 15:53:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:53:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 15:53:04 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:09:28 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 16:09:28 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 16:09:28 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 16:09:29 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:09:29 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:09:29 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 16:09:29 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 16:09:29 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 16:09:29 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 16:16:05 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572509765' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 16:16:05 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 16:27:20 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 16:27:20 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 16:27:20 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 16:27:21 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:27:21 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:27:21 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 16:27:21 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 16:27:21 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 16:27:21 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 16:27:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:27:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:27:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:27:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:27:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:27:35 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 16:34:58 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572510898' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 16:34:58 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 16:37:50 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572511070' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 16:37:50 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 16:39:05 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572511145' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 16:39:05 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 16:42:42 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572511362' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 16:42:42 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 16:42:46 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572511366' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 16:42:46 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 16:45:06 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572511506' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 16:45:06 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 16:53:11 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572511991' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 16:53:11 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 16:53:16 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572511996' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 16:53:16 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 16:54:00 错误SQL语句：:SELECT `uid`,`claim`,`source`,`email` FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 16:54:25 错误SQL语句：:SELECT `uid`,`claim`,`source`,`email` FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 16:54:37 错误SQL语句：:SELECT `uid`,`claim`,`source`,`email` FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 17:20:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:20:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:20:24 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:20:26 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:20:26 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:20:26 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:20:28 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='33' and job_id IN ()
+2019-10-31 17:20:28 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='33' limit=3
+2019-10-31 17:21:25 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='32' and job_id IN ()
+2019-10-31 17:21:25 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='32' limit=3
+2019-10-31 17:21:43 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:43 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:43 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:44 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:44 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:44 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:55 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:55 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:21:55 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:22:03 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='33' and job_id IN ()
+2019-10-31 17:22:03 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='33' limit=3
+2019-10-31 17:22:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:22:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:22:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:23:42 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:23:42 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:23:42 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:23:45 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:23:45 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 17:23:45 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 18:09:29 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572516569' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:09:29 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:10:25 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572516625' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:10:25 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:12:06 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572516726' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:12:06 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:12:37 错误SQL语句：:SELECT * FROM `fpw_atn` WHERE `xjhid` IN () and `uid`=''
+2019-10-31 18:12:37 错误SQL语句：:SELECT `uid`,`name`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 18:12:37 错误SQL语句：:SELECT `id`,`schoolname` FROM `fpw_school_academy` WHERE `id` IN ()
+2019-10-31 18:13:10 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572516790' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:13:10 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:13:30 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572516810' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:13:30 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:13:32 错误SQL语句：:SELECT eid FROM `fpw_down_resume` WHERE comid=
+2019-10-31 18:13:39 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572516819' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:13:39 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:19:20 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517160' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:19:20 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:19:23 错误SQL语句：:SELECT eid FROM `fpw_down_resume` WHERE comid=
+2019-10-31 18:19:27 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517167' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:19:27 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:19:27 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517167' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:19:27 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:19:43 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517183' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:19:43 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:25:21 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517521' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:25:21 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:26:13 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517573' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:26:13 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:26:18 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517578' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:26:18 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:26:20 错误SQL语句：:SELECT * FROM `fpw_partjob` WHERE (`deadline`>'1572517580' or `deadline`=0) and `state`=1 and `r_status`<>2 ORDER BY `lastupdate`  DESC limit -10,10
+2019-10-31 18:26:20 错误SQL语句：:SELECT `uid`,`shortname` FROM `fpw_company` WHERE `uid` in()
+2019-10-31 18:26:22 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517582' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:26:22 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:26:24 错误SQL语句：:SELECT eid FROM `fpw_down_resume` WHERE comid=
+2019-10-31 18:26:26 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517586' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:26:26 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:28:04 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517684' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:28:04 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:31:42 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517902' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:31:42 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:32:06 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572517926' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:32:06 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:33:05 错误SQL语句：:SELECT eid FROM `fpw_down_resume` WHERE comid=
+2019-10-31 18:41:03 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572518463' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:41:03 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:41:14 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE  `status`='1' and `zp_status`='0' and `r_status`<>'2' ORDER BY lastupdate DESC  limit -20,20
+2019-10-31 18:41:14 错误SQL语句：:SELECT `uid`,`name`,`hy`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 18:41:14 错误SQL语句：:SELECT `uid`,`hy`,`photo_big` FROM `fpw_lt_info` WHERE `uid` IN ()
+2019-10-31 18:41:14 错误SQL语句：:select a.uid,b.com_pic from fpw_company_statis a left join fpw_company_rating b on a.rating = b.id WHERE a.uid in ()
+2019-10-31 18:41:14 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE `status`='1' and `uid` in () and `r_status`<>'2' order by `lastupdate` desc
+2019-10-31 18:41:15 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572518475' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:41:15 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:41:18 错误SQL语句：:SELECT eid FROM `fpw_down_resume` WHERE comid=
+2019-10-31 18:41:24 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572518484' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 18:41:24 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 18:55:07 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE  `status`='1' and `zp_status`='0' and `r_status`<>'2' AND `rec`='1' ORDER BY lastupdate DESC  limit -6,6
+2019-10-31 18:55:07 错误SQL语句：:SELECT `uid`,`name`,`hy`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 18:55:07 错误SQL语句：:SELECT `uid`,`hy`,`photo_big` FROM `fpw_lt_info` WHERE `uid` IN ()
+2019-10-31 18:55:07 错误SQL语句：:select a.uid,b.com_pic from fpw_company_statis a left join fpw_company_rating b on a.rating = b.id WHERE a.uid in ()
+2019-10-31 18:55:07 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE `status`='1' and `uid` in () and `r_status`<>'2' order by `lastupdate` desc
+2019-10-31 18:55:07 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE  `status`='1' and `zp_status`='0' and `r_status`<>'2' ORDER BY  `lastupdate`   DESC  limit -3,3
+2019-10-31 18:55:07 错误SQL语句：:SELECT `uid`,`name`,`hy`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-31 18:55:07 错误SQL语句：:SELECT `uid`,`hy`,`photo_big` FROM `fpw_lt_info` WHERE `uid` IN ()
+2019-10-31 18:55:07 错误SQL语句：:select a.uid,b.com_pic from fpw_company_statis a left join fpw_company_rating b on a.rating = b.id WHERE a.uid in ()
+2019-10-31 18:55:07 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE `status`='1' and `uid` in () and `r_status`<>'2' order by `lastupdate` desc
+2019-10-31 18:55:07 错误SQL语句：:SELECT `id` FROM `fpw_lt_info` WHERE `yyzz_status`='1' and `r_status`<>'2' and `com_name`<>'' LIMIT 5000,1
+2019-10-31 18:55:07 错误SQL语句：:SELECT * FROM `fpw_lt_info` WHERE `yyzz_status`='1' and `r_status`<>'2' and `com_name`<>'' ORDER BY `uid`  DESC  limit -4,4
+2019-10-31 18:55:07 错误SQL语句：:select a.uid,b.com_pic from fpw_lt_statis a left join fpw_company_rating b on a.rating = b.id WHERE a.uid in ()
+2019-10-31 18:55:07 错误SQL语句：:SELECT * FROM `fpw_lt_job` WHERE `status`='1' and `uid` in () and `r_status`<>'2' order by `lastupdate` desc
+2019-10-31 19:12:11 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572520331' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 19:12:11 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 19:15:12 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572520512' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 19:15:12 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 19:16:15 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572520575' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 19:16:15 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 19:19:02 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572520742' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 19:19:02 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 19:19:26 错误SQL语句：:SELECT * FROM `fpw_admin_log` WHERE `uid`= and `content`='登录成功' order by `ctime` desc limit 2
+2019-10-31 19:19:29 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 19:19:31 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 19:19:31 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 19:19:32 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:19:32 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 19:19:32 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 19:19:32 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 19:19:32 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 19:19:32 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:19:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:19:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:19:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:19:50 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 19:19:50 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 19:19:50 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 19:19:55 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 19:19:55 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 19:19:55 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 19:20:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:20:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:20:06 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:28:40 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:28:40 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:28:40 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:28:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:28:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:28:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:28:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:28:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:28:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:30:02 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572521402' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 19:30:02 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 19:30:04 错误SQL语句：:SELECT eid FROM `fpw_down_resume` WHERE comid=
+2019-10-31 19:30:07 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572521407' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 19:30:07 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 19:39:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:39:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:39:51 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 19:44:41 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572522281' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 19:44:41 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 19:47:57 错误SQL语句：:SELECT `uid`,`claim`,`source`,`email` FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 19:48:17 错误SQL语句：:SELECT `uid`,`claim`,`source`,`email` FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 19:51:54 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572522714' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 19:51:54 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:03:22 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572523402' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:03:22 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:22:06 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 20:22:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:22:07 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 20:22:07 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 20:22:07 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 20:22:07 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 20:22:07 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 20:22:07 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 20:22:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:22:11 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 20:22:11 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 20:22:11 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 20:22:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 20:22:11 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:22:25 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:22:25 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:22:25 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:33:05 错误SQL语句：:SELECT * FROM `fpw_admin_log` WHERE `uid`= and `content`='登录成功' order by `ctime` desc limit 2
+2019-10-31 20:33:09 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 20:33:10 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 20:33:10 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 20:33:12 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:33:12 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 20:33:12 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 20:33:12 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 20:33:12 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 20:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 20:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 20:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 20:33:14 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 20:33:25 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:33:25 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:33:25 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:34:50 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='34' and job_id IN ()
+2019-10-31 20:34:50 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='34' limit=3
+2019-10-31 20:35:01 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='33' and job_id IN ()
+2019-10-31 20:35:01 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='33' limit=3
+2019-10-31 20:35:01 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:35:01 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:35:01 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:37:21 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572525441' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:37:21 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:38:01 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572525481' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:38:01 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:38:11 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572525491' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:38:11 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:38:48 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572525528' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:38:48 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:39:16 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572525556' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:39:16 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:39:36 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572525576' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:39:36 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:39:48 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572525588' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:39:48 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:40:10 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572525610' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:40:10 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:40:23 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:40:23 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:40:23 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:40:33 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='33' and job_id IN ()
+2019-10-31 20:40:33 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='33' limit=3
+2019-10-31 20:41:00 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572525660' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:41:00 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:42:14 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 20:42:15 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 20:42:15 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 20:42:19 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:42:19 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:42:19 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:42:21 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='33' and job_id IN ()
+2019-10-31 20:42:21 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='33' limit=3
+2019-10-31 20:42:33 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572525753' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:42:33 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:43:17 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:43:17 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:43:17 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 20:44:45 错误SQL语句：:SELECT count(*) as num FROM fpw_admin_user WHERE 1 and `m_id` in (select id from phpyun_admin_user_group where group_power like '%"219"%') and did = 0 
+2019-10-31 20:44:45 错误SQL语句：:SELECT uid,`name`,`status`,`username`,`did` FROM `fpw_admin_user` WHERE 1 and `m_id` in (select id from phpyun_admin_user_group where group_power like '%"219"%') and did = 0  limit 0,10
+2019-10-31 20:44:45 错误SQL语句：:SELECT `uid`,`crm_uid`,`crm_status` FROM `fpw_company` WHERE crm_uid in ()
+2019-10-31 20:44:45 错误SQL语句：:SELECT comid, uid FROM `fpw_crmnew_return_visit` WHERE `status` = 0 and uid in () group by comid
+2019-10-31 20:44:45 错误SQL语句：:SELECT crm_uid,order_price FROM `fpw_company_order` WHERE `type` = 1 and order_state = 2 and crm_uid in ()
+2019-10-31 20:49:32 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572526172' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:49:32 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 20:52:52 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572526372' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 20:52:52 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 21:19:17 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572527957' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 21:19:17 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 21:28:16 错误SQL语句：:SELECT eid FROM `fpw_down_resume` WHERE comid=
+2019-10-31 21:43:13 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572529393' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 21:43:13 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 21:43:40 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572529420' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 21:43:40 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 21:44:36 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572529476' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 21:44:36 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 21:44:54 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572529494' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 21:44:54 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 21:46:19 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572529579' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 21:46:19 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 21:47:17 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572529637' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 21:47:17 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 22:08:19 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572530899' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 22:08:19 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 22:09:33 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572530973' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 22:09:33 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 22:09:55 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572530995' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 22:09:55 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 22:11:13 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572531073' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 22:11:13 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 22:11:37 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 22:11:38 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 22:11:38 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 22:11:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:11:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:11:46 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:11:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:11:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:11:50 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:11:57 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='34' and job_id IN ()
+2019-10-31 22:11:57 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='34' limit=3
+2019-10-31 22:12:19 错误SQL语句：:SELECT count(*) as num FROM fpw_admin_user WHERE 1 and `m_id` in (select id from phpyun_admin_user_group where group_power like '%"219"%') and did = 0 
+2019-10-31 22:12:19 错误SQL语句：:SELECT uid,`name`,`status`,`username`,`did` FROM `fpw_admin_user` WHERE 1 and `m_id` in (select id from phpyun_admin_user_group where group_power like '%"219"%') and did = 0  limit 0,10
+2019-10-31 22:12:20 错误SQL语句：:SELECT `uid`,`crm_uid`,`crm_status` FROM `fpw_company` WHERE crm_uid in ()
+2019-10-31 22:12:20 错误SQL语句：:SELECT comid, uid FROM `fpw_crmnew_return_visit` WHERE `status` = 0 and uid in () group by comid
+2019-10-31 22:12:20 错误SQL语句：:SELECT crm_uid,order_price FROM `fpw_company_order` WHERE `type` = 1 and order_state = 2 and crm_uid in ()
+2019-10-31 22:12:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:12:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:12:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:19:28 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 22:19:29 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 22:19:29 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 22:19:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:19:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:19:31 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 22:19:31 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 22:19:31 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 22:19:31 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 22:19:47 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 22:19:48 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 22:19:48 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 22:19:48 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:19:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:19:49 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 22:19:49 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 22:19:49 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 22:19:49 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 22:27:08 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 22:27:08 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 22:27:08 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 22:27:17 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:27:17 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:27:17 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:29:41 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572532181' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 22:29:41 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 22:30:22 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit -12,12
+2019-10-31 22:30:27 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit -12,12
+2019-10-31 22:30:44 错误SQL语句：:select a.`id`,a.`uid`,a.`name`,a.`hy`,a.`job_classid`,a.`city_classid`,a.`jobstatus`,a.`type`,a.`report`,a.`lastupdate`,a.`rec`,a.`top`,a.`topdate`,a.`rec_resume`,a.`ctime`,a.`uname`,a.`idcard_status`,a.`minsalary`,a.`maxsalary` from `fpw_resume_expect` a where a.`defaults`='1' and a.`status`='1' and a.`r_status`='1' AND a.`height_status`='0' AND a.`photo`<>'' AND a.`phototype`!=1 ORDER BY a.`lastupdate` DESC limit -20,20
+2019-10-31 22:31:36 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit -12,12
+2019-10-31 22:32:17 错误SQL语句：:SELECT `uid`,`pay`,`integral`,`rating`,`rating_name`,`vip_etime`,`msg_num` FROM `fpw_company_statis` WHERE `uid` in ()
+2019-10-31 22:32:30 错误SQL语句：:SELECT `uid`,`pay`,`integral`,`rating`,`rating_name`,`vip_etime`,`msg_num` FROM `fpw_company_statis` WHERE `uid` in ()
+2019-10-31 22:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:32:39 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:32:56 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:32:56 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:32:56 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:33:08 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:33:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:33:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:33:27 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:33:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:33:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:33:54 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:34:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:34:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:34:02 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:35:25 错误SQL语句：:SELECT * FROM `fpw_resume_tiny` WHERE status='1'  ORDER BY lastupdate  DESC limit -24,24
+2019-10-31 22:43:33 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572533013' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 22:43:33 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 22:44:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:44:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:44:22 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 22:49:19 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572533359' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 22:49:19 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 22:54:04 错误SQL语句：:SELECT count(*) as num FROM fpw_admin_user WHERE 1 and `m_id` in (select id from phpyun_admin_user_group where group_power like '%"219"%') and did = 0 
+2019-10-31 22:54:04 错误SQL语句：:SELECT uid,`name`,`status`,`username`,`did` FROM `fpw_admin_user` WHERE 1 and `m_id` in (select id from phpyun_admin_user_group where group_power like '%"219"%') and did = 0  limit 0,10
+2019-10-31 22:54:04 错误SQL语句：:SELECT `uid`,`crm_uid`,`crm_status` FROM `fpw_company` WHERE crm_uid in ()
+2019-10-31 22:54:04 错误SQL语句：:SELECT comid, uid FROM `fpw_crmnew_return_visit` WHERE `status` = 0 and uid in () group by comid
+2019-10-31 22:54:04 错误SQL语句：:SELECT crm_uid,order_price FROM `fpw_company_order` WHERE `type` = 1 and order_state = 2 and crm_uid in ()
+2019-10-31 23:02:57 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 23:02:59 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 23:02:59 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 23:03:08 错误SQL语句：:SELECT `url` FROM `fpw_admin_navigation` WHERE `id` in ()
+2019-10-31 23:03:09 错误SQL语句：:SELECT * FROM `fpw_member` WHERE `uid` in ()
+2019-10-31 23:03:09 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `id` in ()
+2019-10-31 23:03:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 23:03:10 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 23:03:10 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 23:03:10 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 23:03:10 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 23:03:12 错误SQL语句：:SELECT count(*) as num FROM fpw_company WHERE `uid` in ()
+2019-10-31 23:03:12 错误SQL语句：:SELECT count(*) as num FROM fpw_resume WHERE `uid` in ()
+2019-10-31 23:03:12 错误SQL语句：:SELECT count(*) as num FROM fpw_lt_info WHERE `uid` in ()
+2019-10-31 23:03:12 错误SQL语句：:SELECT count(*) as num FROM fpw_px_train WHERE `uid` in ()
+2019-10-31 23:03:12 错误SQL语句：:SELECT count(*) as num FROM fpw_company_cert WHERE `type`=5 and `status`=0 and `uid` in ()
+2019-10-31 23:07:38 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572534458' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 23:07:38 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 23:08:03 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572534483' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 23:08:03 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 23:08:21 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572534501' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 23:08:21 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 23:12:18 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572534738' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 23:12:18 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 23:15:51 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572534951' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 23:15:51 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 23:16:37 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572534997' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 23:16:37 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 23:18:35 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572535115' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 23:18:35 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 23:21:54 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572535314' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 23:21:54 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1
+2019-10-31 23:22:04 错误SQL语句：:SELECT * FROM `fpw_zhaopinhui` WHERE 1 AND unix_timestamp(`endtime`)>'1572535324' ORDER BY unix_timestamp(`starttime`)  asc  limit -5,5
+2019-10-31 23:22:04 错误SQL语句：:SELECT `uid`,`zid`,`jobid` FROM `fpw_zhaopinhui_com` WHERE `zid` in () and `status`=1

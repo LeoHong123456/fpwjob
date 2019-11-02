@@ -1,0 +1,32 @@
+2019-10-27 00:07:17 错误SQL语句：:SELECT count(*) as num FROM fpw_look_job WHERE `jobid`='7' and `status`='0' and `datetime`<time()
+2019-10-27 00:11:01 错误SQL语句：:SELECT * FROM `fpw_once_job` WHERE `status`='1' and `pay`<>'1' and `edate`>1572106261 ORDER BY ctime  DESC limit -20,20
+2019-10-27 05:55:30 错误SQL语句：:SELECT * FROM fpw_company where `name`<>'' AND `hy` = '38' AND `pr` = '23' AND `mun` = '30' AND `r_status`<>'2' ORDER BY `lastupdate`   DESC limit -20,20
+2019-10-27 05:55:30 错误SQL语句：:SELECT `id`,`uid`,`status`,`name` FROM `fpw_company_job` WHERE `uid` IN () and r_status<>'2' and status<>'1' and state=1  order by `lastupdate` desc
+2019-10-27 09:13:19 错误SQL语句：:SELECT `datetime` FROM `fpw_userid_job` WHERE `com_id`='12' and job_id IN ()
+2019-10-27 09:13:19 错误SQL语句：:SELECT * FROM `fpw_school_xjh` WHERE `status`=1 and `uid`='12' limit=3
+2019-10-27 10:32:40 错误SQL语句：:SELECT * FROM `fpw_atn` WHERE `xjhid` IN () and `uid`='7'
+2019-10-27 10:32:40 错误SQL语句：:SELECT `uid`,`name`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-27 10:32:40 错误SQL语句：:SELECT `id`,`schoolname` FROM `fpw_school_academy` WHERE `id` IN ()
+2019-10-27 10:32:55 错误SQL语句：:SELECT count(*) as num FROM fpw_look_job WHERE `jobid`='7' and `status`='0' and `datetime`<time()
+2019-10-27 10:34:08 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572143648 ORDER BY `lastupdate`  DESC limit -20,20
+2019-10-27 10:34:27 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572143667 ORDER BY `lastupdate`  DESC limit -20,20
+2019-10-27 10:34:47 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572143687 ORDER BY `lastupdate`  DESC limit -20,20
+2019-10-27 10:34:56 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `state`=1 and `r_status`=1 and `status`='0' AND `urgent_time`>1572143696 ORDER BY `lastupdate`  DESC limit -20,20
+2019-10-27 11:16:02 错误SQL语句：:SELECT * FROM `fpw_reward` WHERE `status`=1  ORDER BY sdate  desc limit -10,10
+2019-10-27 11:16:06 错误SQL语句：:SELECT * FROM `fpw_reward` WHERE `status`=1  ORDER BY integral  asc  limit -10,10
+2019-10-27 11:17:00 错误SQL语句：:SELECT * FROM `fpw_atn` WHERE `xjhid` IN () and `uid`='7'
+2019-10-27 11:17:00 错误SQL语句：:SELECT `uid`,`name`,`logo` FROM `fpw_company` WHERE `uid` IN ()
+2019-10-27 11:17:00 错误SQL语句：:SELECT `id`,`schoolname` FROM `fpw_school_academy` WHERE `id` IN ()
+2019-10-27 11:17:11 错误SQL语句：:SELECT * FROM `fpw_school_academy` WHERE 1 ORDER BY lastupdate DESC limit -10,10
+2019-10-27 11:17:19 错误SQL语句：:SELECT * FROM `fpw_school_academy` WHERE 1 AND (`cityid` IN (52)) ORDER BY lastupdate DESC limit -10,10
+2019-10-27 11:17:27 错误SQL语句：:SELECT * FROM `fpw_school_academy` WHERE 1 AND (`cityid` IN (52)) AND `school_categty` = 18 ORDER BY lastupdate DESC limit -10,10
+2019-10-27 11:17:33 错误SQL语句：:SELECT * FROM `fpw_school_academy` WHERE 1 AND (`cityid` IN (52)) AND `school_level` = 12 AND `school_categty` = 18 ORDER BY lastupdate DESC limit -10,10
+2019-10-27 11:17:36 错误SQL语句：:SELECT * FROM `fpw_school_academy` WHERE 1 ORDER BY lastupdate DESC limit -10,10
+2019-10-27 11:17:48 错误SQL语句：:SELECT * FROM `fpw_company_job_share` WHERE `jobid` IN ()
+2019-10-27 11:17:54 错误SQL语句：:SELECT * FROM `fpw_company_job_share` WHERE `jobid` IN ()
+2019-10-27 11:17:54 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit -12,12
+2019-10-27 11:18:04 错误SQL语句：:SELECT * FROM `fpw_company_job_share` WHERE `jobid` IN ()
+2019-10-27 11:18:04 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit -12,12
+2019-10-27 11:18:08 错误SQL语句：:SELECT * FROM `fpw_company_job_share` WHERE `jobid` IN ()
+2019-10-27 11:18:08 错误SQL语句：:SELECT * FROM `fpw_company_job` WHERE `rewardpack`='1' AND `r_status`='1' AND `state`=1 and `status`='0'  ORDER BY `lastupdate`  DESC limit -12,12
+2019-10-27 11:59:38 错误SQL语句：:UPDATE `fpw_member_statis` SET  WHERE 1 and `uid`='7'
