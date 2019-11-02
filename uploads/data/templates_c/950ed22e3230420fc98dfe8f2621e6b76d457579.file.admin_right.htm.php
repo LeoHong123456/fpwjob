@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-02 16:31:01
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-02 17:32:43
          compiled from "/www/fpwjob/uploads/app/template/admin/admin_right.htm" */ ?>
 <?php /*%%SmartyHeaderCode:14360873405dbd3ec58e7219-91134875%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '950ed22e3230420fc98dfe8f2621e6b76d457579' => 
     array (
       0 => '/www/fpwjob/uploads/app/template/admin/admin_right.htm',
-      1 => 1572667770,
+      1 => 1572686853,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5dbd3ec59148c2_35334586',
   'variables' => 
   array (
     'config' => 0,
@@ -32,8 +34,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'base' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5dbd3ec59148c2_35334586',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5dbd3ec59148c2_35334586')) {function content_5dbd3ec59148c2_35334586($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -297,12 +297,12 @@ var integral_pricename='<?php echo $_smarty_tpl->tpl_vars['config']->value['inte
  
   <div class="mainright">
     <div class="maininfo">
-    <div class="mainboxtop"><h6>开发团队</h6></div>
+    <div class="mainboxtop"><h6>开发者</h6></div>
         <div class="maincontent">
-        <p>开发团队:LEO</p>
-        <p>联系电话：09163044437</p>
-	<p>官方网站：<a href="https://www.fpwjob.com/" target="_blank">https://www.fpwjob.com/</a>
-	<p>咨询QQ：1513314683</p>
+        <p>开发者：LEO</p>
+        <p>联系电话:09163044437</p>
+		<p>官方网站：<a href="https://www.fpwjob.com/" target="_blank">https://www.fpwjob.com/</a>
+		<p>咨询QQ：1513314683</p>
         </div>
     </div>
   </div> 
@@ -317,19 +317,12 @@ var integral_pricename='<?php echo $_smarty_tpl->tpl_vars['config']->value['inte
 			<div class="mainmsg">
 				<div class="mainboxtop"><h6>系统信息</h6></div>
 				<div class="">
-					<span class="mainmsg_list">PHPYun程序版本： <?php echo $_smarty_tpl->tpl_vars['version']->value;?>
- [ <font id="version_msg">无须更新!</font>]</span>
-					<span class="mainmsg_list">服务器软件：<?php echo $_smarty_tpl->tpl_vars['soft']->value;?>
-</span>
-					<span class="mainmsg_list">可用空间(磁盘区)：<?php echo $_smarty_tpl->tpl_vars['kongjian']->value;?>
-&nbsp;M</span>
-					<span class="mainmsg_list">MySQL 版本：<?php echo $_smarty_tpl->tpl_vars['banben']->value;?>
-</span>
-					<span class="mainmsg_list">PHP 版本：<?php echo $_smarty_tpl->tpl_vars['phpbanben']->value;?>
-</span>
+					<span class="mainmsg_list">服务器软件：<?php echo $_smarty_tpl->tpl_vars['soft']->value;?></span>
+					<span class="mainmsg_list">可用空间(磁盘区)：<?php echo $_smarty_tpl->tpl_vars['kongjian']->value;?>&nbsp;M</span>
+					<span class="mainmsg_list">MySQL 版本：<?php echo $_smarty_tpl->tpl_vars['banben']->value;?></span>
 					<span class="mainmsg_list">用户 - 服务器：<?php echo $_smarty_tpl->tpl_vars['yonghu']->value;?>
- - <?php echo $_smarty_tpl->tpl_vars['server']->value;?>
-</span>
+					 - <?php echo $_smarty_tpl->tpl_vars['server']->value;?>
+					</span>
 				</div>   
 			</div>
 		</div> 
@@ -669,4 +662,5 @@ $(document).ready(function(){
 <?php echo '</script'; ?>
 >
 </body>
-</html><?php }} ?>
+</html>
+<?php }} ?>
