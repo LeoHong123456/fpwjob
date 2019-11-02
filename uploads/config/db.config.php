@@ -4,7 +4,7 @@
       'dbhost'=>'154.211.7.204',
       'dbuser'=>'fpwjob',
       'dbpass'=>'MzgyZTlmMDc0ZTNk@',
-      'dbname'=>'fpwjob',
+      'dbname'=>'fpw',
       'def'=>'fpw_',
       'charset'=>'utf8',
       'timezone'=>'PRC',
