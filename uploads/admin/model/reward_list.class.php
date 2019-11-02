@@ -1,7 +1,7 @@
 <?php
-/** $Author ：LEO
+/** $Author ：PHPYUN开发团队
 *
-* 官网: http://www.fpwjob.com
+* 官网: http://www.phpyun.com
 *
 * 版权所有 2009-2018 宿迁鑫潮信息技术有限公司，并保留所有权利。
 *

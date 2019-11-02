@@ -1,8 +1,8 @@
 <?php
 /* *
-* $Author ：LEO
+* $Author ：PHPYUN开发团队
 *
-* 官网: http://www.fpwjob.com
+* 官网: http://www.phpyun.com
 *
 * 版权所有 2009-2018 宿迁鑫潮信息技术有限公司，并保留所有权利。
 *
@@ -50,7 +50,7 @@ class DBManagement{
 		return $othortable;
 	}
 	function backup_action($table,$sizelimit="100000000",$db_config){
-		$bak="#dbname:".$db_config[dbname]."#phpyun#version:".$db_config[version]."#phpyun#def:".$db_config[def]."#phpyun#charset:".$db_config[charset]."#phpyun#Time:".date('Y-m-d H:i')."\n#phpyun# Type: \n# phpyun: http://www.fpwjob.com\n#\r\n";
+		$bak="#dbname:".$db_config[dbname]."#phpyun#version:".$db_config[version]."#phpyun#def:".$db_config[def]."#phpyun#charset:".$db_config[charset]."#phpyun#Time:".date('Y-m-d H:i')."\n#phpyun# Type: \n# phpyun: http://www.phpyun.com\n#\r\n";
 		$this->db->query("SET SQL_QUOTE_SHOW_CREATE = 0");
 		$this->start = intval($start);
 		!$tabledb && !is_array($table);

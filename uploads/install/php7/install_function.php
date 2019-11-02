@@ -1,8 +1,8 @@
 <?php
 /*
- * $Author ：LEO
+ * $Author ：PHPYUN开发团队
  *
- * 官网: http://www.fpwjob.com
+ * 官网: http://www.phpyun.com
  *
  * 版权所有 2009-2016 宿迁鑫潮信息技术有限公司，并保留所有权利。
  *
@@ -72,7 +72,7 @@ function show_header() {
 }
 function show_footer() {
 	echo '<div class="footer">
-		Powered by <a href="http://www.fpwjob.com" style="color:blue;">PHPYun.人才系统</a> '.VERSION.' &copy;'.YEAR.'
+		Powered by <a href="http://www.phpyun.com" style="color:blue;">PHPYun.人才系统</a> '.VERSION.' &copy;'.YEAR.'
 	</div>
 </div>
 </div>
