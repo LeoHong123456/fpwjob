@@ -19,7 +19,7 @@ $seo=array('index'=>array('0'=>array('title'=>'{webname}_最新招聘信息_{web
 )
 ,'once'=>array('9'=>array('title'=>'店铺招聘 - {webname}','keywords'=>'店铺招聘，快速招聘','description'=>'{webname}为个人提供最全最新最准确的店铺招聘信息。','did'=>'0','php_url'=>'','rewrite_url'=>'')
 )
-,'search'=>array('10'=>array('title'=>'找工作-{webname}','keywords'=>'找工作,人才,工作,求职,招聘,简历,跳槽,高薪,面试,应聘,兼职','description'=>'hr135人才网为个人提供最全最新最准确的企业职位招聘信息，为企业提供全方位的人力资源服务，帮助个人求职者快速的找到工作。','did'=>'0','php_url'=>'','rewrite_url'=>'')
+,'search'=>array('10'=>array('title'=>'找工作-{webname}','keywords'=>'找工作,人才,工作,求职,招聘,简历,跳槽,高薪,面试,应聘,兼职','description'=>'菲聘网为个人提供最全最新最准确的企业职位招聘信息，为企业提供全方位的人力资源服务，帮助个人求职者快速的找到工作。','did'=>'0','php_url'=>'','rewrite_url'=>'')
 )
 ,'forgetpw'=>array('11'=>array('title'=>'{webname}-忘记密码','keywords'=>'忘记密码,找工作,人才,工作,求职,招聘,简历,跳槽,高薪,面试,应聘,兼职','description'=>'{webname}为个人提供最全最新最准确的企业职位招聘信息，为企业提供全方位的人力资源服务，帮助个人求职者快速的找到工作。','did'=>'0','php_url'=>'','rewrite_url'=>'')
 )

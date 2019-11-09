@@ -103,7 +103,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 " size="63"/>
     </div>
     <span class="admin_web_tip">
-      如：hr135人才网
+      如：菲聘网
    </span>
   </div>
 </div>
