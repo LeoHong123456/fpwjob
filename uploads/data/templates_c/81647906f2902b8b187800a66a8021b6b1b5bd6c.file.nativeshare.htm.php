@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-02 16:22:37
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-08 15:39:55
          compiled from "/www/fpwjob/uploads//app/template/wap/nativeshare.htm" */ ?>
-<?php /*%%SmartyHeaderCode:13770067515dbd3ccd0a5591-48779429%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:17143757345dc51bcba9f021-10678034%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13770067515dbd3ccd0a5591-48779429',
+  'nocache_hash' => '17143757345dc51bcba9f021-10678034',
   'function' => 
   array (
   ),
@@ -31,9 +31,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5dbd3ccd0fdb72_73222837',
+  'unifunc' => 'content_5dc51bcbad8e84_06246720',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5dbd3ccd0fdb72_73222837')) {function content_5dbd3ccd0fdb72_73222837($_smarty_tpl) {?><!----如果是微信登录，引导微信自有分享------>
+<?php if ($_valid && !is_callable('content_5dc51bcbad8e84_06246720')) {function content_5dc51bcbad8e84_06246720($_smarty_tpl) {?><!----如果是微信登录，引导微信自有分享------>
 
 <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['wap_style']->value;?>

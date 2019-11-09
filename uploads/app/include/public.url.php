@@ -542,7 +542,7 @@ function Url($m='index',$paramer=array(),$index=""){
 function FormatPicUrl($paramer){
     global $config;
     $UploadPath=$paramer['path'];
-    if(strstr($UploadPath,'http://')){
+    if(strstr($UploadPath,'http://')||strstr($UploadPath,'https://')){
         if(!file_exists(str_replace($config['sy_weburl'],APP_PATH,$UploadPath))){
             $UploadPath='/'.$config['sy_lt_icon'];
         }else{

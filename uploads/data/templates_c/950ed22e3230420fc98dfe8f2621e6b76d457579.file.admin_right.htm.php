@@ -1,41 +1,39 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-02 17:32:43
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-08 15:36:13
          compiled from "/www/fpwjob/uploads/app/template/admin/admin_right.htm" */ ?>
-<?php /*%%SmartyHeaderCode:14360873405dbd3ec58e7219-91134875%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3399105555dc51aedd01575-70207455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '950ed22e3230420fc98dfe8f2621e6b76d457579' => 
     array (
       0 => '/www/fpwjob/uploads/app/template/admin/admin_right.htm',
-      1 => 1572686853,
+      1 => 1573198551,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14360873405dbd3ec58e7219-91134875',
+  'nocache_hash' => '3399105555dc51aedd01575-70207455',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5dbd3ec59148c2_35334586',
   'variables' => 
   array (
     'config' => 0,
     'dirname' => 0,
     'mruser' => 0,
     'nav_user' => 0,
-    'version' => 0,
     'soft' => 0,
     'kongjian' => 0,
     'banben' => 0,
-    'phpbanben' => 0,
     'yonghu' => 0,
     'server' => 0,
     'pytoken' => 0,
     'base' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5dc51aedd3f681_07316854',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5dbd3ec59148c2_35334586')) {function content_5dbd3ec59148c2_35334586($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if ($_valid && !is_callable('content_5dc51aedd3f681_07316854')) {function content_5dc51aedd3f681_07316854($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -289,11 +287,11 @@ var integral_pricename='<?php echo $_smarty_tpl->tpl_vars['config']->value['inte
 <div class="mainindex_box">
 <div class="mainindex_box_cont_c">
  <div class="mainindex_box_cont"><i class="admin_index_bgbox_tit_icon" style="top:25px;"></i>
-   <div class="mainleft">
+<!--   <div class="mainleft">
       <div class="maininfo">
               <div class="admin_indexdt"><div class="mainboxtop"><h6>官方动态</h6></div><ul class="" id="yunzx"></ul></div>
       </div>
-  </div>                                
+  </div> -->
  
   <div class="mainright">
     <div class="maininfo">
@@ -317,12 +315,15 @@ var integral_pricename='<?php echo $_smarty_tpl->tpl_vars['config']->value['inte
 			<div class="mainmsg">
 				<div class="mainboxtop"><h6>系统信息</h6></div>
 				<div class="">
-					<span class="mainmsg_list">服务器软件：<?php echo $_smarty_tpl->tpl_vars['soft']->value;?></span>
-					<span class="mainmsg_list">可用空间(磁盘区)：<?php echo $_smarty_tpl->tpl_vars['kongjian']->value;?>&nbsp;M</span>
-					<span class="mainmsg_list">MySQL 版本：<?php echo $_smarty_tpl->tpl_vars['banben']->value;?></span>
+					<span class="mainmsg_list">服务器软件：<?php echo $_smarty_tpl->tpl_vars['soft']->value;?>
+</span>
+					<span class="mainmsg_list">可用空间(磁盘区)：<?php echo $_smarty_tpl->tpl_vars['kongjian']->value;?>
+&nbsp;M</span>
+					<span class="mainmsg_list">MySQL 版本：<?php echo $_smarty_tpl->tpl_vars['banben']->value;?>
+</span>
 					<span class="mainmsg_list">用户 - 服务器：<?php echo $_smarty_tpl->tpl_vars['yonghu']->value;?>
-					 - <?php echo $_smarty_tpl->tpl_vars['server']->value;?>
-					</span>
+ - <?php echo $_smarty_tpl->tpl_vars['server']->value;?>
+</span>
 				</div>   
 			</div>
 		</div> 

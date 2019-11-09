@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-02 16:22:36
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-08 16:27:50
          compiled from "/www/fpwjob/uploads//app/template/wap/header.htm" */ ?>
-<?php /*%%SmartyHeaderCode:5395589345dbd3ccce9c0b4-87090852%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13310139505dc527063fecf6-41403989%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '5395589345dbd3ccce9c0b4-87090852',
+  'nocache_hash' => '13310139505dc527063fecf6-41403989',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5dbd3cccedb076_21530988',
+  'unifunc' => 'content_5dc527064258f4_88516978',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5dbd3cccedb076_21530988')) {function content_5dbd3cccedb076_21530988($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include '/www/fpwjob/uploads/app/include/libs/plugins/function.url.php';
+<?php if ($_valid && !is_callable('content_5dc527064258f4_88516978')) {function content_5dc527064258f4_88516978($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include '/www/fpwjob/uploads/app/include/libs/plugins/function.url.php';
 ?><!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
