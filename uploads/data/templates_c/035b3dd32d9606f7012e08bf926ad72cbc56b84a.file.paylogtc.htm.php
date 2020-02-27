@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-08 16:46:21
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2020-02-19 08:58:41
          compiled from "/www/fpwjob/uploads/app/template/member/lietou/paylogtc.htm" */ ?>
-<?php /*%%SmartyHeaderCode:6643240255dc52b5d06fed7-29819029%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:4554468015e4c88418fe855-86723298%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '6643240255dc52b5d06fed7-29819029',
+  'nocache_hash' => '4554468015e4c88418fe855-86723298',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5dc52b5d09b5d7_63796410',
+  'unifunc' => 'content_5e4c8841951a74_61650552',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5dc52b5d09b5d7_63796410')) {function content_5dc52b5d09b5d7_63796410($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/www/fpwjob/uploads/app/include/libs/plugins/modifier.date_format.php';
+<?php if ($_valid && !is_callable('content_5e4c8841951a74_61650552')) {function content_5e4c8841951a74_61650552($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/www/fpwjob/uploads/app/include/libs/plugins/modifier.date_format.php';
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

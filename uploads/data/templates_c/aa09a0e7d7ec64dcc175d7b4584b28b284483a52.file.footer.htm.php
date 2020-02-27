@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-08 21:30:28
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2020-02-19 20:42:59
          compiled from "/www/fpwjob/uploads//app/template/member/user/footer.htm" */ ?>
-<?php /*%%SmartyHeaderCode:16079635845dc56df42ef9f7-82317827%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:12613183505e4d2d53904ae6-19876342%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '16079635845dc56df42ef9f7-82317827',
+  'nocache_hash' => '12613183505e4d2d53904ae6-19876342',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5dc56df4335be0_31732361',
+  'unifunc' => 'content_5e4d2d53968954_49497124',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5dc56df4335be0_31732361')) {function content_5dc56df4335be0_31732361($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5e4d2d53968954_49497124')) {function content_5e4d2d53968954_49497124($_smarty_tpl) {?>
 <div class="Commissioned_Resume_box" style="position:absolute; display:none; background: white;width: 548px;">
     <div class="Commissioned_Resume_cont  ">
         <div class="com_resume_ct">委托简历给管理员，管理员将您的简历推荐给企业</div>

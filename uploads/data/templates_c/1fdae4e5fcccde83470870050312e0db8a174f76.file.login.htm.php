@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-08 15:36:52
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2020-01-27 09:44:21
          compiled from "/www/fpwjob/uploads/app/template/default/ajax/login.htm" */ ?>
-<?php /*%%SmartyHeaderCode:9046861025dc51b148f4207-57885684%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:7855938875e2e4075c747f0-70302282%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '9046861025dc51b148f4207-57885684',
+  'nocache_hash' => '7855938875e2e4075c747f0-70302282',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5dc51b14978ca9_97816966',
+  'unifunc' => 'content_5e2e4075d2e4f3_75701504',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5dc51b14978ca9_97816966')) {function content_5dc51b14978ca9_97816966($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include '/www/fpwjob/uploads/app/include/libs/plugins/function.url.php';
+<?php if ($_valid && !is_callable('content_5e2e4075d2e4f3_75701504')) {function content_5e2e4075d2e4f3_75701504($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include '/www/fpwjob/uploads/app/include/libs/plugins/function.url.php';
 ?><?php if ($_smarty_tpl->tpl_vars['usertype']->value=="1") {?>  
 	<div class="login_after_box">
 		<div class="login_after_user_box">

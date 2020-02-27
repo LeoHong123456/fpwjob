@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2019-11-08 15:43:00
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2020-02-17 11:09:46
          compiled from "/www/fpwjob/uploads//app/template/member/com/jobpay.htm" */ ?>
-<?php /*%%SmartyHeaderCode:11011554045dc51c848678e6-41612733%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:20029986765e4a03fae45f97-02839574%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '11011554045dc51c848678e6-41612733',
+  'nocache_hash' => '20029986765e4a03fae45f97-02839574',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5dc51c8487f310_47610395',
+  'unifunc' => 'content_5e4a03fae70699_30114716',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5dc51c8487f310_47610395')) {function content_5dc51c8487f310_47610395($_smarty_tpl) {?> <div class="yun_resume_buy" id="jobpay" style="display:none;">
+<?php if ($_valid && !is_callable('content_5e4a03fae70699_30114716')) {function content_5e4a03fae70699_30114716($_smarty_tpl) {?> <div class="yun_resume_buy" id="jobpay" style="display:none;">
 	<div class="job_redpack_box">
 		<ul class="job_redpack_tit">
 			<li class="job_redpack_tit_cur pack" data-id='sharejob'>分享推广<i class="job_redpack_tit_line"></i></li>

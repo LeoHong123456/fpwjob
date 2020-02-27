@@ -9,7 +9,6 @@
 *
  */ 
 
-
 include(dirname(__FILE__).'/global.php');
 
 //伪静态操作statr
